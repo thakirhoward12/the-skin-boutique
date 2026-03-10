@@ -1,0 +1,59 @@
+$tsContent = [System.IO.File]::ReadAllText("src/data/products.ts")
+$jsContent = $tsContent.Split('export const products: Product[] = ')[1]
+$jsCode = "const products = " + $jsContent
+
+[System.IO.File]::WriteAllText("data.js", $jsCode)
+
+$htmlContent = @"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Boutique Catalog</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fdf5f6; margin: 0; padding: 40px 20px; }
+        h1 { text-align: center; color: #4a4a4a; font-weight: 300; font-size: 2.5rem; margin-bottom: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.03); transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .img-container { height: 300px; overflow: hidden; background: #fff; padding: 20px; display: flex; align-items: center; justify-content: center; }
+        .img-container img { max-width: 100%; max-height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+        .info { padding: 24px; text-align: center; border-top: 1px solid #f0f0f0; }
+        .brand { font-size: 11px; text-transform: uppercase; color: #d88fa4; letter-spacing: 2px; margin-bottom: 8px; font-weight: bold; }
+        .name { font-size: 18px; color: #212121; margin: 0 0 12px 0; font-weight: 500; height: 50px; overflow: hidden; }
+        .price { font-size: 17px; color: #424242; font-weight: 600; margin: 0; }
+        .summary { margin-top: 40px; text-align: center; color: #888; font-size: 15px; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <h1>The Skin Boutique Catalog</h1>
+    <div class="grid" id="grid"></div>
+    <div class="summary" id="summary"></div>
+
+    <script src="data.js"></script>
+    <script>
+        const grid = document.getElementById('grid');
+        products.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <div class="img-container">
+                    <img src="` + "$" + `{p.image}" alt="` + "$" + `{p.name}" onerror="this.src='https://via.placeholder.com/280x280?text=No+Image'">
+                </div>
+                <div class="info">
+                    <div class="brand">` + "$" + `{p.brand}</div>
+                    <h3 class="name" title="` + "$" + `{p.name}">` + "$" + `{p.name}</h3>
+                    <p class="price">` + "$" + `{p.price}</p>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+        document.getElementById('summary').innerText = "Displaying " + products.length + " products!";
+    </script>
+</body>
+</html>
+"@
+
+[System.IO.File]::WriteAllText("preview.html", $htmlContent)
+Write-Host "Successfully generated preview.html!"

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@property --color-pastel-pink {
+  syntax: "<color>";
+  initial-value: #F9F6F0;
+  inherits: true;
+}
+
+@property --color-pastel-pink-dark {
+  syntax: "<color>";
+  initial-value: #D4C5B9;
+  inherits: true;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  
+  --color-pastel-pink: #F9F6F0;
+  --color-pastel-pink-dark: #D4C5B9;
+  --color-pastel-blue: #F0F4F8;
+  --color-pastel-blue-dark: #BCCCDC;
+  --color-pastel-green: #F2F5F0;
+  --color-pastel-green-dark: #C2D1C2;
+  --color-pastel-peach: #FDF8F5;
+  --color-pastel-peach-dark: #E8D5C4;
+  --color-pastel-lilac: #F7F5FA;
+  --color-pastel-lilac-dark: #D1C7DF;
+  --color-pastel-yellow: #FDFCF0;
+  --color-pastel-yellow-dark: #E8E5C4;
+  
+  --color-ink-900: #1A1A1A;
+  --color-ink-700: #4A4A4A;
+  --color-ink-500: #8C8C8C;
+  --color-ink-300: #D1D1D1;
+  --color-ink-200: #E5E5E5;
+  --color-ink-100: #F2F2F2;
+  --color-ink-50: #FAFAFA;
+
+  --animate-neon-marquee: neon-marquee 30s linear infinite;
+}
+
+@keyframes neon-marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.neon-text {
+  /* Removed neon effect per request */
+}
+
+.theme-valentines {
+  --color-pastel-pink: #FFF1F2;
+  --color-pastel-pink-dark: #FB7185;
+}
+
+.theme-womens-day {
+  --color-pastel-pink: #FAF5FF;
+  --color-pastel-pink-dark: #C084FC;
+}
+
+.theme-pride {
+  --color-pastel-pink: #FFFFF0;
+  --color-pastel-pink-dark: #FBBF24;
+}
+
+.theme-christmas {
+  --color-pastel-pink: #F0FDF4;
+  --color-pastel-pink-dark: #4ADE80;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-pastel-pink text-ink-900 font-sans antialiased;
+  transition: --color-pastel-pink 1s ease-in-out, --color-pastel-pink-dark 1s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out, border-color 1s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
