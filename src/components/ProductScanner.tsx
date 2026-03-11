@@ -88,6 +88,13 @@ export default function ProductScanner() {
   };
 
   useEffect(() => {
+    // Only attempt to run the scanner if we actually have an API key configured.
+    // Otherwise, silently skip it so the user's UI remains clean.
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      return; 
+    }
+
     fetch('/api/update-products', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -101,30 +108,24 @@ export default function ProductScanner() {
   }, []);
 
   if (status === 'idle' || status === 'scanning' || status === 'saving') {
-    return (
-      <div className="fixed bottom-4 right-4 bg-white p-4 rounded-lg shadow-xl border border-indigo-100 z-50 max-w-sm">
-        <div className="flex items-center gap-3">
-          <div className="w-4 h-4 border-2 border-indigo-600 border-t-transparent rounded-full animate-spin" />
-          <p className="text-sm font-medium text-gray-700">
-            {status === 'scanning' ? 'Scanning album for new products...' : 'Saving identified products...'}
-          </p>
+    // Only show the loading UI if we actually started scanning
+    if (status !== 'idle') {
+      return (
+        <div className="fixed bottom-4 right-4 bg-white p-4 rounded-lg shadow-xl border border-indigo-100 z-50 max-w-sm">
+          <div className="flex items-center gap-3">
+            <div className="w-4 h-4 border-2 border-indigo-600 border-t-transparent rounded-full animate-spin" />
+            <p className="text-sm font-medium text-gray-700">
+              {status === 'scanning' ? 'Scanning album for new products...' : 'Saving identified products...'}
+            </p>
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 
+  // If there's an error (like missing API key), just fail silently and don't render anything
   if (status === 'error') {
-    return (
-      <div className="fixed bottom-4 right-4 bg-red-50 p-4 rounded-lg shadow-xl border border-red-100 z-50 max-w-sm">
-        <p className="text-sm font-medium text-red-700">Error: {error}</p>
-        <button 
-          onClick={scanProducts}
-          className="mt-2 text-xs bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 transition-colors"
-        >
-          Retry
-        </button>
-      </div>
-    );
+    return null; 
   }
 
   if (status === 'done') {
