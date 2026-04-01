@@ -37,7 +37,7 @@ async function startServer() {
     brand: ${JSON.stringify(p.brand)},
     name: ${JSON.stringify(p.name)},
     category: ${JSON.stringify(p.category)},
-    price: ${JSON.stringify("$" + (p.price || 0).toFixed(2))},
+    price: ${(p.price || 0).toFixed(2)},
     image: ${JSON.stringify("/images/" + p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-') + ".jpg")},
     description: ${JSON.stringify(p.description)},
     ingredients: ${JSON.stringify(Array.isArray(p.ingredients) ? p.ingredients.join(", ") : p.ingredients || "")},

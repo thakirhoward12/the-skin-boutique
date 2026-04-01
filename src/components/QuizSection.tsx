@@ -1,4 +1,5 @@
 import { Sparkles, ArrowRight } from 'lucide-react';
+import { motion } from 'motion/react';
 import { useUser } from '../contexts/UserContext';
 
 export default function QuizSection({ onOpenQuiz }: { onOpenQuiz: () => void }) {
@@ -16,42 +17,93 @@ export default function QuizSection({ onOpenQuiz }: { onOpenQuiz: () => void }) 
         }}
       ></div>
 
+      {/* Animated blobs */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pastel-pink/5 rounded-full blur-3xl animate-blob" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/5 rounded-full blur-3xl animate-blob animation-delay-2000" />
+
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-        <Sparkles className="w-12 h-12 text-pastel-pink mx-auto mb-6 stroke-[1.5]" />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <Sparkles className="w-12 h-12 text-pastel-pink mx-auto mb-6 stroke-[1.5]" />
+        </motion.div>
         
         {profile ? (
           <>
-            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Welcome back.</h2>
-            <p className="text-lg text-white/80 font-light mb-8 max-w-2xl mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="text-4xl md:text-5xl font-serif mb-6 text-white"
+            >
+              Welcome back.
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="text-lg text-white/80 font-light mb-8 max-w-2xl mx-auto"
+            >
               We've customized your experience for <span className="text-pastel-pink font-medium">{profile.skinType}</span> skin targeting <span className="text-pastel-pink font-medium">{profile.concern}</span>. Look for the "Perfect Match" badge on products below.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="flex flex-col sm:flex-row justify-center gap-4"
+            >
               <button 
                 onClick={onOpenQuiz} 
-                className="bg-white text-ink-900 px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-pastel-pink transition-colors"
+                className="bg-white text-ink-900 px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-pastel-pink hover:shadow-lg hover:shadow-pastel-pink/20 transition-all duration-300"
               >
                 Update Profile
               </button>
               <button 
                 onClick={clearProfile} 
-                className="border border-white/30 text-white px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-white/10 transition-colors"
+                className="border border-white/30 text-white px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-white/10 hover:border-white/50 transition-all duration-300"
               >
                 Clear Profile
               </button>
-            </div>
+            </motion.div>
           </>
         ) : (
           <>
-            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Not sure where to start?</h2>
-            <p className="text-lg text-white/80 font-light mb-8 max-w-2xl mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="text-4xl md:text-5xl font-serif mb-6 text-white"
+            >
+              Not sure where to start?
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="text-lg text-white/80 font-light mb-8 max-w-2xl mx-auto"
+            >
               Take our 3-minute diagnostic to uncover your personalized skincare ritual, curated by our experts.
-            </p>
-            <button 
+            </motion.p>
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
               onClick={onOpenQuiz} 
-              className="bg-white text-ink-900 px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-pastel-pink transition-colors inline-flex items-center"
+              className="bg-white text-ink-900 px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-pastel-pink hover:shadow-lg hover:shadow-pastel-pink/20 transition-all duration-300 inline-flex items-center"
             >
               Take The Skin Quiz <ArrowRight className="ml-2 w-4 h-4" />
-            </button>
+            </motion.button>
           </>
         )}
       </div>

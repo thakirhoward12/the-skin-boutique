@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Mail, Lock, LogIn, UserPlus, AlertCircle } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
@@ -6,27 +6,51 @@ import { useAuth } from '../contexts/AuthContext';
 interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
+  initialReferralCode?: string;
 }
 
-export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
+export default function AuthModal({ isOpen, onClose, initialReferralCode }: AuthModalProps) {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [referralCode, setReferralCode] = useState(initialReferralCode || '');
+
+  useEffect(() => {
+    if (!initialReferralCode) {
+      const savedCode = localStorage.getItem('referralCode');
+      if (savedCode) setReferralCode(savedCode);
+    }
+  }, [initialReferralCode]);
   
   const { login, signup, loginWithGoogle } = useAuth();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
+
+    // Sanitization & Validation Guards
+    if (email.length > 100 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setError("Please enter a valid email address (under 100 characters).");
+      return;
+    }
+    if (password.length > 100) {
+      setError("Password exceeds maximum allowed length.");
+      return;
+    }
+    
+    // Clean and validate referral to alphanumeric hyphens, max 50 chars
+    const cleanReferral = referralCode.trim().replace(/[^a-zA-Z0-9-]/g, '').slice(0, 50);
+
     setLoading(true);
 
     try {
       if (isLogin) {
         await login(email, password);
       } else {
-        await signup(email, password);
+        await signup(email, password, cleanReferral || undefined);
+        localStorage.removeItem('referralCode'); // Clear after use
       }
       // After successful login/signup, close modal and reset form
       onClose();
@@ -82,17 +106,17 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="absolute inset-0 bg-ink-900/60 backdrop-blur-md"
+            className="absolute inset-0 bg-ink-900/40 backdrop-blur-sm"
           />
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-md bg-white rounded-[2rem] shadow-2xl overflow-hidden z-10"
+            className="relative w-full max-w-md bg-white/60 backdrop-blur-xl border border-white/40 rounded-[2rem] shadow-2xl overflow-hidden z-10"
           >
             <button 
               onClick={onClose}
-              className="absolute top-6 right-6 z-20 p-2 bg-ink-50 rounded-full hover:bg-ink-100 transition-colors"
+              className="absolute top-6 right-6 z-20 p-2 bg-white/80 rounded-full hover:bg-white transition-colors border border-white/40 shadow-sm"
             >
               <X className="w-5 h-5 text-ink-900 stroke-[1.5]" />
             </button>
@@ -162,6 +186,30 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
                     />
                   </div>
                 </div>
+
+                {!isLogin && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    className="overflow-hidden"
+                  >
+                    <label className="block text-xs font-medium text-ink-700 uppercase tracking-wider mb-2">
+                      Referral Code (Optional)
+                    </label>
+                    <div className="relative">
+                      <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                        <UserPlus className="h-5 w-5 text-ink-400" />
+                      </div>
+                      <input
+                        type="text"
+                        value={referralCode}
+                        onChange={(e) => setReferralCode(e.target.value)}
+                        className="block w-full pl-11 pr-4 py-3 bg-ink-50 border border-transparent rounded-xl text-ink-900 placeholder-ink-400 focus:outline-none focus:ring-2 focus:ring-pastel-pink-dark focus:bg-white transition-all text-sm mb-4"
+                        placeholder="ENTER-CODE"
+                      />
+                    </div>
+                  </motion.div>
+                )}
 
                 <button
                   type="submit"

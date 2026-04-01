@@ -6,14 +6,22 @@ import { products as localProducts, type Product } from '../data/products';
 interface ProductContextType {
   products: Product[];
   isLoading: boolean;
+  searchQuery: string;
+  setSearchQuery: (query: string) => void;
 }
 
 // Default to local products so the app doesn't break before migration
-const ProductContext = createContext<ProductContextType>({ products: localProducts, isLoading: false });
+const ProductContext = createContext<ProductContextType>({ 
+  products: localProducts, 
+  isLoading: false,
+  searchQuery: '',
+  setSearchQuery: () => {}
+});
 
 export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [products, setProducts] = useState<Product[]>(localProducts);
   const [isLoading, setIsLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     try {
@@ -21,7 +29,18 @@ export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ child
         if (!snapshot.empty) {
           const prods: Product[] = [];
           snapshot.forEach(doc => {
-            prods.push(doc.data() as Product);
+            const data = doc.data();
+            // Coerce price to a valid number — Firestore may store it as a string
+            const rawPrice = Number(data.price);
+            prods.push({
+              ...data,
+              price: isNaN(rawPrice) ? 0 : rawPrice,
+              // Also coerce option prices if they exist
+              options: data.options ? data.options.map((opt: any) => ({
+                ...opt,
+                price: isNaN(Number(opt.price)) ? 0 : Number(opt.price)
+              })) : undefined,
+            } as Product);
           });
           setProducts(prods);
         }
@@ -39,7 +58,7 @@ export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ child
   }, []);
 
   return (
-    <ProductContext.Provider value={{ products, isLoading }}>
+    <ProductContext.Provider value={{ products, isLoading, searchQuery, setSearchQuery }}>
       {children}
     </ProductContext.Provider>
   );

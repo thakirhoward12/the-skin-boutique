@@ -10,12 +10,13 @@ import { useProducts } from '../contexts/ProductContext';
 interface SkinQuizModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onOpenBuilder?: (recommendations: Product[]) => void;
 }
 
 type SkinType = 'Oily' | 'Dry' | 'Combination' | 'Normal';
 type Concern = 'Acne & Blemishes' | 'Anti-Aging' | 'Redness & Sensitivity' | 'Dryness & Hydration';
 
-export default function SkinQuizModal({ isOpen, onClose }: SkinQuizModalProps) {
+export default function SkinQuizModal({ isOpen, onClose, onOpenBuilder }: SkinQuizModalProps) {
   const [step, setStep] = useState(0);
   const [skinType, setSkinType] = useState<SkinType | null>(null);
   const [concern, setConcern] = useState<Concern | null>(null);
@@ -121,17 +122,17 @@ export default function SkinQuizModal({ isOpen, onClose }: SkinQuizModalProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={handleClose}
-            className="absolute inset-0 bg-ink-900/60 backdrop-blur-md"
+            className="absolute inset-0 bg-ink-900/40 backdrop-blur-sm"
           />
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-2xl bg-white rounded-[2rem] shadow-2xl overflow-hidden z-10 flex flex-col min-h-[500px]"
+            className="relative w-full max-w-2xl bg-white/60 backdrop-blur-xl border border-white/40 rounded-[2rem] shadow-2xl overflow-hidden z-10 flex flex-col min-h-[500px]"
           >
             <button 
               onClick={handleClose}
-              className="absolute top-6 right-6 z-20 p-2 bg-ink-50 rounded-full hover:bg-ink-100 transition-colors"
+              className="absolute top-6 right-6 z-20 p-2 bg-white/80 rounded-full hover:bg-white transition-colors border border-white/40 shadow-sm"
             >
               <X className="w-5 h-5 text-ink-900 stroke-[1.5]" />
             </button>
@@ -287,16 +288,29 @@ export default function SkinQuizModal({ isOpen, onClose }: SkinQuizModalProps) {
                       ))}
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <button
-                        onClick={handleAddRoutineToCart}
-                        className="flex-1 bg-ink-900 text-white py-4 rounded-full text-xs font-medium tracking-widest uppercase hover:bg-ink-800 transition-colors flex items-center justify-center"
-                      >
-                        Add Routine to Cart
-                      </button>
+                    <div className="flex flex-col gap-4">
+                      <div className="flex flex-col sm:flex-row gap-4">
+                        <button
+                          onClick={handleAddRoutineToCart}
+                          className="flex-1 bg-ink-900 text-white py-4 rounded-full text-xs font-medium tracking-widest uppercase hover:bg-ink-800 transition-colors flex items-center justify-center shadow-md hover:shadow-lg"
+                        >
+                          Quick Add Routine
+                        </button>
+                        {onOpenBuilder && (
+                          <button
+                            onClick={() => {
+                              onClose();
+                              setTimeout(() => onOpenBuilder(recommendations), 300); // Wait for modal close animation
+                            }}
+                            className="flex-1 px-8 py-4 rounded-full text-xs font-medium tracking-widest uppercase bg-pastel-pink text-pastel-pink-dark hover:bg-pastel-pink/80 transition-colors shadow-sm"
+                          >
+                            Customize Bundle
+                          </button>
+                        )}
+                      </div>
                       <button
                         onClick={resetQuiz}
-                        className="px-8 py-4 rounded-full text-xs font-medium tracking-widest uppercase text-ink-900 border border-ink-200 hover:border-ink-900 transition-colors"
+                        className="w-full px-8 py-4 rounded-full text-xs font-medium tracking-widest uppercase text-ink-900 border border-ink-200 hover:border-ink-900 transition-colors"
                       >
                         Retake Quiz
                       </button>

@@ -57,6 +57,7 @@ export default function Hero() {
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
               className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] tracking-tighter font-serif text-pastel-pink leading-[0.85] font-light"
             >
+              <span className="sr-only">Premium Korean Skincare & K-Beauty Boutique</span>
               <span className="block italic pr-8">Glass Skin</span>
               <span className="block pl-12 sm:pl-24">Redefined.</span>
             </motion.h1>

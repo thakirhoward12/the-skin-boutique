@@ -1,15 +1,16 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import { getFunctions } from "firebase/functions";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD8_UOz3Wpow0Wn9w3EHi3MI74r3Yrn_YU",
-  authDomain: "gen-lang-client-0717528220.firebaseapp.com",
-  projectId: "gen-lang-client-0717528220",
-  storageBucket: "gen-lang-client-0717528220.firebasestorage.app",
-  messagingSenderId: "335167175305",
-  appId: "1:335167175305:web:4f7c4f0a3f4419af9be458",
-  measurementId: "G-51B1M2M70P"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
@@ -20,3 +21,6 @@ export const db = getFirestore(app);
 
 // Initialize Firebase Authentication
 export const auth = getAuth(app);
+
+// Initialize Cloud Functions
+export const functions = getFunctions(app, 'africa-south1');

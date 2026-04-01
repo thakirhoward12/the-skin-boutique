@@ -6,19 +6,73 @@ import { useCurrency } from '../contexts/CurrencyContext';
 import { useCart } from '../contexts/CartContext';
 import { useUser } from '../contexts/UserContext';
 import { useProducts } from '../contexts/ProductContext';
+import SEO from './SEO';
+
 
 const INGREDIENT_GLOSSARY: Record<string, string> = {
-  'Snail Secretion Filtrate': 'A powerhouse ingredient that hydrates, repairs skin damage, and fades dark spots.',
-  'Niacinamide': 'Vitamin B3. Brightens skin, reduces redness, and minimizes the appearance of pores.',
-  'Centella Asiatica': 'Also known as Tiger Grass. Highly soothing and excellent for calming inflammation and redness.',
-  'Salicylic Acid': 'A BHA that exfoliates inside the pore to clear breakouts and blackheads.',
-  'Hyaluronic Acid': 'A humectant that draws moisture into the skin, keeping it plump and hydrated.',
-  'Ceramide': 'Lipids that help form the skin\'s barrier and retain moisture.',
-  'Glycolic Acid': 'An AHA that exfoliates the surface of the skin to improve texture and brightness.',
-  'Lactic Acid': 'A gentle AHA that exfoliates while also hydrating the skin.',
-  'Zinc PCA': 'Helps control sebum production and has antibacterial properties.',
-  'Oryza Sativa (Rice) Extract': 'Rich in antioxidants and helps to brighten and soften the skin.',
-  'Butyrospermum Parkii (Shea) Butter': 'An excellent emollient that deeply moisturizes and nourishes the skin.'
+  // Core Actives
+  'Niacinamide': 'Vitamin B3. Brightens skin, reduces redness, minimizes pores, and strengthens the skin barrier.',
+  'Retinol': 'Vitamin A derivative. Stimulates cell turnover, reduces fine lines, and boosts collagen production.',
+  'Ascorbic Acid': 'Pure Vitamin C. A potent antioxidant that brightens, fights UV damage, and boosts collagen.',
+  'Tocopherol': 'Vitamin E. Protects skin from free radical damage and deeply moisturizes.',
+  'Panthenol': 'Provitamin B5. Deeply hydrates, calms irritation, and accelerates skin healing.',
+  'Adenosine': 'A naturally occurring molecule that reduces wrinkles and improves skin elasticity.',
+  'Allantoin': 'Soothes irritation, promotes cell regeneration, and softens the skin.',
+  
+  // Acids & Exfoliants
+  'Salicylic Acid': 'A BHA that penetrates pores to dissolve oil and clear breakouts and blackheads.',
+  'Glycolic Acid': 'An AHA that exfoliates surface dead skin cells to improve texture and brightness.',
+  'Lactic Acid': 'A gentle AHA that exfoliates while also hydrating the skin — great for sensitive types.',
+  'Hyaluronic Acid': 'A powerful humectant that holds 1000x its weight in water, keeping skin plump and hydrated.',
+  'Kojic Acid': 'A natural brightening agent that inhibits melanin production to fade dark spots.',
+  'Tranexamic Acid': 'Reduces hyperpigmentation and dark spots by blocking melanin transfer.',
+  'Succinic Acid': 'An antibacterial acid that helps control acne and remove dead skin cells.',
+  'Citric Acid': 'An AHA that gently exfoliates and helps balance pH levels in the skin.',
+  'Ferulic Acid': 'A plant-based antioxidant that enhances the stability and efficacy of Vitamins C and E.',
+  
+  // Botanicals & Extracts
+  'Centella Asiatica': 'Also known as Tiger Grass or Cica. Highly soothing, calms inflammation, and repairs the skin barrier.',
+  'Madecassoside': 'A compound from Centella Asiatica that powerfully soothes irritated and sensitive skin.',
+  'Camellia Sinensis': 'Green Tea extract. Rich in antioxidants that fight aging and soothe inflammation.',
+  'Artemisia': 'Mugwort extract. A traditional Korean herb that calms sensitive, acne-prone skin.',
+  'Houttuynia Cordata': 'Heartleaf extract. Anti-inflammatory and antibacterial — excellent for acne-prone skin.',
+  'Propolis': 'Bee propolis. A natural antibacterial that heals blemishes and deeply nourishes skin.',
+  'Calendula': 'Anti-inflammatory flower extract that soothes redness and promotes skin healing.',
+  'Snail Secretion Filtrate': 'A K-Beauty powerhouse that hydrates, repairs damage, and fades dark spots.',
+  'Oryza Sativa': 'Rice extract. Rich in vitamins and antioxidants that brighten and soften the skin.',
+  'Tea Tree': 'Antibacterial and anti-inflammatory. Targets acne-causing bacteria without over-drying.',
+  'Aloe': 'Deeply hydrating and soothing. Calms sunburns, irritation, and redness.',
+  'Turmeric': 'Anti-inflammatory and antioxidant-rich. Brightens skin tone and calms redness.',
+  'Ginseng': 'Revitalizes dull skin, boosts circulation, and has powerful anti-aging properties.',
+  
+  // Hydrators & Barrier
+  'Ceramide': 'Essential lipids that form the skin\'s protective barrier and lock in moisture.',
+  'Squalane': 'A lightweight, plant-derived oil that mimics the skin\'s natural sebum for deep hydration.',
+  'Glycerin': 'A gentle humectant that draws water to the skin for lasting hydration.',
+  'Beta-Glucan': 'A soothing hydrator that calms redness and strengthens the skin\'s natural defenses.',
+  'Sodium Hyaluronate': 'A smaller form of Hyaluronic Acid that penetrates deeper for intense hydration.',
+  'Betaine': 'An amino acid that provides osmotic hydration and soothes sensitive skin.',
+  'Collagen': 'A structural protein that improves skin firmness, elasticity, and moisture retention.',
+  'Trehalose': 'A natural sugar that protects skin cells from dehydration and environmental stress.',
+  
+  // Peptides & Growth Factors
+  'Peptide': 'Short chains of amino acids that signal skin to produce more collagen and repair itself.',
+  'Copper Tripeptide': 'A powerful peptide that accelerates wound healing and stimulates collagen synthesis.',
+  'EGF': 'Epidermal Growth Factor. Stimulates cell renewal for smoother, younger-looking skin.',
+  
+  // Emollients & Oils
+  'Butyrospermum Parkii': 'Shea Butter. An excellent emollient that deeply moisturizes and nourishes the skin.',
+  'Jojoba': 'A lightweight oil that closely mimics natural skin oils, balancing hydration without clogging pores.',
+  
+  // Brighteners
+  'Arbutin': 'A natural brightening agent derived from bearberry that fades dark spots gently.',
+  'Glutathione': 'A master antioxidant that brightens skin and evens out skin tone.',
+  
+  // Other Common
+  'Zinc PCA': 'Controls excess sebum production and has antibacterial properties for acne-prone skin.',
+  'Caffeine': 'Reduces puffiness and dark circles by constricting blood vessels and boosting circulation.',
+  'PDRN': 'Salmon DNA. Promotes cell regeneration, improves skin texture, and boosts hydration.',
+  'Papain': 'A natural enzyme from papaya that gently dissolves dead skin cells for smoother texture.',
 };
 
 export default function ProductGrid({ 
@@ -42,7 +96,7 @@ export default function ProductGrid({
   const { formatPrice } = useCurrency();
   const { addToCart } = useCart();
   const { profile } = useUser();
-  const { products, isLoading } = useProducts();
+  const { products, isLoading, searchQuery } = useProducts();
 
   const categories = ['All', ...Array.from(new Set(products.map(p => p.category)))];
   const brands = ['All', ...Array.from(new Set(products.map(p => p.brand)))];
@@ -59,23 +113,32 @@ export default function ProductGrid({
     }
 
     if (sortBy === 'price-low-high') {
-      result.sort((a, b) => parseFloat(a.price.replace('$', '')) - parseFloat(b.price.replace('$', '')));
+      result.sort((a, b) => a.price - b.price);
     } else if (sortBy === 'price-high-low') {
-      result.sort((a, b) => parseFloat(b.price.replace('$', '')) - parseFloat(a.price.replace('$', '')));
+      result.sort((a, b) => b.price - a.price);
+    }
+
+    if (searchQuery.trim() !== '') {
+      const q = searchQuery.toLowerCase();
+      result = result.filter(p => 
+        p.name.toLowerCase().includes(q) || 
+        p.brand.toLowerCase().includes(q) || 
+        p.category.toLowerCase().includes(q) ||
+        (p.description && p.description.toLowerCase().includes(q))
+      );
     }
 
     return result;
-  }, [filterCategory, filterBrand, sortBy]);
+  }, [filterCategory, filterBrand, sortBy, searchQuery, products]);
 
   const handleAddToCart = (e: React.MouseEvent, product: Product, quantity: number = 1, optionIndex: number = 0) => {
     e.stopPropagation();
     e.preventDefault();
     
-    // Parse price string to number for the cart
-    const priceString = product.options && product.options.length > 0 
+    // Use numeric price directly from product or option
+    const priceNumber = product.options && product.options.length > 0 
       ? product.options[optionIndex].price 
       : product.price;
-    const priceNumber = parseFloat(priceString.replace('$', ''));
     
     addToCart({
       id: product.options && product.options.length > 0 ? `${product.id}-${optionIndex}` : product.id.toString(),
@@ -188,7 +251,13 @@ export default function ProductGrid({
   }, [toastMessage]);
 
   return (
-    <section id="products" className="py-24 bg-pastel-pink transition-colors duration-1000">
+    <>
+      <SEO 
+        title={selectedProduct ? selectedProduct.name : "Curated K-Beauty Collections"} 
+        description={selectedProduct ? selectedProduct.description : "Discover premium Korean skincare at The Skin Boutique. Curated favorites for every skin concern."}
+        product={selectedProduct || undefined}
+      />
+      <section id="products" className="py-24 bg-ivory-50 scroll-mt-20 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Featured Products Carousel */}
@@ -212,7 +281,7 @@ export default function ProductGrid({
                 <div className="relative overflow-hidden rounded-[2rem] h-[380px] bg-white shadow-sm group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/20 transition-all duration-500 mb-6">
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={`${product.brand} - ${product.name}`}
                     className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 mix-blend-multiply"
                     referrerPolicy="no-referrer"
                   />
@@ -349,7 +418,7 @@ export default function ProductGrid({
             ) : (
               filteredAndSortedProducts
                 .filter(p => !selectedBrandFolder || p.brand === selectedBrandFolder)
-                .map((product, index) => (
+                .map((product) => (
                 <motion.div 
                   layout
                   key={product.id}
@@ -364,53 +433,55 @@ export default function ProductGrid({
                   }}
                   className="group relative"
                 >
-                <div 
-                  className="relative w-full h-[400px] bg-white rounded-[2rem] overflow-hidden cursor-pointer group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/20 transition-all duration-500"
-                  onClick={() => openModal(product)}
-                >
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-center object-cover group-hover:scale-105 transition-transform duration-700 ease-out mix-blend-multiply"
-                    referrerPolicy="no-referrer"
-                  />
-                  {/* Grainy Noise Overlay */}
                   <div 
-                    className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none" 
-                    style={{ 
-                      backgroundImage: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')" 
-                    }}
-                  ></div>
-                  <div className="absolute inset-0 bg-ink-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
-                  <button 
-                    onClick={(e) => handleToggleFavorite(e, product)}
-                    className="absolute top-4 right-4 z-10 p-3 rounded-full bg-white/70 backdrop-blur-md hover:bg-white transition-all duration-300 shadow-sm opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0"
-                    aria-label="Add to favorites"
+                    className="relative w-full h-[400px] bg-white rounded-[2rem] overflow-hidden cursor-pointer group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/20 transition-all duration-500"
+                    onClick={() => openModal(product)}
                   >
-                    <Heart className={`w-4 h-4 transition-colors ${favorites.has(product.id) ? 'fill-pastel-pink-dark text-pastel-pink-dark' : 'text-ink-700'}`} />
-                  </button>
+                    <img
+                      src={product.image}
+                      alt={`${product.brand} - ${product.name}`}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-center object-cover group-hover:scale-105 transition-transform duration-700 ease-out mix-blend-multiply"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div 
+                      className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none" 
+                      style={{ 
+                        backgroundImage: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')" 
+                      }}
+                    ></div>
+                    <div className="absolute inset-0 bg-ink-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    
+                    <button 
+                      onClick={(e) => handleToggleFavorite(e, product)}
+                      className="absolute top-4 right-4 z-10 p-3 rounded-full bg-white/70 backdrop-blur-md hover:bg-white transition-all duration-300 shadow-sm opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0"
+                      aria-label="Add to favorites"
+                    >
+                      <Heart className={`w-4 h-4 transition-colors ${favorites.has(product.id) ? 'fill-pastel-pink-dark text-pastel-pink-dark' : 'text-ink-700'}`} />
+                    </button>
 
-                  <button 
-                    onClick={(e) => handleAddToCart(e, product)}
-                    className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md text-ink-900 px-8 py-3.5 rounded-full font-medium text-sm flex items-center shadow-lg opacity-0 group-hover:opacity-100 translate-y-6 group-hover:translate-y-0 transition-all duration-500 ease-out hover:bg-ink-900 hover:text-white z-10"
-                  >
-                    <ShoppingBag className="w-4 h-4 mr-2" />
-                    Add to Cart
-                  </button>
-                </div>
-                <div className="mt-6 flex flex-col items-center text-center">
-                  <h3 className="text-[10px] text-ink-500 mb-2 uppercase tracking-[0.2em] font-medium">
-                    {product.brand}
-                  </h3>
-                  <p className="text-xl font-serif text-ink-900 cursor-pointer hover:text-pastel-pink-dark transition-colors line-clamp-1" onClick={() => openModal(product)}>
-                    {product.name}
-                  </p>
-                  <p className="text-sm text-ink-500 mt-1 mb-2 font-light">{product.category}</p>
-                  <p className="text-lg font-medium text-ink-900">{formatPrice(product.price)}</p>
-                </div>
-              </motion.div>
-            )))}
+                    <button 
+                      onClick={(e) => handleAddToCart(e, product)}
+                      className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md text-ink-900 px-8 py-3.5 rounded-full font-medium text-sm flex items-center shadow-lg opacity-0 group-hover:opacity-100 translate-y-6 group-hover:translate-y-0 transition-all duration-500 ease-out hover:bg-ink-900 hover:text-white z-10"
+                    >
+                      <ShoppingBag className="w-4 h-4 mr-2" />
+                      Add to Cart
+                    </button>
+                  </div>
+                  <div className="mt-6 flex flex-col items-center text-center">
+                    <h3 className="text-[10px] text-ink-500 mb-2 uppercase tracking-[0.2em] font-medium">
+                      {product.brand}
+                    </h3>
+                    <p className="text-xl font-serif text-ink-900 cursor-pointer hover:text-pastel-pink-dark transition-colors line-clamp-1" onClick={() => openModal(product)}>
+                      {product.name}
+                    </p>
+                    <p className="text-sm text-ink-500 mt-1 mb-2 font-light">{product.category}</p>
+                    <p className="text-lg font-medium text-ink-900">{formatPrice(product.price)}</p>
+                  </div>
+                </motion.div>
+              ))
+            )}
           </AnimatePresence>
         </motion.div>
       </div>
@@ -469,9 +540,11 @@ export default function ProductGrid({
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <img 
+                   <img 
                     src={selectedProduct.image} 
-                    alt={selectedProduct.name}
+                    alt={`${selectedProduct.brand} - ${selectedProduct.name}`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover mix-blend-multiply"
                     referrerPolicy="no-referrer"
                   />
@@ -606,6 +679,40 @@ export default function ProductGrid({
                       ))}
                     </div>
                   </div>
+
+                  {/* Related Products Section */}
+                  <div className="pt-10 border-t border-ink-100">
+                    <h4 className="text-[10px] font-medium text-ink-900 tracking-[0.2em] uppercase mb-6">More from {selectedProduct.brand}</h4>
+                    <div className="grid grid-cols-3 gap-4">
+                      {products
+                        .filter(p => p.brand === selectedProduct.brand && p.id !== selectedProduct.id)
+                        .slice(0, 3)
+                        .map((relatedProduct) => (
+                          <div 
+                            key={relatedProduct.id} 
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedProduct(relatedProduct);
+                              setModalQuantity(1);
+                              setSelectedOptionIndex(0);
+                            }}
+                            className="group cursor-pointer"
+                          >
+                            <div className="aspect-square bg-white rounded-2xl overflow-hidden mb-2 border border-ink-50 shadow-sm group-hover:shadow-md transition-all duration-300">
+                              <img 
+                                src={relatedProduct.image} 
+                                alt={relatedProduct.name}
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                              />
+                            </div>
+                            <h5 className="text-[9px] font-medium text-ink-900 line-clamp-1 group-hover:text-pastel-pink-dark transition-colors">
+                              {relatedProduct.name}
+                            </h5>
+                            <p className="text-[9px] text-ink-500">{formatPrice(relatedProduct.price)}</p>
+                          </div>
+                        ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -613,5 +720,6 @@ export default function ProductGrid({
         )}
       </AnimatePresence>
     </section>
+    </>
   );
 }

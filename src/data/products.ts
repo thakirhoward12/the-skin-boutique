@@ -3,12 +3,12 @@ export interface Product {
   brand: string;
   name: string;
   category: string;
-  price: string;
+  price: number;
   image: string;
   textureVideo?: string;
   description: string;
   ingredients: string;
-  options?: { size: string; price: string }[];
+  options?: { size: string; price: number }[];
   idealFor?: { skinType: string[]; concern: string[] }[];
   reviews: { author: string; title: string; content: string; rating: number; date: string }[];
 }
@@ -82,6 +82,7 @@ import { brandHeimishProducts } from './brands/heimish';
 import { brandAriulProducts } from './brands/ariul';
 import { brandSkinfoodProducts } from './brands/skinfood';
 import { kiyokoExtrasProducts } from './brands/kiyoko-extras';
+import { kiyokoAllNewProducts } from './brands/kiyoko-all-new';
 
 const allProducts: Product[] = [
   ...brandDrRejuAllProducts,
@@ -151,14 +152,9 @@ const allProducts: Product[] = [
   ...brandHeimishProducts,
   ...brandAriulProducts,
   ...brandSkinfoodProducts,
-  ...kiyokoExtrasProducts
+  ...kiyokoExtrasProducts,
+  ...kiyokoAllNewProducts
 ];
 
-// Balance categories (Max 20 per category)
-const categoryCounts: Record<string, number> = {};
-export const products: Product[] = allProducts.filter((product) => {
-  const cat = product.category;
-  categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
-  return categoryCounts[cat] <= 20;
-});
+export const products: Product[] = allProducts;
 

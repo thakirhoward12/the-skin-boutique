@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { GoogleGenAI, Type } from "@google/genai";
+import { httpsCallable } from 'firebase/functions';
+import { functions } from '../lib/firebase';
 
 const IMAGE_URLS = [
   "https://lh3.googleusercontent.com/pw/AP1GczPeHNFhgVg4nMQQ3s6AiOeOMoWlwurFyh9DC94MSF0vKBDBl2g4fnRtwEgsHN2XAZu2zMXxp34v2vzDOHZO-0fyg2YlUvvUrCtwO_E8fPE5F5BEUBI",
@@ -18,52 +19,17 @@ export default function ProductScanner() {
   const [error, setError] = useState<string | null>(null);
 
   const scanProducts = async () => {
-    const apiKey = process.env.GEMINI_API_KEY;
-    console.log("Scanner: API Key present:", !!apiKey);
-    
-    if (!apiKey) {
-      setError("Gemini API key is missing. Please ensure it is set in the environment.");
-      setStatus('error');
-      return;
-    }
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (!isLocalhost) return;
 
     setStatus('scanning');
     try {
-      const ai = new GoogleGenAI({ apiKey });
+      const analyzeProductImage = httpsCallable(functions, 'analyzeProductImage');
+      const response = await analyzeProductImage({ imageUrls: IMAGE_URLS });
       
-      const prompt = "Identify the skincare products in these images. For each product, provide: brand, name, category, price (estimate if not clear), description, and ingredients (list). Return as a JSON array.";
-      
-      const response = await ai.models.generateContent({
-        model: "gemini-3-flash-preview",
-        contents: [
-          {
-            parts: [
-              { text: prompt },
-              ...IMAGE_URLS.map(url => ({ text: `Image: ${url}` }))
-            ]
-          }
-        ],
-        config: {
-          responseMimeType: "application/json",
-          responseSchema: {
-            type: Type.ARRAY,
-            items: {
-              type: Type.OBJECT,
-              properties: {
-                brand: { type: Type.STRING },
-                name: { type: Type.STRING },
-                category: { type: Type.STRING },
-                price: { type: Type.NUMBER },
-                description: { type: Type.STRING },
-                ingredients: { type: Type.ARRAY, items: { type: Type.STRING } }
-              },
-              required: ["brand", "name", "category", "price", "description", "ingredients"]
-            }
-          }
-        }
-      });
+      const data = response.data as any;
+      const products = data.products || [];
 
-      const products = JSON.parse(response.text);
       setResults(products);
       
       setStatus('saving');
@@ -88,12 +54,10 @@ export default function ProductScanner() {
   };
 
   useEffect(() => {
-    // Only attempt to run the scanner if we actually have an API key configured.
-    // Otherwise, silently skip it so the user's UI remains clean.
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) {
-      return; 
-    }
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (!isLocalhost) return;
+
+    // Remove direct API checks since we migrated securely to the backend
 
     fetch('/api/update-products', {
       method: 'POST',

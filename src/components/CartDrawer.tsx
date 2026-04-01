@@ -4,15 +4,8 @@ import { useCart } from '../contexts/CartContext';
 import { useCurrency } from '../contexts/CurrencyContext';
 
 export default function CartDrawer() {
-  const { isCartOpen, closeCart, cartItems, updateQuantity, removeFromCart, cartTotal } = useCart();
-  const { currency } = useCurrency();
-
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: currency,
-    }).format(price);
-  };
+  const { isCartOpen, closeCart, cartItems, updateQuantity, removeFromCart, cartTotal, openCheckout } = useCart();
+  const { formatPrice } = useCurrency();
 
   return (
     <AnimatePresence>
@@ -33,17 +26,17 @@ export default function CartDrawer() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white z-[101] shadow-2xl flex flex-col"
+            className="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white/70 backdrop-blur-2xl border-l border-white/40 z-[101] shadow-2xl flex flex-col"
           >
             {/* Header */}
-            <div className="p-6 border-b border-ink-100 flex justify-between items-center bg-pastel-pink/30">
+            <div className="p-6 border-b border-white/40 flex justify-between items-center bg-white/40">
               <div className="flex items-center gap-2">
                 <ShoppingBag className="w-5 h-5 text-ink-900" />
                 <span className="font-serif text-xl font-semibold text-ink-900">Your Cart</span>
               </div>
               <button
                 onClick={closeCart}
-                className="p-2 bg-white/50 backdrop-blur-md rounded-full hover:bg-white transition-colors"
+                className="p-2 bg-white/80 backdrop-blur-md rounded-full hover:bg-white transition-colors border border-white/50 shadow-sm"
               >
                 <X className="w-5 h-5 text-ink-900" />
               </button>
@@ -118,24 +111,55 @@ export default function CartDrawer() {
             </div>
 
             {/* Footer */}
-            {cartItems.length > 0 && (
-              <div className="p-6 border-t border-ink-100 bg-ink-50/50">
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-ink-500 font-medium uppercase tracking-wider text-sm">
-                    Subtotal
-                  </span>
-                  <span className="font-serif text-2xl font-semibold text-ink-900">
-                    {formatPrice(cartTotal)}
-                  </span>
+            {cartItems.length > 0 && (() => {
+              const FREE_SHIPPING_THRESHOLD = 35; // USD
+              const remaining = FREE_SHIPPING_THRESHOLD - cartTotal;
+              const progress = Math.min((cartTotal / FREE_SHIPPING_THRESHOLD) * 100, 100);
+              const qualified = remaining <= 0;
+
+              return (
+                <div className="p-6 border-t border-white/40 bg-white/40 backdrop-blur-md">
+                  {/* Free shipping progress */}
+                  <div className="mb-4">
+                    {qualified ? (
+                      <div className="flex items-center justify-center gap-2 py-2 px-4 bg-emerald-50 border border-emerald-200 rounded-full shadow-sm">
+                        <span className="text-emerald-600 text-xs font-semibold">🎉 Free Shipping Unlocked!</span>
+                      </div>
+                    ) : (
+                      <div className="bg-white/60 p-3 rounded-2xl border border-white/50 shadow-sm">
+                        <p className="text-xs text-ink-500 text-center mb-2">
+                          Add <span className="font-semibold text-ink-800">{formatPrice(remaining)}</span> more for <span className="font-semibold text-emerald-600">free shipping</span>
+                        </p>
+                        <div className="w-full h-1.5 bg-ink-100 rounded-full overflow-hidden">
+                          <div
+                            className="h-full bg-gradient-to-r from-pastel-pink-dark to-emerald-400 rounded-full transition-all duration-500 ease-out"
+                            style={{ width: `${progress}%` }}
+                          />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="flex justify-between items-center mb-4">
+                    <span className="text-ink-500 font-medium uppercase tracking-wider text-sm">
+                      Subtotal
+                    </span>
+                    <span className="font-serif text-2xl font-semibold text-ink-900">
+                      {formatPrice(cartTotal)}
+                    </span>
+                  </div>
+                  <p className="text-xs text-ink-500 mb-6 text-center">
+                    {qualified ? 'Free standard shipping applied!' : 'Shipping and taxes calculated at checkout.'}
+                  </p>
+                  <button 
+                    onClick={openCheckout}
+                    className="w-full py-4 bg-ink-900 text-white rounded-full font-medium text-lg hover:bg-ink-800 transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
+                  >
+                    Checkout
+                  </button>
                 </div>
-                <p className="text-xs text-ink-500 mb-6 text-center">
-                  Shipping and taxes calculated at checkout.
-                </p>
-                <button className="w-full py-4 bg-ink-900 text-white rounded-full font-medium text-lg hover:bg-pastel-pink-dark hover:text-ink-900 transition-colors flex items-center justify-center gap-2">
-                  Checkout
-                </button>
-              </div>
-            )}
+              );
+            })()}
           </motion.div>
         </>
       )}

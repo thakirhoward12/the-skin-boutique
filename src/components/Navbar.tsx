@@ -1,31 +1,35 @@
 import { useState, useRef, useEffect } from 'react';
-import { ShoppingBag, Search, User, Menu, Heart, X, Globe, Droplet } from 'lucide-react';
+import { ShoppingBag, Search, User, Menu, Heart, X, Globe, Droplet, Settings, Gift } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { useCurrency, Currency } from '../contexts/CurrencyContext';
 import { useCart } from '../contexts/CartContext';
 import { useAuth } from '../contexts/AuthContext';
+import { useProducts } from '../contexts/ProductContext';
 
 export default function Navbar({ 
   favoritesCount, 
   onOpenWishlist,
   onOpenCheckout,
   onOpenCurrency,
-  onOpenAuth
+  onOpenAuth,
+  onOpenAffiliate
 }: { 
   favoritesCount: number;
   onOpenWishlist: () => void;
   onOpenCheckout: () => void;
   onOpenCurrency: () => void;
   onOpenAuth: () => void;
+  onOpenAffiliate?: () => void;
 }) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
+  const { searchQuery, setSearchQuery } = useProducts();
   const [isScrolled, setIsScrolled] = useState(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const { currency, setCurrency } = useCurrency();
   const { cartCount, openCart } = useCart();
-  const { user, logout } = useAuth();
+  const { user, isAdmin, logout } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -111,6 +115,32 @@ export default function Navbar({
               <Globe className="h-5 w-5" strokeWidth={1.5} />
               <span className="text-xs font-medium">{currency}</span>
             </button>
+            {isAdmin && (
+              <Link
+                to="/admin"
+                title="Admin Dashboard"
+                className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 hidden sm:block`}
+              >
+                <Settings className="h-5 w-5" strokeWidth={1.5} />
+              </Link>
+            )}
+            {user ? (
+              <Link 
+                to="/affiliate" 
+                title="Affiliate Dashboard"
+                className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 hidden sm:block`}
+              >
+                <Gift className="h-5 w-5" strokeWidth={1.5} />
+              </Link>
+            ) : (
+              <button 
+                onClick={onOpenAffiliate}
+                title="Affiliate Rewards"
+                className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 hidden sm:block`}
+              >
+                <Gift className="h-5 w-5" strokeWidth={1.5} />
+              </button>
+            )}
             <button 
               onClick={() => user ? logout() : onOpenAuth()}
               title={user ? "Log Out" : "Sign In"}
@@ -183,6 +213,20 @@ export default function Navbar({
                 {/* Navigation Links */}
                 <div className="flex flex-col space-y-4">
                   <span className="text-xs font-semibold text-ink-500 uppercase tracking-wider mb-2">Navigation</span>
+                  {isAdmin && (
+                    <Link to="/admin" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-pastel-pink-dark hover:text-ink-900 transition-colors flex items-center gap-2">
+                      <Settings className="w-5 h-5" /> Admin Dashboard
+                    </Link>
+                  )}
+                  {user ? (
+                    <Link to="/affiliate" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors flex items-center gap-2">
+                      <Gift className="w-5 h-5 text-pastel-pink-dark" /> Affiliate Rewards
+                    </Link>
+                  ) : (
+                    <button onClick={() => { setIsMobileMenuOpen(false); onOpenAffiliate?.(); }} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors flex items-center gap-2">
+                      <Gift className="w-5 h-5 text-pastel-pink-dark" /> Affiliate Rewards
+                    </button>
+                  )}
                   <a href="#products" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">Shop</a>
                   <a href="#brands" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">Brands</a>
                   <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">About</a>
