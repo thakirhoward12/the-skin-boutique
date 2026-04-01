@@ -125,28 +125,16 @@ h1, h2, h3, h4, h5, h6 {
 .btn-shop {
   position: relative;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background-image: radial-gradient(circle, var(--color-ink-900) 50%, transparent 50%);
+  background-size: 0% 0%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-shop::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--color-ink-900);
-  border-radius: inherit;
-  transform: scale(0);
-  transform-origin: center;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 0;
-}
-
-.btn-shop:hover::before {
-  transform: scale(1);
-}
-
-.btn-shop > * {
-  position: relative;
-  z-index: 1;
+.btn-shop:hover {
+  background-size: 300% 300%;
+  color: white !important;
 }
 
 .btn-shop:active {
@@ -154,8 +142,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Inverted variant for buttons already on dark bg */
-.btn-shop-inv::before {
-  background: var(--color-pastel-pink);
+.btn-shop-inv {
+  background-image: radial-gradient(circle, var(--color-pastel-pink) 50%, transparent 50%);
 }
 
 .btn-shop-inv:hover {

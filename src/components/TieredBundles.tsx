@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Package, Sparkles, ArrowRight, ShieldCheck, Zap, Droplets, Sun } from 'lucide-react';
+import { Package, ArrowRight, ShieldCheck, Zap, Droplets, Sun } from 'lucide-react';
 
 interface TieredBundlesProps {
   onOpenBuilder: (tierIndex: number) => void;
@@ -13,7 +13,7 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
       tagline: "Your skincare baseline",
       items: ["Cleanser", "Moisturizer"],
       icon: Droplets,
-      discount: "10% OFF",
+      steps: "2 Steps",
       gradient: "from-blue-50 to-indigo-50",
       iconColor: "text-blue-500",
     },
@@ -22,7 +22,7 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
       tagline: "Complete daytime protection",
       items: ["Cleanser", "Moisturizer", "SPF"],
       icon: Sun,
-      discount: "15% OFF",
+      steps: "3 Steps",
       gradient: "from-amber-50 to-orange-50",
       iconColor: "text-amber-500",
     },
@@ -31,17 +31,16 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
       tagline: "Targeted active treatment",
       items: ["Cleanser", "Serum", "Moisturizer", "SPF"],
       icon: Zap,
-      discount: "20% OFF",
+      steps: "4 Steps",
       gradient: "from-purple-50 to-fuchsia-50",
       iconColor: "text-purple-500",
-      featured: true,
     },
     {
       name: "The Ritual",
       tagline: "The ultimate skin transformation",
       items: ["Cleanser", "Toner", "Serum", "Moisturizer", "SPF"],
       icon: ShieldCheck,
-      discount: "25% OFF",
+      steps: "5 Steps",
       gradient: "from-emerald-50 to-teal-50",
       iconColor: "text-emerald-500",
     }
@@ -65,7 +64,7 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-serif text-ink-900 mb-6"
           >
-            Curate Your Bundle
+            Build Your Routine
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -74,7 +73,7 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
             transition={{ delay: 0.1 }}
             className="text-lg text-ink-500 font-light"
           >
-            Unlock progressively larger discounts by building your perfect bundle. Choose from our baseline sets below or build from scratch.
+            Choose a starting point that matches your skincare goals, then pick the exact products you want.
           </motion.p>
         </div>
 
@@ -89,29 +88,17 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => onOpenBuilder(index)}
-                className={`group cursor-pointer relative flex flex-col p-8 rounded-[2rem] border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
-                  tier.featured 
-                    ? 'border-pastel-pink-dark bg-white shadow-lg ring-2 ring-transparent hover:ring-pastel-pink-dark/50' 
-                    : 'border-ink-100 bg-white hover:border-ink-300'
-                }`}
+                className="group cursor-pointer relative flex flex-col p-8 rounded-[2rem] border border-ink-100 bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-ink-300"
               >
-                {tier.featured && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-pastel-pink-dark text-white px-4 py-1 text-xs font-bold tracking-widest uppercase rounded-full flex items-center gap-1 shadow-md">
-                    <Sparkles className="w-3 h-3" /> Most Popular
-                  </div>
-                )}
-                
                 <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${tier.gradient} flex items-center justify-center mb-6`}>
                   <Icon className={`w-7 h-7 ${tier.iconColor} stroke-[1.5]`} />
                 </div>
                 
                 <h3 className="text-2xl font-serif text-ink-900 mb-1">{tier.name}</h3>
-                <p className="text-sm text-ink-500 font-light mb-6">{tier.tagline}</p>
+                <p className="text-sm text-ink-500 font-light mb-2">{tier.tagline}</p>
+                <p className="text-xs text-ink-400 font-medium tracking-wider uppercase mb-6">{tier.steps}</p>
                 
                 <div className="mb-8">
-                  <div className="inline-block px-3 py-1 bg-ink-900 text-white text-sm font-bold rounded-lg mb-4">
-                    {tier.discount}
-                  </div>
                   <ul className="space-y-3">
                     {tier.items.map((item, i) => (
                       <li key={i} className="flex items-center text-sm text-ink-700">
@@ -123,14 +110,8 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
                 </div>
                 
                 <div className="mt-auto pt-6 border-t border-ink-100">
-                  <div
-                    className={`btn-shop w-full py-4 rounded-full text-xs font-medium tracking-widest uppercase transition-colors flex items-center justify-center gap-2 ${
-                      tier.featured
-                        ? 'bg-ink-900 text-white'
-                        : 'bg-ink-50 text-ink-900'
-                    }`}
-                  >
-                    <span>Select Bundle</span>
+                  <div className="group/btn relative overflow-hidden w-full py-4 rounded-full bg-ink-50 text-ink-900 text-xs font-medium tracking-widest uppercase transition-all duration-500 flex items-center justify-center gap-2 group-hover:bg-ink-900 group-hover:text-white">
+                    <span className="relative z-10">Start Building</span>
                   </div>
                 </div>
               </motion.div>
