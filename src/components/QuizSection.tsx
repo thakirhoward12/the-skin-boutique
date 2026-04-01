@@ -60,9 +60,9 @@ export default function QuizSection({ onOpenQuiz }: { onOpenQuiz: () => void }) 
             >
               <button 
                 onClick={onOpenQuiz} 
-                className="bg-white text-ink-900 px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-pastel-pink hover:shadow-lg hover:shadow-pastel-pink/20 transition-all duration-300"
+                className="btn-shop bg-white text-ink-900 px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:text-white transition-all duration-300"
               >
-                Update Profile
+                <span>Update Profile</span>
               </button>
               <button 
                 onClick={clearProfile} 
@@ -100,9 +100,9 @@ export default function QuizSection({ onOpenQuiz }: { onOpenQuiz: () => void }) 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               onClick={onOpenQuiz} 
-              className="bg-white text-ink-900 px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-pastel-pink hover:shadow-lg hover:shadow-pastel-pink/20 transition-all duration-300 inline-flex items-center"
+              className="btn-shop bg-white text-ink-900 px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:text-white transition-all duration-300 inline-flex items-center"
             >
-              Take The Skin Quiz <ArrowRight className="ml-2 w-4 h-4" />
+              <span className="flex items-center">Take The Skin Quiz <ArrowRight className="ml-2 w-4 h-4" /></span>
             </motion.button>
           </>
         )}

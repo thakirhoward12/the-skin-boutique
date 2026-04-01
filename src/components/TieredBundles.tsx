@@ -124,13 +124,13 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
                 
                 <div className="mt-auto pt-6 border-t border-ink-100">
                   <div
-                    className={`w-full py-4 rounded-full text-xs font-medium tracking-widest uppercase transition-colors flex items-center justify-center gap-2 ${
+                    className={`btn-shop w-full py-4 rounded-full text-xs font-medium tracking-widest uppercase transition-colors flex items-center justify-center gap-2 ${
                       tier.featured
-                        ? 'bg-ink-900 text-white group-hover:bg-ink-800'
-                        : 'bg-ink-50 text-ink-900 group-hover:bg-ink-200'
+                        ? 'bg-ink-900 text-white'
+                        : 'bg-ink-50 text-ink-900'
                     }`}
                   >
-                    Select Bundle
+                    <span>Select Bundle</span>
                   </div>
                 </div>
               </motion.div>

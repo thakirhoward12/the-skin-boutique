@@ -313,10 +313,10 @@ export default function ProductGrid({
                   <div className="absolute inset-x-0 bottom-0 p-6 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                     <button 
                       onClick={(e) => handleAddToCart(e, product)}
-                      className="w-full bg-white/90 backdrop-blur-md text-ink-900 py-3.5 rounded-full font-medium hover:bg-ink-900 hover:text-white transition-colors flex items-center justify-center gap-2 shadow-lg text-sm"
+                      className="btn-shop w-full bg-white/90 backdrop-blur-md text-ink-900 py-3.5 rounded-full font-medium hover:text-white transition-colors flex items-center justify-center gap-2 shadow-lg text-sm"
                     >
                       <ShoppingBag className="w-4 h-4" />
-                      Quick Add
+                      <span>Quick Add</span>
                     </button>
                   </div>
                 </div>
@@ -463,10 +463,10 @@ export default function ProductGrid({
 
                     <button 
                       onClick={(e) => handleAddToCart(e, product)}
-                      className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md text-ink-900 px-8 py-3.5 rounded-full font-medium text-sm flex items-center shadow-lg opacity-0 group-hover:opacity-100 translate-y-6 group-hover:translate-y-0 transition-all duration-500 ease-out hover:bg-ink-900 hover:text-white z-10"
+                      className="btn-shop absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md text-ink-900 px-8 py-3.5 rounded-full font-medium text-sm flex items-center shadow-lg opacity-0 group-hover:opacity-100 translate-y-6 group-hover:translate-y-0 transition-all duration-500 ease-out hover:text-white z-10"
                     >
                       <ShoppingBag className="w-4 h-4 mr-2" />
-                      Add to Cart
+                      <span>Add to Cart</span>
                     </button>
                   </div>
                   <div className="mt-6 flex flex-col items-center text-center">
@@ -636,9 +636,9 @@ export default function ProductGrid({
 
                     <button 
                       onClick={(e) => handleAddToCart(e, selectedProduct, modalQuantity, selectedOptionIndex)}
-                      className="w-full bg-ink-900 text-white h-12 rounded-full font-medium flex items-center justify-center hover:bg-ink-800 transition-colors text-xs tracking-widest uppercase"
+                      className="btn-shop btn-shop-inv w-full bg-ink-900 text-white h-12 rounded-full font-medium flex items-center justify-center transition-colors text-xs tracking-widest uppercase"
                     >
-                      Add to Cart
+                      <span>Add to Cart</span>
                     </button>
                   </div>
                 </div>

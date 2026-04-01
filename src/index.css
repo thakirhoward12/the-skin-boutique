@@ -119,3 +119,45 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* ─── Unified Shop Button Animation ─── */
+/* Signature radial-fill hover + press effect matching Hero's "Shop Now" */
+.btn-shop {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-shop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-ink-900);
+  border-radius: inherit;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 0;
+}
+
+.btn-shop:hover::before {
+  transform: scale(1);
+}
+
+.btn-shop > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-shop:active {
+  transform: scale(0.95);
+}
+
+/* Inverted variant for buttons already on dark bg */
+.btn-shop-inv::before {
+  background: var(--color-pastel-pink);
+}
+
+.btn-shop-inv:hover {
+  color: var(--color-ink-900) !important;
+}

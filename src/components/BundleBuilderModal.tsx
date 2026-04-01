@@ -15,11 +15,11 @@ interface BundleBuilderModalProps {
 }
 
 const CATEGORIES = [
-  { id: 'cleanser', title: 'Cleanser', keywords: ['cleanser', 'wash', 'cleansing'] },
-  { id: 'toner', title: 'Toner', keywords: ['toner', 'essence', 'mist'] },
-  { id: 'serum', title: 'Serum', keywords: ['serum', 'ampoule', 'treatment', 'vitamin c', 'cica', 'retinol', 'bha'] },
-  { id: 'moisturizer', title: 'Moisturizer', keywords: ['moisturizer', 'cream', 'lotion', 'gel', 'hydrate'] },
-  { id: 'spf', title: 'SPF', keywords: ['spf', 'sunscreen', 'sun'] }
+  { id: 'cleanser', title: 'Cleanser', keywords: ['cleanser', 'wash', 'cleansing'], excludeKeywords: ['shampoo', 'hair', 'scalp'] },
+  { id: 'toner', title: 'Toner', keywords: ['toner', 'essence', 'mist'], excludeKeywords: ['hair toner', 'hair', 'scalp', 'shampoo', 'conditioner'] },
+  { id: 'serum', title: 'Serum', keywords: ['serum', 'ampoule', 'treatment', 'vitamin c', 'cica', 'retinol', 'bha'], excludeKeywords: ['hair serum', 'scalp serum', 'hair', 'shampoo', 'conditioner'] },
+  { id: 'moisturizer', title: 'Moisturizer', keywords: ['moisturizer', 'cream', 'lotion', 'gel', 'hydrate'], excludeKeywords: ['hair', 'body lotion', 'hand cream', 'shampoo', 'conditioner', 'scalp'] },
+  { id: 'spf', title: 'SPF', keywords: ['spf', 'sunscreen', 'sun'], excludeKeywords: [] }
 ];
 
 export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex = null }: BundleBuilderModalProps) {
@@ -49,12 +49,18 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
 
   const activeCategory = CATEGORIES[activeCategoryIndex];
 
-  // Filter products for the current active tab
   const filteredProducts = useMemo(() => {
     if (!activeCategory) return products.slice(0, 12);
     return products.filter(p => {
       const text = `${p.name} ${p.category} ${p.brand}`.toLowerCase();
-      return activeCategory.keywords.some(kw => text.includes(kw.toLowerCase()));
+      const matchesCategory = activeCategory.keywords.some(kw => text.includes(kw.toLowerCase()));
+      if (!matchesCategory) return false;
+      // Hard exclude: if the product's category field is Haircare, Bath & Body, etc., never show in skincare tabs
+      const hardExcludeCategories = ['haircare', 'hair care', 'body care', 'bath & body', 'fragrance'];
+      if (hardExcludeCategories.some(exc => (p.category || '').toLowerCase().includes(exc))) return false;
+      // Soft exclude: check negative keywords
+      const excluded = activeCategory.excludeKeywords.some(ek => text.includes(ek.toLowerCase()));
+      return !excluded;
     }).slice(0, 20); 
   }, [activeCategory, products]);
 
@@ -158,8 +164,8 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
                   <Beaker className="w-5 h-5 text-pastel-pink-dark stroke-[2]" />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-serif text-ink-900">Custom Sandbox Configurator</h2>
-                  <p className="text-sm text-ink-500">Pick exactly what you want. We'll verify the ingredients for you.</p>
+                  <h2 className="text-2xl font-serif text-ink-900">Build Your Bundle</h2>
+                  <p className="text-sm text-ink-500">Pick your skincare products. No commitment, no subscription — just your perfect routine.</p>
                 </div>
               </div>
 
@@ -221,13 +227,13 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
                           <div className="mt-auto">
                             <button
                               onClick={() => handleToggleProduct(product)}
-                              className={`w-full py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider transition-colors ${
+                              className={`btn-shop w-full py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider transition-colors ${
                                 isSelected 
                                   ? 'bg-ink-100 text-ink-900 hover:bg-ink-200' 
-                                  : 'bg-ink-900 text-white hover:bg-ink-800 shadow-sm'
+                                  : 'bg-ink-900 text-white hover:text-white shadow-sm'
                               }`}
                             >
-                              {isSelected ? 'Remove' : 'Select'}
+                              <span>{isSelected ? 'Remove' : 'Select'}</span>
                             </button>
                           </div>
                         </div>
@@ -376,9 +382,9 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
                   <button
                     disabled={selectedCount < 2}
                     onClick={handleAddToCart}
-                    className="w-full py-4 bg-ink-900 text-white rounded-xl text-sm font-bold tracking-widest uppercase hover:bg-ink-800 transition-all transform hover:scale-[1.02] active:scale-100 flex items-center justify-center gap-2 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    className="btn-shop btn-shop-inv w-full py-4 bg-ink-900 text-white rounded-xl text-sm font-bold tracking-widest uppercase transition-all flex items-center justify-center gap-2 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {selectedCount < 2 ? 'Add 2+ to Unlock Bundle' : 'Checkout Selection'}
+                    <span>{selectedCount < 2 ? 'Add 2+ to Unlock Bundle' : 'Checkout Selection'}</span>
                   </button>
                 </div>
               </div>
