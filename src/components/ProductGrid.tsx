@@ -524,7 +524,7 @@ export default function ProductGrid({
             >
               <button 
                 onClick={() => setSelectedProduct(null)}
-                className="absolute top-6 right-6 z-20 p-2 bg-white/80 backdrop-blur-md rounded-full hover:bg-white transition-colors border border-ink-100"
+                className="absolute top-6 right-6 z-20 p-2 bg-ink-50 rounded-full hover:bg-ink-100 transition-colors border border-ink-200"
               >
                 <X className="w-5 h-5 text-ink-900 stroke-[1.5]" />
               </button>

@@ -464,7 +464,7 @@ export default function AdminDashboard() {
         ) : activeTab === 'orders' ? (
           <AdminOrders />
         ) : activeTab === 'suppliers' ? (
-          <SupplierManagement />
+          <SupplierManagement products={products} />
         ) : activeTab === 'analytics' ? (
           <AdvancedAnalytics />
         ) : activeTab === 'settings' ? (

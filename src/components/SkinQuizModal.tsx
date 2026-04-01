@@ -128,11 +128,11 @@ export default function SkinQuizModal({ isOpen, onClose, onOpenBuilder }: SkinQu
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-2xl bg-white/60 backdrop-blur-xl border border-white/40 rounded-[2rem] shadow-2xl overflow-hidden z-10 flex flex-col min-h-[500px]"
+            className="relative w-full max-w-2xl bg-white border border-ink-100 rounded-[2rem] shadow-2xl overflow-hidden z-10 flex flex-col min-h-[500px]"
           >
             <button 
               onClick={handleClose}
-              className="absolute top-6 right-6 z-20 p-2 bg-white/80 rounded-full hover:bg-white transition-colors border border-white/40 shadow-sm"
+              className="absolute top-6 right-6 z-20 p-2 bg-ink-50 rounded-full hover:bg-ink-100 transition-colors border border-ink-200 shadow-sm"
             >
               <X className="w-5 h-5 text-ink-900 stroke-[1.5]" />
             </button>

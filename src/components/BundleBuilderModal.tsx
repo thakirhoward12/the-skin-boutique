@@ -148,17 +148,17 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-6xl bg-white/70 backdrop-blur-3xl border border-white/40 rounded-[2rem] shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
+            className="relative w-full max-w-6xl bg-white border border-ink-100 rounded-[2rem] shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
           >
             <button 
               onClick={onClose}
-              className="absolute top-6 right-6 z-20 p-2 bg-white/80 rounded-full hover:bg-white transition-colors border border-white/40 shadow-sm"
+              className="absolute top-6 right-6 z-20 p-2 bg-ink-50 rounded-full hover:bg-ink-100 transition-colors border border-ink-200 shadow-sm"
             >
               <X className="w-5 h-5 text-ink-900 stroke-[1.5]" />
             </button>
 
             {/* Header */}
-            <div className="p-8 border-b border-white/40 bg-white/50 shadow-sm flex-shrink-0 z-10 flex flex-col">
+            <div className="p-8 border-b border-ink-100 bg-white shadow-sm flex-shrink-0 z-10 flex flex-col">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 bg-pastel-pink/40 rounded-full flex items-center justify-center">
                   <Beaker className="w-5 h-5 text-pastel-pink-dark stroke-[2]" />

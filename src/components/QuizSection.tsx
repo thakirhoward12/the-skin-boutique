@@ -6,20 +6,18 @@ export default function QuizSection({ onOpenQuiz }: { onOpenQuiz: () => void }) 
   const { profile, clearProfile } = useUser();
 
   return (
-    <section className="py-24 bg-ink-900 text-white relative overflow-hidden transition-colors duration-1000">
-      <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center mix-blend-overlay"></div>
-      
-      {/* Grainy Noise Overlay */}
+    <section className="py-24 bg-ink-900 text-white relative overflow-hidden">
+      {/* Subtle grain texture only — no background image */}
       <div 
-        className="absolute inset-0 opacity-30 mix-blend-overlay pointer-events-none" 
+        className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none" 
         style={{ 
           backgroundImage: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')" 
         }}
       ></div>
 
-      {/* Animated blobs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pastel-pink/5 rounded-full blur-3xl animate-blob" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/5 rounded-full blur-3xl animate-blob animation-delay-2000" />
+      {/* Animated blobs — solid pastel */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pastel-pink/10 rounded-full blur-3xl animate-blob" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl animate-blob animation-delay-2000" />
 
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <motion.div
@@ -66,7 +64,7 @@ export default function QuizSection({ onOpenQuiz }: { onOpenQuiz: () => void }) 
               </button>
               <button 
                 onClick={clearProfile} 
-                className="border border-white/30 text-white px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-white/10 hover:border-white/50 transition-all duration-300"
+                className="border border-white/50 text-white px-8 py-4 rounded-full text-xs font-medium uppercase tracking-widest hover:bg-white hover:text-ink-900 transition-all duration-300"
               >
                 Clear Profile
               </button>
