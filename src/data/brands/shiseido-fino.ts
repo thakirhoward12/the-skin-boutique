@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ShiseidoFinoProducts: Product[] = [
   {
-    "id": 10434,
+    "id": "10434",
     "slug": "shiseido-fino-premium-touch-penetration-essence-hair-oil-70ml",
     "brand": "Shiseido Fino",
     "name": "Shiseido Fino Premium Touch Penetration Essence Hair Oil (70ml)",
@@ -33,7 +33,7 @@ export const ShiseidoFinoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10731,
+    "id": "10731",
     "slug": "shiseido-fino-premium-touch-hair-mask-230g",
     "brand": "Shiseido Fino",
     "name": "Shiseido Fino Premium Touch Hair Mask (230g)",
@@ -64,7 +64,7 @@ export const ShiseidoFinoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10983,
+    "id": "10983",
     "slug": "shiseido-fino-premium-touch-moist-conditioner-550ml",
     "brand": "Shiseido Fino",
     "name": "Shiseido Fino Premium Touch Moist Conditioner (550ml)",
@@ -95,7 +95,7 @@ export const ShiseidoFinoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10984,
+    "id": "10984",
     "slug": "shiseido-fino-premium-touch-moist-shampoo-550ml",
     "brand": "Shiseido Fino",
     "name": "Shiseido Fino Premium Touch Moist Shampoo (550ml)",

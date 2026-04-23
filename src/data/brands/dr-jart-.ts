@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const DrJartProducts: Product[] = [
   {
-    "id": 10617,
+    "id": "10617",
     "slug": "dr-jart-cicapair-intensive-soothing-repair-serum-mask",
     "brand": "Dr.Jart+",
     "name": "Dr.Jart+ Cicapair Intensive Soothing Repair Serum Mask",
@@ -42,7 +42,7 @@ export const DrJartProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10800,
+    "id": "10800",
     "slug": "dr-jart-cicapair-intensive-soothing-repair-cream-50ml",
     "brand": "Dr.Jart+",
     "name": "Dr.Jart+ Cicapair Intensive Soothing Repair Cream (50ml)",
@@ -73,7 +73,7 @@ export const DrJartProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10968,
+    "id": "10968",
     "slug": "dr-jart-dermask-micro-jet-clearing-solution-mask",
     "brand": "Dr.Jart+",
     "name": "Dr.Jart+ Dermask Micro Jet Clearing Solution Mask",
@@ -113,7 +113,7 @@ export const DrJartProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11014,
+    "id": "11014",
     "slug": "dr-jart-dermask-micro-jet-brightening-solution-mask",
     "brand": "Dr.Jart+",
     "name": "Dr.Jart+ Dermask Micro Jet Brightening Solution Mask",
@@ -153,7 +153,7 @@ export const DrJartProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11015,
+    "id": "11015",
     "slug": "dr-jart-vital-hydra-solution-mask",
     "brand": "Dr.Jart+",
     "name": "Dr.Jart+ Vital Hydra Solution Mask",
@@ -193,7 +193,7 @@ export const DrJartProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11016,
+    "id": "11016",
     "slug": "dr-jart-soothing-hydra-solution-mask",
     "brand": "Dr.Jart+",
     "name": "Dr.Jart+ Soothing Hydra Solution Mask",

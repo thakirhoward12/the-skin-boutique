@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const AHCProducts: Product[] = [
   {
-    "id": 10484,
+    "id": "10484",
     "slug": "ahc-premier-eye-cream-40ml",
     "brand": "AHC",
     "name": "AHC Premier Eye Cream (40ml)",

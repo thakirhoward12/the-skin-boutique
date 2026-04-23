@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const OliveYoungProducts: Product[] = [
   {
-    "id": 11011,
+    "id": "11011",
     "slug": "olive-young-overnight-care-spot-patches",
     "brand": "Olive Young",
     "name": "Olive Young Overnight Care Spot Patches",

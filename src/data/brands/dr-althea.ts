@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const DrAltheaProducts: Product[] = [
   {
-    "id": 10080,
+    "id": "10080",
     "slug": "dr-althea-gentle-pore-cleansing-oil-150ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Gentle Pore Cleansing Oil (150ml)",
@@ -33,7 +33,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10081,
+    "id": "10081",
     "slug": "dr-althea-vita-glow-mask",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Vita Glow Mask",
@@ -73,7 +73,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10107,
+    "id": "10107",
     "slug": "dr-althea-marine-anti-blemish-mask",
     "brand": "Dr. Althea",
     "name": "Dr. Althea Marine Anti-Blemish Mask",
@@ -113,7 +113,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10108,
+    "id": "10108",
     "slug": "dr-althea-pdrn-reju-5000-cream-20g",
     "brand": "Dr. Althea",
     "name": "Dr.Althea PDRN Reju 5000 Cream (20g)",
@@ -144,7 +144,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10243,
+    "id": "10243",
     "slug": "dr-althea-345-relief-cream-mist-100ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea 345 Relief Cream Mist (100ml)",
@@ -184,7 +184,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10244,
+    "id": "10244",
     "slug": "dr-althea-aqua-marine-jelly-mist-100ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Aqua Marine Jelly Mist (100ml)",
@@ -215,7 +215,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10245,
+    "id": "10245",
     "slug": "dr-althea-aqua-marine-watery-cream-50ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Aqua Marine Watery Cream (50ml)",
@@ -246,7 +246,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10338,
+    "id": "10338",
     "slug": "dr-althea-345-relief-cream",
     "brand": "Dr. Althea",
     "name": "Dr. Althea 345 Relief Cream",
@@ -286,7 +286,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10465,
+    "id": "10465",
     "slug": "dr-althea-pore-refresh-grinding-cleansing-balm-50ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Pore Refresh Grinding Cleansing Balm (50ml)",
@@ -317,7 +317,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10482,
+    "id": "10482",
     "slug": "dr-althea-jelly-seal-repair-mask-4-pcs",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Jelly Seal Repair Mask (4 PCs)",
@@ -348,7 +348,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10483,
+    "id": "10483",
     "slug": "dr-althea-cushion-veil-calming-mask-4-pcs",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Cushion Veil Calming Mask (4 PCs)",
@@ -379,7 +379,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10485,
+    "id": "10485",
     "slug": "dr-althea-aqua-blue-moisturizing-mask-4-pcs",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Aqua Blue Moisturizing Mask (4 PCs)",
@@ -410,7 +410,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10560,
+    "id": "10560",
     "slug": "dr-althea-85-anastatica-skin-conditioning-toner-250ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea 85% Anastatica Skin Conditioning Toner (250ml)",
@@ -441,7 +441,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10611,
+    "id": "10611",
     "slug": "dr-althea-85-anastatica-skin-conditioning-pad-65pcs",
     "brand": "Dr. Althea",
     "name": "Dr.Althea 85% Anastatica Skin Conditioning Pad (65pcs)",
@@ -472,7 +472,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10612,
+    "id": "10612",
     "slug": "dr-althea-fresh-deep-noni-lotion-110ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Fresh Deep Noni Lotion (110ml)",
@@ -503,7 +503,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10648,
+    "id": "10648",
     "slug": "dr-althea-vitamin-c-boosting-serum-30ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Vitamin C Boosting Serum (30ml)",
@@ -534,7 +534,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10830,
+    "id": "10830",
     "slug": "dr-althea-skin-relief-essence-30ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Skin Relief Essence (30ml)",
@@ -565,7 +565,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10831,
+    "id": "10831",
     "slug": "dr-althea-gentle-vitamin-c-serum-30ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Gentle Vitamin C Serum (30ml)",
@@ -596,7 +596,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10832,
+    "id": "10832",
     "slug": "dr-althea-pure-grinding-cleansing-balm-50ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Pure Grinding Cleansing Balm (50ml)",
@@ -627,7 +627,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10833,
+    "id": "10833",
     "slug": "dr-althea-green-relief-amino-gel-cleanser-100ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Green Relief Amino Gel Cleanser (100ml)",
@@ -658,7 +658,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10834,
+    "id": "10834",
     "slug": "dr-althea-natural-radiance-essence-30ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Natural Radiance Essence (30ml)",
@@ -689,7 +689,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10835,
+    "id": "10835",
     "slug": "dr-althea-147-barrier-cream-50ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea 147 Barrier Cream (50ml)",
@@ -720,7 +720,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10836,
+    "id": "10836",
     "slug": "dr-althea-gentle-pore-vegan-cleansing-oil-150ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Gentle Pore Vegan Cleansing Oil (150ml)",
@@ -751,7 +751,7 @@ export const DrAltheaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10837,
+    "id": "10837",
     "slug": "dr-althea-amino-acid-gentle-bubble-cleanser-140ml",
     "brand": "Dr. Althea",
     "name": "Dr.Althea Amino Acid Gentle Bubble Cleanser (140ml)",

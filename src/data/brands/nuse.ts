@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const nuseProducts: Product[] = [
   {
-    "id": 10174,
+    "id": "10174",
     "slug": "nuse-mousse-care-cheek-handy-10g",
     "brand": "nuse",
     "name": "nuse Mousse Care Cheek Handy (10g)",
@@ -74,7 +74,7 @@ export const nuseProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10175,
+    "id": "10175",
     "slug": "nuse-mousse-care-cheek-16ml",
     "brand": "nuse",
     "name": "nuse Mousse Care Cheek (16ml)",
@@ -130,7 +130,7 @@ export const nuseProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10176,
+    "id": "10176",
     "slug": "nuse-liquid-care-cheek-16ml",
     "brand": "nuse",
     "name": "nuse Liquid Care Cheek (16ml)",
@@ -190,7 +190,7 @@ export const nuseProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10177,
+    "id": "10177",
     "slug": "nuse-color-care-lip-balm-4-3g",
     "brand": "nuse",
     "name": "nuse Color Care Lip Balm (4.3g)",
@@ -246,7 +246,7 @@ export const nuseProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10178,
+    "id": "10178",
     "slug": "nuse-mousse-liptual-4-5g",
     "brand": "nuse",
     "name": "nuse Mousse Liptual (4.5g)",
@@ -302,7 +302,7 @@ export const nuseProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10179,
+    "id": "10179",
     "slug": "nuse-care-liptual-4-5g",
     "brand": "nuse",
     "name": "nuse Care Liptual (4.5g)",
@@ -386,7 +386,7 @@ export const nuseProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10233,
+    "id": "10233",
     "slug": "nuse-reju-lip-gloss-10-5g",
     "brand": "nuse",
     "name": "nuse Reju Lip Gloss (10.5g)",
@@ -446,7 +446,7 @@ export const nuseProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10234,
+    "id": "10234",
     "slug": "nuse-care-tone-up-handy-20ml",
     "brand": "nuse",
     "name": "nuse Care Tone-Up Handy (20ml)",
@@ -486,7 +486,7 @@ export const nuseProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10235,
+    "id": "10235",
     "slug": "nuse-care-tone-up-30ml",
     "brand": "nuse",
     "name": "nuse Care Tone-Up (30ml)",

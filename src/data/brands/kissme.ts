@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KISSMEProducts: Product[] = [
   {
-    "id": 10323,
+    "id": "10323",
     "slug": "kissme-speedy-mascara-remover",
     "brand": "KISSME",
     "name": "KISSME Speedy Mascara Remover",
@@ -33,7 +33,7 @@ export const KISSMEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10972,
+    "id": "10972",
     "slug": "kissme-heavy-rotation-eyebrow-pencil",
     "brand": "KISSME",
     "name": "KISSME Heavy Rotation Eyebrow Pencil",
@@ -77,7 +77,7 @@ export const KISSMEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10973,
+    "id": "10973",
     "slug": "kissme-heroine-make-long-curl-mascara-advanced-film",
     "brand": "KISSME",
     "name": "KISSME Heroine Make Long & Curl Mascara Advanced Film",
@@ -117,7 +117,7 @@ export const KISSMEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11013,
+    "id": "11013",
     "slug": "kissme-heroine-make-prime-liquid-eyeliner-rich-keep",
     "brand": "KISSME",
     "name": "KISSME Heroine Make Prime Liquid Eyeliner Rich Keep",
@@ -161,7 +161,7 @@ export const KISSMEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11017,
+    "id": "11017",
     "slug": "kissme-heroine-make-prime-long-up-mascara-super-waterproof",
     "brand": "KISSME",
     "name": "KISSME Heroine Make Prime Long Up Mascara Super Waterproof",
@@ -201,7 +201,7 @@ export const KISSMEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11018,
+    "id": "11018",
     "slug": "kissme-heroine-make-prime-volume-up-mascara-super-waterproof",
     "brand": "KISSME",
     "name": "KISSME Heroine Make Prime Volume Up Mascara Super Waterproof",
@@ -241,7 +241,7 @@ export const KISSMEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11021,
+    "id": "11021",
     "slug": "kissme-heroine-make-volume-curl-mascara-6g",
     "brand": "KISSME",
     "name": "KISSME Heroine Make Volume & Curl Mascara (6g)",
@@ -281,7 +281,7 @@ export const KISSMEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11028,
+    "id": "11028",
     "slug": "kissme-heroine-long-stay-sharp-gel-eyeliner",
     "brand": "KISSME",
     "name": "KISSME Heroine Long Stay Sharp Gel Eyeliner",
@@ -325,7 +325,7 @@ export const KISSMEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11040,
+    "id": "11040",
     "slug": "kissme-heroine-make-liquid-eyeliner",
     "brand": "KISSME",
     "name": "KISSME Heroine Make Liquid Eyeliner",

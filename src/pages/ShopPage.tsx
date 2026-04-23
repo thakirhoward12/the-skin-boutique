@@ -170,6 +170,7 @@ export default function ShopPage() {
 // ═══════════════════════════════════════════════════════
 
 interface CategoryRowProps {
+  key?: React.Key;
   section: ShopSection;
   products: Product[];
   totalCount: number;

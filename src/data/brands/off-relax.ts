@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const OFFRELAXProducts: Product[] = [
   {
-    "id": 10322,
+    "id": "10322",
     "slug": "off-relax-spa-hair-mask-150g",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX SPA Hair Mask (150g)",
@@ -33,7 +33,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10327,
+    "id": "10327",
     "slug": "off-relax-2-0-spa-treatment-fluffy-refresh-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX 2.0 Spa Treatment Fluffy Refresh (460ml)",
@@ -64,7 +64,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10328,
+    "id": "10328",
     "slug": "off-relax-2-0-spa-shampoo-fluffy-refresh-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX 2.0 Spa Shampoo Fluffy Refresh (460ml)",
@@ -95,7 +95,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10329,
+    "id": "10329",
     "slug": "off-relax-2-0-spa-treatment-glossy-moisture-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX 2.0 Spa Treatment Glossy Moisture (460ml)",
@@ -126,7 +126,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10330,
+    "id": "10330",
     "slug": "off-relax-2-0-spa-shampoo-glossy-moisture-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX 2.0 Spa Shampoo Glossy Moisture (460ml)",
@@ -157,7 +157,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10352,
+    "id": "10352",
     "slug": "off-relax-spa-shampoo-hair-treatment-lychee-rose-limited-set-2x460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX Spa Shampoo + Hair Treatment Lychee & Rose Limited Set (2x460ml)",
@@ -188,7 +188,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10353,
+    "id": "10353",
     "slug": "off-relax-spa-shampoo-hair-treatment-lemon-magnolia-limited-set-2x460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX Spa Shampoo + Hair Treatment Lemon & Magnolia Limited Set (2x460ml)",
@@ -219,7 +219,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10354,
+    "id": "10354",
     "slug": "off-relax-spa-shampoo-hair-treatment-earl-grey-cucumber-scent-limited-set-2x460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX Spa Shampoo + Hair Treatment Earl Grey & Cucumber Scent Limited Set (2x460ml)",
@@ -250,7 +250,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10412,
+    "id": "10412",
     "slug": "off-relax-aromatic-hair-oil-50ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX Aromatic Hair Oil (50ml)",
@@ -281,7 +281,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10678,
+    "id": "10678",
     "slug": "off-relax-spa-treatment-moisture-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX SPA Treatment Moisture (460ml)",
@@ -312,7 +312,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10685,
+    "id": "10685",
     "slug": "off-relax-spa-shampoo-moisture-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX SPA Shampoo Moisture (460ml)",
@@ -343,7 +343,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10693,
+    "id": "10693",
     "slug": "off-relax-spa-treatment-refresh-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX SPA Treatment Refresh (460ml)",
@@ -374,7 +374,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10694,
+    "id": "10694",
     "slug": "off-relax-spa-shampoo-refresh-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX SPA Shampoo Refresh (460ml)",
@@ -405,7 +405,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10906,
+    "id": "10906",
     "slug": "off-relax-hot-spring-water-silky-night-repair-spa-shampoo-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX Hot Spring Water Silky Night Repair Spa Shampoo (460ml)",
@@ -436,7 +436,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10907,
+    "id": "10907",
     "slug": "off-relax-hot-spring-water-silky-night-repair-spa-treatment-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX Hot Spring Water Silky Night Repair Spa Treatment (460ml)",
@@ -467,7 +467,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10908,
+    "id": "10908",
     "slug": "off-relax-hot-spring-water-deep-cleanse-spa-treatment-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX Hot Spring Water Deep Cleanse Spa Treatment (460ml)",
@@ -498,7 +498,7 @@ export const OFFRELAXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10909,
+    "id": "10909",
     "slug": "off-relax-hot-spring-water-deep-cleanse-spa-shampoo-460ml",
     "brand": "OFF & RELAX",
     "name": "OFF & RELAX Hot Spring Water Deep Cleanse Spa Shampoo (460ml)",

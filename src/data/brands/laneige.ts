@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const LANEIGEProducts: Product[] = [
   {
-    "id": 10228,
+    "id": "10228",
     "slug": "laneige-bouncy-firm-sleeping-mask-60ml",
     "brand": "LANEIGE",
     "name": "LANEIGE Bouncy & Firm Sleeping Mask (60ml)",
@@ -33,7 +33,7 @@ export const LANEIGEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10336,
+    "id": "10336",
     "slug": "laneige-water-bank-hyaluronic-intensive-moisture-cream-50ml",
     "brand": "LANEIGE",
     "name": "LANEIGE Water Bank Hyaluronic Intensive Moisture Cream (50ml)",
@@ -64,7 +64,7 @@ export const LANEIGEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10337,
+    "id": "10337",
     "slug": "laneige-water-bank-hyaluronic-intensive-gel-cream-50ml",
     "brand": "LANEIGE",
     "name": "LANEIGE Water Bank Hyaluronic Intensive Gel Cream (50ml)",
@@ -95,7 +95,7 @@ export const LANEIGEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11005,
+    "id": "11005",
     "slug": "laneige-water-sleeping-mask-70ml",
     "brand": "LANEIGE",
     "name": "LANEIGE Water Sleeping Mask (70ml)",
@@ -126,7 +126,7 @@ export const LANEIGEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11006,
+    "id": "11006",
     "slug": "laneige-lip-sleeping-mask-20g",
     "brand": "LANEIGE",
     "name": "LANEIGE Lip Sleeping Mask (20g)",
@@ -190,7 +190,7 @@ export const LANEIGEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11012,
+    "id": "11012",
     "slug": "laneige-cica-sleeping-mask-60ml",
     "brand": "LANEIGE",
     "name": "LANEIGE Cica Sleeping Mask (60ml)",

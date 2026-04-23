@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const HeimishProducts: Product[] = [
   {
-    "id": 10351,
+    "id": "10351",
     "slug": "heimish-bulgarian-rose-water-hydrogel-eye-patch-30-pairs",
     "brand": "Heimish",
     "name": "HEIMISH Bulgarian Rose Water Hydrogel Eye Patch (30 Pairs)",
@@ -33,7 +33,7 @@ export const HeimishProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10936,
+    "id": "10936",
     "slug": "heimish-marine-care-eye-cream-30ml",
     "brand": "Heimish",
     "name": "HEIMISH Marine Care Eye Cream (30ml)",

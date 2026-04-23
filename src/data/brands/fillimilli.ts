@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const FILLIMILLIProducts: Product[] = [
   {
-    "id": 10511,
+    "id": "10511",
     "slug": "fillimilli-eyebrow-scissors-with-comb",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI Eyebrow Scissors With Comb",
@@ -33,7 +33,7 @@ export const FILLIMILLIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10512,
+    "id": "10512",
     "slug": "fillimilli-make-up-hair-pin-6pcs",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI Make Up Hair Pin (6pcs)",
@@ -64,7 +64,7 @@ export const FILLIMILLIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10513,
+    "id": "10513",
     "slug": "fillimilli-pure-cotton-puff-100pcs",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI Pure Cotton Puff (100pcs)",
@@ -95,7 +95,7 @@ export const FILLIMILLIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10514,
+    "id": "10514",
     "slug": "fillimilli-slim-tweezers",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI Slim Tweezers",
@@ -126,7 +126,7 @@ export const FILLIMILLIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10515,
+    "id": "10515",
     "slug": "fillimilli-elaborative-tweezers",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI Elaborative Tweezers",
@@ -157,7 +157,7 @@ export const FILLIMILLIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10516,
+    "id": "10516",
     "slug": "fillimilli-macaron-puff-2pcs",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI Macaron Puff (2pcs)",
@@ -188,7 +188,7 @@ export const FILLIMILLIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10517,
+    "id": "10517",
     "slug": "fillimilli-mini-makeup-brush-set-5-pcs",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI Mini Makeup Brush Set (5 PCs)",
@@ -219,7 +219,7 @@ export const FILLIMILLIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10518,
+    "id": "10518",
     "slug": "fillimilli-v-cut-foundation-brush-822",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI V Cut Foundation Brush 822",
@@ -250,7 +250,7 @@ export const FILLIMILLIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10519,
+    "id": "10519",
     "slug": "fillimilli-flat-foundation-brush-820",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI Flat Foundation Brush 820",
@@ -281,7 +281,7 @@ export const FILLIMILLIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10520,
+    "id": "10520",
     "slug": "fillimilli-heating-eyelash-curler-usb-type",
     "brand": "FILLIMILLI",
     "name": "FILLIMILLI Heating Eyelash Curler (USB Type)",

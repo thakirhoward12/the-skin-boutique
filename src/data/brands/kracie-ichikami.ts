@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KRACIEIchikamiProducts: Product[] = [
   {
-    "id": 10123,
+    "id": "10123",
     "slug": "kracie-ichikami-shampoo-conditioner-set-limited-spring-edition-480ml-480g",
     "brand": "KRACIE Ichikami",
     "name": "KRACIE Ichikami Shampoo & Conditioner Set - Limited Spring Edition (480ml + 480g)",
@@ -33,7 +33,7 @@ export const KRACIEIchikamiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10549,
+    "id": "10549",
     "slug": "kracie-ichikami-shampoo-conditioner-set-limited-edition",
     "brand": "KRACIE Ichikami",
     "name": "KRACIE Ichikami Shampoo & Conditioner Set - Limited Edition",
@@ -73,7 +73,7 @@ export const KRACIEIchikamiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10657,
+    "id": "10657",
     "slug": "kracie-ichikami-moisturizing-shampoo-480ml",
     "brand": "KRACIE Ichikami",
     "name": "KRACIE Ichikami Moisturizing Shampoo (480ml)",
@@ -104,7 +104,7 @@ export const KRACIEIchikamiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10658,
+    "id": "10658",
     "slug": "kracie-ichikami-moisturizing-conditioner-480ml",
     "brand": "KRACIE Ichikami",
     "name": "KRACIE Ichikami Moisturizing Conditioner (480ml)",
@@ -135,7 +135,7 @@ export const KRACIEIchikamiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10666,
+    "id": "10666",
     "slug": "kracie-ichikami-smoothing-conditioner-480ml",
     "brand": "KRACIE Ichikami",
     "name": "KRACIE Ichikami Smoothing Conditioner (480ml)",
@@ -166,7 +166,7 @@ export const KRACIEIchikamiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10667,
+    "id": "10667",
     "slug": "kracie-ichikami-smoothing-shampoo-480ml",
     "brand": "KRACIE Ichikami",
     "name": "KRACIE Ichikami Smoothing Shampoo (480ml)",

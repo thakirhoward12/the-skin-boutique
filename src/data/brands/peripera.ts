@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const PERIPERAProducts: Product[] = [
   {
-    "id": 10304,
+    "id": "10304",
     "slug": "peripera-syrupy-tok-cheek-9g",
     "brand": "PERIPERA",
     "name": "PERIPERA Syrupy Tok Cheek (9g)",
@@ -46,7 +46,7 @@ export const PERIPERAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10310,
+    "id": "10310",
     "slug": "peripera-ink-mood-glowy-tint-4g",
     "brand": "PERIPERA",
     "name": "PERIPERA Ink Mood Glowy Tint (4g)",

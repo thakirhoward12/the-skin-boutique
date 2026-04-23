@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const InnisfreeProducts: Product[] = [
   {
-    "id": 10911,
+    "id": "10911",
     "slug": "innisfree-no-sebum-mineral-powder-5g",
     "brand": "Innisfree",
     "name": "INNISFREE No Sebum Mineral Powder (5g)",

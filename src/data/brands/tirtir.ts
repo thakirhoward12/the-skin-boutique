@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const TIRTIRProducts: Product[] = [
   {
-    "id": 10032,
+    "id": "10032",
     "slug": "tirtir-ceramic-cream-50ml",
     "brand": "TIRTIR",
     "name": "TIRTIR Ceramic Cream (50ml)",
@@ -33,7 +33,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10033,
+    "id": "10033",
     "slug": "tirtir-pure-vitamin-c24-serum-30ml",
     "brand": "TIRTIR",
     "name": "TIRTIR Pure Vitamin C24 Serum (30ml)",
@@ -64,7 +64,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10034,
+    "id": "10034",
     "slug": "tirtir-mask-fit-red-foundation-30ml",
     "brand": "TIRTIR",
     "name": "TIRTIR Mask Fit Red Foundation (30ml)",
@@ -128,7 +128,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10041,
+    "id": "10041",
     "slug": "tirtir-niacinaminde-20-serum-30ml",
     "brand": "TIRTIR",
     "name": "TIRTIR Niacinaminde 20% Serum (30ml)",
@@ -159,7 +159,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10042,
+    "id": "10042",
     "slug": "tirtir-hydro-boost-enzyme-powder-wash-75g",
     "brand": "TIRTIR",
     "name": "TIRTIR Hydro Boost Enzyme Powder Wash (75g)",
@@ -190,7 +190,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10043,
+    "id": "10043",
     "slug": "tirtir-ceramic-cream-light-50ml",
     "brand": "TIRTIR",
     "name": "TIRTIR Ceramic Cream Light (50ml)",
@@ -221,7 +221,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10044,
+    "id": "10044",
     "slug": "tirtir-pha15-serum-30ml",
     "brand": "TIRTIR",
     "name": "TIRTIR PHA15 Serum (30ml)",
@@ -252,7 +252,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10045,
+    "id": "10045",
     "slug": "tirtir-azelaic-acid-12-serum-30ml",
     "brand": "TIRTIR",
     "name": "TIRTIR Azelaic Acid 12% Serum (30ml)",
@@ -283,7 +283,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10046,
+    "id": "10046",
     "slug": "tirtir-waterism-lip-plumper-3-3g",
     "brand": "TIRTIR",
     "name": "TIRTIR Waterism Lip Plumper (3.3g)",
@@ -314,7 +314,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10047,
+    "id": "10047",
     "slug": "tirtir-glide-hide-blurring-concealer-stick-4g-liquid-4g",
     "brand": "TIRTIR",
     "name": "TIRTIR Glide & Hide Blurring Concealer (Stick 4g+Liquid 4g)",
@@ -382,7 +382,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10048,
+    "id": "10048",
     "slug": "tirtir-waterism-glow-tint-4g",
     "brand": "TIRTIR",
     "name": "TIRTIR Waterism Glow Tint (4g)",
@@ -458,7 +458,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10049,
+    "id": "10049",
     "slug": "tirtir-collagen-lifting-eye-cream-15ml",
     "brand": "TIRTIR",
     "name": "TIRTIR Collagen Lifting Eye Cream (15ml)",
@@ -489,7 +489,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10158,
+    "id": "10158",
     "slug": "tirtir-mask-fit-ai-filter-cushion-18g",
     "brand": "TIRTIR",
     "name": "TIRTIR Mask Fit AI Filter Cushion (18g)",
@@ -545,7 +545,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10159,
+    "id": "10159",
     "slug": "tirtir-mask-fit-all-cover-cushion-18g",
     "brand": "TIRTIR",
     "name": "TIRTIR Mask Fit All-Cover Cushion (18g)",
@@ -617,7 +617,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10160,
+    "id": "10160",
     "slug": "tirtir-mask-fit-aura-cushion-18g",
     "brand": "TIRTIR",
     "name": "TIRTIR Mask Fit Aura Cushion (18g)",
@@ -701,7 +701,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10161,
+    "id": "10161",
     "slug": "tirtir-mask-fit-waterproof-setting-spray-80ml",
     "brand": "TIRTIR",
     "name": "TIRTIR Mask Fit Waterproof Setting Spray (80ml)",
@@ -732,7 +732,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10851,
+    "id": "10851",
     "slug": "tirtir-mask-fit-red-cushion",
     "brand": "TIRTIR",
     "name": "TIRTIR Mask Fit Red Cushion",
@@ -960,7 +960,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10852,
+    "id": "10852",
     "slug": "tirtir-sos-serum-50ml",
     "brand": "TIRTIR",
     "name": "TIRTIR SOS Serum (50ml)",
@@ -991,7 +991,7 @@ export const TIRTIRProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10853,
+    "id": "10853",
     "slug": "tirtir-milk-skin-toner-150ml",
     "brand": "TIRTIR",
     "name": "TIRTIR Milk Skin Toner (150ml)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const AesturaProducts: Product[] = [
   {
-    "id": 10809,
+    "id": "10809",
     "slug": "aestura-atobarrier-365-lotion-150ml",
     "brand": "Aestura",
     "name": "AESTURA Atobarrier 365 Lotion (150ml)",
@@ -33,7 +33,7 @@ export const AesturaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10810,
+    "id": "10810",
     "slug": "aestura-atobarrier-365-bubble-cleanser-150ml",
     "brand": "Aestura",
     "name": "AESTURA Atobarrier 365 Bubble Cleanser (150ml)",
@@ -64,7 +64,7 @@ export const AesturaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10849,
+    "id": "10849",
     "slug": "aestura-atobarrier-365-cream-80ml",
     "brand": "Aestura",
     "name": "AESTURA Atobarrier 365 Cream (80ml)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MoistDianeProducts: Product[] = [
   {
-    "id": 10665,
+    "id": "10665",
     "slug": "moist-diane-perfect-beauty-dry-shampoo-95g-fresh-citrus-pear",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Dry Shampoo (95g) - Fresh Citrus & Pear",
@@ -33,7 +33,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10668,
+    "id": "10668",
     "slug": "moist-diane-perfect-beauty-extra-volume-scalp-shampoo-450ml",
     "brand": "Moist Diane",
     "name": "Moist Diane Perfect Beauty Extra Volume & Scalp Shampoo (450ml)",
@@ -64,7 +64,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10676,
+    "id": "10676",
     "slug": "moist-diane-perfect-beauty-dry-shampoo-95g-grapefruit-mint",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Dry Shampoo (95g) - Grapefruit & Mint",
@@ -95,7 +95,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10679,
+    "id": "10679",
     "slug": "moist-diane-perfect-beauty-fresh-hydrate-shampoo-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Fresh Hydrate Shampoo (450ml)",
@@ -126,7 +126,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10687,
+    "id": "10687",
     "slug": "moist-diane-perfect-beauty-dry-shampoo-95g-fresh-mango-musk",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Dry Shampoo (95g) - Fresh Mango & Musk",
@@ -157,7 +157,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10688,
+    "id": "10688",
     "slug": "moist-diane-perfect-beauty-extra-smooth-straight-shampoo-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Extra Smooth & Straight Shampoo (450ml)",
@@ -188,7 +188,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10714,
+    "id": "10714",
     "slug": "moist-diane-perfect-beauty-extra-moist-shine-treatment-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Extra Moist & Shine Treatment (450ml)",
@@ -219,7 +219,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10723,
+    "id": "10723",
     "slug": "moist-diane-perfect-beauty-extra-smooth-straight-treatment-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Extra Smooth & Straight Treatment (450ml)",
@@ -250,7 +250,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10724,
+    "id": "10724",
     "slug": "moist-diane-perfect-beauty-extra-vital-treatment-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Extra Vital Treatment (450ml)",
@@ -281,7 +281,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10730,
+    "id": "10730",
     "slug": "moist-diane-perfect-beauty-fresh-hydrate-treatment-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Fresh Hydrate Treatment (450ml)",
@@ -312,7 +312,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10734,
+    "id": "10734",
     "slug": "moist-diane-perfect-beauty-extra-moist-shine-shampoo-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Extra Moist & Shine Shampoo (450ml)",
@@ -343,7 +343,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10735,
+    "id": "10735",
     "slug": "moist-diane-perfect-beauty-extra-volume-scalp-treatment-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Extra Volume & Scalp Treatment (450ml)",
@@ -374,7 +374,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10736,
+    "id": "10736",
     "slug": "moist-diane-perfect-beauty-extra-vital-shampoo-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Beauty Extra Vital Shampoo (450ml)",
@@ -405,7 +405,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10741,
+    "id": "10741",
     "slug": "moist-diane-perfect-extra-damage-repair-treatment-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Extra Damage Repair Treatment (450ml)",
@@ -436,7 +436,7 @@ export const MoistDianeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10742,
+    "id": "10742",
     "slug": "moist-diane-perfect-extra-damage-repair-shampoo-450ml",
     "brand": "Moist Diane",
     "name": "MOIST DIANE Perfect Extra Damage Repair Shampoo (450ml)",

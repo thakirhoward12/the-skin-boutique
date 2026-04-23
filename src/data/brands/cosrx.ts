@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const COSRXProducts: Product[] = [
   {
-    "id": 10141,
+    "id": "10141",
     "slug": "cosrx-the-alpha-arbution-2-discoloration-care-serum-50ml",
     "brand": "COSRX",
     "name": "COSRX The Alpha-Arbution 2 Discoloration Care Serum (50ml)",
@@ -33,7 +33,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10415,
+    "id": "10415",
     "slug": "cosrx-propolis-nourishing-magnet-sheet-mask-1-pc",
     "brand": "COSRX",
     "name": "COSRX Propolis Nourishing Magnet Sheet Mask (1 PC)",
@@ -64,7 +64,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10490,
+    "id": "10490",
     "slug": "cosrx-the-peptide-collagen-hydrogel-eye-patch-30-pairs",
     "brand": "COSRX",
     "name": "COSRX The Peptide Collagen Hydrogel Eye Patch (30 Pairs)",
@@ -95,7 +95,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10614,
+    "id": "10614",
     "slug": "cosrx-hydrium-triple-hyaluronic-moisture-ampoule-40ml",
     "brand": "COSRX",
     "name": "COSRX Hydrium Triple Hyaluronic Moisture Ampoule (40ml)",
@@ -126,7 +126,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10672,
+    "id": "10672",
     "slug": "cosrx-the-6-peptide-skin-booster-serum-150ml",
     "brand": "COSRX",
     "name": "COSRX The 6 Peptide Skin Booster Serum (150ml)",
@@ -157,7 +157,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10696,
+    "id": "10696",
     "slug": "cosrx-hydrium-green-tea-aqua-soothing-gel-cream-50ml",
     "brand": "COSRX",
     "name": "COSRX Hydrium Green Tea Aqua Soothing Gel Cream (50ml)",
@@ -188,7 +188,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10702,
+    "id": "10702",
     "slug": "cosrx-low-ph-niacinamide-micellar-cleansing-water-400ml",
     "brand": "COSRX",
     "name": "COSRX Low pH Niacinamide Micellar Cleansing Water (400ml)",
@@ -219,7 +219,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10729,
+    "id": "10729",
     "slug": "cosrx-full-fit-propolis-light-cream-65ml",
     "brand": "COSRX",
     "name": "COSRX Full Fit Propolis Light Cream (65ml)",
@@ -250,7 +250,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10737,
+    "id": "10737",
     "slug": "cosrx-centella-blemish-cream-30g",
     "brand": "COSRX",
     "name": "COSRX Centella Blemish Cream (30g)",
@@ -281,7 +281,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10738,
+    "id": "10738",
     "slug": "cosrx-oil-free-ultra-moisturizing-lotion-100ml",
     "brand": "COSRX",
     "name": "COSRX Oil-Free Ultra Moisturizing Lotion (100ml)",
@@ -312,7 +312,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10739,
+    "id": "10739",
     "slug": "cosrx-centella-water-alcohol-free-toner-150ml",
     "brand": "COSRX",
     "name": "COSRX Centella Water Alcohol-Free Toner (150ml)",
@@ -343,7 +343,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10748,
+    "id": "10748",
     "slug": "cosrx-galactomyces-95-tone-balancing-essence-100ml",
     "brand": "COSRX",
     "name": "COSRX Galactomyces 95 Tone Balancing Essence (100ml)",
@@ -374,7 +374,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10749,
+    "id": "10749",
     "slug": "cosrx-hydrium-moisture-power-enriched-cream-50ml",
     "brand": "COSRX",
     "name": "COSRX Hydrium Moisture Power Enriched Cream (50ml)",
@@ -405,7 +405,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10750,
+    "id": "10750",
     "slug": "cosrx-hyaluronic-acid-hydra-power-essence-100ml",
     "brand": "COSRX",
     "name": "COSRX Hyaluronic Acid Hydra Power Essence (100ml)",
@@ -436,7 +436,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10751,
+    "id": "10751",
     "slug": "cosrx-low-ph-good-night-soft-peeling-gel-120ml",
     "brand": "COSRX",
     "name": "COSRX Low pH Good Night Soft Peeling Gel (120ml)",
@@ -467,7 +467,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10752,
+    "id": "10752",
     "slug": "cosrx-advanced-snail-mucin-gel-cleanser-150ml",
     "brand": "COSRX",
     "name": "COSRX Advanced Snail Mucin Gel Cleanser (150ml)",
@@ -498,7 +498,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10755,
+    "id": "10755",
     "slug": "cosrx-advanced-snail-radiance-dual-essence-80ml",
     "brand": "COSRX",
     "name": "COSRX Advanced Snail Radiance Dual Essence (80ml)",
@@ -529,7 +529,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10756,
+    "id": "10756",
     "slug": "cosrx-full-fit-propolis-light-ampoule-30ml",
     "brand": "COSRX",
     "name": "COSRX Full Fit Propolis Light Ampoule (30ml)",
@@ -560,7 +560,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10757,
+    "id": "10757",
     "slug": "cosrx-full-fit-propolis-synergy-toner-150ml",
     "brand": "COSRX",
     "name": "COSRX Full Fit Propolis Synergy Toner (150ml)",
@@ -591,7 +591,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10758,
+    "id": "10758",
     "slug": "cosrx-advanced-snail-hydrogel-eye-patch-30-pairs",
     "brand": "COSRX",
     "name": "COSRX Advanced Snail Hydrogel Eye Patch (30 Pairs)",
@@ -622,7 +622,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10767,
+    "id": "10767",
     "slug": "cosrx-hyaluronic-acid-intensive-cream-100g",
     "brand": "COSRX",
     "name": "COSRX Hyaluronic Acid Intensive Cream (100g)",
@@ -653,7 +653,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10913,
+    "id": "10913",
     "slug": "cosrx-two-in-one-poreless-power-liquid-100ml",
     "brand": "COSRX",
     "name": "COSRX Two in One Poreless Power Liquid (100ml)",
@@ -684,7 +684,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10931,
+    "id": "10931",
     "slug": "cosrx-ultimate-nourishing-rice-spa-overnight-mask-60ml",
     "brand": "COSRX",
     "name": "COSRX Ultimate Nourishing Rice Spa Overnight Mask (60ml)",
@@ -715,7 +715,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10932,
+    "id": "10932",
     "slug": "cosrx-the-vitamin-c-13-serum-20ml",
     "brand": "COSRX",
     "name": "COSRX The Vitamin C 13 Serum (20ml)",
@@ -746,7 +746,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10964,
+    "id": "10964",
     "slug": "cosrx-the-retinol-0-5-oil-20ml",
     "brand": "COSRX",
     "name": "COSRX The Retinol 0.5 Oil (20ml)",
@@ -777,7 +777,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10965,
+    "id": "10965",
     "slug": "cosrx-the-retinol-0-1-cream-20ml",
     "brand": "COSRX",
     "name": "COSRX The Retinol 0.1 Cream (20ml)",
@@ -808,7 +808,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10966,
+    "id": "10966",
     "slug": "cosrx-the-niacinamide-15-serum-20ml",
     "brand": "COSRX",
     "name": "COSRX The Niacinamide 15 Serum (20ml)",
@@ -839,7 +839,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10989,
+    "id": "10989",
     "slug": "cosrx-the-vitamin-c-23-serum-20g",
     "brand": "COSRX",
     "name": "COSRX The Vitamin C 23 Serum (20g)",
@@ -870,7 +870,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10990,
+    "id": "10990",
     "slug": "cosrx-the-hyaluronic-acid-3-serum-20ml",
     "brand": "COSRX",
     "name": "COSRX The Hyaluronic Acid 3 Serum (20ml)",
@@ -901,7 +901,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11009,
+    "id": "11009",
     "slug": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml",
     "brand": "COSRX",
     "name": "COSRX Salicylic Acid Daily Gentle Cleanser (150ml)",
@@ -932,7 +932,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11010,
+    "id": "11010",
     "slug": "cosrx-bha-blackhead-power-liquid-100ml",
     "brand": "COSRX",
     "name": "COSRX BHA Blackhead Power Liquid (100ml)",
@@ -963,7 +963,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11020,
+    "id": "11020",
     "slug": "cosrx-low-ph-good-morning-gel-cleanser-150ml",
     "brand": "COSRX",
     "name": "COSRX Low pH Good Morning Gel Cleanser (150ml)",
@@ -994,7 +994,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11022,
+    "id": "11022",
     "slug": "cosrx-acne-pimple-master-patch-24-patches",
     "brand": "COSRX",
     "name": "COSRX Acne Pimple Master Patch (24 Patches)",
@@ -1025,7 +1025,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11023,
+    "id": "11023",
     "slug": "cosrx-aha-bha-clarifying-treatment-toner-150ml",
     "brand": "COSRX",
     "name": "COSRX AHA BHA Clarifying Treatment Toner (150ml)",
@@ -1056,7 +1056,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11027,
+    "id": "11027",
     "slug": "cosrx-advanced-snail-peptide-eye-cream-25ml",
     "brand": "COSRX",
     "name": "COSRX Advanced Snail Peptide Eye Cream (25ml)",
@@ -1087,7 +1087,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11029,
+    "id": "11029",
     "slug": "cosrx-advanced-snail-92-all-in-one-cream-100g",
     "brand": "COSRX",
     "name": "COSRX Advanced Snail 92 All In One Cream (100g)",
@@ -1118,7 +1118,7 @@ export const COSRXProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11030,
+    "id": "11030",
     "slug": "cosrx-advanced-snail-96-mucin-power-essence-100ml",
     "brand": "COSRX",
     "name": "COSRX Advanced Snail 96 Mucin Power Essence (100ml)",

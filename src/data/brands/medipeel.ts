@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MEDIPEELProducts: Product[] = [
   {
-    "id": 10256,
+    "id": "10256",
     "slug": "medipeel-red-lacto-collagen-wrapping-mask-70ml",
     "brand": "MEDIPEEL",
     "name": "MEDIPEEL Red Lacto Collagen Wrapping Mask (70ml)",
@@ -33,7 +33,7 @@ export const MEDIPEELProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10257,
+    "id": "10257",
     "slug": "medipeel-phyto-exosome-pdrn-lifting-shot-eye-cream-40ml",
     "brand": "MEDIPEEL",
     "name": "MEDIPEEL Phyto Exosome PDRN Lifting Shot Eye Cream (40ml)",
@@ -64,7 +64,7 @@ export const MEDIPEELProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10268,
+    "id": "10268",
     "slug": "medipeel-premium-3-0-collagen-naite-thread-neck-cream-100ml",
     "brand": "MEDIPEEL",
     "name": "MEDIPEEL Premium 3.0 Collagen Naite Thread Neck Cream (100ml)",
@@ -95,7 +95,7 @@ export const MEDIPEELProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10269,
+    "id": "10269",
     "slug": "medipeel-retinol-collagen-lifting-cream-50ml",
     "brand": "MEDIPEEL",
     "name": "MEDIPEEL Retinol Collagen Lifting Cream (50ml)",

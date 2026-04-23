@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SNATUREProducts: Product[] = [
   {
-    "id": 10138,
+    "id": "10138",
     "slug": "s-nature-aqua-oasis-toner-300ml",
     "brand": "S.NATURE",
     "name": "S.NATURE Aqua Oasis Toner (300ml)",
@@ -33,7 +33,7 @@ export const SNATUREProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10139,
+    "id": "10139",
     "slug": "s-nature-aqua-rice-cleansing-oil-200ml",
     "brand": "S.NATURE",
     "name": "S.NATURE Aqua Rice Cleansing Oil (200ml)",
@@ -64,7 +64,7 @@ export const SNATUREProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10151,
+    "id": "10151",
     "slug": "s-nature-aqua-squalane-moisturizing-cream",
     "brand": "S.NATURE",
     "name": "S.NATURE Aqua Squalane Moisturizing Cream",
@@ -104,7 +104,7 @@ export const SNATUREProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10152,
+    "id": "10152",
     "slug": "s-nature-aqua-squalane-serum",
     "brand": "S.NATURE",
     "name": "S.NATURE Aqua Squalane Serum",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const JUDYDOLLProducts: Product[] = [
   {
-    "id": 10027,
+    "id": "10027",
     "slug": "judydoll-precise-drawing-eyeliner-pen",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Precise Drawing Eyeliner Pen",
@@ -42,7 +42,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10037,
+    "id": "10037",
     "slug": "judydoll-gummy-plump-peptide-lip-oil-6-5g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Gummy Plump Peptide Lip Oil (6.5g)",
@@ -86,7 +86,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10095,
+    "id": "10095",
     "slug": "judydoll-mascara-remover-5ml",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Mascara Remover (5ml)",
@@ -117,7 +117,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10096,
+    "id": "10096",
     "slug": "judydoll-eyebrow-mascara-2-5g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Eyebrow Mascara (2.5g)",
@@ -157,7 +157,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10097,
+    "id": "10097",
     "slug": "judydoll-cloud-touch-concealer-3-2g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Cloud Touch Concealer (3.2g)",
@@ -201,7 +201,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10098,
+    "id": "10098",
     "slug": "judydoll-slim-gel-eyeliner-0-06g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Slim Gel Eyeliner (0.06g)",
@@ -245,7 +245,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10099,
+    "id": "10099",
     "slug": "judydoll-peel-off-stain-and-plumping-oil-duo-2-4g-2g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Peel Off Stain and Plumping Oil Duo (2.4g + 2g)",
@@ -297,7 +297,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10127,
+    "id": "10127",
     "slug": "judydoll-liquid-contour-under-eye-brightening-duo-4-8g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Liquid Contour & Under Eye Brightening Duo (4.8g)",
@@ -337,7 +337,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10128,
+    "id": "10128",
     "slug": "judydoll-dual-flash-watery-lip-gloss-2-4g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Dual Flash Watery Lip Gloss (2.4g)",
@@ -393,7 +393,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10129,
+    "id": "10129",
     "slug": "judydoll-highlighting-concealer-cushion-8g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Highlighting Concealer Cushion (8g)",
@@ -433,7 +433,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10130,
+    "id": "10130",
     "slug": "judydoll-blush-highlight-palette-9g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Blush & Highlight Palette (9g)",
@@ -464,7 +464,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10131,
+    "id": "10131",
     "slug": "judydoll-duo-eyebrow-pencil",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Duo Eyebrow Pencil",
@@ -504,7 +504,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10132,
+    "id": "10132",
     "slug": "judydoll-liquid-eyeshadow-3g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Liquid Eyeshadow (3g)",
@@ -535,7 +535,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10133,
+    "id": "10133",
     "slug": "judydoll-liquid-blush-4-5g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Liquid Blush (4.5g)",
@@ -575,7 +575,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10134,
+    "id": "10134",
     "slug": "judydoll-liquid-highlighter-4-8g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Liquid Highlighter (4.8g)",
@@ -615,7 +615,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10135,
+    "id": "10135",
     "slug": "judydoll-blush-powder-2g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Blush Powder (2g)",
@@ -663,7 +663,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10602,
+    "id": "10602",
     "slug": "judydoll-watery-lip-gloss-2-4g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Watery Lip Gloss (2.4g)",
@@ -719,7 +719,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10608,
+    "id": "10608",
     "slug": "judydoll-cloud-touch-concealer-palette-6g",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Cloud Touch Concealer Palette (6g)",
@@ -763,7 +763,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10609,
+    "id": "10609",
     "slug": "judydoll-all-in-one-palette-for-your-full-face",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL All-In-One Palette For Your Full Face",
@@ -819,7 +819,7 @@ export const JUDYDOLLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10613,
+    "id": "10613",
     "slug": "judydoll-mascara",
     "brand": "JUDYDOLL",
     "name": "JUDYDOLL Mascara",

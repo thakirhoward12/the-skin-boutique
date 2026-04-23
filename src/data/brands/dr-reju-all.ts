@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const DrRejuAllProducts: Product[] = [
   {
-    "id": 10121,
+    "id": "10121",
     "slug": "dr-reju-all-advanced-retino-mela-serum-30ml",
     "brand": "Dr. Reju-All",
     "name": "Dr. Reju-All Advanced Retino-Mela Serum (30ml)",
@@ -33,7 +33,7 @@ export const DrRejuAllProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10122,
+    "id": "10122",
     "slug": "dr-reju-all-advanced-lc-ceramide-barrier-cream-50ml",
     "brand": "Dr. Reju-All",
     "name": "Dr. Reju-All Advanced LC-Ceramide Barrier Cream (50ml)",
@@ -64,7 +64,7 @@ export const DrRejuAllProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10169,
+    "id": "10169",
     "slug": "dr-reju-all-advanced-pdrn-rejuvenating-cream",
     "brand": "Dr. Reju-All",
     "name": "Dr. Reju-All Advanced PDRN Rejuvenating Cream",

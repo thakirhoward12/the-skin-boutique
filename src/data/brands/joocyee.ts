@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const JOOCYEEProducts: Product[] = [
   {
-    "id": 10001,
+    "id": "10001",
     "slug": "joocyee-happy-me-day-crystal-gloss-8ml",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Happy Me Day Crystal Gloss (8ml)",
@@ -33,7 +33,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10082,
+    "id": "10082",
     "slug": "joocyee-magneglow-lip-gloss-6g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE MagneGlow Lip Gloss (6g)",
@@ -77,7 +77,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10083,
+    "id": "10083",
     "slug": "joocyee-lucent-glazed-rouge-lipstick-3-5g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Lucent Glazed Rouge Lipstick (3.5g)",
@@ -125,7 +125,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10084,
+    "id": "10084",
     "slug": "joocyee-dewdrop-glaze-lip-oil-1-9g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Dewdrop Glaze Lip Oil (1.9g)",
@@ -169,7 +169,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10085,
+    "id": "10085",
     "slug": "joocyee-2-in-1-lip-liner-and-gloss-0-13g-2-3g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE 2-IN-1 Lip Liner And Gloss (0.13g + 2.3g)",
@@ -213,7 +213,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10086,
+    "id": "10086",
     "slug": "joocyee-new-smoky-glazed-gloss-4g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE New Smoky Glazed Gloss (4g)",
@@ -253,7 +253,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10087,
+    "id": "10087",
     "slug": "joocyee-glazed-multi-purpose-stick-5-2g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Glazed Multi-Purpose Stick (5.2g)",
@@ -297,7 +297,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10088,
+    "id": "10088",
     "slug": "joocyee-satin-multi-purpose-stick-5-2g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Satin Multi-Purpose Stick (5.2g)",
@@ -341,7 +341,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10089,
+    "id": "10089",
     "slug": "joocyee-happy-me-day-cream-blush-4g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Happy Me Day Cream Blush (4g)",
@@ -381,7 +381,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10090,
+    "id": "10090",
     "slug": "joocyee-velvet-rouge-matte-lipstick-pen-3g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Velvet Rouge Matte Lipstick Pen (3g)",
@@ -429,7 +429,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10091,
+    "id": "10091",
     "slug": "joocyee-jelly-highlighter-glitter-stick-2g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Jelly Highlighter Glitter Stick (2g)",
@@ -477,7 +477,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10092,
+    "id": "10092",
     "slug": "joocyee-single-eyeshadow-1-2-1-8g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Single Eyeshadow (1.2-1.8g)",
@@ -529,7 +529,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10093,
+    "id": "10093",
     "slug": "joocyee-long-lasting-glossy-rouge-3g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Long-Lasting Glossy Rouge (3g)",
@@ -581,7 +581,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10094,
+    "id": "10094",
     "slug": "joocyee-multi-purpose-lip-cheek-cream-4-5g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Multi-Purpose Lip & Cheek Cream (4.5g)",
@@ -633,7 +633,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10124,
+    "id": "10124",
     "slug": "joocyee-glazed-rouge-2-0-ultra-shine-lipstick-3-5g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Glazed Rouge 2.0 Ultra Shine Lipstick (3.5g)",
@@ -673,7 +673,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10125,
+    "id": "10125",
     "slug": "joocyee-glazed-rouge-lipstick-3-5g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE Glazed Rouge Lipstick (3.5g)",
@@ -721,7 +721,7 @@ export const JOOCYEEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10126,
+    "id": "10126",
     "slug": "joocyee-12-shades-eyeshadow-palette-14g",
     "brand": "JOOCYEE",
     "name": "JOOCYEE 12 Shades Eyeshadow Palette (14g)",

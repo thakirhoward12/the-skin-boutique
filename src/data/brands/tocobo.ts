@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const TocoboProducts: Product[] = [
   {
-    "id": 10468,
+    "id": "10468",
     "slug": "tocobo-cotton-soft-sun-stick-spf50-pa-19g",
     "brand": "Tocobo",
     "name": "TOCOBO Cotton Soft Sun Stick SPF50+ PA++++ (19g)",

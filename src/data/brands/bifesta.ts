@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const BifestaProducts: Product[] = [
   {
-    "id": 10815,
+    "id": "10815",
     "slug": "bifesta-eye-makeup-remover-145ml",
     "brand": "Bifesta",
     "name": "Bifesta Eye Makeup Remover (145ml)",

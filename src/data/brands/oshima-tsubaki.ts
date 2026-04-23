@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const OshimaTsubakiProducts: Product[] = [
   {
-    "id": 10801,
+    "id": "10801",
     "slug": "oshima-tsubaki-camellia-premium-conditioner-300ml",
     "brand": "Oshima Tsubaki",
     "name": "Oshima Tsubaki Camellia Premium Conditioner (300ml)",
@@ -33,7 +33,7 @@ export const OshimaTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10926,
+    "id": "10926",
     "slug": "oshima-tsubaki-pure-camellia-oil-60ml",
     "brand": "Oshima Tsubaki",
     "name": "Oshima Tsubaki Pure Camellia Oil (60ml)",

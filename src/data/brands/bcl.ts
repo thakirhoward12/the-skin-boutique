@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const BCLProducts: Product[] = [
   {
-    "id": 10319,
+    "id": "10319",
     "slug": "bcl-saborino-morning-facial-sheet-mask-moisture-rich-30pcs",
     "brand": "BCL",
     "name": "BCL Saborino Morning Facial Sheet Mask Moisture Rich (30pcs)",
@@ -33,7 +33,7 @@ export const BCLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10320,
+    "id": "10320",
     "slug": "bcl-saborino-morning-facial-sheet-mask-32pcs",
     "brand": "BCL",
     "name": "BCL Saborino Morning Facial Sheet Mask (32pcs)",
@@ -64,7 +64,7 @@ export const BCLProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10321,
+    "id": "10321",
     "slug": "bcl-saborino-good-night-facial-sheet-mask-30pcs",
     "brand": "BCL",
     "name": "BCL Saborino Good Night Facial Sheet Mask (30pcs)",

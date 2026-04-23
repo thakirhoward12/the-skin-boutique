@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const NIDAProducts: Product[] = [
   {
-    "id": 10109,
+    "id": "10109",
     "slug": "nida-retinol-glowy-lip-serum-7g",
     "brand": "NIDA",
     "name": "NIDA Retinol Glowy Lip Serum (7g)",
@@ -33,7 +33,7 @@ export const NIDAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10110,
+    "id": "10110",
     "slug": "nida-revive-eye-cream-for-face-and-neck-40ml",
     "brand": "NIDA",
     "name": "NIDA Revive Eye Cream For Face And Neck (40ml)",
@@ -64,7 +64,7 @@ export const NIDAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10111,
+    "id": "10111",
     "slug": "nida-youthful-formula-ultimate-moisturizing-cream-100ml",
     "brand": "NIDA",
     "name": "NIDA Youthful Formula™ Ultimate Moisturizing Cream (100ml)",
@@ -95,7 +95,7 @@ export const NIDAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10112,
+    "id": "10112",
     "slug": "nida-overnight-lip-mask-20g",
     "brand": "NIDA",
     "name": "NIDA Overnight Lip Mask (20g)",
@@ -126,7 +126,7 @@ export const NIDAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10113,
+    "id": "10113",
     "slug": "nida-black-rice-blackhead-exfoliating-serum-50ml",
     "brand": "NIDA",
     "name": "NIDA Black Rice Blackhead Exfoliating Serum (50ml)",
@@ -157,7 +157,7 @@ export const NIDAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10114,
+    "id": "10114",
     "slug": "nida-peptide-propolis-renewal-serum-50ml",
     "brand": "NIDA",
     "name": "NIDA Peptide Propolis Renewal Serum (50ml)",
@@ -188,7 +188,7 @@ export const NIDAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10115,
+    "id": "10115",
     "slug": "nida-centella-hydrating-serum-50ml",
     "brand": "NIDA",
     "name": "NIDA Centella Hydrating Serum (50ml)",
@@ -219,7 +219,7 @@ export const NIDAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10116,
+    "id": "10116",
     "slug": "nida-youth-boosting-rice-milky-toner-150ml",
     "brand": "NIDA",
     "name": "NIDA Youth-Boosting Rice Milky Toner (150ml)",

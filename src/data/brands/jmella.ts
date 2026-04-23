@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const JMELLAProducts: Product[] = [
   {
-    "id": 10100,
+    "id": "10100",
     "slug": "jmella-in-france-favorite-perfume-hand-cream-set-50ml-x-5",
     "brand": "JMELLA",
     "name": "JMELLA In France Favorite Perfume Hand Cream Set (50ml x 5)",
@@ -33,7 +33,7 @@ export const JMELLAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10103,
+    "id": "10103",
     "slug": "jmella-in-france-favorite-perfume-body-lotion-500ml",
     "brand": "JMELLA",
     "name": "JMELLA In France Favorite Perfume Body Lotion (500ml)",
@@ -77,7 +77,7 @@ export const JMELLAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10148,
+    "id": "10148",
     "slug": "jmella-in-france-favorite-perfume-hand-cream-50ml",
     "brand": "JMELLA",
     "name": "JMELLA In France Favorite Perfume Hand Cream (50ml)",
@@ -121,7 +121,7 @@ export const JMELLAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10238,
+    "id": "10238",
     "slug": "jmella-in-france-favorite-perfume-hair-treatment-500ml",
     "brand": "JMELLA",
     "name": "JMELLA In France Favorite Perfume Hair Treatment (500ml)",
@@ -161,7 +161,7 @@ export const JMELLAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10251,
+    "id": "10251",
     "slug": "jmella-in-france-signature-perfume-hair-shampoo-500ml",
     "brand": "JMELLA",
     "name": "JMELLA In France Signature Perfume Hair Shampoo (500ml)",
@@ -209,7 +209,7 @@ export const JMELLAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10253,
+    "id": "10253",
     "slug": "jmella-in-france-favorite-perfume-body-wash-500ml",
     "brand": "JMELLA",
     "name": "JMELLA IN FRANCE Favorite Perfume Body Wash (500ml)",

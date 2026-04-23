@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ArenciaProducts: Product[] = [
   {
-    "id": 10662,
+    "id": "10662",
     "slug": "arencia-mochi-cleanser-120g",
     "brand": "Arencia",
     "name": "ARENCIA Mochi Cleanser (120g)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const IZEZEProducts: Product[] = [
   {
-    "id": 10325,
+    "id": "10325",
     "slug": "izeze-black-cumin-nsa-enrich-cream-50ml",
     "brand": "IZEZE",
     "name": "IZEZE Black Cumin NSA Enrich Cream (50ml)",
@@ -33,7 +33,7 @@ export const IZEZEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10326,
+    "id": "10326",
     "slug": "izeze-black-cumin-nda-pudding-gel-cream-50ml",
     "brand": "IZEZE",
     "name": "IZEZE Black Cumin NDA Pudding Gel Cream (50ml)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SoonJungProducts: Product[] = [
   {
-    "id": 10892,
+    "id": "10892",
     "slug": "etude-house-soon-jung-10-panthensoside-cica-balm-50ml",
     "brand": "Soon Jung",
     "name": "ETUDE HOUSE Soon Jung 10 Panthensoside Cica Balm (50ml)",
@@ -33,7 +33,7 @@ export const SoonJungProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10952,
+    "id": "10952",
     "slug": "etude-house-soon-jung-2x-barrier-intensive-cream-60ml",
     "brand": "Soon Jung",
     "name": "ETUDE HOUSE Soon Jung 2X Barrier Intensive Cream (60ml)",
@@ -64,7 +64,7 @@ export const SoonJungProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10991,
+    "id": "10991",
     "slug": "etude-house-soon-jung-panthensoside-mask-1-pc",
     "brand": "Soon Jung",
     "name": "ETUDE HOUSE Soon Jung Panthensoside Mask (1 PC)",
@@ -95,7 +95,7 @@ export const SoonJungProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10992,
+    "id": "10992",
     "slug": "etude-house-soon-jung-10-free-moist-emulsion-130ml",
     "brand": "Soon Jung",
     "name": "ETUDE HOUSE Soon Jung 10 Free Moist Emulsion (130ml)",
@@ -126,7 +126,7 @@ export const SoonJungProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10993,
+    "id": "10993",
     "slug": "etude-house-soon-jung-whip-cleanser-150ml",
     "brand": "Soon Jung",
     "name": "ETUDE HOUSE Soon Jung Whip Cleanser (150ml)",
@@ -157,7 +157,7 @@ export const SoonJungProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10994,
+    "id": "10994",
     "slug": "etude-house-soon-jung-hydro-barrier-cream-75ml",
     "brand": "Soon Jung",
     "name": "ETUDE HOUSE Soon Jung Hydro Barrier Cream (75ml)",
@@ -188,7 +188,7 @@ export const SoonJungProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10995,
+    "id": "10995",
     "slug": "etude-house-soon-jung-relief-toner-200ml",
     "brand": "Soon Jung",
     "name": "ETUDE HOUSE Soon Jung Relief Toner (200ml)",

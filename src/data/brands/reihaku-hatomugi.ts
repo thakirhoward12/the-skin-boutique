@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ReihakuHatomugiProducts: Product[] = [
   {
-    "id": 10996,
+    "id": "10996",
     "slug": "reihaku-hatomugi-white-coix-face-wash-foam-170g",
     "brand": "Reihaku Hatomugi",
     "name": "Reihaku Hatomugi White Coix Face Wash Foam (170g)",
@@ -33,7 +33,7 @@ export const ReihakuHatomugiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10997,
+    "id": "10997",
     "slug": "reihaku-hatomugi-toner-500ml",
     "brand": "Reihaku Hatomugi",
     "name": "Reihaku Hatomugi Toner (500ml)",
@@ -64,7 +64,7 @@ export const ReihakuHatomugiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10998,
+    "id": "10998",
     "slug": "reihaku-hatomugi-body-soap-800ml",
     "brand": "Reihaku Hatomugi",
     "name": "Reihaku Hatomugi Body Soap (800ml)",
@@ -95,7 +95,7 @@ export const ReihakuHatomugiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10999,
+    "id": "10999",
     "slug": "reihaku-hatomugi-milky-cream-300g",
     "brand": "Reihaku Hatomugi",
     "name": "Reihaku Hatomugi Milky Cream (300g)",

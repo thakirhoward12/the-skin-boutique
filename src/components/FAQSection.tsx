@@ -165,7 +165,7 @@ const faqData: FAQCategory[] = [
   }
 ];
 
-function AccordionItem({ item, isOpen, onClick }: { item: FAQItem; isOpen: boolean; onClick: () => void }) {
+function AccordionItem({ item, isOpen, onClick }: { key?: React.Key; item: FAQItem; isOpen: boolean; onClick: () => void }) {
   return (
     <div className="border-b border-gray-200/60 last:border-b-0">
       <button
@@ -191,7 +191,7 @@ function AccordionItem({ item, isOpen, onClick }: { item: FAQItem; isOpen: boole
   );
 }
 
-function CategorySection({ category }: { category: FAQCategory }) {
+function CategorySection({ category }: { key?: React.Key; category: FAQCategory }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (

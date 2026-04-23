@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const numbuzinProducts: Product[] = [
   {
-    "id": 10050,
+    "id": "10050",
     "slug": "numbuzin-no-2-rose-pdrn-collagen-2x-plumping-serum-30ml",
     "brand": "numbuzin",
     "name": "numbuzin No.2 Rose PDRN Collagen 2X Plumping Serum (30mL)",
@@ -33,7 +33,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10051,
+    "id": "10051",
     "slug": "numbuzin-no-2-rose-pdrn-collagen-plumping-serum-duo-1-2ml-x-10",
     "brand": "numbuzin",
     "name": "numbuzin No.2 Rose PDRN Collagen Plumping Serum Duo (1.2ml x 10)",
@@ -64,7 +64,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10064,
+    "id": "10064",
     "slug": "numbuzin-no-3-blue-bio-retinol-pore-refining-serum",
     "brand": "numbuzin",
     "name": "numbuzin No.3 Blue Bio-Retinol Pore Refining Serum",
@@ -104,7 +104,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10065,
+    "id": "10065",
     "slug": "numbuzin-no-2-rose-pdrn-collagen-plumping-serum-30ml",
     "brand": "numbuzin",
     "name": "numbuzin No.2 Rose PDRN Collagen Plumping Serum (30ml)",
@@ -135,7 +135,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10066,
+    "id": "10066",
     "slug": "numbuzin-no-4-ceramide-aha-glazed-skin-prep-serum",
     "brand": "numbuzin",
     "name": "numbuzin No.4 Ceramide AHA Glazed Skin Prep Serum",
@@ -175,7 +175,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10067,
+    "id": "10067",
     "slug": "numbuzin-no-4-hydrating-glow-mineral-toner-200ml",
     "brand": "numbuzin",
     "name": "numbuzin No.4 Hydrating Glow Mineral Toner (200ml)",
@@ -206,7 +206,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10068,
+    "id": "10068",
     "slug": "numbuzin-no-4-pore-zero-peeled-egg-toner-pad-70-pcs",
     "brand": "numbuzin",
     "name": "numbuzin No.4 Pore Zero Peeled Egg Toner Pad (70 PCs)",
@@ -237,7 +237,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10069,
+    "id": "10069",
     "slug": "numbuzin-no-2-deep-clean-fresh-cream-cleanser-120ml",
     "brand": "numbuzin",
     "name": "numbuzin No.2 Deep Clean Fresh Cream Cleanser (120ml)",
@@ -268,7 +268,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10070,
+    "id": "10070",
     "slug": "numbuzin-no-1-pantothenic-skincare-100-powder-7g",
     "brand": "numbuzin",
     "name": "numbuzin No.1 Pantothenic Skincare 100 Powder (7g)",
@@ -299,7 +299,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10071,
+    "id": "10071",
     "slug": "numbuzin-no-2-cica-ceramide-repair-cream-60ml",
     "brand": "numbuzin",
     "name": "numbuzin No.2 Cica Ceramide Repair Cream (60ml)",
@@ -330,7 +330,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10072,
+    "id": "10072",
     "slug": "numbuzin-no-3-velvet-beauty-cream-60ml",
     "brand": "numbuzin",
     "name": "numbuzin No.3 Velvet Beauty Cream (60ml)",
@@ -361,7 +361,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10073,
+    "id": "10073",
     "slug": "numbuzin-no-5-glutathione-vitamin-dark-spot-cream-50ml",
     "brand": "numbuzin",
     "name": "Numbuzin No.5+ Glutathione Vitamin Dark Spot Cream (50ml)",
@@ -392,7 +392,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10074,
+    "id": "10074",
     "slug": "numbuzin-no-1-pantothenic-b5-hyaluronic-active-clear-mask",
     "brand": "numbuzin",
     "name": "numbuzin No.1 Pantothenic B5 Hyaluronic Active Clear Mask",
@@ -432,7 +432,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10075,
+    "id": "10075",
     "slug": "numbuzin-no-2-rose-pdrn-collagen-plumping-sheet-mask",
     "brand": "numbuzin",
     "name": "numbuzin No.2 Rose PDRN Collagen Plumping Sheet Mask",
@@ -472,7 +472,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10076,
+    "id": "10076",
     "slug": "numbuzin-no-4-icy-soothing-sheet-mask",
     "brand": "numbuzin",
     "name": "numbuzin No.4 Icy Soothing Sheet Mask",
@@ -512,7 +512,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10077,
+    "id": "10077",
     "slug": "numbuzin-no-3-pore-reset-ampoule-25ml",
     "brand": "numbuzin",
     "name": "numbuzin No.3 Pore Reset Ampoule (25ml)",
@@ -543,7 +543,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10078,
+    "id": "10078",
     "slug": "numbuzin-no-2-rose-pdrn-overnight-collagen-mask",
     "brand": "numbuzin",
     "name": "numbuzin No.2 Rose PDRN Overnight Collagen Mask",
@@ -583,7 +583,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10101,
+    "id": "10101",
     "slug": "numbuzin-no-1-pure-full-calming-herb-toner-300ml",
     "brand": "numbuzin",
     "name": "numbuzin No.1 Pure-Full Calming Herb Toner (300ml)",
@@ -614,7 +614,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10171,
+    "id": "10171",
     "slug": "numbuzin-no-9-nad-collagen-under-eye-patches-5-pairs",
     "brand": "numbuzin",
     "name": "numbuzin No.9 NAD+ Collagen Under Eye Patches (5 Pairs)",
@@ -645,7 +645,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10182,
+    "id": "10182",
     "slug": "numbuzin-no-3-super-glowing-essence-toner-200ml",
     "brand": "numbuzin",
     "name": "numbuzin No.3 Super Glowing Essence Toner (200ml)",
@@ -676,7 +676,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10267,
+    "id": "10267",
     "slug": "numbuzin-no-9-nad-bio-lifting-sil-essence-50ml",
     "brand": "numbuzin",
     "name": "numbuzin No.9 NAD Bio Lifting-Sil Essence (50ml)",
@@ -707,7 +707,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10348,
+    "id": "10348",
     "slug": "numbuzin-no-1-pantothenic-b5-active-soothing-serum-50ml",
     "brand": "numbuzin",
     "name": "numbuzin No.1 Pantothenic B5 Active Soothing Serum (50ml)",
@@ -738,7 +738,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10349,
+    "id": "10349",
     "slug": "numbuzin-no-1-centella-re-leaf-green-toner-pad-70-pcs",
     "brand": "numbuzin",
     "name": "numbuzin No.1 Centella Re-Leaf Green Toner Pad (70 PCs)",
@@ -769,7 +769,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10350,
+    "id": "10350",
     "slug": "numbuzin-no-9-nad-bio-lifting-sil-full-face-mask",
     "brand": "numbuzin",
     "name": "numbuzin No.9 NAD Bio Lifting-sil Full Face Mask",
@@ -809,7 +809,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10459,
+    "id": "10459",
     "slug": "numbuzin-no-8-glossy-essence-serum-50ml",
     "brand": "numbuzin",
     "name": "numbuzin No.8 Glossy Essence Serum (50ml)",
@@ -840,7 +840,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10599,
+    "id": "10599",
     "slug": "numbuzin-no-1-pantothenic-b5-active-soothing-cream-80ml",
     "brand": "numbuzin",
     "name": "numbuzin No.1 Pantothenic B5 Active Soothing Cream (80ml)",
@@ -871,7 +871,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10797,
+    "id": "10797",
     "slug": "numbuzin-no-5-vitamin-boosting-essence-toner-200ml",
     "brand": "numbuzin",
     "name": "numbuzin No.5 Vitamin Boosting Essence Toner (200ml)",
@@ -902,7 +902,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10858,
+    "id": "10858",
     "slug": "numbuzin-no-1-easy-peasy-cleansing-oil-200ml",
     "brand": "numbuzin",
     "name": "numbuzin No.1 Easy Peasy Cleansing Oil (200ml)",
@@ -933,7 +933,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10859,
+    "id": "10859",
     "slug": "numbuzin-no-3-radiance-glowing-jumbo-essence-pad-70-pcs",
     "brand": "numbuzin",
     "name": "numbuzin No.3 Radiance Glowing Jumbo Essence Pad (70 PCs)",
@@ -964,7 +964,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10866,
+    "id": "10866",
     "slug": "numbuzin-no-5-vitamin-niacinamide-concentrated-pads-70pcs",
     "brand": "numbuzin",
     "name": "numbuzin No.5+ Vitamin Niacinamide Concentrated Pads (70pcs)",
@@ -995,7 +995,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10893,
+    "id": "10893",
     "slug": "numbuzin-no-5-glutathione-vitamin-concentrated-serum-30ml",
     "brand": "numbuzin",
     "name": "numbuzin No.5+ Glutathione Vitamin Concentrated Serum (30ml)",
@@ -1026,7 +1026,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10912,
+    "id": "10912",
     "slug": "numbuzin-no-5-goodbye-blemish-serum-50ml",
     "brand": "numbuzin",
     "name": "numbuzin No.5 Goodbye Blemish Serum (50ml)",
@@ -1057,7 +1057,7 @@ export const numbuzinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10934,
+    "id": "10934",
     "slug": "numbuzin-no-3-skin-softening-serum-50ml",
     "brand": "numbuzin",
     "name": "numbuzin No.3 Skin Softening Serum (50ml)",

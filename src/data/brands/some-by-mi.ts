@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SOMEBYMIProducts: Product[] = [
   {
-    "id": 10778,
+    "id": "10778",
     "slug": "some-by-mi-retinol-intense-advanced-triple-action-eye-cream-30ml",
     "brand": "SOME BY MI",
     "name": "SOME BY MI Retinol Intense Advanced Triple Action Eye Cream (30ml)",
@@ -33,7 +33,7 @@ export const SOMEBYMIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10840,
+    "id": "10840",
     "slug": "some-by-mi-retinol-intense-reactivating-serum-30ml",
     "brand": "SOME BY MI",
     "name": "SOME BY MI Retinol Intense Reactivating Serum (30ml)",
@@ -64,7 +64,7 @@ export const SOMEBYMIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10915,
+    "id": "10915",
     "slug": "some-by-mi-retinol-intensive-reactivating-mask-1-pc",
     "brand": "SOME BY MI",
     "name": "SOME BY MI Retinol Intensive Reactivating Mask (1 PC)",
@@ -95,7 +95,7 @@ export const SOMEBYMIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10967,
+    "id": "10967",
     "slug": "some-by-mi-aha-bha-pha-30-days-miracle-body-cleanser-400g",
     "brand": "SOME BY MI",
     "name": "SOME BY MI AHA-BHA-PHA 30 Days Miracle Body Cleanser (400g)",
@@ -126,7 +126,7 @@ export const SOMEBYMIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10979,
+    "id": "10979",
     "slug": "some-by-mi-galactomyces-pure-vitamin-c-glow-serum-30ml",
     "brand": "SOME BY MI",
     "name": "SOME BY MI Galactomyces Pure Vitamin C Glow Serum (30ml)",
@@ -157,7 +157,7 @@ export const SOMEBYMIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10980,
+    "id": "10980",
     "slug": "some-by-mi-aha-bha-pha-30-days-miracle-serum-50ml",
     "brand": "SOME BY MI",
     "name": "SOME BY MI AHA-BHA-PHA 30 Days Miracle Serum (50ml)",
@@ -197,7 +197,7 @@ export const SOMEBYMIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10985,
+    "id": "10985",
     "slug": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml",
     "brand": "SOME BY MI",
     "name": "SOME BY MI AHA-BHA-PHA 30 Days Miracle Toner (150ml)",

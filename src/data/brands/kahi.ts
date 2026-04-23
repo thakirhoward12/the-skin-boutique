@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KAHIProducts: Product[] = [
   {
-    "id": 10850,
+    "id": "10850",
     "slug": "kahi-wrinkle-bounce-multi-balm-9g",
     "brand": "KAHI",
     "name": "KAHI Wrinkle Bounce Multi Balm (9g)",

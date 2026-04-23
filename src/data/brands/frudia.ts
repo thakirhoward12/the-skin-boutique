@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const FrudiaProducts: Product[] = [
   {
-    "id": 10768,
+    "id": "10768",
     "slug": "frudia-lip-balm-10ml",
     "brand": "Frudia",
     "name": "Frudia Lip Balm (10ml)",

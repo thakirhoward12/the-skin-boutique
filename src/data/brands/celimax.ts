@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const CelimaxProducts: Product[] = [
   {
-    "id": 10270,
+    "id": "10270",
     "slug": "celimax-pore-dark-spot-brightening-pad-40pcs",
     "brand": "Celimax",
     "name": "celimax Pore+Dark Spot Brightening Pad (40pcs)",
@@ -33,7 +33,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10272,
+    "id": "10272",
     "slug": "celimax-pore-dark-spot-brightening-cream-35ml",
     "brand": "Celimax",
     "name": "celimax Pore+Dark Spot Brightening Cream (35ml)",
@@ -64,7 +64,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10300,
+    "id": "10300",
     "slug": "celimax-pore-dark-spot-brightening-pad",
     "brand": "Celimax",
     "name": "celimax Pore+Dark Spot Brightening Pad",
@@ -104,7 +104,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10301,
+    "id": "10301",
     "slug": "celimax-pore-dark-spot-brightening-serum-30ml",
     "brand": "Celimax",
     "name": "celimax Pore+Dark Spot Brightening Serum (30ml)",
@@ -135,7 +135,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10400,
+    "id": "10400",
     "slug": "celimax-the-real-noni-energy-repair-cream-50ml",
     "brand": "Celimax",
     "name": "celimax The Real Noni Energy Repair Cream (50ml)",
@@ -166,7 +166,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10401,
+    "id": "10401",
     "slug": "celimax-the-real-noni-moisture-balancing-toner-150ml",
     "brand": "Celimax",
     "name": "celimax The Real Noni Moisture Balancing Toner (150ml)",
@@ -197,7 +197,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10402,
+    "id": "10402",
     "slug": "celimax-the-real-noni-refresh-clay-mask-120g",
     "brand": "Celimax",
     "name": "celimax The Real Noni Refresh Clay Mask (120g)",
@@ -228,7 +228,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10403,
+    "id": "10403",
     "slug": "celimax-the-real-cica-calming-serum-mask-1-pc",
     "brand": "Celimax",
     "name": "celimax The Real Cica Calming Serum Mask (1 PC)",
@@ -259,7 +259,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10404,
+    "id": "10404",
     "slug": "celimax-the-real-noni-energy-ampoule-mask-1-pc",
     "brand": "Celimax",
     "name": "celimax The Real Noni Energy Ampoule Mask (1 PC)",
@@ -290,7 +290,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10551,
+    "id": "10551",
     "slug": "celimax-derma-nature-fresh-blackhead-jojoba-cleansing-oil",
     "brand": "Celimax",
     "name": "celimax Derma Nature Fresh Blackhead Jojoba Cleansing Oil",
@@ -330,7 +330,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10552,
+    "id": "10552",
     "slug": "celimax-the-real-noni-starter-kit-3-pcs",
     "brand": "Celimax",
     "name": "celimax The Real Noni Starter Kit (3 PCs)",
@@ -361,7 +361,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10553,
+    "id": "10553",
     "slug": "celimax-the-vita-a-retinal-shot-tightening-booster-15ml",
     "brand": "Celimax",
     "name": "celimax The Vita-A Retinal Shot Tightening Booster (15ml)",
@@ -392,7 +392,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10554,
+    "id": "10554",
     "slug": "celimax-the-vita-a-retinol-shot-tightening-serum-30ml",
     "brand": "Celimax",
     "name": "celimax The Vita-A Retinol Shot Tightening Serum (30ml)",
@@ -423,7 +423,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10653,
+    "id": "10653",
     "slug": "celimax-the-real-noni-energy-ampoule",
     "brand": "Celimax",
     "name": "celimax The Real Noni Energy Ampoule",
@@ -463,7 +463,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10654,
+    "id": "10654",
     "slug": "celimax-the-real-noni-acne-bubble-cleanser-155ml",
     "brand": "Celimax",
     "name": "celimax The Real Noni Acne Bubble Cleanser (155ml)",
@@ -494,7 +494,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10655,
+    "id": "10655",
     "slug": "celimax-ji-woo-gae-one-step-body-brightening-pad-60pcs",
     "brand": "Celimax",
     "name": "celimax Ji Woo Gae One Step Body Brightening Pad (60pcs)",
@@ -525,7 +525,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10656,
+    "id": "10656",
     "slug": "celimax-ji-woo-gae-cica-bha-blemish-toner-pad-60pcs",
     "brand": "Celimax",
     "name": "celimax Ji Woo Gae Cica BHA Blemish Toner Pad (60pcs)",
@@ -556,7 +556,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10789,
+    "id": "10789",
     "slug": "celimax-dual-barrier-skin-wearable-cream-50ml",
     "brand": "Celimax",
     "name": "celimax Dual Barrier Skin Wearable Cream (50ml)",
@@ -587,7 +587,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10790,
+    "id": "10790",
     "slug": "celimax-dual-barrier-creamy-toner-150ml",
     "brand": "Celimax",
     "name": "celimax Dual Barrier Creamy Toner (150ml)",
@@ -618,7 +618,7 @@ export const CelimaxProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10792,
+    "id": "10792",
     "slug": "celimax-heartleaf-bha-peeling-pad-60pcs",
     "brand": "Celimax",
     "name": "celimax Heartleaf BHA Peeling Pad (60pcs)",

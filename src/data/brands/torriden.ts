@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const TorridenProducts: Product[] = [
   {
-    "id": 10079,
+    "id": "10079",
     "slug": "torriden-balanceful-cleansing-gel-200ml",
     "brand": "Torriden",
     "name": "TORRIDEN Balanceful Cleansing Gel (200ml)",
@@ -33,7 +33,7 @@ export const TorridenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10118,
+    "id": "10118",
     "slug": "torriden-balanceful-cica-cream-80ml",
     "brand": "Torriden",
     "name": "TORRIDEN Balanceful Cica Cream (80ml)",
@@ -64,7 +64,7 @@ export const TorridenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10119,
+    "id": "10119",
     "slug": "torriden-balanceful-cica-mask",
     "brand": "Torriden",
     "name": "TORRIDEN Balanceful Cica Mask",
@@ -104,7 +104,7 @@ export const TorridenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10181,
+    "id": "10181",
     "slug": "torriden-cellmazing-vita-c-brightening-mask",
     "brand": "Torriden",
     "name": "TORRIDEN Cellmazing Vita C Brightening Mask",
@@ -144,7 +144,7 @@ export const TorridenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10854,
+    "id": "10854",
     "slug": "torriden-solid-in-ceramide-lip-essence",
     "brand": "Torriden",
     "name": "TORRIDEN SOLID-IN Ceramide Lip Essence",
@@ -184,7 +184,7 @@ export const TorridenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10855,
+    "id": "10855",
     "slug": "torriden-dive-in-low-molecular-hyaluronic-acid-multi-pad-80pcs",
     "brand": "Torriden",
     "name": "TORRIDEN Dive-In Low Molecular Hyaluronic Acid Multi-Pad (80pcs)",
@@ -215,7 +215,7 @@ export const TorridenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10868,
+    "id": "10868",
     "slug": "torriden-dive-in-low-molecular-hyaluronic-acid-cleansing-water-400ml",
     "brand": "Torriden",
     "name": "TORRIDEN Dive-In Low Molecular Hyaluronic Acid Cleansing Water (400ml)",
@@ -246,7 +246,7 @@ export const TorridenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10870,
+    "id": "10870",
     "slug": "torriden-dive-in-low-molecular-hyaluronic-acid-mask",
     "brand": "Torriden",
     "name": "TORRIDEN Dive-In Low Molecular Hyaluronic Acid Mask",
@@ -286,7 +286,7 @@ export const TorridenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10887,
+    "id": "10887",
     "slug": "torriden-dive-in-low-molecular-hyaluronic-acid-serum-50ml",
     "brand": "Torriden",
     "name": "TORRIDEN Dive-In Low Molecular Hyaluronic Acid Serum (50ml)",
@@ -317,7 +317,7 @@ export const TorridenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10897,
+    "id": "10897",
     "slug": "torriden-dive-in-low-molecular-hyaluronic-acid-soothing-cream-100ml",
     "brand": "Torriden",
     "name": "TORRIDEN Dive-In Low Molecular Hyaluronic Acid Soothing Cream (100ml)",

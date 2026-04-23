@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KAOProducts: Product[] = [
   {
-    "id": 10324,
+    "id": "10324",
     "slug": "kao-megrhythm-steam-eye-mask-12pcs",
     "brand": "KAO",
     "name": "KAO MegRhythm Steam Eye Mask (12pcs)",
@@ -62,7 +62,7 @@ export const KAOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10579,
+    "id": "10579",
     "slug": "kao-bior-foaming-hand-soap-240ml",
     "brand": "KAO",
     "name": "KAO Bioré Foaming Hand Soap (240ml)",
@@ -106,7 +106,7 @@ export const KAOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11024,
+    "id": "11024",
     "slug": "kao-steam-pack-for-shoulder-12pcs",
     "brand": "KAO",
     "name": "KAO Steam Pack for Shoulder (12pcs)",

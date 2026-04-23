@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MEDIFLOWERProducts: Product[] = [
   {
-    "id": 10250,
+    "id": "10250",
     "slug": "medi-flower-bonita-garden-hand-cream-set-75gx6",
     "brand": "MEDI FLOWER",
     "name": "MEDI FLOWER Bonita Garden Hand Cream Set (75gx6)",

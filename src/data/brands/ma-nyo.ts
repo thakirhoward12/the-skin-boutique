@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const manyoProducts: Product[] = [
   {
-    "id": 10779,
+    "id": "10779",
     "slug": "ma-nyo-pure-deep-cleansing-foam-200ml",
     "brand": "ma:nyo",
     "name": "ma:nyo Pure & Deep Cleansing Foam (200ml)",
@@ -33,7 +33,7 @@ export const manyoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10954,
+    "id": "10954",
     "slug": "ma-nyo-pure-cleansing-oil-200ml",
     "brand": "ma:nyo",
     "name": "ma:nyo Pure Cleansing Oil (200ml)",

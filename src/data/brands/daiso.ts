@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const DAISOProducts: Product[] = [
   {
-    "id": 10703,
+    "id": "10703",
     "slug": "daiso-foot-care-mask-1-pair",
     "brand": "DAISO",
     "name": "DAISO Foot Care Mask (1 Pair)",
@@ -33,7 +33,7 @@ export const DAISOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10744,
+    "id": "10744",
     "slug": "daiso-hand-care-mask-1-pair",
     "brand": "DAISO",
     "name": "DAISO Hand Care Mask (1 Pair)",
@@ -64,7 +64,7 @@ export const DAISOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10953,
+    "id": "10953",
     "slug": "daiso-cotton-swabs-100pcs",
     "brand": "DAISO",
     "name": "DAISO Cotton Swabs (100pcs)",

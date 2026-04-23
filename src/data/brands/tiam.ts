@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const TIAMProducts: Product[] = [
   {
-    "id": 10594,
+    "id": "10594",
     "slug": "tiam-vita-b3-source-40ml",
     "brand": "TIAM",
     "name": "TIAM Vita B3 Source (40ml)",

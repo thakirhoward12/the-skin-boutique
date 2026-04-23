@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KSECRETSEOUL1988Products: Product[] = [
   {
-    "id": 10014,
+    "id": "10014",
     "slug": "k-secret-seoul-instant-relief-eye-gel-patches-60-pcs",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL Instant Relief Eye Gel Patches (60 PCs)",
@@ -33,7 +33,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10015,
+    "id": "10015",
     "slug": "k-secret-seoul-extra-illuminating-eye-gel-patches-60-pcs",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL Extra Illuminating Eye Gel Patches (60 PCs)",
@@ -64,7 +64,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10016,
+    "id": "10016",
     "slug": "k-secret-advanced-regenerating-eye-gel-patches-60-pcs",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET Advanced Regenerating Eye Gel Patches (60 PCs)",
@@ -95,7 +95,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10383,
+    "id": "10383",
     "slug": "k-secret-seoul-1988-cream-retinal-liposome-1-fermented-rice-50ml",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL 1988 Cream: Retinal Liposome 1% + Fermented Rice (50ml)",
@@ -126,7 +126,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10471,
+    "id": "10471",
     "slug": "k-secret-seoul-1988-sun-pine-tree-ceramide-50ml",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL 1988 Sun Pine Tree + Ceramide (50ml)",
@@ -157,7 +157,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10479,
+    "id": "10479",
     "slug": "k-secret-seoul-1988-essence-snail-mucin-97-rice-100ml",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL 1988 Essence: Snail Mucin 97% + Rice (100ml)",
@@ -188,7 +188,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10531,
+    "id": "10531",
     "slug": "k-secret-seoul-1988-serum-retinal-liposome-2-black-ginseng-30ml",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL 1988 Serum: Retinal Liposome 2% + Black Ginseng (30ml)",
@@ -219,7 +219,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10532,
+    "id": "10532",
     "slug": "k-secret-seoul-1988-eye-cream-retinal-liposome-4-fermented-bean-30ml",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL 1988 Eye Cream: Retinal Liposome 4% + Fermented Bean (30ml)",
@@ -250,7 +250,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10533,
+    "id": "10533",
     "slug": "k-secret-seoul-1988-cream-snail-mucin-93-rice-100ml",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL 1988 Cream: Snail Mucin 93% + Rice (100ml)",
@@ -281,7 +281,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10534,
+    "id": "10534",
     "slug": "k-secret-seoul-1988-cleansing-oil-pine-cica-1-probiotics-200ml",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL 1988 Cleansing Oil: Pine Cica 1% + Probiotics (200ml)",
@@ -312,7 +312,7 @@ export const KSECRETSEOUL1988Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10535,
+    "id": "10535",
     "slug": "k-secret-seoul-1988-cleansing-foam-pine-cica-1-probiotics-150ml",
     "brand": "K-SECRET SEOUL 1988",
     "name": "K-SECRET SEOUL 1988 Cleansing Foam: Pine Cica 1% + Probiotics (150ml)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const dAlbaProducts: Product[] = [
   {
-    "id": 10140,
+    "id": "10140",
     "slug": "d-alba-white-truffle-double-moisture-cream-60ml",
     "brand": "d'Alba",
     "name": "d'Alba White Truffle Double Moisture Cream (60ml)",
@@ -33,7 +33,7 @@ export const dAlbaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10258,
+    "id": "10258",
     "slug": "d-alba-white-truffle-double-layer-revitalizing-serum-30ml",
     "brand": "d'Alba",
     "name": "d'Alba White Truffle Double Layer Revitalizing Serum (30ml)",
@@ -64,7 +64,7 @@ export const dAlbaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10334,
+    "id": "10334",
     "slug": "d-alba-white-truffle-prime-intensive-serum-100ml",
     "brand": "d'Alba",
     "name": "d'Alba White Truffle Prime Intensive Serum (100ml)",
@@ -95,7 +95,7 @@ export const dAlbaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10335,
+    "id": "10335",
     "slug": "d-alba-white-truffle-royal-intensive-serum-100ml",
     "brand": "d'Alba",
     "name": "d'Alba White Truffle Royal Intensive Serum (100ml)",
@@ -126,7 +126,7 @@ export const dAlbaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10498,
+    "id": "10498",
     "slug": "d-alba-white-truffle-double-serum-cream-70g",
     "brand": "d'Alba",
     "name": "d'Alba White Truffle Double Serum & Cream (70g)",
@@ -157,7 +157,7 @@ export const dAlbaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10499,
+    "id": "10499",
     "slug": "d-alba-white-truffle-vital-spray-serum-100ml",
     "brand": "d'Alba",
     "name": "d'Alba White Truffle Vital Spray Serum (100ml)",
@@ -188,7 +188,7 @@ export const dAlbaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10601,
+    "id": "10601",
     "slug": "d-alba-white-truffle-vegan-first-spray-serum-100ml",
     "brand": "d'Alba",
     "name": "d'Alba White Truffle Vegan First Spray Serum (100ml)",

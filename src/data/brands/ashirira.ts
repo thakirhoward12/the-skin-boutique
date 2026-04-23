@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const AshiriraProducts: Product[] = [
   {
-    "id": 10167,
+    "id": "10167",
     "slug": "ashirira-foot-relax-sheet-ginger-1-box-30-pcs",
     "brand": "Ashirira",
     "name": "Ashirira Foot Relax Sheet: Ginger (1 BOX / 30 PCs)",
@@ -33,7 +33,7 @@ export const AshiriraProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10691,
+    "id": "10691",
     "slug": "ashirira-foot-relax-sheet-grapefruit-1-box-30-pcs",
     "brand": "Ashirira",
     "name": "Ashirira Foot Relax Sheet: Grapefruit (1 BOX / 30 PCs)",
@@ -64,7 +64,7 @@ export const AshiriraProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10704,
+    "id": "10704",
     "slug": "ashirira-foot-relax-sheet-rose-1-box-30-pcs",
     "brand": "Ashirira",
     "name": "Ashirira Foot Relax Sheet: Rose (1 BOX / 30 PCs)",
@@ -95,7 +95,7 @@ export const AshiriraProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10705,
+    "id": "10705",
     "slug": "ashirira-foot-relax-sheet-mugwort-1-box-30-pcs",
     "brand": "Ashirira",
     "name": "Ashirira Foot Relax Sheet: Mugwort (1 BOX / 30 PCs)",

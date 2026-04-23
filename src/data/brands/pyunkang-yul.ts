@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const PYUNKANGYULProducts: Product[] = [
   {
-    "id": 10783,
+    "id": "10783",
     "slug": "pyunkang-yul-ultimate-calming-solution-ampoule-30ml",
     "brand": "PYUNKANG YUL",
     "name": "PYUNKANG YUL Ultimate Calming Solution Ampoule (30ml)",

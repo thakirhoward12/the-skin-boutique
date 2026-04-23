@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const IMFROMProducts: Product[] = [
   {
-    "id": 10271,
+    "id": "10271",
     "slug": "i-m-from-honey-mask-120g",
     "brand": "I'M FROM",
     "name": "I'M FROM Honey Mask (120g)",
@@ -33,7 +33,7 @@ export const IMFROMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10291,
+    "id": "10291",
     "slug": "i-m-from-mugwort-essence-150ml",
     "brand": "I'M FROM",
     "name": "I'M FROM Mugwort Essence (150ml)",
@@ -64,7 +64,7 @@ export const IMFROMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10359,
+    "id": "10359",
     "slug": "i-m-from-black-rice-toner-150ml",
     "brand": "I'M FROM",
     "name": "I'M FROM Black Rice Toner (150ml)",
@@ -95,7 +95,7 @@ export const IMFROMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10869,
+    "id": "10869",
     "slug": "i-m-from-rice-cream-50g",
     "brand": "I'M FROM",
     "name": "I'M FROM Rice Cream (50g)",
@@ -126,7 +126,7 @@ export const IMFROMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10872,
+    "id": "10872",
     "slug": "i-m-from-rice-mask-110g",
     "brand": "I'M FROM",
     "name": "I'M FROM Rice Mask (110g)",
@@ -157,7 +157,7 @@ export const IMFROMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10935,
+    "id": "10935",
     "slug": "i-m-from-rice-toner-150ml",
     "brand": "I'M FROM",
     "name": "I'M FROM Rice Toner (150ml)",

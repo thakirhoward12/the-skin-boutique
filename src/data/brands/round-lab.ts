@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ROUNDLABProducts: Product[] = [
   {
-    "id": 10382,
+    "id": "10382",
     "slug": "round-lab-vita-niacinamide-dark-spot-serum-mask",
     "brand": "ROUND LAB",
     "name": "ROUND LAB Vita Niacinamide Dark Spot Serum Mask",
@@ -42,7 +42,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10413,
+    "id": "10413",
     "slug": "round-lab-birch-juice-moisturizing-mask",
     "brand": "ROUND LAB",
     "name": "ROUND LAB Birch Juice Moisturizing Mask",
@@ -82,7 +82,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10708,
+    "id": "10708",
     "slug": "round-lab-1025-dokdo-water-gel-mask-sheet",
     "brand": "ROUND LAB",
     "name": "ROUND LAB 1025 Dokdo Water Gel Mask Sheet",
@@ -122,7 +122,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10808,
+    "id": "10808",
     "slug": "round-lab-1025-dokdo-bubble-foam-150ml",
     "brand": "ROUND LAB",
     "name": "ROUND LAB 1025 Dokdo Bubble Foam (150ml)",
@@ -153,7 +153,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10863,
+    "id": "10863",
     "slug": "round-lab-1025-dokdo-cleansing-oil-200ml",
     "brand": "ROUND LAB",
     "name": "ROUND LAB 1025 Dokdo Cleansing Oil (200ml)",
@@ -184,7 +184,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10864,
+    "id": "10864",
     "slug": "round-lab-birch-juice-moisturizing-cream-80ml",
     "brand": "ROUND LAB",
     "name": "ROUND LAB Birch Juice Moisturizing Cream (80ml)",
@@ -215,7 +215,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10879,
+    "id": "10879",
     "slug": "round-lab-1025-dokdo-ampoule-45g",
     "brand": "ROUND LAB",
     "name": "ROUND LAB 1025 Dokdo Ampoule (45g)",
@@ -246,7 +246,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10880,
+    "id": "10880",
     "slug": "round-lab-birch-moisturizing-pad-80pcs",
     "brand": "ROUND LAB",
     "name": "ROUND LAB Birch Moisturizing Pad (80pcs)",
@@ -277,7 +277,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10881,
+    "id": "10881",
     "slug": "round-lab-1025-dokdo-cream-80ml",
     "brand": "ROUND LAB",
     "name": "ROUND LAB 1025 Dokdo Cream (80ml)",
@@ -308,7 +308,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10921,
+    "id": "10921",
     "slug": "round-lab-birch-juice-moisturizing-cleanser-150ml",
     "brand": "ROUND LAB",
     "name": "ROUND LAB Birch Juice Moisturizing Cleanser (150ml)",
@@ -339,7 +339,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10974,
+    "id": "10974",
     "slug": "round-lab-birch-juice-moisturizing-toner-300ml",
     "brand": "ROUND LAB",
     "name": "ROUND LAB Birch Juice Moisturizing Toner (300ml)",
@@ -370,7 +370,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10975,
+    "id": "10975",
     "slug": "round-lab-1025-dokdo-toner-200ml",
     "brand": "ROUND LAB",
     "name": "ROUND LAB 1025 Dokdo Toner (200ml)",
@@ -401,7 +401,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10976,
+    "id": "10976",
     "slug": "round-lab-1025-dokdo-lotion-200ml",
     "brand": "ROUND LAB",
     "name": "ROUND LAB 1025 Dokdo Lotion (200ml)",
@@ -432,7 +432,7 @@ export const ROUNDLABProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10977,
+    "id": "10977",
     "slug": "round-lab-1025-dokdo-cleanser-150ml",
     "brand": "ROUND LAB",
     "name": "ROUND LAB 1025 Dokdo Cleanser (150ml)",

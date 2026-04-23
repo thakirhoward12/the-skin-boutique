@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KikumasamuneProducts: Product[] = [
   {
-    "id": 10957,
+    "id": "10957",
     "slug": "kikumasamune-rice-made-mild-cleansing-oil-200ml",
     "brand": "Kikumasamune",
     "name": "KIKUMASAMUNE Rice Made+ Mild Cleansing Oil (200ml)",
@@ -33,7 +33,7 @@ export const KikumasamuneProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10958,
+    "id": "10958",
     "slug": "kikumasamune-rice-made-japanese-sake-cleansing-lotion-500ml",
     "brand": "Kikumasamune",
     "name": "KIKUMASAMUNE Rice Made+ Japanese Sake Cleansing Lotion (500ml)",
@@ -64,7 +64,7 @@ export const KikumasamuneProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11001,
+    "id": "11001",
     "slug": "kikumasamune-japanese-sake-cream-150g",
     "brand": "Kikumasamune",
     "name": "KIKUMASAMUNE Japanese Sake Cream (150g)",
@@ -95,7 +95,7 @@ export const KikumasamuneProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11002,
+    "id": "11002",
     "slug": "kikumasamune-japanese-sake-essence-150ml",
     "brand": "Kikumasamune",
     "name": "KIKUMASAMUNE Japanese Sake Essence (150ml)",
@@ -126,7 +126,7 @@ export const KikumasamuneProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11032,
+    "id": "11032",
     "slug": "kikumasamune-japanese-sake-skin-care-wash-200g",
     "brand": "Kikumasamune",
     "name": "KIKUMASAMUNE Japanese Sake Skin Care Wash (200g)",
@@ -157,7 +157,7 @@ export const KikumasamuneProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11033,
+    "id": "11033",
     "slug": "kikumasamune-japanese-sake-skin-care-cleansing-gel-200g",
     "brand": "Kikumasamune",
     "name": "KIKUMASAMUNE Japanese Sake Skin Care Cleansing Gel (200g)",
@@ -188,7 +188,7 @@ export const KikumasamuneProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11042,
+    "id": "11042",
     "slug": "kikumasamune-japanese-sake-emulsion-380ml",
     "brand": "Kikumasamune",
     "name": "KIKUMASAMUNE Japanese Sake Emulsion (380ml)",
@@ -219,7 +219,7 @@ export const KikumasamuneProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11043,
+    "id": "11043",
     "slug": "kikumasamune-japanese-sake-lotion-500ml",
     "brand": "Kikumasamune",
     "name": "KIKUMASAMUNE Japanese Sake Lotion (500ml)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const TheSAEMProducts: Product[] = [
   {
-    "id": 10002,
+    "id": "10002",
     "slug": "the-saem-jeju-fresh-soothing-aloe-gel-99-300ml",
     "brand": "The SAEM",
     "name": "The SAEM Jeju Fresh Soothing Aloe Gel 99% (300ml)",

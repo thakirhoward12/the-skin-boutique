@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const APRILSKINProducts: Product[] = [
   {
-    "id": 10622,
+    "id": "10622",
     "slug": "aprilskin-carrotene-pore-clay-mask-100g",
     "brand": "APRILSKIN",
     "name": "APRILSKIN Carrotene Pore Clay Mask (100g)",
@@ -33,7 +33,7 @@ export const APRILSKINProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10623,
+    "id": "10623",
     "slug": "aprilskin-pink-aloe-mucin-serum-30ml",
     "brand": "APRILSKIN",
     "name": "APRILSKIN Pink Aloe Mucin Serum (30ml)",

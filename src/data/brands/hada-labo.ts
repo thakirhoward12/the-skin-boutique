@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const HadaLaboProducts: Product[] = [
   {
-    "id": 10963,
+    "id": "10963",
     "slug": "hada-labo-gokujyun-aging-care-emulsion-140ml",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Aging Care Emulsion (140ml)",
@@ -33,7 +33,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11044,
+    "id": "11044",
     "slug": "hada-labo-gokujyun-premium-hydrating-cream-50g",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Premium Hydrating Cream (50g)",
@@ -64,7 +64,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11045,
+    "id": "11045",
     "slug": "hada-labo-gokujyun-hyaluronic-cream-50g",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Hyaluronic Cream (50g)",
@@ -95,7 +95,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11047,
+    "id": "11047",
     "slug": "hada-labo-gokujyun-premium-perfect-gel-100g",
     "brand": "Hada Labo",
     "name": "Hada Labo Gokujyun Premium Perfect Gel (100g)",
@@ -126,7 +126,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11049,
+    "id": "11049",
     "slug": "hada-labo-gokujyun-hydrating-emulsion-140ml",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Hydrating Emulsion (140ml)",
@@ -157,7 +157,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11050,
+    "id": "11050",
     "slug": "hada-labo-gokujyun-hydrating-lotion-170ml",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Hydrating Lotion (170ml)",
@@ -197,7 +197,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11051,
+    "id": "11051",
     "slug": "hada-labo-gokujyun-premium-hydrating-lotion-170ml",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Premium Hydrating Lotion (170ml)",
@@ -228,7 +228,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11052,
+    "id": "11052",
     "slug": "hada-labo-gokujyun-premium-hydrating-emulsion-140ml",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Premium Hydrating Emulsion (140ml)",
@@ -259,7 +259,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11053,
+    "id": "11053",
     "slug": "hada-labo-gokujyun-foaming-face-wash-160ml",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Foaming Face Wash (160ml)",
@@ -290,7 +290,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11054,
+    "id": "11054",
     "slug": "hada-labo-gokujyun-aging-care-cream-50g",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Aging Care Cream (50g)",
@@ -321,7 +321,7 @@ export const HadaLaboProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11055,
+    "id": "11055",
     "slug": "hada-labo-gokujyun-aging-care-lotion-170ml",
     "brand": "Hada Labo",
     "name": "Hada-Labo Gokujyun Aging Care Lotion (170ml)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const LakaProducts: Product[] = [
   {
-    "id": 10417,
+    "id": "10417",
     "slug": "laka-love-silk-blush-5-2g",
     "brand": "Laka",
     "name": "LAKA Love Silk Blush (5.2g)",
@@ -54,7 +54,7 @@ export const LakaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10418,
+    "id": "10418",
     "slug": "laka-mono-eye-shadow-1-8g",
     "brand": "Laka",
     "name": "LAKA Mono Eye Shadow (1.8g)",
@@ -110,7 +110,7 @@ export const LakaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10419,
+    "id": "10419",
     "slug": "laka-dream-beam-highlighter-2-8g",
     "brand": "Laka",
     "name": "LAKA Dream Beam Highlighter (2.8g)",
@@ -154,7 +154,7 @@ export const LakaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10420,
+    "id": "10420",
     "slug": "laka-forever-6-eye-palette-6-2g",
     "brand": "Laka",
     "name": "LAKA Forever 6 Eye Palette (6.2g)",
@@ -202,7 +202,7 @@ export const LakaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10421,
+    "id": "10421",
     "slug": "laka-pixi-brow-cara-8g",
     "brand": "Laka",
     "name": "LAKA Pixi Brow Cara (8g)",
@@ -262,7 +262,7 @@ export const LakaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10422,
+    "id": "10422",
     "slug": "laka-jelling-nude-gloss-4-5g",
     "brand": "Laka",
     "name": "LAKA Jelling Nude Gloss (4.5g)",
@@ -334,7 +334,7 @@ export const LakaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10429,
+    "id": "10429",
     "slug": "laka-fruity-glam-tint-4-5g",
     "brand": "Laka",
     "name": "LAKA Fruity Glam Tint (4.5g)",
@@ -462,7 +462,7 @@ export const LakaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10430,
+    "id": "10430",
     "slug": "laka-popping-balloon-tint-4-5g",
     "brand": "Laka",
     "name": "LAKA Popping Balloon Tint (4.5g)",

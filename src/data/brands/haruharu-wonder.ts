@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const HaruharuWonderProducts: Product[] = [
   {
-    "id": 10292,
+    "id": "10292",
     "slug": "haruharu-wonder-black-rice-5-ceramide-barrier-moisturizing-cream-50ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice 5 Ceramide Barrier Moisturizing Cream (50ml)",
@@ -33,7 +33,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10302,
+    "id": "10302",
     "slug": "haruharu-wonder-black-rice-night-knight-retinol-serum-20ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Night Knight Retinol Serum (20ml)",
@@ -64,7 +64,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10480,
+    "id": "10480",
     "slug": "haruharu-wonder-black-rice-10-hyaluronic-cream-unscented-50ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice 10 Hyaluronic Cream - Unscented (50ml)",
@@ -95,7 +95,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10510,
+    "id": "10510",
     "slug": "haruharu-wonder-black-rice-pure-mineral-relief-daily-sunscreen-spf50-pa-50ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Pure Mineral Relief Daily Sunscreen SPF50+/PA++++ (50ml)",
@@ -126,7 +126,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10636,
+    "id": "10636",
     "slug": "haruharu-wonder-black-rice-probiotics-barrier-essence-120ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Probiotics Barrier Essence (120ml)",
@@ -157,7 +157,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10816,
+    "id": "10816",
     "slug": "haruharu-wonder-centella-phyto-5-peptide-concentrate-cream-30ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Centella Phyto & 5 Peptide Concentrate Cream (30ml)",
@@ -188,7 +188,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10817,
+    "id": "10817",
     "slug": "haruharu-wonder-centella-4-txa-dark-spot-go-away-serum-30ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Centella 4% TXA Dark Spot Go Away Serum (30ml)",
@@ -219,7 +219,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10818,
+    "id": "10818",
     "slug": "haruharu-wonder-black-rice-facial-oil-30ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Facial Oil (30ml)",
@@ -250,7 +250,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10894,
+    "id": "10894",
     "slug": "haruharu-wonder-black-rice-moisture-deep-cleansing-oil-150ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Moisture Deep Cleansing Oil (150ml)",
@@ -281,7 +281,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10895,
+    "id": "10895",
     "slug": "haruharu-wonder-black-rice-moisture-5-5-soft-cleansing-gel-100ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Moisture 5.5 Soft Cleansing Gel (100ml)",
@@ -312,7 +312,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10896,
+    "id": "10896",
     "slug": "haruharu-wonder-black-rice-10-hyaluronic-cream-50ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice 10 Hyaluronic Cream (50ml)",
@@ -343,7 +343,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10914,
+    "id": "10914",
     "slug": "haruharu-wonder-black-rice-bakuchiol-eye-cream-20ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Bakuchiol Eye Cream (20ml)",
@@ -374,7 +374,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10924,
+    "id": "10924",
     "slug": "haruharu-wonder-black-rice-hyaluronic-toner-for-sensitive-skin",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Hyaluronic Toner for Sensitive Skin",
@@ -414,7 +414,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10925,
+    "id": "10925",
     "slug": "haruharu-wonder-black-rice-hyaluronic-toner-150ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Hyaluronic Toner (150ml)",
@@ -445,7 +445,7 @@ export const HaruharuWonderProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10933,
+    "id": "10933",
     "slug": "haruharu-wonder-black-rice-hyaluronic-essence-50ml",
     "brand": "Haruharu Wonder",
     "name": "Haruharu Wonder Black Rice Hyaluronic Essence (50ml)",

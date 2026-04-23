@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const FarmStayProducts: Product[] = [
   {
-    "id": 10193,
+    "id": "10193",
     "slug": "farmstay-essential-foot-mask-1-pair",
     "brand": "FarmStay",
     "name": "FarmStay Essential Foot Mask (1 pair)",
@@ -33,7 +33,7 @@ export const FarmStayProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10194,
+    "id": "10194",
     "slug": "farmstay-essential-foot-peeling-mask-1-pair",
     "brand": "FarmStay",
     "name": "FarmStay Essential Foot Peeling Mask (1 pair)",
@@ -64,7 +64,7 @@ export const FarmStayProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10195,
+    "id": "10195",
     "slug": "farmstay-essential-hand-mask-1-pair",
     "brand": "FarmStay",
     "name": "FarmStay Essential Hand Mask (1 pair)",

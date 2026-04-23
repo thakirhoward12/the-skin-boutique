@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const NaturieProducts: Product[] = [
   {
-    "id": 11046,
+    "id": "11046",
     "slug": "naturie-skin-conditioning-gel-180g",
     "brand": "Naturie",
     "name": "Naturie Skin Conditioning Gel (180g)",
@@ -33,7 +33,7 @@ export const NaturieProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11048,
+    "id": "11048",
     "slug": "naturie-hatomugi-skin-conditioner-500ml-2023-version",
     "brand": "Naturie",
     "name": "Naturie Hatomugi Skin Conditioner (500ml) - 2023 Version",

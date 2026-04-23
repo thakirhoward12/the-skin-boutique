@@ -2,52 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { db } from '../lib/firebase';
 import { collection, onSnapshot, orderBy, query, doc, updateDoc, addDoc, Timestamp } from 'firebase/firestore';
 import { generatePurchaseLedger } from '../lib/purchaseLedger';
-
-export interface OrderItem {
-  id: string;
-  title: string;
-  price: number;
-  image: string;
-  quantity: number;
-  sku?: string;
-  supplierId?: 'teemdrop' | 'abw' | 'local';
-  sourceUrl?: string;
-  sourcePrice?: number;
-  bundleId?: string;
-}
-
-export type OrderStatus = 'pending' | 'paid' | 'confirmed' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
-
-export interface Order {
-  id: string; // Firestore doc ID
-  orderNumber: string;
-  items: OrderItem[];
-  subtotal: number;
-  shipping: number;
-  total: number;
-  status: OrderStatus;
-  paymentMethod: string;
-  customerEmail: string;
-  customerName?: string;
-  shippingAddress?: {
-    firstName: string;
-    lastName: string;
-    address1: string;
-    address2?: string;
-    city: string;
-    state: string;
-    zipCode: string;
-    country: string;
-  };
-  paymentReference?: string;
-  shopifySyncStatus?: 'success' | 'failed';
-  shopifySyncError?: string;
-  shopifyOrderId?: string | number;
-  shopifySyncTimestamp?: Timestamp | Date;
-  purchaseLedgerStatus?: 'pending' | 'generated' | 'fulfilled';
-  createdAt: Timestamp | Date;
-  updatedAt: Timestamp | Date;
-}
+import { Order, OrderItem, OrderStatus } from '../types';
 
 interface OrderContextType {
   orders: Order[];

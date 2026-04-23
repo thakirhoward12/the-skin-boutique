@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const iUNIKProducts: Product[] = [
   {
-    "id": 10380,
+    "id": "10380",
     "slug": "iunik-centella-bubble-cleansing-foam-150ml",
     "brand": "iUNIK",
     "name": "iUNIK Centella Bubble Cleansing Foam (150ml)",
@@ -33,7 +33,7 @@ export const iUNIKProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10386,
+    "id": "10386",
     "slug": "iunik-beta-glucan-3x-barrier-cream-50ml",
     "brand": "iUNIK",
     "name": "iUNIK Beta-Glucan 3x Barrier Cream (50ml)",
@@ -64,7 +64,7 @@ export const iUNIKProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10784,
+    "id": "10784",
     "slug": "iunik-beta-glucan-daily-moisture-cream-60ml",
     "brand": "iUNIK",
     "name": "iUNIK Beta Glucan Daily Moisture Cream (60ml)",
@@ -95,7 +95,7 @@ export const iUNIKProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10796,
+    "id": "10796",
     "slug": "iunik-tea-tree-relief-serum-50ml",
     "brand": "iUNIK",
     "name": "iUNIK Tea Tree Relief Serum (50ml)",
@@ -126,7 +126,7 @@ export const iUNIKProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10891,
+    "id": "10891",
     "slug": "iunik-calendula-complete-cleansing-oil-200ml",
     "brand": "iUNIK",
     "name": "iUNIK Calendula Complete Cleansing Oil (200ml)",
@@ -157,7 +157,7 @@ export const iUNIKProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10916,
+    "id": "10916",
     "slug": "iunik-beta-glucan-power-moisture-serum-50ml",
     "brand": "iUNIK",
     "name": "iUNIK Beta-Glucan Power Moisture Serum (50ml)",
@@ -188,7 +188,7 @@ export const iUNIKProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10923,
+    "id": "10923",
     "slug": "iunik-centella-calming-gel-cream-60ml",
     "brand": "iUNIK",
     "name": "iUNIK Centella Calming Gel Cream (60ml)",

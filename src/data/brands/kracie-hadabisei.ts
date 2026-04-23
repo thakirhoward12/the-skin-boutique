@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KRACIEHadabiseiProducts: Product[] = [
   {
-    "id": 10445,
+    "id": "10445",
     "slug": "kracie-hadabisei-3d-face-mask-super-supple",
     "brand": "KRACIE Hadabisei",
     "name": "KRACIE Hadabisei 3D Face Mask - Super Supple",
@@ -42,7 +42,7 @@ export const KRACIEHadabiseiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10546,
+    "id": "10546",
     "slug": "kracie-hadabisei-3d-face-mask-moisturizing",
     "brand": "KRACIE Hadabisei",
     "name": "KRACIE Hadabisei 3D Face Mask - Moisturizing",
@@ -82,7 +82,7 @@ export const KRACIEHadabiseiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10547,
+    "id": "10547",
     "slug": "kracie-hadabisei-3d-face-mask-brightening",
     "brand": "KRACIE Hadabisei",
     "name": "KRACIE Hadabisei 3D Face Mask - Brightening",

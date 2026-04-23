@@ -2,21 +2,7 @@ import { createContext, useContext, useState, useEffect, ReactNode } from 'react
 import { doc, onSnapshot, setDoc, updateDoc, increment } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import { useAuth } from './AuthContext';
-
-export type AffiliateTier = 'Bronze' | 'Silver' | 'Gold';
-
-type SkinProfile = {
-  skinType: string;
-  concern: string;
-  walletBalance: number; // in Rands (ZAR)
-  affiliateCode: string;
-  referredBy?: string;
-  displayName?: string;
-  email?: string;
-  tier: AffiliateTier;
-  referralCount: number;
-  hasUsedReferralDiscount: boolean;
-};
+import { SkinProfile, AffiliateTier } from '../types';
 
 interface UserContextType {
   profile: SkinProfile | null;

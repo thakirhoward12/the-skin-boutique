@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MedicubeProducts: Product[] = [
   {
-    "id": 10038,
+    "id": "10038",
     "slug": "medicube-rosemary-pdrn-scalp-serum-20ml",
     "brand": "Medicube",
     "name": "Medicube Rosemary PDRN Scalp Serum (20ml)",
@@ -33,7 +33,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10039,
+    "id": "10039",
     "slug": "medicube-red-succinic-acid-clarifying-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube Red Succinic Acid Clarifying Serum (30ml)",
@@ -64,7 +64,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10040,
+    "id": "10040",
     "slug": "medicube-red-acne-succinic-acid-peel-40g",
     "brand": "Medicube",
     "name": "Medicube Red Acne Succinic Acid Peel (40g)",
@@ -95,7 +95,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10056,
+    "id": "10056",
     "slug": "medicube-hyaluronic-ceramide-jelly-cream-50ml",
     "brand": "Medicube",
     "name": "Medicube Hyaluronic Ceramide Jelly Cream (50ml)",
@@ -126,7 +126,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10057,
+    "id": "10057",
     "slug": "medicube-azelaic-acid-16-bb-calming-serum-mask-1-pc",
     "brand": "Medicube",
     "name": "Medicube Azelaic Acid 16 BB Calming Serum Mask (1 PC)",
@@ -157,7 +157,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10058,
+    "id": "10058",
     "slug": "medicube-hypochlorous-acid-daily-facial-spray",
     "brand": "Medicube",
     "name": "Medicube Hypochlorous Acid Daily Facial Spray",
@@ -197,7 +197,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10059,
+    "id": "10059",
     "slug": "medicube-hyaluronic-moisturizing-capsule-cream-55g",
     "brand": "Medicube",
     "name": "Medicube Hyaluronic Moisturizing Capsule Cream (55g)",
@@ -228,7 +228,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10060,
+    "id": "10060",
     "slug": "medicube-pdrn-collagen-glow-jelly-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Collagen Glow Jelly Serum (30ml)",
@@ -259,7 +259,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10061,
+    "id": "10061",
     "slug": "medicube-pdrn-pink-glutathione-capsule-cleansing-foam-120g",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Glutathione Capsule Cleansing Foam (120g)",
@@ -290,7 +290,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10062,
+    "id": "10062",
     "slug": "medicube-collagen-milk-toning-wrapping-mask-75ml",
     "brand": "Medicube",
     "name": "Medicube Collagen Milk Toning Wrapping Mask (75ml)",
@@ -321,7 +321,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10063,
+    "id": "10063",
     "slug": "medicube-kojic-acid-turmeric-vita-eye-gel-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube Kojic Acid Turmeric Vita Eye Gel Serum (30ml)",
@@ -352,7 +352,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10104,
+    "id": "10104",
     "slug": "medicube-kojic-acid-turmeric-vita-capsule-cream-53g",
     "brand": "Medicube",
     "name": "Medicube Kojic Acid Turmeric Vita Capsule Cream (53g)",
@@ -383,7 +383,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10105,
+    "id": "10105",
     "slug": "medicube-kojic-acid-turmeric-vita-jelly-mist-serum-100ml",
     "brand": "Medicube",
     "name": "Medicube Kojic Acid Turmeric Vita Jelly Mist Serum (100ml)",
@@ -414,7 +414,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10106,
+    "id": "10106",
     "slug": "medicube-deep-vita-c-capsule-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube Deep Vita C Capsule Serum (30ml)",
@@ -445,7 +445,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10120,
+    "id": "10120",
     "slug": "medicube-exosome-cica-toner-210ml",
     "brand": "Medicube",
     "name": "Medicube Exosome Cica Toner (210ml)",
@@ -476,7 +476,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10137,
+    "id": "10137",
     "slug": "medicube-collagen-lifting-mask-1-pc",
     "brand": "Medicube",
     "name": "Medicube Collagen Lifting Mask (1 PC)",
@@ -507,7 +507,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10164,
+    "id": "10164",
     "slug": "medicube-azelaic-acid-16-bb-soothing-serum",
     "brand": "Medicube",
     "name": "Medicube Azelaic Acid 16 BB Soothing Serum",
@@ -547,7 +547,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10173,
+    "id": "10173",
     "slug": "medicube-pdrn-pink-cica-soothing-toner-250ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Cica Soothing Toner (250ml)",
@@ -578,7 +578,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10237,
+    "id": "10237",
     "slug": "medicube-pdrn-pink-peptide-cream-50ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Peptide Cream (50ml)",
@@ -609,7 +609,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10246,
+    "id": "10246",
     "slug": "medicube-retinol-nmn-boosting-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube Retinol NMN Boosting Serum (30ml)",
@@ -640,7 +640,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10247,
+    "id": "10247",
     "slug": "medicube-pdrn-pink-collagen-bubble-serum-95ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Collagen Bubble Serum (95ml)",
@@ -671,7 +671,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10248,
+    "id": "10248",
     "slug": "medicube-pdrn-pink-collagen-glow-jelly-mist-serum-100ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Collagen Glow Jelly Mist Serum (100ml)",
@@ -702,7 +702,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10249,
+    "id": "10249",
     "slug": "medicube-pdrn-pink-caffeine-night-wrapping-mask-75ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Caffeine Night Wrapping Mask (75ml)",
@@ -733,7 +733,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10293,
+    "id": "10293",
     "slug": "medicube-triple-collagen-serum-4-0-55ml",
     "brand": "Medicube",
     "name": "Medicube Triple Collagen Serum 4.0 (55ml)",
@@ -764,7 +764,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10357,
+    "id": "10357",
     "slug": "medicube-booster-pro-mini-velvet-pouch",
     "brand": "Medicube",
     "name": "Medicube Booster Pro Mini Velvet Pouch",
@@ -795,7 +795,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10361,
+    "id": "10361",
     "slug": "medicube-kojic-acid-turmeric-resurfacing-toner-250ml",
     "brand": "Medicube",
     "name": "Medicube Kojic Acid Turmeric Resurfacing Toner (250ml)",
@@ -826,7 +826,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10362,
+    "id": "10362",
     "slug": "medicube-kojic-acid-turmeric-niacinamide-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube Kojic Acid Turmeric Niacinamide Serum (30ml)",
@@ -857,7 +857,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10363,
+    "id": "10363",
     "slug": "medicube-kojic-acid-turmeric-toning-cleanser-120g",
     "brand": "Medicube",
     "name": "Medicube Kojic Acid Turmeric Toning Cleanser (120g)",
@@ -888,7 +888,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10364,
+    "id": "10364",
     "slug": "medicube-pdrn-hydrating-gel-cleanser",
     "brand": "Medicube",
     "name": "Medicube PDRN Hydrating Gel Cleanser",
@@ -928,7 +928,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10365,
+    "id": "10365",
     "slug": "medicube-red-succinic-acid-peeling-pad",
     "brand": "Medicube",
     "name": "Medicube Red Succinic Acid Peeling Pad",
@@ -968,7 +968,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10366,
+    "id": "10366",
     "slug": "medicube-kojic-acid-turmeric-pad-70-pcs",
     "brand": "Medicube",
     "name": "Medicube Kojic Acid Turmeric Pad (70 PCs)",
@@ -999,7 +999,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10367,
+    "id": "10367",
     "slug": "medicube-pdrn-pink-collagen-toning-gel-toner-pad",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Collagen Toning Gel Toner Pad",
@@ -1039,7 +1039,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10368,
+    "id": "10368",
     "slug": "medicube-red-foam-cleanser-230ml",
     "brand": "Medicube",
     "name": "Medicube Red Foam Cleanser (230ml)",
@@ -1070,7 +1070,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10392,
+    "id": "10392",
     "slug": "medicube-azelaic-acid-exosome-shot-pore-ampoule-7500-30ml",
     "brand": "Medicube",
     "name": "Medicube Azelaic Acid Exosome Shot Pore Ampoule 7500 (30ml)",
@@ -1101,7 +1101,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10394,
+    "id": "10394",
     "slug": "medicube-zero-pore-serum-2-0-37ml",
     "brand": "Medicube",
     "name": "Medicube Zero Pore Serum 2.0 (37ml)",
@@ -1132,7 +1132,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10395,
+    "id": "10395",
     "slug": "medicube-zero-pore-cream-2-0-50ml",
     "brand": "Medicube",
     "name": "Medicube Zero Pore Cream 2.0 (50ml)",
@@ -1163,7 +1163,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10396,
+    "id": "10396",
     "slug": "medicube-booster-pro-panda-head-case",
     "brand": "Medicube",
     "name": "Medicube Booster Pro Panda Head Case",
@@ -1194,7 +1194,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10399,
+    "id": "10399",
     "slug": "medicube-one-day-exosome-shot-pore-ampoule-25000-13ml",
     "brand": "Medicube",
     "name": "Medicube One Day Exosome Shot Pore Ampoule 25000 (13ml)",
@@ -1225,7 +1225,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10410,
+    "id": "10410",
     "slug": "medicube-azelaic-acid-exosome-shot-pore-ampoule-2000-30ml",
     "brand": "Medicube",
     "name": "Medicube Azelaic Acid Exosome Shot Pore Ampoule 2000 (30ml)",
@@ -1256,7 +1256,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10431,
+    "id": "10431",
     "slug": "medicube-azelaic-acid-niacinamide-clear-toner",
     "brand": "Medicube",
     "name": "Medicube Azelaic Acid Niacinamide Clear Toner",
@@ -1296,7 +1296,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10432,
+    "id": "10432",
     "slug": "medicube-exosome-cica-calming-pad",
     "brand": "Medicube",
     "name": "Medicube Exosome Cica Calming Pad",
@@ -1336,7 +1336,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10433,
+    "id": "10433",
     "slug": "medicube-pdrn-pink-one-day-serum-10-x-1-5ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink One Day Serum (10 x 1.5ml)",
@@ -1367,7 +1367,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10438,
+    "id": "10438",
     "slug": "medicube-zero-pore-toner-250ml",
     "brand": "Medicube",
     "name": "Medicube Zero Pore Toner (250ml)",
@@ -1398,7 +1398,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10439,
+    "id": "10439",
     "slug": "medicube-zero-pore-blackhead-deep-cleansing-oil",
     "brand": "Medicube",
     "name": "Medicube Zero Pore Blackhead Deep Cleansing Oil",
@@ -1438,7 +1438,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10440,
+    "id": "10440",
     "slug": "medicube-multi-blackhead-pore-brush-20g",
     "brand": "Medicube",
     "name": "Medicube Multi Blackhead Pore Brush (20g)",
@@ -1469,7 +1469,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10441,
+    "id": "10441",
     "slug": "medicube-pdrn-pink-collagen-capsule-cream-55g",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Collagen Capsule Cream (55g)",
@@ -1500,7 +1500,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10442,
+    "id": "10442",
     "slug": "medicube-azelaic-acid-niacinamide-deep-clean-foam-cleanser-120g",
     "brand": "Medicube",
     "name": "Medicube Azelaic Acid Niacinamide Deep Clean Foam Cleanser (120g)",
@@ -1531,7 +1531,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10470,
+    "id": "10470",
     "slug": "medicube-age-r-vita-k-refining-cream",
     "brand": "Medicube",
     "name": "Medicube Age-R Vita K Refining Cream",
@@ -1571,7 +1571,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10472,
+    "id": "10472",
     "slug": "medicube-txa-niacinamide-capsule-cream-55g",
     "brand": "Medicube",
     "name": "Medicube TXA Niacinamide Capsule Cream (55g)",
@@ -1602,7 +1602,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10473,
+    "id": "10473",
     "slug": "medicube-age-r-vita-c-pro-ampoule-20ml",
     "brand": "Medicube",
     "name": "Medicube Age-R Vita C Pro Ampoule (20ml)",
@@ -1633,7 +1633,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10476,
+    "id": "10476",
     "slug": "medicube-age-r-glutathione-glow-toner-140ml",
     "brand": "Medicube",
     "name": "Medicube Age-R Glutathione Glow Toner (140ml)",
@@ -1664,7 +1664,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10477,
+    "id": "10477",
     "slug": "medicube-age-r-glutathione-glow-capsule-cream-50ml",
     "brand": "Medicube",
     "name": "Medicube Age-R Glutathione Glow Capsule Cream (50ml)",
@@ -1695,7 +1695,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10478,
+    "id": "10478",
     "slug": "medicube-age-r-glutathione-glow-serum-30g",
     "brand": "Medicube",
     "name": "Medicube Age-R Glutathione Glow Serum (30g)",
@@ -1726,7 +1726,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10501,
+    "id": "10501",
     "slug": "medicube-pdrn-pink-niacinamide-whip-cleanser",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Niacinamide Whip Cleanser",
@@ -1766,7 +1766,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10502,
+    "id": "10502",
     "slug": "medicube-pdrn-lip-sleeping-mask-10g",
     "brand": "Medicube",
     "name": "Medicube PDRN Lip Sleeping Mask (10g)",
@@ -1797,7 +1797,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10503,
+    "id": "10503",
     "slug": "medicube-txa-niacinamide-15-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube TXA Niacinamide 15% Serum (30ml)",
@@ -1828,7 +1828,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10504,
+    "id": "10504",
     "slug": "medicube-hyaluronic-multi-peptide-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube Hyaluronic Multi Peptide Serum (30ml)",
@@ -1859,7 +1859,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10506,
+    "id": "10506",
     "slug": "medicube-pdrn-pink-peptide-eye-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Peptide Eye Serum (30ml)",
@@ -1890,7 +1890,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10507,
+    "id": "10507",
     "slug": "medicube-zero-pore-sa-clear-capsule-cleansing-foam-120g",
     "brand": "Medicube",
     "name": "Medicube Zero Pore SA Clear Capsule Cleansing Foam (120g)",
@@ -1921,7 +1921,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10508,
+    "id": "10508",
     "slug": "medicube-pdrn-pink-niacinamide-milky-toner",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Niacinamide Milky Toner",
@@ -1961,7 +1961,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10522,
+    "id": "10522",
     "slug": "medicube-zero-pore-cooling-mask-1-pc",
     "brand": "Medicube",
     "name": "Medicube Zero Pore Cooling Mask (1 PC)",
@@ -1992,7 +1992,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10523,
+    "id": "10523",
     "slug": "medicube-deep-peptide-radiance-mask-1-pc",
     "brand": "Medicube",
     "name": "Medicube Deep Peptide Radiance Mask (1 PC)",
@@ -2023,7 +2023,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10559,
+    "id": "10559",
     "slug": "medicube-deep-lifting-age-repair-cream-30ml",
     "brand": "Medicube",
     "name": "Medicube Deep Lifting Age-Repair Cream (30ml)",
@@ -2054,7 +2054,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10561,
+    "id": "10561",
     "slug": "medicube-pdrn-pink-peptide-serum",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Peptide Serum",
@@ -2098,7 +2098,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10562,
+    "id": "10562",
     "slug": "medicube-pdrn-pink-exosome-shot-serum-7500-30ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Exosome Shot Serum 7500 (30ml)",
@@ -2129,7 +2129,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10563,
+    "id": "10563",
     "slug": "medicube-pdrn-pink-exosome-shot-serum-2000",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Exosome Shot Serum 2000",
@@ -2169,7 +2169,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10564,
+    "id": "10564",
     "slug": "medicube-kojic-acid-turmeric-night-wrapping-mask-75ml",
     "brand": "Medicube",
     "name": "Medicube Kojic Acid Turmeric Night Wrapping Mask (75ml)",
@@ -2200,7 +2200,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10565,
+    "id": "10565",
     "slug": "medicube-deep-vita-a-retinol-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube Deep Vita A Retinol Serum (30ml)",
@@ -2231,7 +2231,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10566,
+    "id": "10566",
     "slug": "medicube-deep-vita-c-daily-quick-mask-30-pcs",
     "brand": "Medicube",
     "name": "Medicube Deep Vita C Daily Quick Mask (30 PCs)",
@@ -2262,7 +2262,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10567,
+    "id": "10567",
     "slug": "medicube-zero-pore-one-day-cream-50ml",
     "brand": "Medicube",
     "name": "Medicube Zero Pore One Day Cream (50ml)",
@@ -2293,7 +2293,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10568,
+    "id": "10568",
     "slug": "medicube-zero-pore-one-day-peptide-serum-30ml",
     "brand": "Medicube",
     "name": "Medicube Zero Pore One Day Peptide Serum (30ml)",
@@ -2324,7 +2324,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10605,
+    "id": "10605",
     "slug": "medicube-zero-pore-madecassoside-pad-mild-70-pcs",
     "brand": "Medicube",
     "name": "Medicube Zero Pore Madecassoside Pad - Mild (70 PCs)",
@@ -2355,7 +2355,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10606,
+    "id": "10606",
     "slug": "medicube-deep-vita-c-pad",
     "brand": "Medicube",
     "name": "Medicube Deep Vita C Pad",
@@ -2395,7 +2395,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10618,
+    "id": "10618",
     "slug": "medicube-deep-lifting-peptide-eye-cream-30ml",
     "brand": "Medicube",
     "name": "Medicube Deep Lifting Peptide Eye Cream (30ml)",
@@ -2426,7 +2426,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10620,
+    "id": "10620",
     "slug": "medicube-age-r-booster-pro",
     "brand": "Medicube",
     "name": "Medicube Age-R Booster Pro",
@@ -2470,7 +2470,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10621,
+    "id": "10621",
     "slug": "medicube-pdrn-pink-hyaluronic-moisturizing-cream",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Hyaluronic Moisturizing Cream",
@@ -2510,7 +2510,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10624,
+    "id": "10624",
     "slug": "medicube-kojic-acid-turmeric-brightening-gel-mask-1-pc",
     "brand": "Medicube",
     "name": "Medicube Kojic Acid Turmeric Brightening Gel Mask (1 PC)",
@@ -2541,7 +2541,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10625,
+    "id": "10625",
     "slug": "medicube-pdrn-pink-collagen-gel-mask-1-pc",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Collagen Gel Mask (1 PC)",
@@ -2572,7 +2572,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10626,
+    "id": "10626",
     "slug": "medicube-jelly-brush-20g",
     "brand": "Medicube",
     "name": "Medicube Jelly Brush (20g)",
@@ -2603,7 +2603,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10627,
+    "id": "10627",
     "slug": "medicube-pdrn-booster-gel-300ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Booster Gel (300ml)",
@@ -2634,7 +2634,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10628,
+    "id": "10628",
     "slug": "medicube-pdrn-pink-peptide-toner-250ml",
     "brand": "Medicube",
     "name": "Medicube PDRN Pink Peptide Toner (250ml)",
@@ -2665,7 +2665,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10629,
+    "id": "10629",
     "slug": "medicube-collagen-glow-booster-serum-15ml",
     "brand": "Medicube",
     "name": "Medicube Collagen Glow Booster Serum (15ml)",
@@ -2696,7 +2696,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10630,
+    "id": "10630",
     "slug": "medicube-triple-collagen-toner-140ml",
     "brand": "Medicube",
     "name": "Medicube Triple Collagen Toner (140ml)",
@@ -2727,7 +2727,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10631,
+    "id": "10631",
     "slug": "medicube-zero-foam-cleanser-120ml",
     "brand": "Medicube",
     "name": "Medicube Zero Foam Cleanser (120ml)",
@@ -2758,7 +2758,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10632,
+    "id": "10632",
     "slug": "medicube-zero-pore-blackhead-mud-mask-100g",
     "brand": "Medicube",
     "name": "Medicube Zero Pore Blackhead Mud Mask (100g)",
@@ -2789,7 +2789,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10633,
+    "id": "10633",
     "slug": "medicube-one-day-exosome-shot-pore-ampoule-7500-30ml",
     "brand": "Medicube",
     "name": "Medicube One Day Exosome Shot Pore Ampoule 7500 (30ml)",
@@ -2820,7 +2820,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10663,
+    "id": "10663",
     "slug": "medicube-deep-vita-c-capsule-cream-55g",
     "brand": "Medicube",
     "name": "Medicube Deep Vita C Capsule Cream (55g)",
@@ -2851,7 +2851,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10664,
+    "id": "10664",
     "slug": "medicube-collagen-night-wrapping-mask-75ml",
     "brand": "Medicube",
     "name": "Medicube Collagen Night Wrapping Mask (75ml)",
@@ -2882,7 +2882,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10791,
+    "id": "10791",
     "slug": "medicube-zero-pore-pads-2-0",
     "brand": "Medicube",
     "name": "Medicube Zero Pore Pads 2.0",
@@ -2922,7 +2922,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10793,
+    "id": "10793",
     "slug": "medicube-one-day-exosome-shot-pore-ampoule-2000-30ml",
     "brand": "Medicube",
     "name": "Medicube One Day Exosome Shot Pore Ampoule 2000 (30ml)",
@@ -2953,7 +2953,7 @@ export const MedicubeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10794,
+    "id": "10794",
     "slug": "medicube-collagen-jelly-cream",
     "brand": "Medicube",
     "name": "Medicube Collagen Jelly Cream",

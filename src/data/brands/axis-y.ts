@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const AXISYProducts: Product[] = [
   {
-    "id": 10117,
+    "id": "10117",
     "slug": "axis-y-triple-pdrn-gel-toner-270ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Triple PDRN Gel Toner (270ml)",
@@ -33,7 +33,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10266,
+    "id": "10266",
     "slug": "axis-y-biome-recharging-night-renewal-set-2pcs",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Biome Recharging Night Renewal Set (2pcs)",
@@ -64,7 +64,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10331,
+    "id": "10331",
     "slug": "axis-y-txa-2-5-intensive-brightening-cream-50ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y TXA 2.5% Intensive Brightening Cream (50ml)",
@@ -95,7 +95,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10651,
+    "id": "10651",
     "slug": "axis-y-lha-peel-fill-pore-balancing-cream-50ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y LHA Peel & Fill Pore Balancing Cream (50ml)",
@@ -126,7 +126,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10675,
+    "id": "10675",
     "slug": "axis-y-dark-spot-correcting-glow-cream-50ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Dark Spot Correcting Glow Cream (50ml)",
@@ -157,7 +157,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10692,
+    "id": "10692",
     "slug": "axis-y-new-skin-resolution-gel-mask-100ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y New Skin Resolution Gel Mask (100ml)",
@@ -188,7 +188,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10699,
+    "id": "10699",
     "slug": "axis-y-quinoa-one-step-balanced-gel-cleanser-180ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Quinoa One-Step Balanced Gel Cleanser (180ml)",
@@ -219,7 +219,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10706,
+    "id": "10706",
     "slug": "axis-y-mugwort-pore-clarifying-wash-off-pack-100ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Mugwort Pore Clarifying Wash Off Pack (100ml)",
@@ -250,7 +250,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10707,
+    "id": "10707",
     "slug": "axis-y-calamine-pore-control-capsule-serum-50ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y CALAMINE Pore Control Capsule Serum (50ml)",
@@ -281,7 +281,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10717,
+    "id": "10717",
     "slug": "axis-y-artichoke-intensive-skin-barrier-ampoule-30ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Artichoke Intensive Skin Barrier Ampoule (30ml)",
@@ -312,7 +312,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10754,
+    "id": "10754",
     "slug": "axis-y-dark-spot-correcting-glow-serum-50ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Dark Spot Correcting Glow Serum (50ml)",
@@ -343,7 +343,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10788,
+    "id": "10788",
     "slug": "axis-y-vegan-collagen-eye-serum-10ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Vegan Collagen Eye Serum (10ml)",
@@ -374,7 +374,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10839,
+    "id": "10839",
     "slug": "axis-y-complete-no-stress-physical-sunscreen-broad-spectrum-spf-50-pa-50ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Complete No-Stress Physical Sunscreen Broad Spectrum SPF 50+ PA++++ (50ml)",
@@ -405,7 +405,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10867,
+    "id": "10867",
     "slug": "axis-y-panthenol-10-skin-smoothing-shield-cream-50ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Panthenol 10 Skin Smoothing Shield Cream (50ml)",
@@ -436,7 +436,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10889,
+    "id": "10889",
     "slug": "axis-y-heartleaf-my-type-calming-cream-60ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Heartleaf My Type Calming Cream (60ml)",
@@ -467,7 +467,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10890,
+    "id": "10890",
     "slug": "axis-y-cera-heart-my-type-duo-cream-60ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Cera-Heart My Type Duo Cream (60ml)",
@@ -498,7 +498,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10900,
+    "id": "10900",
     "slug": "axis-y-sunday-morning-refreshing-cleansing-foam-120ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Sunday Morning Refreshing Cleansing Foam (120ml)",
@@ -529,7 +529,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10901,
+    "id": "10901",
     "slug": "axis-y-daily-purifying-treatment-toner-200ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Daily Purifying Treatment Toner (200ml)",
@@ -560,7 +560,7 @@ export const AXISYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10959,
+    "id": "10959",
     "slug": "axis-y-spot-the-difference-blemish-treatment-15ml",
     "brand": "AXIS-Y",
     "name": "AXIS-Y Spot The Difference Blemish Treatment (15ml)",

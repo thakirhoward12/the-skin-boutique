@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const UnoveProducts: Product[] = [
   {
-    "id": 10156,
+    "id": "10156",
     "slug": "unove-volume-up-curling-essence-147ml",
     "brand": "Unove",
     "name": "UNOVE Volume Up Curling Essence (147ml)",
@@ -33,7 +33,7 @@ export const UnoveProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10157,
+    "id": "10157",
     "slug": "unove-water-essence-mist-200ml",
     "brand": "Unove",
     "name": "UNOVE Water Essence Mist (200ml)",
@@ -64,7 +64,7 @@ export const UnoveProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10592,
+    "id": "10592",
     "slug": "unove-deep-damage-treatment-ex",
     "brand": "Unove",
     "name": "UNOVE Deep Damage Treatment EX",
@@ -108,7 +108,7 @@ export const UnoveProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10593,
+    "id": "10593",
     "slug": "unove-deep-damage-repair-shampoo-500ml",
     "brand": "Unove",
     "name": "UNOVE Deep Damage Repair Shampoo (500ml)",
@@ -139,7 +139,7 @@ export const UnoveProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10600,
+    "id": "10600",
     "slug": "unove-silk-oil-essence-70ml",
     "brand": "Unove",
     "name": "UNOVE Silk Oil Essence (70ml)",

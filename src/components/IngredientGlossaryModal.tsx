@@ -2,13 +2,14 @@ import { useState, useMemo } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { X, Search, ChevronDown } from 'lucide-react';
 
+import { SkinType } from '../types';
+
 interface IngredientGlossaryModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
 type SafetyRating = 'Hero' | 'Workhorse' | 'Well-Studied' | 'Use with Care';
-type SkinType = 'All' | 'Oily' | 'Dry' | 'Sensitive' | 'Combo';
 
 interface Ingredient {
   name: string;

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const WasosenProducts: Product[] = [
   {
-    "id": 10150,
+    "id": "10150",
     "slug": "wasosen-body-milk-500ml",
     "brand": "Wasosen",
     "name": "Wasosen Body Milk (500ml)",
@@ -33,7 +33,7 @@ export const WasosenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10698,
+    "id": "10698",
     "slug": "wasosen-cleansing-foam-150g",
     "brand": "Wasosen",
     "name": "Wasosen Cleansing Foam (150g)",
@@ -64,7 +64,7 @@ export const WasosenProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10719,
+    "id": "10719",
     "slug": "wasosen-all-in-one-gel-300g",
     "brand": "Wasosen",
     "name": "Wasosen All-in-One Gel (300g)",

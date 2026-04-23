@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MAPEPEProducts: Product[] = [
   {
-    "id": 10006,
+    "id": "10006",
     "slug": "mapepe-natural-mix-brush-volume-care",
     "brand": "MAPEPE",
     "name": "MAPEPE Natural Mix Brush (Volume Care)",
@@ -33,7 +33,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10007,
+    "id": "10007",
     "slug": "mapepe-detangling-brush-pocket-size",
     "brand": "MAPEPE",
     "name": "MAPEPE Detangling Brush (Pocket Size)",
@@ -73,7 +73,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10008,
+    "id": "10008",
     "slug": "mapepe-natural-mix-brush-mini",
     "brand": "MAPEPE",
     "name": "MAPEPE Natural Mix Brush (Mini)",
@@ -104,7 +104,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10009,
+    "id": "10009",
     "slug": "mapepe-natural-mix-roll-brush",
     "brand": "MAPEPE",
     "name": "MAPEPE Natural Mix Roll Brush",
@@ -135,7 +135,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10010,
+    "id": "10010",
     "slug": "mapepe-anti-static-blow-brush",
     "brand": "MAPEPE",
     "name": "MAPEPE Anti-Static Blow Brush",
@@ -166,7 +166,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10011,
+    "id": "10011",
     "slug": "mapepe-natural-mix-roll-brush-mini",
     "brand": "MAPEPE",
     "name": "MAPEPE Natural Mix Roll Brush (Mini)",
@@ -197,7 +197,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10012,
+    "id": "10012",
     "slug": "mapepe-bathtime-scalp-cushion-cleansing",
     "brand": "MAPEPE",
     "name": "MAPEPE Bathtime Scalp Cushion Cleansing",
@@ -228,7 +228,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10013,
+    "id": "10013",
     "slug": "mapepe-spring-hair-gum-2-pcs",
     "brand": "MAPEPE",
     "name": "MAPEPE Spring Hair Gum (2 PCs)",
@@ -259,7 +259,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10017,
+    "id": "10017",
     "slug": "mapepe-detangling-brush-long-hard",
     "brand": "MAPEPE",
     "name": "MAPEPE Detangling Brush (Long & Hard)",
@@ -290,7 +290,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10018,
+    "id": "10018",
     "slug": "mapepe-detangling-brush-hard",
     "brand": "MAPEPE",
     "name": "MAPEPE Detangling Brush (Hard)",
@@ -321,7 +321,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10019,
+    "id": "10019",
     "slug": "mapepe-anti-static-folding-brush",
     "brand": "MAPEPE",
     "name": "MAPEPE Anti-Static Folding Brush",
@@ -352,7 +352,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10020,
+    "id": "10020",
     "slug": "mapepe-bathtime-haircare-comb",
     "brand": "MAPEPE",
     "name": "MAPEPE Bathtime Haircare Comb",
@@ -383,7 +383,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10021,
+    "id": "10021",
     "slug": "mapepe-hair-brush-cleaner",
     "brand": "MAPEPE",
     "name": "MAPEPE Hair Brush Cleaner",
@@ -414,7 +414,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10022,
+    "id": "10022",
     "slug": "mapepe-detangling-brush-long",
     "brand": "MAPEPE",
     "name": "MAPEPE Detangling Brush (Long)",
@@ -454,7 +454,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10023,
+    "id": "10023",
     "slug": "mapepe-compact-comb-for-bang",
     "brand": "MAPEPE",
     "name": "MAPEPE Compact Comb for Bang",
@@ -485,7 +485,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10024,
+    "id": "10024",
     "slug": "mapepe-detangling-brush-mini-wet-and-dry-hair",
     "brand": "MAPEPE",
     "name": "MAPEPE Detangling Brush Mini (Wet and Dry Hair)",
@@ -533,7 +533,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10025,
+    "id": "10025",
     "slug": "mapepe-detangling-brush-wet-and-dry-hair",
     "brand": "MAPEPE",
     "name": "MAPEPE Detangling Brush (Wet and Dry Hair)",
@@ -564,7 +564,7 @@ export const MAPEPEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10026,
+    "id": "10026",
     "slug": "mapepe-cushion-comb-l",
     "brand": "MAPEPE",
     "name": "MAPEPE Cushion Comb L",

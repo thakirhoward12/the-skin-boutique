@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MIXSOONProducts: Product[] = [
   {
-    "id": 10254,
+    "id": "10254",
     "slug": "mixsoon-bean-cream-50ml",
     "brand": "MIXSOON",
     "name": "MIXSOON Bean Cream (50ml)",
@@ -33,7 +33,7 @@ export const MIXSOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10860,
+    "id": "10860",
     "slug": "mixsoon-bean-cleansing-oil-195ml",
     "brand": "MIXSOON",
     "name": "MIXSOON Bean Cleansing Oil (195ml)",
@@ -64,7 +64,7 @@ export const MIXSOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10865,
+    "id": "10865",
     "slug": "mixsoon-glacier-water-hyaluronic-acid-serum-300ml",
     "brand": "MIXSOON",
     "name": "MIXSOON Glacier Water Hyaluronic Acid Serum (300ml)",
@@ -95,7 +95,7 @@ export const MIXSOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10903,
+    "id": "10903",
     "slug": "mixsoon-soondy-centella-asiatica-essence-100ml",
     "brand": "MIXSOON",
     "name": "MIXSOON Soondy Centella Asiatica Essence (100ml)",
@@ -126,7 +126,7 @@ export const MIXSOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10904,
+    "id": "10904",
     "slug": "mixsoon-bean-essence",
     "brand": "MIXSOON",
     "name": "MIXSOON Bean Essence",

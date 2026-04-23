@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ITSSkinProducts: Product[] = [
   {
-    "id": 10102,
+    "id": "10102",
     "slug": "its-skin-hyaluronic-acid-moisture-emulsion-150ml",
     "brand": "ITS Skin",
     "name": "ITS SKIN Hyaluronic Acid Moisture Emulsion (150ml)",
@@ -33,7 +33,7 @@ export const ITSSkinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10303,
+    "id": "10303",
     "slug": "its-skin-prestige-snail-mask-1-pc",
     "brand": "ITS Skin",
     "name": "ITS SKIN Prestige Snail Mask (1 PC)",
@@ -85,7 +85,7 @@ export const ITSSkinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10314,
+    "id": "10314",
     "slug": "its-skin-hyaluronic-acid-moisture-cream-50ml",
     "brand": "ITS Skin",
     "name": "ITS SKIN Hyaluronic Acid Moisture Cream (50ml)",
@@ -116,7 +116,7 @@ export const ITSSkinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10686,
+    "id": "10686",
     "slug": "its-skin-collagen-nutrition-cream-50ml",
     "brand": "ITS Skin",
     "name": "ITS SKIN Collagen Nutrition Cream+ (50ml)",
@@ -147,7 +147,7 @@ export const ITSSkinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10725,
+    "id": "10725",
     "slug": "its-skin-power-10-formula-gf-effector-soak-up-helper-30ml",
     "brand": "ITS Skin",
     "name": "ITS SKIN Power 10 Formula GF Effector Soak Up Helper (30ml)",
@@ -178,7 +178,7 @@ export const ITSSkinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10732,
+    "id": "10732",
     "slug": "its-skin-new-collagen-nutrition-emulsion-150ml",
     "brand": "ITS Skin",
     "name": "ITS SKIN New Collagen Nutrition Emulsion+ (150ml)",
@@ -209,7 +209,7 @@ export const ITSSkinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10733,
+    "id": "10733",
     "slug": "its-skin-hyaluronic-acid-moisture-eye-cream-25ml",
     "brand": "ITS Skin",
     "name": "ITS SKIN Hyaluronic Acid Moisture Eye Cream (25ml)",
@@ -240,7 +240,7 @@ export const ITSSkinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10740,
+    "id": "10740",
     "slug": "its-skin-collagen-nutrition-toner-150ml",
     "brand": "ITS Skin",
     "name": "ITS SKIN Collagen Nutrition Toner (150ml)",
@@ -271,7 +271,7 @@ export const ITSSkinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10746,
+    "id": "10746",
     "slug": "its-skin-collagen-nutrition-eye-cream-25ml",
     "brand": "ITS Skin",
     "name": "ITS SKIN Collagen Nutrition Eye Cream (25ml)",
@@ -302,7 +302,7 @@ export const ITSSkinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10753,
+    "id": "10753",
     "slug": "its-skin-the-fresh-mask-sheet-1-pc",
     "brand": "ITS Skin",
     "name": "ITS SKIN The Fresh Mask Sheet (1 PC)",

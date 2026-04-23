@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ShiseidoTsubakiProducts: Product[] = [
   {
-    "id": 10571,
+    "id": "10571",
     "slug": "shiseido-tsubaki-premium-ex-damage-care-repair-shampoo-conditioner-set-2x400ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium EX Damage Care & Repair Shampoo & Conditioner Set (2x400ml)",
@@ -33,7 +33,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10572,
+    "id": "10572",
     "slug": "shiseido-tsubaki-premium-ex-damage-care-repair-conditioner-450ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium EX Damage Care & Repair Conditioner (450ml)",
@@ -64,7 +64,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10573,
+    "id": "10573",
     "slug": "shiseido-tsubaki-premium-ex-damage-care-repair-shampoo-450ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium EX Damage Care & Repair Shampoo (450ml)",
@@ -95,7 +95,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10574,
+    "id": "10574",
     "slug": "shiseido-tsubaki-premium-volume-repair-conditioner-450ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium Volume & Repair Conditioner (450ml)",
@@ -126,7 +126,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10575,
+    "id": "10575",
     "slug": "shiseido-tsubaki-premium-volume-repair-shampoo-450ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium Volume & Repair Shampoo (450ml)",
@@ -157,7 +157,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10576,
+    "id": "10576",
     "slug": "shiseido-tsubaki-premium-moist-repair-treatment-160g",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium Moist & Repair Treatment (160g)",
@@ -188,7 +188,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10577,
+    "id": "10577",
     "slug": "shiseido-tsubaki-premium-moist-repair-conditioner-450ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium Moist & Repair Conditioner (450ml)",
@@ -219,7 +219,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10578,
+    "id": "10578",
     "slug": "shiseido-tsubaki-premium-moist-repair-shampoo-450ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium Moist & Repair Shampoo (450ml)",
@@ -250,7 +250,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10639,
+    "id": "10639",
     "slug": "shiseido-tsubaki-premium-moist-repair-shampoo-conditioner-set-2x450ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium Moist & Repair Shampoo & Conditioner Set (2x450ml)",
@@ -281,7 +281,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10640,
+    "id": "10640",
     "slug": "shiseido-tsubaki-premium-volume-repair-shampoo-conditioner-set-2x450ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium Volume & Repair Shampoo & Conditioner Set (2x450ml)",
@@ -312,7 +312,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10786,
+    "id": "10786",
     "slug": "shiseido-tsubaki-premium-repair-hair-water-210ml",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium Repair Hair Water (210ml)",
@@ -343,7 +343,7 @@ export const ShiseidoTsubakiProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11039,
+    "id": "11039",
     "slug": "shiseido-tsubaki-premium-ex-repair-hair-mask-180g",
     "brand": "Shiseido Tsubaki",
     "name": "Shiseido Tsubaki Premium EX Repair Hair Mask (180g)",

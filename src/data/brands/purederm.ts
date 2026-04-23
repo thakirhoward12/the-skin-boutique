@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const PUREDERMProducts: Product[] = [
   {
-    "id": 10172,
+    "id": "10172",
     "slug": "purederm-instant-softening-heel-mask-1-pair",
     "brand": "PUREDERM",
     "name": "PUREDERM Instant Softening Heel Mask (1 pair)",
@@ -33,7 +33,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10311,
+    "id": "10311",
     "slug": "purederm-exfoliating-foot-mask-1-pair",
     "brand": "PUREDERM",
     "name": "PUREDERM Exfoliating Foot Mask (1 pair)",
@@ -64,7 +64,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10312,
+    "id": "10312",
     "slug": "purederm-p-d-heating-moisture-foot-mask-1-pair",
     "brand": "PUREDERM",
     "name": "PUREDERM P/D Heating Moisture Foot Mask (1 pair)",
@@ -95,7 +95,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10313,
+    "id": "10313",
     "slug": "purederm-black-food-mg-gel-eye-zone-mask-1-pair",
     "brand": "PUREDERM",
     "name": "PUREDERM Black Food MG: Gel Eye Zone Mask (1 pair)",
@@ -126,7 +126,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10450,
+    "id": "10450",
     "slug": "purederm-vegan-under-eye-collagen-mask-15-pairs",
     "brand": "PUREDERM",
     "name": "PUREDERM Vegan Under Eye Collagen Mask (15 pairs)",
@@ -157,7 +157,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10451,
+    "id": "10451",
     "slug": "purederm-vitamin-brightening-under-eye-mask-15-pairs",
     "brand": "PUREDERM",
     "name": "PUREDERM Vitamin Brightening Under Eye Mask (15 Pairs)",
@@ -188,7 +188,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10452,
+    "id": "10452",
     "slug": "purederm-botanical-choice-intensive-healing-foot-mask-1-pair",
     "brand": "PUREDERM",
     "name": "PUREDERM Botanical Choice Intensive Healing Foot Mask (1 pair)",
@@ -219,7 +219,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10453,
+    "id": "10453",
     "slug": "purederm-moisture-nourishing-hand-mask-1-pair",
     "brand": "PUREDERM",
     "name": "PUREDERM Moisture & Nourishing Hand Mask (1 pair)",
@@ -250,7 +250,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10454,
+    "id": "10454",
     "slug": "purederm-p-d-heating-moisture-hand-mask-1-pair",
     "brand": "PUREDERM",
     "name": "PUREDERM P/D Heating Moisture Hand Mask (1 pair)",
@@ -281,7 +281,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10455,
+    "id": "10455",
     "slug": "purederm-miracle-solution-micro-fill-under-eye-patch-1-pair",
     "brand": "PUREDERM",
     "name": "PUREDERM Miracle Solution Micro Fill Under Eye Patch (1 Pair)",
@@ -312,7 +312,7 @@ export const PUREDERMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10456,
+    "id": "10456",
     "slug": "purederm-collagen-eye-zone-mask-15-pairs",
     "brand": "PUREDERM",
     "name": "PUREDERM Collagen Eye Zone Mask (15 Pairs)",

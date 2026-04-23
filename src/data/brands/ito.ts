@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ITOProducts: Product[] = [
   {
-    "id": 11000,
+    "id": "11000",
     "slug": "ito-facial-towel-60-sheets",
     "brand": "ITO",
     "name": "ITO Facial Towel (60 sheets)",

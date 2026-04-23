@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KosProducts: Product[] = [
   {
-    "id": 10529,
+    "id": "10529",
     "slug": "kos-vitapuru-deep-repair-serum-40ml",
     "brand": "Kosé",
     "name": "Kosé Vitapuru Deep Repair Serum (40ml)",

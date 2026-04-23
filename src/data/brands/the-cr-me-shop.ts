@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const TheCrmeShopProducts: Product[] = [
   {
-    "id": 10545,
+    "id": "10545",
     "slug": "the-cr-me-shop-x-bt21-baby-macaron-lip-balm-9g",
     "brand": "The Crème Shop",
     "name": "The Crème Shop x BT21 Baby Macaron Lip Balm (9g)",

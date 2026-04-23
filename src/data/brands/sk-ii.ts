@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SKIIProducts: Product[] = [
   {
-    "id": 10697,
+    "id": "10697",
     "slug": "sk-ii-facial-treatment-pitera-essence-230ml",
     "brand": "SK-II",
     "name": "SK-II Facial Treatment Pitera Essence (230ml)",

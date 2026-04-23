@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ANUAProducts: Product[] = [
   {
-    "id": 10031,
+    "id": "10031",
     "slug": "anua-heartleaf-succinic-moisture-cleansing-foam",
     "brand": "ANUA",
     "name": "ANUA Heartleaf Succinic Moisture Cleansing Foam",
@@ -42,7 +42,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10153,
+    "id": "10153",
     "slug": "anua-pdrn-hyaluronic-acid-capsule-100-serum-30ml",
     "brand": "ANUA",
     "name": "ANUA PDRN Hyaluronic Acid Capsule 100 Serum (30ml)",
@@ -73,7 +73,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10180,
+    "id": "10180",
     "slug": "anua-7-rice-ceramide-hydrating-barrier-serum-50ml",
     "brand": "ANUA",
     "name": "ANUA 7 Rice Ceramide Hydrating Barrier Serum (50ml)",
@@ -104,7 +104,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10390,
+    "id": "10390",
     "slug": "anua-heartleaf-centella-red-spot-cream-30g",
     "brand": "ANUA",
     "name": "ANUA Heartleaf Centella Red Spot Cream (30g)",
@@ -135,7 +135,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10489,
+    "id": "10489",
     "slug": "anua-airy-sun-cream-spf-50-pa-50ml",
     "brand": "ANUA",
     "name": "ANUA Airy Sun Cream SPF 50+ PA++++ (50ml)",
@@ -166,7 +166,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10619,
+    "id": "10619",
     "slug": "anua-azelaic-acid-10-hyaluron-soothing-serum-30ml",
     "brand": "ANUA",
     "name": "ANUA Azelaic Acid 10 Hyaluron Soothing Serum (30ml)",
@@ -197,7 +197,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10641,
+    "id": "10641",
     "slug": "anua-peach-niacin-serum-mask",
     "brand": "ANUA",
     "name": "ANUA Peach Niacin Serum Mask",
@@ -237,7 +237,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10642,
+    "id": "10642",
     "slug": "anua-heartleaf-87-low-ph-deep-cleansing-water-500g",
     "brand": "ANUA",
     "name": "ANUA Heartleaf 87 Low pH Deep Cleansing Water (500g)",
@@ -268,7 +268,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10804,
+    "id": "10804",
     "slug": "anua-rice-70-glow-milky-toner-250ml",
     "brand": "ANUA",
     "name": "ANUA Rice 70 Glow Milky Toner (250ml)",
@@ -308,7 +308,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10825,
+    "id": "10825",
     "slug": "anua-heartleaf-70-soothing-cream-100ml",
     "brand": "ANUA",
     "name": "ANUA Heartleaf 70% Soothing Cream (100ml)",
@@ -339,7 +339,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10826,
+    "id": "10826",
     "slug": "anua-heartleaf-pore-control-cleansing-oil",
     "brand": "ANUA",
     "name": "ANUA Heartleaf Pore Control Cleansing Oil",
@@ -387,7 +387,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10856,
+    "id": "10856",
     "slug": "anua-peach-70-niacin-serum",
     "brand": "ANUA",
     "name": "ANUA Peach 70% Niacin Serum",
@@ -427,7 +427,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10857,
+    "id": "10857",
     "slug": "anua-heartleaf-lha-moisture-peeling-gel-120ml",
     "brand": "ANUA",
     "name": "ANUA Heartleaf LHA Moisture Peeling Gel (120ml)",
@@ -458,7 +458,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10861,
+    "id": "10861",
     "slug": "anua-niacinamide-10-txa-4-dark-spot-correcting-serum-30ml",
     "brand": "ANUA",
     "name": "ANUA Niacinamide 10% + TXA 4% Dark Spot Correcting Serum (30ml)",
@@ -489,7 +489,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10882,
+    "id": "10882",
     "slug": "anua-heartleaf-77-soothing-sheet-mask",
     "brand": "ANUA",
     "name": "ANUA Heartleaf 77% Soothing Sheet Mask",
@@ -529,7 +529,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10883,
+    "id": "10883",
     "slug": "anua-heartleaf-70-intense-calming-cream",
     "brand": "ANUA",
     "name": "ANUA Heartleaf 70% Intense Calming Cream",
@@ -569,7 +569,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10884,
+    "id": "10884",
     "slug": "anua-peach-77-niacin-conditioning-milk-150ml",
     "brand": "ANUA",
     "name": "ANUA Peach 77% Niacin Conditioning Milk (150ml)",
@@ -600,7 +600,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10905,
+    "id": "10905",
     "slug": "anua-heartleaf-77-clear-pad-70pcs",
     "brand": "ANUA",
     "name": "ANUA Heartleaf 77% Clear Pad (70pcs)",
@@ -631,7 +631,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10917,
+    "id": "10917",
     "slug": "anua-heartleaf-quercetinol-pore-deep-cleansing-foam-150ml",
     "brand": "ANUA",
     "name": "ANUA Heartleaf Quercetinol Pore Deep Cleansing Foam (150ml)",
@@ -671,7 +671,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10918,
+    "id": "10918",
     "slug": "anua-heartleaf-70-daily-lotion",
     "brand": "ANUA",
     "name": "ANUA Heartleaf 70% Daily Lotion",
@@ -711,7 +711,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10919,
+    "id": "10919",
     "slug": "anua-heartleaf-77-soothing-toner-250ml",
     "brand": "ANUA",
     "name": "ANUA Heartleaf 77% Soothing Toner (250ml)",
@@ -751,7 +751,7 @@ export const ANUAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10920,
+    "id": "10920",
     "slug": "anua-heartleaf-80-soothing-ampoule",
     "brand": "ANUA",
     "name": "ANUA Heartleaf 80% Soothing Ampoule",

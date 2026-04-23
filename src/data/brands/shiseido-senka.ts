@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ShiseidoSenkaProducts: Product[] = [
   {
-    "id": 10003,
+    "id": "10003",
     "slug": "shiseido-senka-perfect-whip-berry-bright-foam-cleanser-100g",
     "brand": "Shiseido Senka",
     "name": "Shiseido Senka Perfect Whip Berry Bright Foam Cleanser (100g)",
@@ -33,7 +33,7 @@ export const ShiseidoSenkaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10004,
+    "id": "10004",
     "slug": "shiseido-senka-perfect-whip-vit-c-poreless-foam-cleanser-100g",
     "brand": "Shiseido Senka",
     "name": "Shiseido Senka Perfect Whip Vit C Poreless Foam Cleanser (100g)",
@@ -64,7 +64,7 @@ export const ShiseidoSenkaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10712,
+    "id": "10712",
     "slug": "shiseido-senka-perfect-whip-face-cleansing-foam-collagen-120g",
     "brand": "Shiseido Senka",
     "name": "Shiseido Senka Perfect Whip Face Cleansing Foam Collagen (120g)",
@@ -95,7 +95,7 @@ export const ShiseidoSenkaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10720,
+    "id": "10720",
     "slug": "shiseido-senka-perfect-whip-face-cleansing-foam-120g",
     "brand": "Shiseido Senka",
     "name": "Shiseido Senka Perfect Whip Face Cleansing Foam (120g)",

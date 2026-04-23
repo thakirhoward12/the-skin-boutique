@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const Skin1004Products: Product[] = [
   {
-    "id": 10142,
+    "id": "10142",
     "slug": "skin1004-madagascar-centella-poremizing-quick-clay-stick-mask-27g",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Poremizing Quick Clay Stick Mask (27g)",
@@ -33,7 +33,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10187,
+    "id": "10187",
     "slug": "skin1004-madagascar-centella-tea-trica-spot-cream-20ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Tea-Trica Spot Cream (20ml)",
@@ -64,7 +64,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10391,
+    "id": "10391",
     "slug": "skin1004-madagascar-centella-tone-brightening-dark-spot-ampoule-pad-60-pads",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Tone Brightening Dark Spot Ampoule Pad (60 pads)",
@@ -95,7 +95,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10407,
+    "id": "10407",
     "slug": "skin1004-madagascar-centella-matrixyl-10-boosting-shot-ampoule-30ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Matrixyl 10 Boosting Shot Ampoule (30ml)",
@@ -126,7 +126,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10408,
+    "id": "10408",
     "slug": "skin1004-madagascar-centella-niacinamide-10-boosting-shot-ampoule-30ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Niacinamide 10 Boosting Shot Ampoule (30ml)",
@@ -157,7 +157,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10409,
+    "id": "10409",
     "slug": "skin1004-madagascar-centella-retinol-0-2-boosting-shot-ampoule-30ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Retinol 0.2 Boosting Shot Ampoule (30ml)",
@@ -188,7 +188,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10505,
+    "id": "10505",
     "slug": "skin1004-madagascar-centella-air-fit-suncream-light-spf30-pa-50ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Air Fit Suncream Light SPF30 PA++++ (50ml)",
@@ -219,7 +219,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10542,
+    "id": "10542",
     "slug": "skin1004-madagascar-centella-probio-cica-nourishing-mask",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Probio-Cica Nourishing Mask",
@@ -259,7 +259,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10543,
+    "id": "10543",
     "slug": "skin1004-madagascar-centella-tea-trica-b5-cream-75ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Tea-Trica B5 Cream (75ml)",
@@ -290,7 +290,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10544,
+    "id": "10544",
     "slug": "skin1004-madagascar-centella-quick-calming-pad-70-pads",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Quick Calming Pad (70 Pads)",
@@ -321,7 +321,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10590,
+    "id": "10590",
     "slug": "skin1004-madagascar-centella-ampoule-kit-4-pcs",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Ampoule Kit (4 PCs)",
@@ -352,7 +352,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10813,
+    "id": "10813",
     "slug": "skin1004-madagascar-centella-ampoule",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Ampoule",
@@ -392,7 +392,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10824,
+    "id": "10824",
     "slug": "skin1004-tea-trica-spot-cover-patch-22pcs",
     "brand": "Skin1004",
     "name": "SKIN1004 Tea Trica Spot Cover Patch (22pcs)",
@@ -423,7 +423,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10838,
+    "id": "10838",
     "slug": "skin1004-centella-poremizing-deep-cleansing-foam-125ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Poremizing Deep Cleansing Foam (125ml)",
@@ -454,7 +454,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10841,
+    "id": "10841",
     "slug": "skin1004-madagascar-centella-soothing-cream",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Soothing Cream",
@@ -494,7 +494,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10842,
+    "id": "10842",
     "slug": "skin1004-madagascar-centella-probio-cica-enrich-cream",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Probio-Cica Enrich Cream",
@@ -534,7 +534,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10843,
+    "id": "10843",
     "slug": "skin1004-centella-probio-cica-bakuchiol-eye-cream-20ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Probio Cica Bakuchiol Eye Cream (20ml)",
@@ -565,7 +565,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10848,
+    "id": "10848",
     "slug": "skin1004-madagascar-centella-air-fit-suncream-plus-spf-50-pa-50ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Air-Fit Suncream Plus SPF 50+ PA++++ (50ml)",
@@ -596,7 +596,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10862,
+    "id": "10862",
     "slug": "skin1004-centella-tea-trica-purifying-toner-210ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Tea Trica Purifying Toner (210ml)",
@@ -627,7 +627,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10871,
+    "id": "10871",
     "slug": "skin1004-centella-hyalu-cica-blue-serum-50ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Hyalu Cica Blue Serum (50ml)",
@@ -658,7 +658,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10873,
+    "id": "10873",
     "slug": "skin1004-centella-tone-brightening-capsule-cream-75ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Tone Brightening Capsule Cream (75ml)",
@@ -689,7 +689,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10874,
+    "id": "10874",
     "slug": "skin1004-centella-tea-trica-relief-ampoule-100ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Tea Trica Relief Ampoule (100ml)",
@@ -720,7 +720,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10875,
+    "id": "10875",
     "slug": "skin1004-centella-probio-cica-intensive-ampoule",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Probio Cica Intensive Ampoule",
@@ -764,7 +764,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10876,
+    "id": "10876",
     "slug": "skin1004-centella-poremizing-light-gel-cream-75ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Poremizing Light Gel Cream (75ml)",
@@ -795,7 +795,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10877,
+    "id": "10877",
     "slug": "skin1004-centella-probio-cica-essence-toner-210ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Probio-Cica Essence Toner (210ml)",
@@ -826,7 +826,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10878,
+    "id": "10878",
     "slug": "skin1004-centella-hyalu-cica-sleeping-pack-100ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Hyalu Cica Sleeping Pack (100ml)",
@@ -857,7 +857,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10885,
+    "id": "10885",
     "slug": "skin1004-centella-hyalu-cica-moisture-cream-75ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Centella Hyalu-Cica Moisture Cream (75ml)",
@@ -888,7 +888,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10938,
+    "id": "10938",
     "slug": "skin1004-madagascar-centella-tone-brightening-cleansing-gel-foam-125ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Tone Brightening Cleansing Gel Foam (125ml)",
@@ -919,7 +919,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10939,
+    "id": "10939",
     "slug": "skin1004-madagascar-centella-tone-brightening-capsule-ampoule",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Tone Brightening Capsule Ampoule",
@@ -959,7 +959,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10940,
+    "id": "10940",
     "slug": "skin1004-madagascar-centella-tone-brightening-boosting-toner-210ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Tone Brightening Boosting Toner (210ml)",
@@ -990,7 +990,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10941,
+    "id": "10941",
     "slug": "skin1004-madagascar-centella-poremizing-fresh-ampoule-100ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Poremizing Fresh Ampoule (100ml)",
@@ -1021,7 +1021,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10942,
+    "id": "10942",
     "slug": "skin1004-madagascar-centella-poremizing-clear-toner-210ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Poremizing Clear Toner (210ml)",
@@ -1052,7 +1052,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10943,
+    "id": "10943",
     "slug": "skin1004-madagascar-centella-hyalu-cica-first-ampoule-100ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Hyalu-Cica First Ampoule (100ml)",
@@ -1083,7 +1083,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10944,
+    "id": "10944",
     "slug": "skin1004-madagascar-centella-hyalu-cica-brightening-toner-210ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Hyalu-Cica Brightening Toner (210ml)",
@@ -1114,7 +1114,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10945,
+    "id": "10945",
     "slug": "skin1004-madagascar-centella-watergel-sheet-ampoule-mask",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Watergel Sheet Ampoule Mask",
@@ -1154,7 +1154,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10946,
+    "id": "10946",
     "slug": "skin1004-madagascar-centella-toning-toner",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Toning Toner",
@@ -1194,7 +1194,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10947,
+    "id": "10947",
     "slug": "skin1004-madagascar-centella-light-cleansing-oil-200ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Light Cleansing Oil (200ml)",
@@ -1225,7 +1225,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10948,
+    "id": "10948",
     "slug": "skin1004-madagascar-centella-cream",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Cream",
@@ -1265,7 +1265,7 @@ export const Skin1004Products: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10949,
+    "id": "10949",
     "slug": "skin1004-madagascar-centella-ampoule-foam-125ml",
     "brand": "Skin1004",
     "name": "SKIN1004 Madagascar Centella Ampoule Foam (125ml)",

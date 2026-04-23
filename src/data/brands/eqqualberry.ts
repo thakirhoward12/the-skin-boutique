@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const EqqualberryProducts: Product[] = [
   {
-    "id": 10295,
+    "id": "10295",
     "slug": "eqqualberry-purple-rice-pack-cleanser-130g",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Purple Rice Pack Cleanser (130g)",
@@ -33,7 +33,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10296,
+    "id": "10296",
     "slug": "eqqualberry-purple-rice-cleansing-oil-200ml",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Purple Rice Cleansing Oil (200ml)",
@@ -64,7 +64,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10297,
+    "id": "10297",
     "slug": "eqqualberry-hyaltoin-flooding-serum-30ml",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Hyaltoin Flooding Serum (30ml)",
@@ -95,7 +95,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10298,
+    "id": "10298",
     "slug": "eqqualberry-aloe-pdrn-calming-serum-30ml",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Aloe PDRN Calming Serum (30ml)",
@@ -126,7 +126,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10299,
+    "id": "10299",
     "slug": "eqqualberry-nad-peptide-boosting-serum-30ml",
     "brand": "Eqqualberry",
     "name": "Eqqualberry NAD+ Peptide Boosting Serum (30ml)",
@@ -157,7 +157,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10370,
+    "id": "10370",
     "slug": "eqqualberry-bakuchiol-plumping-capsule-cream-50ml",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Bakuchiol Plumping Capsule Cream (50ml)",
@@ -188,7 +188,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10460,
+    "id": "10460",
     "slug": "eqqualberry-purple-pdrn-pore-minimizing-serum-30ml",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Purple PDRN Pore Minimizing Serum (30ml)",
@@ -219,7 +219,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10461,
+    "id": "10461",
     "slug": "eqqualberry-collagen-pore-tight-up-hydrogel-mask-4-pcs",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Collagen Pore-Tight Up Hydrogel Mask (4 PCs)",
@@ -250,7 +250,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10462,
+    "id": "10462",
     "slug": "eqqualberry-collagen-glow-up-hydrogel-mask-4-pcs",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Collagen Glow up Hydrogel Mask (4 PCs)",
@@ -281,7 +281,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10463,
+    "id": "10463",
     "slug": "eqqualberry-collagen-pore-tight-up-gel-toner-pad-60pcs",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Collagen Pore-Tight Up Gel Toner Pad (60pcs)",
@@ -312,7 +312,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10464,
+    "id": "10464",
     "slug": "eqqualberry-collagen-glow-up-gel-toner-pad-60pcs",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Collagen Glow Up Gel Toner Pad (60pcs)",
@@ -343,7 +343,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10583,
+    "id": "10583",
     "slug": "eqqualberry-big-calming-swimming-pool-toner-pads-70pads",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Big Calming Swimming Pool Toner Pads (70pads)",
@@ -374,7 +374,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10584,
+    "id": "10584",
     "slug": "eqqualberry-swimming-pool-ampoule-50ml",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Swimming Pool Ampoule (50ml)",
@@ -405,7 +405,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10637,
+    "id": "10637",
     "slug": "eqqualberry-glow-filter-vitamin-illuminating-serum-30ml",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Glow Filter Vitamin Illuminating Serum (30ml)",
@@ -436,7 +436,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10638,
+    "id": "10638",
     "slug": "eqqualberry-bakuchiol-plumping-serum-30ml",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Bakuchiol Plumping Serum (30ml)",
@@ -467,7 +467,7 @@ export const EqqualberryProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10669,
+    "id": "10669",
     "slug": "eqqualberry-daily-peeling-swimming-pool-toner",
     "brand": "Eqqualberry",
     "name": "Eqqualberry Daily Peeling Swimming Pool Toner",

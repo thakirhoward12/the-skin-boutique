@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MaryMayProducts: Product[] = [
   {
-    "id": 10384,
+    "id": "10384",
     "slug": "mary-may-tranexamic-acid-glutathion-eye-cream-30ml",
     "brand": "Mary&May",
     "name": "Mary&May Tranexamic Acid+ Glutathion Eye Cream (30ml)",

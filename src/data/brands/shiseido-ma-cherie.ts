@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ShiseidoMaCherieProducts: Product[] = [
   {
-    "id": 10682,
+    "id": "10682",
     "slug": "shiseido-ma-cherie-air-feel-conditioner-450ml",
     "brand": "Shiseido Ma Cherie",
     "name": "Shiseido Ma Cherie Air Feel Conditioner (450ml)",
@@ -33,7 +33,7 @@ export const ShiseidoMaCherieProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10683,
+    "id": "10683",
     "slug": "shiseido-ma-cherie-air-feel-shampoo-450ml",
     "brand": "Shiseido Ma Cherie",
     "name": "Shiseido Ma Cherie Air Feel Shampoo (450ml)",
@@ -64,7 +64,7 @@ export const ShiseidoMaCherieProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10716,
+    "id": "10716",
     "slug": "shiseido-ma-cherie-moisture-shampoo-450ml",
     "brand": "Shiseido Ma Cherie",
     "name": "Shiseido Ma Cherie Moisture Shampoo (450ml)",

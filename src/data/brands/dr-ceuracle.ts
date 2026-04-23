@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const DrCeuracleProducts: Product[] = [
   {
-    "id": 10922,
+    "id": "10922",
     "slug": "dr-ceuracle-vegan-kombucha-tea-gel-cream-75g",
     "brand": "Dr. Ceuracle",
     "name": "Dr. Ceuracle Vegan Kombucha Tea Gel Cream (75g)",

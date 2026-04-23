@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const LIONProducts: Product[] = [
   {
-    "id": 10971,
+    "id": "10971",
     "slug": "lion-kirei-kirei-foaming-hand-soap",
     "brand": "LION",
     "name": "LION Kirei Kirei Foaming Hand Soap",

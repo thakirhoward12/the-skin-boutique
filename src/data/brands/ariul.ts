@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ARIULProducts: Product[] = [
   {
-    "id": 10355,
+    "id": "10355",
     "slug": "ariul-smooth-pure-foot-mask-special-care-set-tea-tree-aloe-2-pairs",
     "brand": "ARIUL",
     "name": "ARIUL Smooth & Pure Foot Mask Special Care Set Tea Tree & Aloe (2 Pairs)",

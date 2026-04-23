@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SANAProducts: Product[] = [
   {
-    "id": 10376,
+    "id": "10376",
     "slug": "sana-new-born-brow-eyebrow-mascara-and-pencil-ex",
     "brand": "SANA",
     "name": "Sana New Born Brow Eyebrow Mascara and Pencil EX",
@@ -66,7 +66,7 @@ export const SANAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10377,
+    "id": "10377",
     "slug": "sana-newborn-perfect-eyebrow-pencil-0-4g",
     "brand": "SANA",
     "name": "Sana Newborn Perfect Eyebrow Pencil (0.4g)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KUMANOYUSHIProducts: Product[] = [
   {
-    "id": 10680,
+    "id": "10680",
     "slug": "kumanoyushi-horse-oil-shampoo-600ml",
     "brand": "KUMANOYUSHI",
     "name": "KUMANOYUSHI Horse Oil Shampoo (600ml)",
@@ -33,7 +33,7 @@ export const KUMANOYUSHIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10681,
+    "id": "10681",
     "slug": "kumanoyushi-horse-oil-conditioner-600ml",
     "brand": "KUMANOYUSHI",
     "name": "KUMANOYUSHI Horse Oil Conditioner (600ml)",
@@ -64,7 +64,7 @@ export const KUMANOYUSHIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10743,
+    "id": "10743",
     "slug": "kumanoyushi-horse-oil-non-silicone-rinse-in-shampoo-600ml",
     "brand": "KUMANOYUSHI",
     "name": "KUMANOYUSHI Horse Oil Non Silicone Rinse In Shampoo (600ml)",
@@ -95,7 +95,7 @@ export const KUMANOYUSHIProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10774,
+    "id": "10774",
     "slug": "kumanoyushi-horse-oil-body-soap-600ml",
     "brand": "KUMANOYUSHI",
     "name": "KUMANOYUSHI Horse Oil Body Soap (600ml)",

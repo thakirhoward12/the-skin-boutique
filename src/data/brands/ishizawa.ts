@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const IshizawaProducts: Product[] = [
   {
-    "id": 10036,
+    "id": "10036",
     "slug": "ishizawa-keana-rice-mask-10th-anniversary-set",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Rice Mask 10th Anniversary Set",
@@ -33,7 +33,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10347,
+    "id": "10347",
     "slug": "ishizawa-keana-nadeshiko-baking-soda-cleansing-gel-100g",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Nadeshiko Baking Soda Cleansing Gel (100g)",
@@ -64,7 +64,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10435,
+    "id": "10435",
     "slug": "ishizawa-keana-nadeshiko-pore-care-rice-pack-170g",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Nadeshiko Pore Care Rice Pack (170g)",
@@ -95,7 +95,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10436,
+    "id": "10436",
     "slug": "ishizawa-keana-baking-soda-moist-peeling-200ml",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Baking Soda Moist Peeling (200ml)",
@@ -126,7 +126,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10437,
+    "id": "10437",
     "slug": "ishizawa-keana-baking-soda-face-foam-100g",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Baking Soda Face Foam (100g)",
@@ -157,7 +157,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10446,
+    "id": "10446",
     "slug": "ishizawa-keana-nadeshiko-baking-soda-nose-cream-pack-15g",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Nadeshiko Baking Soda Nose Cream Pack (15g)",
@@ -188,7 +188,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10447,
+    "id": "10447",
     "slug": "ishizawa-keana-nadeshiko-goodbye-pore-makeup-base-12g",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Nadeshiko Goodbye Pore Makeup Base (12g)",
@@ -219,7 +219,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10495,
+    "id": "10495",
     "slug": "ishizawa-keana-nadeshiko-rice-cleansing-oil-145ml",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Nadeshiko Rice Cleansing Oil (145ml)",
@@ -250,7 +250,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10496,
+    "id": "10496",
     "slug": "ishizawa-keana-nadeshiko-rice-powder-wash-50g",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Nadeshiko Rice Powder Wash (50g)",
@@ -281,7 +281,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10497,
+    "id": "10497",
     "slug": "ishizawa-keana-pore-tightening-mask",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Pore Tightening Mask",
@@ -321,7 +321,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10521,
+    "id": "10521",
     "slug": "ishizawa-keana-nadeshiko-rice-cream-30g",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Nadeshiko Rice Cream (30g)",
@@ -352,7 +352,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10899,
+    "id": "10899",
     "slug": "ishizawa-sukoyaka-suhada-urea-moisture-eye-cream-30g",
     "brand": "Ishizawa",
     "name": "ISHIZAWA Sukoyaka Suhada Urea Moisture Eye Cream (30g)",
@@ -383,7 +383,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10955,
+    "id": "10955",
     "slug": "ishizawa-sukoyaka-suhada-urea-moisture-lotion-200ml",
     "brand": "Ishizawa",
     "name": "ISHIZAWA Sukoyaka Suhada Urea Moisture Lotion (200ml)",
@@ -414,7 +414,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11025,
+    "id": "11025",
     "slug": "ishizawa-keana-nadeshiko-rice-mask",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Nadeshiko Rice Mask",
@@ -454,7 +454,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11026,
+    "id": "11026",
     "slug": "ishizawa-keana-baking-soda-scrub-wash-100g",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Baking Soda Scrub Wash (100g)",
@@ -485,7 +485,7 @@ export const IshizawaProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11031,
+    "id": "11031",
     "slug": "ishizawa-keana-nadeshiko-rice-toner-300ml",
     "brand": "Ishizawa",
     "name": "ISHIZAWA KEANA Nadeshiko Rice Toner (300ml)",

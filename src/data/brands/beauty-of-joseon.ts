@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const BeautyofJoseonProducts: Product[] = [
   {
-    "id": 10661,
+    "id": "10661",
     "slug": "beauty-of-joseon-relief-sun-aqua-fresh-rice-b5-spf50-pa-special-edition-set-50ml-50ml-fan",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Relief Sun Aqua-Fresh Rice+B5 (SPF50+ PA++++) Special Edition Set (50ml+50ml+fan)",
@@ -33,7 +33,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10684,
+    "id": "10684",
     "slug": "beauty-of-joseon-green-plum-refreshing-toner-aha-bha-150ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Green Plum Refreshing Toner: AHA + BHA (150ml)",
@@ -64,7 +64,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10709,
+    "id": "10709",
     "slug": "beauty-of-joseon-dynasty-cream",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Dynasty Cream",
@@ -104,7 +104,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10727,
+    "id": "10727",
     "slug": "beauty-of-joseon-red-bean-water-gel-100ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Red Bean Water Gel (100ml)",
@@ -135,7 +135,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10728,
+    "id": "10728",
     "slug": "beauty-of-joseon-centella-asiatica-calming-mask-10-pcs",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Centella Asiatica Calming Mask (10 pcs)",
@@ -166,7 +166,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10747,
+    "id": "10747",
     "slug": "beauty-of-joseon-red-bean-refreshing-pore-mask-140ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Red Bean Refreshing Pore Mask (140ml)",
@@ -197,7 +197,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10759,
+    "id": "10759",
     "slug": "beauty-of-joseon-apricot-blossom-peeling-gel-100ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Apricot Blossom Peeling Gel (100ml)",
@@ -228,7 +228,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10761,
+    "id": "10761",
     "slug": "beauty-of-joseon-light-on-serum-centella-vita-c-30ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Light On Serum Centella + Vita C (30ml)",
@@ -259,7 +259,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10762,
+    "id": "10762",
     "slug": "beauty-of-joseon-calming-serum-30ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Calming Serum (30ml)",
@@ -290,7 +290,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10764,
+    "id": "10764",
     "slug": "beauty-of-joseon-radiance-cleansing-balm-100ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Radiance Cleansing Balm (100ml)",
@@ -321,7 +321,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10765,
+    "id": "10765",
     "slug": "beauty-of-joseon-revive-serum-ginseng-snail-mucin-30ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Revive Serum: Ginseng + Snail Mucin (30ml)",
@@ -352,7 +352,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10766,
+    "id": "10766",
     "slug": "beauty-of-joseon-green-plum-refreshing-cleanser-100ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Green Plum Refreshing Cleanser (100ml)",
@@ -383,7 +383,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10769,
+    "id": "10769",
     "slug": "beauty-of-joseon-ginseng-essence-water-150ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Ginseng Essence Water (150ml)",
@@ -414,7 +414,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10770,
+    "id": "10770",
     "slug": "beauty-of-joseon-glow-serum-propolis-niacinamide-30ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Glow Serum: Propolis & Niacinamide (30ml)",
@@ -445,7 +445,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10771,
+    "id": "10771",
     "slug": "beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Revive Eye Serum: Ginseng + Retinal (30ml)",
@@ -476,7 +476,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10772,
+    "id": "10772",
     "slug": "beauty-of-joseon-glow-deep-serum-rice-arbutin-30ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Glow Deep Serum: Rice + Arbutin (30ml)",
@@ -507,7 +507,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10773,
+    "id": "10773",
     "slug": "beauty-of-joseon-ginseng-cleansing-oil-210ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Ginseng Cleansing Oil (210ml)",
@@ -538,7 +538,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10806,
+    "id": "10806",
     "slug": "beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Ground Rice And Honey Glow Mask (150ml)",
@@ -569,7 +569,7 @@ export const BeautyofJoseonProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10807,
+    "id": "10807",
     "slug": "beauty-of-joseon-glow-replenishing-rice-milk-150ml",
     "brand": "Beauty of Joseon",
     "name": "Beauty of Joseon Glow Replenishing Rice Milk (150ml)",

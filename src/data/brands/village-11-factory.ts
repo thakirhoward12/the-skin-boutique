@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const Village11FactoryProducts: Product[] = [
   {
-    "id": 10340,
+    "id": "10340",
     "slug": "village-11-factory-hydro-boost-serum-50ml",
     "brand": "Village 11 Factory",
     "name": "Village 11 Factory Hydro Boost Serum (50ml)",

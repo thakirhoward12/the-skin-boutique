@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const GoodalProducts: Product[] = [
   {
-    "id": 10814,
+    "id": "10814",
     "slug": "goodal-green-tangerine-vita-c-dark-spot-care-pads-70pcs",
     "brand": "Goodal",
     "name": "Goodal Green Tangerine Vita-C Dark Spot Care Pads (70pcs)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MedihealProducts: Product[] = [
   {
-    "id": 10028,
+    "id": "10028",
     "slug": "mediheal-vitamin-c-essential-mask-clear-toning-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Vitamin C Essential Mask - Clear Toning (10 PCs)",
@@ -33,7 +33,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10029,
+    "id": "10029",
     "slug": "mediheal-collagen-essential-mask-core-firming-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Collagen Essential Mask - Core Firming (10 PCs)",
@@ -64,7 +64,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10030,
+    "id": "10030",
     "slug": "mediheal-ceramide-essential-mask-moisture-barrier-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Ceramide Essential Mask - Moisture Barrier (10 PCs)",
@@ -95,7 +95,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10188,
+    "id": "10188",
     "slug": "mediheal-hyaluronate-essential-mask-ultra-hydration-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Hyaluronate Essential Mask - Ultra Hydration (10 PCs)",
@@ -126,7 +126,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10189,
+    "id": "10189",
     "slug": "mediheal-teatree-essential-mask-calming-moisture-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Teatree Essential Mask - Calming Moisture (10 PCs)",
@@ -157,7 +157,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10236,
+    "id": "10236",
     "slug": "mediheal-madecassoside-essential-mask-blemish-repair-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Madecassoside Essential Mask - Blemish Repair (10 PCs)",
@@ -188,7 +188,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10294,
+    "id": "10294",
     "slug": "mediheal-retinol-collagen-ampoule-lifting-mask-4-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Retinol Collagen Ampoule Lifting Mask (4 PCs)",
@@ -219,7 +219,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10339,
+    "id": "10339",
     "slug": "mediheal-pdrn-lifting-pad-100-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL PDRN Lifting Pad (100 PCs)",
@@ -250,7 +250,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10411,
+    "id": "10411",
     "slug": "mediheal-rose-pdrn-essential-mask-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Rose PDRN Essential Mask (10 PCs)",
@@ -281,7 +281,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10491,
+    "id": "10491",
     "slug": "mediheal-vita-c-brightening-sleeping-mask-20ml",
     "brand": "Mediheal",
     "name": "MEDIHEAL Vita C Brightening Sleeping Mask (20ml)",
@@ -312,7 +312,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10492,
+    "id": "10492",
     "slug": "mediheal-hyaluron-hydrating-sleeping-mask-20ml",
     "brand": "Mediheal",
     "name": "MEDIHEAL Hyaluron Hydrating Sleeping Mask (20ml)",
@@ -343,7 +343,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10493,
+    "id": "10493",
     "slug": "mediheal-cica-ac-calming-sleeping-mask-20ml",
     "brand": "Mediheal",
     "name": "MEDIHEAL Cica AC Calming Sleeping Mask (20ml)",
@@ -374,7 +374,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10494,
+    "id": "10494",
     "slug": "mediheal-collagen-anti-aging-sleeping-mask-20ml",
     "brand": "Mediheal",
     "name": "MEDIHEAL Collagen Anti-Aging Sleeping Mask (20ml)",
@@ -405,7 +405,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10524,
+    "id": "10524",
     "slug": "mediheal-vital-firming-mask-1-pc",
     "brand": "Mediheal",
     "name": "MEDIHEAL Vital Firming Mask (1 PC)",
@@ -436,7 +436,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10525,
+    "id": "10525",
     "slug": "mediheal-pure-calming-mask-1-pc",
     "brand": "Mediheal",
     "name": "MEDIHEAL Pure Calming Mask (1 PC)",
@@ -467,7 +467,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10526,
+    "id": "10526",
     "slug": "mediheal-hydra-soothing-mask-1-pc",
     "brand": "Mediheal",
     "name": "MEDIHEAL Hydra Soothing Mask (1 PC)",
@@ -498,7 +498,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10527,
+    "id": "10527",
     "slug": "mediheal-centella-niacin-ampoule-mask-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Centella Niacin Ampoule Mask (10 PCs)",
@@ -529,7 +529,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10528,
+    "id": "10528",
     "slug": "mediheal-vita-toning-essence-mask-5-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Vita Toning Essence Mask (5 PCs)",
@@ -560,7 +560,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10580,
+    "id": "10580",
     "slug": "mediheal-cica-calming-ampoule-mask-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Cica Calming Ampoule Mask (10 PCs)",
@@ -591,7 +591,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10581,
+    "id": "10581",
     "slug": "mediheal-aqua-soothing-ampoule-mask-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Aqua Soothing Ampoule Mask (10 PCs)",
@@ -622,7 +622,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10582,
+    "id": "10582",
     "slug": "mediheal-vita-clear-ampoule-mask-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Vita Clear Ampoule Mask (10 PCs)",
@@ -653,7 +653,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10603,
+    "id": "10603",
     "slug": "mediheal-derma-clear-teatree-treatment-spot-patch-44-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Derma Clear Teatree Treatment Spot Patch (44 PCs)",
@@ -684,7 +684,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10616,
+    "id": "10616",
     "slug": "mediheal-derma-layer-hand-mask",
     "brand": "Mediheal",
     "name": "MEDIHEAL Derma Layer Hand Mask",
@@ -724,7 +724,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10776,
+    "id": "10776",
     "slug": "mediheal-labocare-pantenolips-10ml",
     "brand": "Mediheal",
     "name": "MEDIHEAL Labocare Pantenolips (10ml)",
@@ -784,7 +784,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10777,
+    "id": "10777",
     "slug": "mediheal-derma-layer-foot-mask",
     "brand": "Mediheal",
     "name": "MEDIHEAL Derma Layer Foot Mask",
@@ -824,7 +824,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10844,
+    "id": "10844",
     "slug": "mediheal-derma-synergy-wrapping-mask-madecassoside-x-vitamin-c",
     "brand": "Mediheal",
     "name": "MEDIHEAL Derma Synergy Wrapping Mask - Madecassoside x Vitamin C",
@@ -864,7 +864,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10886,
+    "id": "10886",
     "slug": "mediheal-retinol-collagen-lifting-pad-100-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Retinol Collagen Lifting Pad (100 PCs)",
@@ -895,7 +895,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10898,
+    "id": "10898",
     "slug": "mediheal-phyto-enzyme-peeling-pad-90-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Phyto-enzyme Peeling Pad (90 PCs)",
@@ -926,7 +926,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10910,
+    "id": "10910",
     "slug": "mediheal-vitamide-brightening-pad-100-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Vitamide Brightening Pad (100 PCs)",
@@ -957,7 +957,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10927,
+    "id": "10927",
     "slug": "mediheal-watermide-toner-pad-100-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Watermide Toner Pad (100 PCs)",
@@ -988,7 +988,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10928,
+    "id": "10928",
     "slug": "mediheal-teatree-trouble-pad-100-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Teatree Trouble Pad (100 PCs)",
@@ -1019,7 +1019,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10929,
+    "id": "10929",
     "slug": "mediheal-madecassoside-blemish-pad-100-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Madecassoside Blemish Pad (100 PCs)",
@@ -1050,7 +1050,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10930,
+    "id": "10930",
     "slug": "mediheal-collagen-ampoule-pad-100-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Collagen Ampoule Pad (100 PCs)",
@@ -1081,7 +1081,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10937,
+    "id": "10937",
     "slug": "mediheal-madecassoside-essential-mask-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Madecassoside Essential Mask (10 PCs)",
@@ -1112,7 +1112,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10950,
+    "id": "10950",
     "slug": "mediheal-vita-essential-mask-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Vita Essential Mask (10 PCs)",
@@ -1143,7 +1143,7 @@ export const MedihealProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10951,
+    "id": "10951",
     "slug": "mediheal-placenta-essential-mask-10-pcs",
     "brand": "Mediheal",
     "name": "MEDIHEAL Placenta Essential Mask (10 PCs)",

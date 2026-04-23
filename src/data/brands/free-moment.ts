@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const FREEMOMENTProducts: Product[] = [
   {
-    "id": 10610,
+    "id": "10610",
     "slug": "free-moment-80-super-noni-serum-30ml",
     "brand": "FREE MOMENT",
     "name": "FREE MOMENT 80% Super Noni Serum (30ml)",
@@ -33,7 +33,7 @@ export const FREEMOMENTProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10827,
+    "id": "10827",
     "slug": "free-moment-green-calming-serum-mist-100ml",
     "brand": "FREE MOMENT",
     "name": "FREE MOMENT Green Calming Serum Mist (100ml)",
@@ -64,7 +64,7 @@ export const FREEMOMENTProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10828,
+    "id": "10828",
     "slug": "free-moment-refresh-moment-perfume-treatment-150ml",
     "brand": "FREE MOMENT",
     "name": "FREE MOMENT Refresh Moment Perfume Treatment (150ml)",
@@ -104,7 +104,7 @@ export const FREEMOMENTProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10829,
+    "id": "10829",
     "slug": "free-moment-refresh-moment-perfume-shampoo-500ml",
     "brand": "FREE MOMENT",
     "name": "FREE MOMENT Refresh Moment Perfume Shampoo (500ml)",

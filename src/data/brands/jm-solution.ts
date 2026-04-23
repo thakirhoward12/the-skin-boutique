@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const JMSolutionProducts: Product[] = [
   {
-    "id": 10162,
+    "id": "10162",
     "slug": "jmsolution-honey-luminous-royal-propolis-hand-cream-set-100ml-50ml",
     "brand": "JM Solution",
     "name": "JMsolution Honey Luminous Royal Propolis Hand Cream Set (100ml+50ml)",
@@ -33,7 +33,7 @@ export const JMSolutionProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10163,
+    "id": "10163",
     "slug": "jmsolution-water-luminous-avocado-nourishing-hand-cream-set-100ml-50ml",
     "brand": "JM Solution",
     "name": "JMsolution Water Luminous Avocado Nourishing Hand Cream Set (100ml+50ml)",

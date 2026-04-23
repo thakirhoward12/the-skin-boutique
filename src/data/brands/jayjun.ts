@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const JAYJUNProducts: Product[] = [
   {
-    "id": 11004,
+    "id": "11004",
     "slug": "jayjun-eye-gel-patch-30-pairs",
     "brand": "JAYJUN",
     "name": "JAYJUN Eye Gel Patch (30 Pairs)",

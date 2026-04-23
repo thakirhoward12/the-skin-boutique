@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ETUDEHOUSEProducts: Product[] = [
   {
-    "id": 10358,
+    "id": "10358",
     "slug": "etude-house-fruity-lip-balm-10g",
     "brand": "ETUDE HOUSE",
     "name": "ETUDE HOUSE Fruity Lip Balm (10g)",

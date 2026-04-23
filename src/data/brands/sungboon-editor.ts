@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SungboonEditorProducts: Product[] = [
   {
-    "id": 10231,
+    "id": "10231",
     "slug": "sungboon-editor-deep-collagen-cica-teatree-soothing-mask-4-pcs",
     "brand": "Sungboon Editor",
     "name": "Sungboon Editor Deep Collagen Cica Teatree Soothing Mask (4 PCs)",
@@ -33,7 +33,7 @@ export const SungboonEditorProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10378,
+    "id": "10378",
     "slug": "sungboon-editor-deep-collagen-niacin-vita-c-brightening-mask-4-pcs",
     "brand": "Sungboon Editor",
     "name": "Sungboon Editor Deep Collagen Niacin-Vita C Brightening Mask (4 PCs)",
@@ -64,7 +64,7 @@ export const SungboonEditorProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10379,
+    "id": "10379",
     "slug": "sungboon-editor-deep-collagen-hyalu-b5-hydrating-mask-4-pcs",
     "brand": "Sungboon Editor",
     "name": "Sungboon Editor Deep Collagen Hyalu-B5 Hydrating Mask (4 PCs)",
@@ -95,7 +95,7 @@ export const SungboonEditorProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10652,
+    "id": "10652",
     "slug": "sungboon-editor-deep-collagen-anti-wrinkle-lifting-mask-4-pcs",
     "brand": "Sungboon Editor",
     "name": "Sungboon Editor Deep Collagen Anti-Wrinkle Lifting Mask (4 PCs)",

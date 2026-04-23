@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ISNTREEProducts: Product[] = [
   {
-    "id": 10052,
+    "id": "10052",
     "slug": "isntree-hyaluronic-acid-aqua-gel-cream-100ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Hyaluronic Acid Aqua Gel Cream (100ml)",
@@ -33,7 +33,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10149,
+    "id": "10149",
     "slug": "isntree-hyaluronic-acid-low-ph-cleansing-foam-150ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Hyaluronic Acid Low PH Cleansing Foam (150ml)",
@@ -64,7 +64,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10670,
+    "id": "10670",
     "slug": "isntree-hyaluronic-acid-water-sleeping-mask-100ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Hyaluronic Acid Water Sleeping Mask (100ml)",
@@ -95,7 +95,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10689,
+    "id": "10689",
     "slug": "isntree-tw-real-eye-cream-30ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Tw-Real Eye Cream (30ml)",
@@ -126,7 +126,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10690,
+    "id": "10690",
     "slug": "isntree-green-tea-fresh-cleanser-120ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Green Tea Fresh Cleanser (120ml)",
@@ -157,7 +157,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10695,
+    "id": "10695",
     "slug": "isntree-green-tea-fresh-serum-50ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Green Tea Fresh Serum (50ml)",
@@ -188,7 +188,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10701,
+    "id": "10701",
     "slug": "isntree-hyaluronic-acid-toner-200ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Hyaluronic Acid Toner (200ml)",
@@ -219,7 +219,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10710,
+    "id": "10710",
     "slug": "isntree-green-tea-fresh-toner-200ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Green Tea Fresh Toner (200ml)",
@@ -250,7 +250,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10711,
+    "id": "10711",
     "slug": "isntree-hyaluronic-acid-water-essence-50ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Hyaluronic Acid Water Essence (50ml)",
@@ -281,7 +281,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10715,
+    "id": "10715",
     "slug": "isntree-green-tea-fresh-emulsion-120ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Green Tea Fresh Emulsion (120ml)",
@@ -312,7 +312,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10787,
+    "id": "10787",
     "slug": "isntree-hyper-vitamin-c-30-cream-20ml",
     "brand": "ISNTREE",
     "name": "ISNTREE Hyper Vitamin C 30 Cream (20ml)",
@@ -343,7 +343,7 @@ export const ISNTREEProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10956,
+    "id": "10956",
     "slug": "isntree-hyaluronic-acid-natural-sun-cream-spf50-pa-50ml",
     "brand": "ISNTREE",
     "name": "Isntree Hyaluronic Acid Natural Sun Cream SPF50+ PA++++ (50ml)",

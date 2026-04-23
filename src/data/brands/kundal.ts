@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KUNDALProducts: Product[] = [
   {
-    "id": 10273,
+    "id": "10273",
     "slug": "kundal-airy-volume-hyaluron-hair-care-set-2x300ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Airy Volume Hyaluron Hair Care Set (2x300ml)",
@@ -33,7 +33,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10274,
+    "id": "10274",
     "slug": "kundal-10x-caffeine-strengthening-scalp-serum-10ml",
     "brand": "KUNDAL",
     "name": "KUNDAL 10X Caffeine Strengthening Scalp Serum (10ml)",
@@ -64,7 +64,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10275,
+    "id": "10275",
     "slug": "kundal-airy-volume-hyaluron-serum-50ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Airy Volume Hyaluron Serum (50ml)",
@@ -95,7 +95,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10276,
+    "id": "10276",
     "slug": "kundal-protein-bonding-treatment-250ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Protein Bonding Treatment (250ml)",
@@ -126,7 +126,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10277,
+    "id": "10277",
     "slug": "kundal-honey-macadamia-hair-care-set-2x500ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Honey & Macadamia Hair Care Set (2x500ml)",
@@ -166,7 +166,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10278,
+    "id": "10278",
     "slug": "kundal-honey-macadamia-pure-body-wash-body-lotion-set-2x500ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Honey & Macadamia Pure Body Wash + Body Lotion Set (2x500ml)",
@@ -197,7 +197,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10279,
+    "id": "10279",
     "slug": "kundal-caffeine-shampoo-500ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Caffeine Shampoo (500ml)",
@@ -241,7 +241,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10280,
+    "id": "10280",
     "slug": "kundal-tea-tree-macadamia-deep-cleansing-shampoo-500ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Tea Tree & Macadamia Deep Cleansing Shampoo (500ml)",
@@ -285,7 +285,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10281,
+    "id": "10281",
     "slug": "kundal-protein-bonding-shampoo-500ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Protein Bonding Shampoo (500ml)",
@@ -316,7 +316,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10282,
+    "id": "10282",
     "slug": "kundal-airy-volume-hyaluron-treatment-500ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Airy Volume Hyaluron Treatment (500ml)",
@@ -347,7 +347,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10283,
+    "id": "10283",
     "slug": "kundal-protein-bonding-no-wash-treatment-130ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Protein Bonding No Wash Treatment (130ml)",
@@ -378,7 +378,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10284,
+    "id": "10284",
     "slug": "kundal-head-spa-scalp-care-scalp-tonic-100ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Head Spa & Scalp Care+ Scalp Tonic (100ml)",
@@ -409,7 +409,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10285,
+    "id": "10285",
     "slug": "kundal-dandruff-relief-shampoo-500ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Dandruff Relief Shampoo (500ml)",
@@ -449,7 +449,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10286,
+    "id": "10286",
     "slug": "kundal-airy-volume-hyaluron-shampoo-500ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Airy Volume Hyaluron Shampoo (500ml)",
@@ -480,7 +480,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10287,
+    "id": "10287",
     "slug": "kundal-macadamia-hair-serum-100ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Macadamia Hair Serum (100ml)",
@@ -528,7 +528,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10288,
+    "id": "10288",
     "slug": "kundal-honey-macadamia-pure-body-wash-500ml",
     "brand": "KUNDAL",
     "name": "KUNDAL Honey & Macadamia Pure Body Wash (500ml)",
@@ -584,7 +584,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10289,
+    "id": "10289",
     "slug": "kundal-honey-macadamia-shampoo",
     "brand": "KUNDAL",
     "name": "KUNDAL Honey & Macadamia Shampoo",
@@ -644,7 +644,7 @@ export const KUNDALProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10290,
+    "id": "10290",
     "slug": "kundal-honey-macadamia-protein-treatment",
     "brand": "KUNDAL",
     "name": "KUNDAL Honey & Macadamia Protein Treatment",

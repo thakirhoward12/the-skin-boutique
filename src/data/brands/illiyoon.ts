@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ILLIYOONProducts: Product[] = [
   {
-    "id": 10196,
+    "id": "10196",
     "slug": "illiyoon-ultra-repair-intensive-care-cream-200ml",
     "brand": "ILLIYOON",
     "name": "ILLIYOON Ultra Repair Intensive Care Cream (200ml)",
@@ -33,7 +33,7 @@ export const ILLIYOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10197,
+    "id": "10197",
     "slug": "illiyoon-ultra-repair-lotion-350ml",
     "brand": "ILLIYOON",
     "name": "ILLIYOON Ultra Repair Lotion (350ml)",
@@ -64,7 +64,7 @@ export const ILLIYOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10539,
+    "id": "10539",
     "slug": "illiyoon-ceramide-ato-concentrate-cream-230ml",
     "brand": "ILLIYOON",
     "name": "ILLIYOON Ceramide Ato Concentrate Cream (230ml)",
@@ -95,7 +95,7 @@ export const ILLIYOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10960,
+    "id": "10960",
     "slug": "illiyoon-ceramide-ato-lotion-350ml",
     "brand": "ILLIYOON",
     "name": "ILLIYOON Ceramide Ato Lotion (350ml)",
@@ -126,7 +126,7 @@ export const ILLIYOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10961,
+    "id": "10961",
     "slug": "illiyoon-ceramide-ato-6-0-top-to-toe-wash-500ml",
     "brand": "ILLIYOON",
     "name": "ILLIYOON Ceramide Ato 6.0 Top to Toe Wash (500ml)",
@@ -157,7 +157,7 @@ export const ILLIYOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10969,
+    "id": "10969",
     "slug": "illiyoon-fresh-moisture-body-wash-500ml",
     "brand": "ILLIYOON",
     "name": "ILLIYOON Fresh Moisture Body Wash (500ml)",
@@ -188,7 +188,7 @@ export const ILLIYOONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10970,
+    "id": "10970",
     "slug": "illiyoon-fresh-moisture-body-lotion-350ml",
     "brand": "ILLIYOON",
     "name": "ILLIYOON Fresh Moisture Body Lotion (350ml)",

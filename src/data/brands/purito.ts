@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const PuritoProducts: Product[] = [
   {
-    "id": 10165,
+    "id": "10165",
     "slug": "purito-fermented-complex-94-boosting-essence-150ml",
     "brand": "Purito",
     "name": "PURITO Fermented Complex 94 Boosting Essence (150ml)",
@@ -33,7 +33,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10183,
+    "id": "10183",
     "slug": "purito-clear-code-superfruit-cleanser-150ml",
     "brand": "Purito",
     "name": "PURITO Clear Code Superfruit Cleanser (150ml)",
@@ -64,7 +64,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10184,
+    "id": "10184",
     "slug": "purito-clear-code-superfruit-serum-30ml",
     "brand": "Purito",
     "name": "PURITO Clear Code Superfruit Serum (30ml)",
@@ -95,7 +95,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10185,
+    "id": "10185",
     "slug": "purito-timeless-bloom-bakuchiol-serum-30ml",
     "brand": "Purito",
     "name": "PURITO Timeless Bloom Bakuchiol Serum (30ml)",
@@ -126,7 +126,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10186,
+    "id": "10186",
     "slug": "purito-timeless-bloom-retinol-spot-cream-30ml",
     "brand": "Purito",
     "name": "PURITO Timeless Bloom Retinol Spot Cream (30ml)",
@@ -157,7 +157,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10227,
+    "id": "10227",
     "slug": "purito-hypochlorous-acid-rescue-spray-100ml",
     "brand": "Purito",
     "name": "PURITO Hypochlorous Acid Rescue Spray (100ml)",
@@ -188,7 +188,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10332,
+    "id": "10332",
     "slug": "purito-azelaic-acid-10-kojic-tea-tree-serum-30ml",
     "brand": "Purito",
     "name": "PURITO Azelaic Acid 10 Kojic Tea Tree Serum (30ml)",
@@ -219,7 +219,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10333,
+    "id": "10333",
     "slug": "purito-txa-6-niacinamide-10-retinal-serum-30ml",
     "brand": "Purito",
     "name": "PURITO TXA 6 Niacinamide 10 Retinal Serum (30ml)",
@@ -250,7 +250,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10397,
+    "id": "10397",
     "slug": "purito-oat-pdrn-gentle-refining-toner-200ml",
     "brand": "Purito",
     "name": "PURITO Oat PDRN Gentle Refining Toner (200ml)",
@@ -281,7 +281,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10398,
+    "id": "10398",
     "slug": "purito-oat-in-gentle-exfoliating-face-cleanser-150ml",
     "brand": "Purito",
     "name": "PURITO Oat-In Gentle Exfoliating Face Cleanser (150ml)",
@@ -312,7 +312,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10467,
+    "id": "10467",
     "slug": "purito-sea-buckthorn-vital-70-cream-50ml",
     "brand": "Purito",
     "name": "PURITO Sea Buckthorn Vital 70 Cream (50ml)",
@@ -343,7 +343,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10469,
+    "id": "10469",
     "slug": "purito-wonder-releaf-centella-serum",
     "brand": "Purito",
     "name": "PURITO Wonder Releaf Centella Serum",
@@ -374,7 +374,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10474,
+    "id": "10474",
     "slug": "purito-from-green-deep-foaming-cleanser-150ml",
     "brand": "Purito",
     "name": "PURITO From Green Deep Foaming Cleanser (150ml)",
@@ -405,7 +405,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10475,
+    "id": "10475",
     "slug": "purito-hydro-wave-deep-sea-serum-60ml",
     "brand": "Purito",
     "name": "PURITO Hydro Wave Deep Sea Serum (60ml)",
@@ -436,7 +436,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10481,
+    "id": "10481",
     "slug": "purito-cica-clearing-bb-cream-30ml-31-deep-warm",
     "brand": "Purito",
     "name": "PURITO Cica Clearing BB Cream (30ml) - #31 Deep Warm",
@@ -467,7 +467,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10500,
+    "id": "10500",
     "slug": "purito-wonder-releaf-centella-cream-50ml",
     "brand": "Purito",
     "name": "PURITO Wonder Releaf Centella Cream (50ml)",
@@ -498,7 +498,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10540,
+    "id": "10540",
     "slug": "purito-wonder-releaf-centella-eye-cream-unscented-30ml",
     "brand": "Purito",
     "name": "PURITO Wonder Releaf Centella Eye Cream Unscented (30ml)",
@@ -529,7 +529,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10541,
+    "id": "10541",
     "slug": "purito-wonder-releaf-centella-eye-cream-30ml",
     "brand": "Purito",
     "name": "PURITO Wonder Releaf Centella Eye Cream (30ml)",
@@ -560,7 +560,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10548,
+    "id": "10548",
     "slug": "purito-wonder-releaf-centella-bb-cream-spf-30-pa-30ml",
     "brand": "Purito",
     "name": "PURITO Wonder Releaf Centella BB Cream SPF 30 PA+++ (30ml)",
@@ -612,7 +612,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10550,
+    "id": "10550",
     "slug": "purito-centella-green-level-calming-toner-200ml",
     "brand": "Purito",
     "name": "PURITO Centella Green Level Calming Toner (200ml)",
@@ -643,7 +643,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10555,
+    "id": "10555",
     "slug": "purito-mighty-bamboo-panthenol-serum-30ml",
     "brand": "Purito",
     "name": "PURITO Mighty Bamboo Panthenol Serum (30ml)",
@@ -674,7 +674,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10556,
+    "id": "10556",
     "slug": "purito-from-green-avocado-cleansing-balm-100ml",
     "brand": "Purito",
     "name": "PURITO From Green Avocado Cleansing Balm (100ml)",
@@ -705,7 +705,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10557,
+    "id": "10557",
     "slug": "purito-wonder-releaf-centella-mini-kit-unscented-3-pcs",
     "brand": "Purito",
     "name": "PURITO Wonder Releaf Centella Mini Kit Unscented (3 PCs)",
@@ -736,7 +736,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10591,
+    "id": "10591",
     "slug": "purito-mighty-bamboo-panthenol-cleanser-150ml",
     "brand": "Purito",
     "name": "PURITO Mighty Bamboo Panthenol Cleanser (150ml)",
@@ -767,7 +767,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10649,
+    "id": "10649",
     "slug": "purito-from-green-cleansing-oil-200ml",
     "brand": "Purito",
     "name": "PURITO From Green Cleansing Oil (200ml)",
@@ -798,7 +798,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10660,
+    "id": "10660",
     "slug": "purito-wonder-releaf-centella-cream-unscented",
     "brand": "Purito",
     "name": "PURITO Wonder Releaf Centella Cream Unscented",
@@ -838,7 +838,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10795,
+    "id": "10795",
     "slug": "purito-luminous-ceramide-moisturizer-100ml",
     "brand": "Purito",
     "name": "PURITO Luminous Ceramide Moisturizer (100ml)",
@@ -869,7 +869,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10798,
+    "id": "10798",
     "slug": "purito-mighty-bamboo-panthenol-cream-100ml",
     "brand": "Purito",
     "name": "PURITO Mighty Bamboo Panthenol Cream (100ml)",
@@ -900,7 +900,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10799,
+    "id": "10799",
     "slug": "purito-galacto-niacin-97-power-essence-60ml",
     "brand": "Purito",
     "name": "PURITO Galacto Niacin 97 Power Essence (60ml)",
@@ -931,7 +931,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10888,
+    "id": "10888",
     "slug": "purito-oat-in-calming-gel-cream-100ml",
     "brand": "Purito",
     "name": "PURITO Oat-in Calming Gel Cream (100ml)",
@@ -962,7 +962,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10981,
+    "id": "10981",
     "slug": "purito-wonder-releaf-centella-toner-unscented-200ml",
     "brand": "Purito",
     "name": "PURITO Wonder Releaf Centella Toner Unscented (200ml)",
@@ -993,7 +993,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10982,
+    "id": "10982",
     "slug": "purito-wonder-releaf-centella-unscented-serum",
     "brand": "Purito",
     "name": "PURITO Wonder Releaf Centella Unscented Serum",
@@ -1033,7 +1033,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10986,
+    "id": "10986",
     "slug": "purito-luminous-ceramide-sleeping-pack-100ml",
     "brand": "Purito",
     "name": "PURITO Luminous Ceramide Sleeping Pack (100ml)",
@@ -1064,7 +1064,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10987,
+    "id": "10987",
     "slug": "purito-pure-vitamin-c-serum-60ml",
     "brand": "Purito",
     "name": "PURITO Pure Vitamin C Serum (60ml)",
@@ -1095,7 +1095,7 @@ export const PuritoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10988,
+    "id": "10988",
     "slug": "purito-deep-sea-pure-water-cream-50g",
     "brand": "Purito",
     "name": "PURITO Deep Sea Pure Water Cream (50g)",

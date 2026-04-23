@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ROSYROSAProducts: Product[] = [
   {
-    "id": 10198,
+    "id": "10198",
     "slug": "rosy-rosa-make-up-sponge-egg-2pc",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Make Up Sponge - Egg (2pc)",
@@ -33,7 +33,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10199,
+    "id": "10199",
     "slug": "rosy-rosa-moist-sponge-square-l",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Moist Sponge - Square L",
@@ -73,7 +73,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10200,
+    "id": "10200",
     "slug": "rosy-rosa-makeup-sponge-n-square-l-2pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Makeup Sponge - N Square L (2pcs)",
@@ -104,7 +104,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10201,
+    "id": "10201",
     "slug": "rosy-rosa-jelly-touch-sponge-house-6pc",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Jelly Touch Sponge - House (6pc)",
@@ -135,7 +135,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10202,
+    "id": "10202",
     "slug": "rosy-rosa-natural-sea-sponge-s-2pc",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Natural Sea Sponge S (2pc)",
@@ -166,7 +166,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10203,
+    "id": "10203",
     "slug": "rosy-rosa-value-sponge-n-wedge-30pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Value Sponge - N Wedge (30pcs)",
@@ -197,7 +197,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10204,
+    "id": "10204",
     "slug": "rosy-rosa-charcoal-makeup-sponge-6pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Charcoal Makeup Sponge (6pcs)",
@@ -228,7 +228,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10205,
+    "id": "10205",
     "slug": "rosy-rosa-real-look-mirror-1pc",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Real Look Mirror (1pc)",
@@ -268,7 +268,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10206,
+    "id": "10206",
     "slug": "rosy-rosa-100-natural-cotton-72pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA 100% Natural Cotton (72pcs)",
@@ -299,7 +299,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10207,
+    "id": "10207",
     "slug": "rosy-rosa-flocky-puff-2pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Flocky Puff (2pcs)",
@@ -330,7 +330,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10208,
+    "id": "10208",
     "slug": "rosy-rosa-smooth-fit-sponge-1pc",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Smooth Fit Sponge (1pc)",
@@ -361,7 +361,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10209,
+    "id": "10209",
     "slug": "rosy-rosa-fiber-brush-1pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Fiber Brush (1pcs)",
@@ -392,7 +392,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10210,
+    "id": "10210",
     "slug": "rosy-rosa-double-ended-concealer-brush-1pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Double-Ended Concealer Brush (1pcs)",
@@ -423,7 +423,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10211,
+    "id": "10211",
     "slug": "rosy-rosa-slide-lip-brush-mini-pink-1pc",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Slide Lip Brush Mini - Pink (1pc)",
@@ -454,7 +454,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10212,
+    "id": "10212",
     "slug": "rosy-rosa-multi-use-brush-face",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Multi Use Brush - Face",
@@ -485,7 +485,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10213,
+    "id": "10213",
     "slug": "rosy-rosa-eye-shadow-tip-6pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Eye Shadow Tip (6pcs)",
@@ -516,7 +516,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10214,
+    "id": "10214",
     "slug": "rosy-rosa-eyebrow-brush-set-mini-3pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Eyebrow Brush Set - Mini (3pcs)",
@@ -547,7 +547,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10215,
+    "id": "10215",
     "slug": "rosy-rosa-multi-use-brush-point-1pc",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Multi Use Brush - Point (1pc)",
@@ -578,7 +578,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10216,
+    "id": "10216",
     "slug": "rosy-rosa-value-sponge-n-square-l-12pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Value Sponge - N Square L (12pcs)",
@@ -609,7 +609,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10217,
+    "id": "10217",
     "slug": "rosy-rosa-fiber-eyeshadow-brush-set-2pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Fiber Eyeshadow Brush Set (2pcs)",
@@ -640,7 +640,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10218,
+    "id": "10218",
     "slug": "rosy-rosa-point-makeup-brush-set-2pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Point Makeup Brush Set (2pcs)",
@@ -671,7 +671,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10219,
+    "id": "10219",
     "slug": "rosy-rosa-value-sponge-n-house-s-30pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Value Sponge - N House S (30pcs)",
@@ -702,7 +702,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10220,
+    "id": "10220",
     "slug": "rosy-rosa-multi-use-foundation-puff-2pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Multi Use Foundation Puff (2pcs)",
@@ -733,7 +733,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10221,
+    "id": "10221",
     "slug": "rosy-rosa-marshmallow-mousse-touch-puff",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Marshmallow Mousse Touch Puff",
@@ -764,7 +764,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10222,
+    "id": "10222",
     "slug": "rosy-rosa-airy-touch-puff",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Airy Touch Puff",
@@ -795,7 +795,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10223,
+    "id": "10223",
     "slug": "rosy-rosa-value-sponge-n-assorted-nbr-20pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Value Sponge - N Assorted NBR (20pcs)",
@@ -826,7 +826,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10224,
+    "id": "10224",
     "slug": "rosy-rosa-value-sponge-n-assorted-nbr-30pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Value Sponge - N Assorted NBR (30pcs)",
@@ -857,7 +857,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10225,
+    "id": "10225",
     "slug": "rosy-rosa-value-sponge-diamond-m-6pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Value Sponge - Diamond M (6pcs)",
@@ -888,7 +888,7 @@ export const ROSYROSAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10226,
+    "id": "10226",
     "slug": "rosy-rosa-value-sponge-n-diamond-s-30pcs",
     "brand": "ROSY ROSA",
     "name": "ROSY ROSA Value Sponge - N Diamond S (30pcs)",

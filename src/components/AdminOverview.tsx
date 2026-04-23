@@ -13,7 +13,7 @@ import {
   BarChart3,
   ArrowUpRight,
 } from 'lucide-react';
-import { type Product } from '../data/products';
+import { Order, Product } from '../types';
 import { useCurrency, exchangeRates } from '../contexts/CurrencyContext';
 
 interface AdminOverviewProps {
@@ -106,14 +106,14 @@ export default function AdminOverview({ products }: AdminOverviewProps) {
   const rate = exchangeRates[currency] || 1;
 
   // ── Live Revenue Data ──
-  const [orders, setOrders] = useState<any[]>([]);
+  const [orders, setOrders] = useState<Order[]>([]);
   useEffect(() => {
     const fetchOrders = async () => {
       try {
         const snapshot = await getDocs(query(collection(db, 'orders')));
-        const fetched = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+        const fetched = snapshot.docs.map(d => ({ id: d.id, ...d.data() })) as Order[];
         // Only count legitimate completed transactions
-        setOrders(fetched.filter(o => o.status === 'paid' || o.status === 'processing' || o.status === 'fulfilled' || o.paymentStatus === 'paid'));
+        setOrders(fetched.filter((o) => o.status === 'paid' || o.status === 'processing' || o.status === 'fulfilled' || o.paymentStatus === 'paid'));
       } catch (err) {
         console.error("Failed to fetch orders for revenue chart:", err);
       }

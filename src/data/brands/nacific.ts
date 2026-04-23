@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const NacificProducts: Product[] = [
   {
-    "id": 10607,
+    "id": "10607",
     "slug": "nacific-fresh-herb-origin-cream-50ml",
     "brand": "Nacific",
     "name": "NACIFIC Fresh Herb Origin Cream (50ml)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const CowBrandProducts: Product[] = [
   {
-    "id": 10005,
+    "id": "10005",
     "slug": "cow-brand-bouncia-additive-free-cleansing-oil-pump-150ml",
     "brand": "Cow Brand",
     "name": "COW BRAND Bouncia Additive Free Cleansing Oil Pump (150ml)",
@@ -33,7 +33,7 @@ export const CowBrandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10190,
+    "id": "10190",
     "slug": "cow-brand-soaps-2-pcs",
     "brand": "Cow Brand",
     "name": "COW BRAND Soaps (2 pcs)",
@@ -73,7 +73,7 @@ export const CowBrandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10255,
+    "id": "10255",
     "slug": "cow-brand-shizen-gokochi-facial-cleansing-bar-soap-80g",
     "brand": "Cow Brand",
     "name": "COW BRAND Shizen Gokochi Facial Cleansing Bar Soap (80g)",
@@ -113,7 +113,7 @@ export const CowBrandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10558,
+    "id": "10558",
     "slug": "cow-brand-bouncia-additive-free-moisturizing-facial-foam-110g",
     "brand": "Cow Brand",
     "name": "COW BRAND Bouncia Additive Free Moisturizing Facial Foam (110g)",
@@ -144,7 +144,7 @@ export const CowBrandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10645,
+    "id": "10645",
     "slug": "cow-brand-additive-free-foam-body-soap",
     "brand": "Cow Brand",
     "name": "COW BRAND Additive Free Foam Body Soap",
@@ -184,7 +184,7 @@ export const CowBrandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10763,
+    "id": "10763",
     "slug": "cow-brand-bouncia-body-wash",
     "brand": "Cow Brand",
     "name": "COW BRAND Bouncia Body Wash",

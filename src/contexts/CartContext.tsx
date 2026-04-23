@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
+import { CartItem } from '../types';
 import {
   FREE_SHIPPING_THRESHOLD,
   calculateShipping,
@@ -7,19 +8,6 @@ import {
   getCartLeadTime,
   getLeadTimeLabel,
 } from '../lib/pricingEngine';
-
-export interface CartItem {
-  id: string | number; // Product ID
-  title: string;
-  price: number;
-  image: string;
-  quantity: number;
-  sku?: string;
-  supplierId?: 'teemdrop' | 'abw' | 'local';
-  bundleId?: string;      // If part of a bundle purchase
-  sourceUrl?: string;     // Source store URL for purchase ledger
-  sourcePrice?: number;   // Cost at source for margin tracking
-}
 
 interface CartContextType {
   cartItems: CartItem[];

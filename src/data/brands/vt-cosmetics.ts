@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const VTCosmeticsProducts: Product[] = [
   {
-    "id": 10154,
+    "id": "10154",
     "slug": "vt-collagen-reedle-shot-100-2-step-hydrogel-mask-1-pc",
     "brand": "VT Cosmetics",
     "name": "VT Collagen Reedle Shot 100 2-Step Hydrogel Mask (1 PC)",
@@ -33,7 +33,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10155,
+    "id": "10155",
     "slug": "vt-reti-a-reedle-shot-100-2-step-hydrogel-mask-1-pc",
     "brand": "VT Cosmetics",
     "name": "VT Reti-A Reedle Shot 100 2-Step Hydrogel Mask (1 PC)",
@@ -64,7 +64,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10530,
+    "id": "10530",
     "slug": "vt-cica-collagen-eye-cream-15ml",
     "brand": "VT Cosmetics",
     "name": "VT Cica Collagen Eye Cream (15ml)",
@@ -95,7 +95,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10586,
+    "id": "10586",
     "slug": "vt-cica-collagen-all-in-one-3-step-mask-1-pc",
     "brand": "VT Cosmetics",
     "name": "VT Cica Collagen All-In-One 3-Step Mask (1 PC)",
@@ -126,7 +126,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10587,
+    "id": "10587",
     "slug": "vt-vita-light-all-in-one-3-step-mask-1-pc",
     "brand": "VT Cosmetics",
     "name": "VT Vita Light All-In-One 3-Step Mask (1 PC)",
@@ -157,7 +157,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10588,
+    "id": "10588",
     "slug": "vt-cica-reti-a-all-in-one-3-step-mask-1-pc",
     "brand": "VT Cosmetics",
     "name": "VT Cica Reti-A All-In-One 3-Step Mask (1 PC)",
@@ -188,7 +188,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10589,
+    "id": "10589",
     "slug": "vt-reedle-shot-all-in-one-3-step-mask-1-pc",
     "brand": "VT Cosmetics",
     "name": "VT Reedle Shot All-In-One 3-Step Mask (1 PC)",
@@ -219,7 +219,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10785,
+    "id": "10785",
     "slug": "vt-pdrn-essence-100-30ml",
     "brand": "VT Cosmetics",
     "name": "VT PDRN Essence 100 (30ml)",
@@ -250,7 +250,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10802,
+    "id": "10802",
     "slug": "vt-reedle-shot-300-2-step-mask-1-pc",
     "brand": "VT Cosmetics",
     "name": "VT Reedle Shot 300 2-Step Mask (1 PC)",
@@ -281,7 +281,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10803,
+    "id": "10803",
     "slug": "vt-reedle-shot-100-2-step-mask-1-pc",
     "brand": "VT Cosmetics",
     "name": "VT Reedle Shot 100 2-Step Mask (1 PC)",
@@ -312,7 +312,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10819,
+    "id": "10819",
     "slug": "vt-cica-daily-soothing-mask-30-pcs",
     "brand": "VT Cosmetics",
     "name": "VT Cica Daily Soothing Mask (30 PCs)",
@@ -343,7 +343,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10820,
+    "id": "10820",
     "slug": "vt-cica-reedle-shot-300-essence-50ml",
     "brand": "VT Cosmetics",
     "name": "VT Cica Reedle Shot 300 Essence (50ml)",
@@ -374,7 +374,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10821,
+    "id": "10821",
     "slug": "vt-cica-reedle-shot-100-essence-50ml",
     "brand": "VT Cosmetics",
     "name": "VT Cica Reedle Shot 100 Essence (50ml)",
@@ -405,7 +405,7 @@ export const VTCosmeticsProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11019,
+    "id": "11019",
     "slug": "vt-cica-acne-spot-patch",
     "brand": "VT Cosmetics",
     "name": "VT Cica Acne Spot Patch",

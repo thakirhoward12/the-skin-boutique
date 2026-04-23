@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const CurlProducts: Product[] = [
   {
-    "id": 10307,
+    "id": "10307",
     "slug": "cur-l-conditioner-pump-420ml",
     "brand": "Curél",
     "name": "Curél Conditioner Pump (420ml)",
@@ -33,7 +33,7 @@ export const CurlProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11056,
+    "id": "11056",
     "slug": "cur-l-moisture-lotion-150ml",
     "brand": "Curél",
     "name": "Curél Moisture Lotion (150ml)",
@@ -73,7 +73,7 @@ export const CurlProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11057,
+    "id": "11057",
     "slug": "cur-l-intensive-moisture-care-moisturizer-cream-40g",
     "brand": "Curél",
     "name": "Curél Intensive Moisture Care Moisturizer Cream (40g)",
@@ -104,7 +104,7 @@ export const CurlProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11058,
+    "id": "11058",
     "slug": "cur-l-intensive-moisture-care-foaming-wash-150ml",
     "brand": "Curél",
     "name": "Curél Intensive Moisture Care Foaming Wash (150ml)",

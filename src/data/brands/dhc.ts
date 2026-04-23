@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const DHCProducts: Product[] = [
   {
-    "id": 10000,
+    "id": "10000",
     "slug": "dhc-color-lip-cream-natural-aroma-1-5g",
     "brand": "DHC",
     "name": "DHC Color Lip Cream Natural Aroma (1.5g)",
@@ -42,7 +42,7 @@ export const DHCProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11041,
+    "id": "11041",
     "slug": "dhc-lip-cream-1-5g",
     "brand": "DHC",
     "name": "DHC Lip Cream (1.5g)",

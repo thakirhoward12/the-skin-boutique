@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MIZONProducts: Product[] = [
   {
-    "id": 10341,
+    "id": "10341",
     "slug": "mizon-hyaluronic-acid-eye-gel-patch-30-pairs",
     "brand": "MIZON",
     "name": "MIZON Hyaluronic Acid Eye Gel Patch (30 Pairs)",
@@ -33,7 +33,7 @@ export const MIZONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10342,
+    "id": "10342",
     "slug": "mizon-peptide-500-30ml",
     "brand": "MIZON",
     "name": "MIZON Peptide 500 (30ml)",
@@ -64,7 +64,7 @@ export const MIZONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10343,
+    "id": "10343",
     "slug": "mizon-snail-repair-intensive-gold-eye-gel-patch-30-pairs",
     "brand": "MIZON",
     "name": "MIZON Snail Repair Intensive Gold Eye Gel Patch (30 Pairs)",
@@ -95,7 +95,7 @@ export const MIZONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10344,
+    "id": "10344",
     "slug": "mizon-all-in-one-snail-repair-cream-75g",
     "brand": "MIZON",
     "name": "MIZON All in One Snail Repair Cream (75g)",
@@ -126,7 +126,7 @@ export const MIZONProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10345,
+    "id": "10345",
     "slug": "mizon-collagen-100-30ml",
     "brand": "MIZON",
     "name": "MIZON Collagen 100 (30ml)",

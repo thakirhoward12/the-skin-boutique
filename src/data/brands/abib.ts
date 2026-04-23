@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const AbibProducts: Product[] = [
   {
-    "id": 10239,
+    "id": "10239",
     "slug": "abib-gummy-sheet-mask-madecassoside-sticker",
     "brand": "Abib",
     "name": "Abib Gummy Sheet Mask Madecassoside Sticker",
@@ -42,7 +42,7 @@ export const AbibProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10240,
+    "id": "10240",
     "slug": "abib-collagen-eye-patch-jericho-rose-jelly-30-pairs-60-pcs",
     "brand": "Abib",
     "name": "Abib Collagen Eye Patch Jericho Rose Jelly (30 Pairs / 60 pcs)",
@@ -73,7 +73,7 @@ export const AbibProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10466,
+    "id": "10466",
     "slug": "abib-quick-sunstick-protection-bar-spf50-pa-22g",
     "brand": "Abib",
     "name": "Abib Quick Sunstick Protection Bar SPF50+ PA++++ (22g)",
@@ -104,7 +104,7 @@ export const AbibProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10486,
+    "id": "10486",
     "slug": "abib-gummy-sheet-mask-sedum-hyaluron-sticker",
     "brand": "Abib",
     "name": "Abib Gummy Sheet Mask Sedum Hyaluron Sticker",
@@ -144,7 +144,7 @@ export const AbibProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10673,
+    "id": "10673",
     "slug": "abib-gummy-sheet-mask-hyaluron-sticker",
     "brand": "Abib",
     "name": "Abib Gummy Sheet Mask Hyaluron Sticker",
@@ -184,7 +184,7 @@ export const AbibProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10674,
+    "id": "10674",
     "slug": "abib-gummy-sheet-mask-heartleaf-sticker",
     "brand": "Abib",
     "name": "Abib Gummy Sheet Mask Heartleaf Sticker",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ACWELLProducts: Product[] = [
   {
-    "id": 10822,
+    "id": "10822",
     "slug": "acwell-licorice-ph-balancing-cleansing-toner-150ml",
     "brand": "ACWELL",
     "name": "ACWELL Licorice pH Balancing Cleansing Toner (150ml)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ELIZAVECCAProducts: Product[] = [
   {
-    "id": 10780,
+    "id": "10780",
     "slug": "elizavecca-cer-100-collagen-coating-hair-muscle-treatment-rinse-500ml",
     "brand": "ELIZAVECCA",
     "name": "ELIZAVECCA CER-100 Collagen Coating Hair Muscle Treatment Rinse (500ml)",
@@ -33,7 +33,7 @@ export const ELIZAVECCAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10781,
+    "id": "10781",
     "slug": "elizavecca-cer-100-hair-muscle-essence-oil-100ml",
     "brand": "ELIZAVECCA",
     "name": "ELIZAVECCA CER-100 Hair Muscle Essence Oil (100ml)",
@@ -64,7 +64,7 @@ export const ELIZAVECCAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10782,
+    "id": "10782",
     "slug": "elizavecca-cer-100-collagen-coating-protein-ion-injection-50ml",
     "brand": "ELIZAVECCA",
     "name": "ELIZAVECCA CER-100 Collagen Coating Protein Ion Injection (50ml)",
@@ -95,7 +95,7 @@ export const ELIZAVECCAProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10902,
+    "id": "10902",
     "slug": "elizavecca-cer-100-collagen-ceramide-coating-protein-treatment-100ml",
     "brand": "ELIZAVECCA",
     "name": "ELIZAVECCA CER-100 Collagen Ceramide Coating Protein Treatment (100ml)",

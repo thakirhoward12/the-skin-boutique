@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const LululunProducts: Product[] = [
   {
-    "id": 10035,
+    "id": "10035",
     "slug": "lululun-premium-sakura-face-mask",
     "brand": "Lululun",
     "name": "LULULUN Premium Sakura Face Mask",
@@ -42,7 +42,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10136,
+    "id": "10136",
     "slug": "lululun-premium-kyoto-green-tea-sheet-mask-kyoto-limited-release",
     "brand": "Lululun",
     "name": "LULULUN Premium Kyoto Green Tea Sheet Mask - Kyoto Limited Release",
@@ -82,7 +82,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10308,
+    "id": "10308",
     "slug": "lululun-aura-bright-face-mask",
     "brand": "Lululun",
     "name": "LULULUN Aura Bright Face Mask",
@@ -122,7 +122,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10309,
+    "id": "10309",
     "slug": "lululun-strawberry-face-mask-tochigi-limited-release",
     "brand": "Lululun",
     "name": "LULULUN Strawberry Face Mask - Tochigi Limited Release",
@@ -162,7 +162,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10360,
+    "id": "10360",
     "slug": "lululun-nagasaki-tulip-face-mask",
     "brand": "Lululun",
     "name": "LULULUN Nagasaki Tulip Face Mask",
@@ -202,7 +202,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10381,
+    "id": "10381",
     "slug": "lululun-hydra-ex-face-mask-7-pcs",
     "brand": "Lululun",
     "name": "LULULUN Hydra-EX Face Mask (7 PCs)",
@@ -233,7 +233,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10444,
+    "id": "10444",
     "slug": "lululun-hydra-az-mask-7-pcs",
     "brand": "Lululun",
     "name": "LULULUN Hydra AZ Mask (7 PCs)",
@@ -264,7 +264,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10449,
+    "id": "10449",
     "slug": "lululun-hydra-f-face-mask-7-pcs",
     "brand": "Lululun",
     "name": "LULULUN Hydra F Face Mask (7 PCs)",
@@ -295,7 +295,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10585,
+    "id": "10585",
     "slug": "lululun-hydra-v-mask",
     "brand": "Lululun",
     "name": "LULULUN Hydra V Mask",
@@ -335,7 +335,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10596,
+    "id": "10596",
     "slug": "lululun-pure-everys-pink-face-mask",
     "brand": "Lululun",
     "name": "LULULUN Pure Everys Pink Face Mask",
@@ -375,7 +375,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10597,
+    "id": "10597",
     "slug": "lululun-precious-red-moist-face-mask",
     "brand": "Lululun",
     "name": "LULULUN Precious Red Moist Face Mask",
@@ -415,7 +415,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10598,
+    "id": "10598",
     "slug": "lululun-precious-white-clear-face-mask",
     "brand": "Lululun",
     "name": "LULULUN Precious White Clear Face Mask",
@@ -455,7 +455,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10604,
+    "id": "10604",
     "slug": "lululun-precious-green-balance-face-mask",
     "brand": "Lululun",
     "name": "LULULUN Precious Green Balance Face Mask",
@@ -495,7 +495,7 @@ export const LululunProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10634,
+    "id": "10634",
     "slug": "lululun-one-night-rescue-face-mask-5-pcs",
     "brand": "Lululun",
     "name": "LULULUN One Night Rescue Face Mask (5 PCs)",

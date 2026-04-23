@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const RomandProducts: Product[] = [
   {
-    "id": 10369,
+    "id": "10369",
     "slug": "rom-nd-the-juicy-lasting-tint-3-5g",
     "brand": "Romand",
     "name": "rom&nd The Juicy Lasting Tint (3.5g)",
@@ -54,7 +54,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10385,
+    "id": "10385",
     "slug": "rom-nd-han-all-brow-cara-9g",
     "brand": "Romand",
     "name": "rom&nd Han All Brow Cara (9g)",
@@ -102,7 +102,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10393,
+    "id": "10393",
     "slug": "rom-nd-better-than-cheek-4g",
     "brand": "Romand",
     "name": "rom&nd Better Than Cheek (4g)",
@@ -182,7 +182,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10416,
+    "id": "10416",
     "slug": "rom-nd-better-than-eyes-6-5g",
     "brand": "Romand",
     "name": "rom&nd Better Than Eyes (6.5g)",
@@ -254,7 +254,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10423,
+    "id": "10423",
     "slug": "rom-nd-glasting-melting-balm-3-5g",
     "brand": "Romand",
     "name": "rom&nd Glasting Melting Balm (3.5g)",
@@ -346,7 +346,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10424,
+    "id": "10424",
     "slug": "rom-nd-glasting-water-tint-4g",
     "brand": "Romand",
     "name": "rom&nd Glasting Water Tint (4g)",
@@ -414,7 +414,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10425,
+    "id": "10425",
     "slug": "rom-nd-juicy-lasting-tint-5-5g",
     "brand": "Romand",
     "name": "rom&nd Juicy Lasting Tint (5.5g)",
@@ -562,7 +562,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10426,
+    "id": "10426",
     "slug": "rom-nd-dewyful-water-tint-5g",
     "brand": "Romand",
     "name": "rom&nd Dewyful Water Tint (5g)",
@@ -634,7 +634,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10427,
+    "id": "10427",
     "slug": "rom-nd-zero-matte-lipstick-3g",
     "brand": "Romand",
     "name": "rom&nd Zero Matte Lipstick (3g)",
@@ -706,7 +706,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10428,
+    "id": "10428",
     "slug": "rom-nd-zero-velvet-tint-5-5g",
     "brand": "Romand",
     "name": "rom&nd Zero Velvet Tint (5.5g)",
@@ -774,7 +774,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10443,
+    "id": "10443",
     "slug": "rom-nd-sheer-tinted-stick-2g",
     "brand": "Romand",
     "name": "rom&nd Sheer Tinted Stick (2g)",
@@ -830,7 +830,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10448,
+    "id": "10448",
     "slug": "rom-nd-bare-water-tint-4-5g",
     "brand": "Romand",
     "name": "rom&nd Bare Water Tint (4.5g)",
@@ -894,7 +894,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10457,
+    "id": "10457",
     "slug": "rom-nd-juicy-roll-cheek-8-4g",
     "brand": "Romand",
     "name": "rom&nd Juicy Roll Cheek (8.4g)",
@@ -938,7 +938,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10458,
+    "id": "10458",
     "slug": "rom-nd-blur-fudge-tint-5g",
     "brand": "Romand",
     "name": "rom&nd Blur Fudge Tint (5g)",
@@ -1006,7 +1006,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10615,
+    "id": "10615",
     "slug": "rom-nd-glasting-color-gloss-4g",
     "brand": "Romand",
     "name": "rom&nd Glasting Color Gloss (4g)",
@@ -1062,7 +1062,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10671,
+    "id": "10671",
     "slug": "rom-nd-nu-zero-puff-2-pcs",
     "brand": "Romand",
     "name": "rom&nd Nu Zero Puff (2 pcs)",
@@ -1093,7 +1093,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10677,
+    "id": "10677",
     "slug": "rom-nd-better-than-finish-setting-powder-15g",
     "brand": "Romand",
     "name": "rom&nd Better Than Finish Setting Powder (15g)",
@@ -1124,7 +1124,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10700,
+    "id": "10700",
     "slug": "rom-nd-lip-mate-pencil-0-5g",
     "brand": "Romand",
     "name": "rom&nd Lip Mate Pencil (0.5g)",
@@ -1180,7 +1180,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10713,
+    "id": "10713",
     "slug": "rom-nd-bare-water-cushion-20g",
     "brand": "Romand",
     "name": "rom&nd Bare Water Cushion (20g)",
@@ -1232,7 +1232,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10718,
+    "id": "10718",
     "slug": "rom-nd-better-than-palette-8g",
     "brand": "Romand",
     "name": "rom&nd Better Than Palette (8g)",
@@ -1304,7 +1304,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10721,
+    "id": "10721",
     "slug": "rom-nd-back-me-tone-up-cream-50ml",
     "brand": "Romand",
     "name": "rom&nd Back Me Tone Up Cream (50ml)",
@@ -1335,7 +1335,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10722,
+    "id": "10722",
     "slug": "rom-nd-bare-layer-palette-14g",
     "brand": "Romand",
     "name": "rom&nd Bare Layer Palette (14g)",
@@ -1375,7 +1375,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10726,
+    "id": "10726",
     "slug": "rom-nd-lip-matter-8ml",
     "brand": "Romand",
     "name": "rom&nd Lip Matter (8ml)",
@@ -1406,7 +1406,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10745,
+    "id": "10745",
     "slug": "rom-nd-nu-zero-cushion",
     "brand": "Romand",
     "name": "rom&nd Nu Zero Cushion",
@@ -1466,7 +1466,7 @@ export const RomandProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10760,
+    "id": "10760",
     "slug": "rom-nd-glasting-water-gloss-4-5g",
     "brand": "Romand",
     "name": "rom&nd Glasting Water Gloss (4.5g)",

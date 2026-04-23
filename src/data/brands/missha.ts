@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MisshaProducts: Product[] = [
   {
-    "id": 10978,
+    "id": "10978",
     "slug": "missha-perfect-cover-bb-cream-50ml",
     "brand": "Missha",
     "name": "MISSHA Perfect Cover BB Cream (50ml)",

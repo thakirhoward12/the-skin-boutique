@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SeapuriProducts: Product[] = [
   {
-    "id": 10414,
+    "id": "10414",
     "slug": "seapuri-body-mist-200ml",
     "brand": "Seapuri",
     "name": "Seapuri Body Mist (200ml)",

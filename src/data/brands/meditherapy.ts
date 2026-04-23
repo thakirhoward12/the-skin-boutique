@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const MEDITHERAPYProducts: Product[] = [
   {
-    "id": 10166,
+    "id": "10166",
     "slug": "meditherapy-tranexamic-acid-skin-booster-cream-booster-cap-100ml",
     "brand": "MEDITHERAPY",
     "name": "MEDITHERAPY Tranexamic Acid Skin Booster Cream + Booster Cap (100ml)",
@@ -33,7 +33,7 @@ export const MEDITHERAPYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10315,
+    "id": "10315",
     "slug": "meditherapy-tension-up-mask",
     "brand": "MEDITHERAPY",
     "name": "MEDITHERAPY Tension Up Mask",
@@ -64,7 +64,7 @@ export const MEDITHERAPYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10316,
+    "id": "10316",
     "slug": "meditherapy-wrinkle-fit-mask-7-pcs",
     "brand": "MEDITHERAPY",
     "name": "MEDITHERAPY Wrinkle-Fit Mask (7 PCs)",
@@ -95,7 +95,7 @@ export const MEDITHERAPYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10317,
+    "id": "10317",
     "slug": "meditherapy-retinal-skin-booster-serum-150ml",
     "brand": "MEDITHERAPY",
     "name": "MEDITHERAPY Retinal Skin Booster Serum (150ml)",
@@ -126,7 +126,7 @@ export const MEDITHERAPYProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10346,
+    "id": "10346",
     "slug": "meditherapy-wrinkle-fit-tangle-eye-patch-4-pairs",
     "brand": "MEDITHERAPY",
     "name": "MEDITHERAPY Wrinkle-Fit Tangle Eye Patch (4 Pairs)",

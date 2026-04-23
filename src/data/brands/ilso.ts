@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const ILSOProducts: Product[] = [
   {
-    "id": 10143,
+    "id": "10143",
     "slug": "ilso-natural-mild-clear-nose-patch-5-pcs",
     "brand": "ILSO",
     "name": "ILSO Natural Mild Clear Nose Patch (5 PCs)",
@@ -33,7 +33,7 @@ export const ILSOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10144,
+    "id": "10144",
     "slug": "ilso-super-melting-sebum-cleansing-oil-200ml",
     "brand": "ILSO",
     "name": "ILSO Super Melting Sebum Cleansing Oil (200ml)",
@@ -64,7 +64,7 @@ export const ILSOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10145,
+    "id": "10145",
     "slug": "ilso-no-problem-spot-patch-72-pcs",
     "brand": "ILSO",
     "name": "ILSO No Problem Spot Patch (72 PCs)",
@@ -95,7 +95,7 @@ export const ILSOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10146,
+    "id": "10146",
     "slug": "ilso-no-problem-spot-softener-1-3-saving-cotton-pad-150g-40pcs",
     "brand": "ILSO",
     "name": "ILSO No Problem Spot Softener + 1/3 Saving Cotton Pad (150g + 40pcs)",
@@ -126,7 +126,7 @@ export const ILSOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10147,
+    "id": "10147",
     "slug": "ilso-clean-up-wash-off-mud-cream-100g",
     "brand": "ILSO",
     "name": "ILSO Clean Up Wash Off Mud Cream (100g)",
@@ -157,7 +157,7 @@ export const ILSOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10643,
+    "id": "10643",
     "slug": "ilso-natural-mild-cleansing-oil-200ml",
     "brand": "ILSO",
     "name": "ILSO Natural Mild Cleansing Oil (200ml)",
@@ -188,7 +188,7 @@ export const ILSOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10644,
+    "id": "10644",
     "slug": "ilso-clean-mud-cream-100g",
     "brand": "ILSO",
     "name": "ILSO Clean Mud Cream (100g)",
@@ -219,7 +219,7 @@ export const ILSOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10646,
+    "id": "10646",
     "slug": "ilso-super-melting-sebum-softener-special-set-150ml-40-pcs",
     "brand": "ILSO",
     "name": "ILSO Super Melting Sebum Softener Special Set (150ml + 40 pcs)",
@@ -250,7 +250,7 @@ export const ILSOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10647,
+    "id": "10647",
     "slug": "ilso-1-3-saving-cotton-pad-40-sheets",
     "brand": "ILSO",
     "name": "ILSO 1/3 Saving Cotton Pad (40 Sheets)",
@@ -281,7 +281,7 @@ export const ILSOProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10775,
+    "id": "10775",
     "slug": "ilso-deep-clean-master",
     "brand": "ILSO",
     "name": "ILSO Deep Clean Master",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const DasiqueProducts: Product[] = [
   {
-    "id": 10812,
+    "id": "10812",
     "slug": "dasique-shadow-palette-7g",
     "brand": "Dasique",
     "name": "Dasique Shadow Palette (7g)",

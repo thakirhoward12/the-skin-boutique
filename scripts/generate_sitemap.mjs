@@ -18,13 +18,13 @@ async function generateSitemap() {
     const content = fs.readFileSync(path.join(BRANDS_DIR, file), 'utf8');
     
     // Extract Brand Name (usually first brand: "...")
-    const brandMatch = content.match(/brand:\s*["']([^"']+)["']/);
+    const brandMatch = content.match(/["']?brand["']?:\s*["']([^"']+)["']/);
     if (brandMatch && !brands.includes(brandMatch[1])) {
       brands.push(brandMatch[1]);
     }
 
     // Extract Product Names
-    const nameRegex = /name:\s*["']([^"']+)["']/g;
+    const nameRegex = /["']?name["']?:\s*["']([^"']+)["']/g;
     let match;
     while ((match = nameRegex.exec(content)) !== null) {
       products.push(match[1]);

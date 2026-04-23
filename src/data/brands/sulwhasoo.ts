@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SulwhasooProducts: Product[] = [
   {
-    "id": 10252,
+    "id": "10252",
     "slug": "sulwhasoo-essential-revitalizing-set-6pcs",
     "brand": "Sulwhasoo",
     "name": "SULWHASOO Essential Revitalizing Set (6pcs)",

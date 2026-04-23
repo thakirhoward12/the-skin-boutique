@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const BanilaCoProducts: Product[] = [
   {
-    "id": 10387,
+    "id": "10387",
     "slug": "banila-co-clean-it-zero-cica-relief-calming-cleansing-balm-100ml",
     "brand": "Banila Co",
     "name": "Banila Co. Clean It Zero Cica-Relief Calming Cleansing Balm (100ml)",
@@ -33,7 +33,7 @@ export const BanilaCoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10388,
+    "id": "10388",
     "slug": "banila-co-clean-it-zero-ginseng-glow-nourishing-cleansing-balm-100ml",
     "brand": "Banila Co",
     "name": "Banila Co. Clean It Zero Ginseng-Glow Nourishing Cleansing Balm (100ml)",
@@ -64,7 +64,7 @@ export const BanilaCoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10389,
+    "id": "10389",
     "slug": "banila-co-clean-it-zero-tea-tree-ex-pore-clarifying-cleansing-balm-100ml",
     "brand": "Banila Co",
     "name": "Banila Co. Clean It Zero Tea-Tree EX Pore Clarifying Cleansing Balm (100ml)",
@@ -95,7 +95,7 @@ export const BanilaCoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10650,
+    "id": "10650",
     "slug": "banila-co-clean-it-zero-original-cleansing-balm-100ml",
     "brand": "Banila Co",
     "name": "Banila Co Clean It Zero Original Cleansing Balm (100ml)",

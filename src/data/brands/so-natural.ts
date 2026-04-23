@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SoNaturalProducts: Product[] = [
   {
-    "id": 10536,
+    "id": "10536",
     "slug": "so-natural-oil-cut-hair-dry-powder-20g",
     "brand": "So Natural",
     "name": "So Natural Oil Cut Hair Dry Powder (20g)",
@@ -33,7 +33,7 @@ export const SoNaturalProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10537,
+    "id": "10537",
     "slug": "so-natural-hair-line-cover-cushion-2-5g",
     "brand": "So Natural",
     "name": "So Natural Hair Line Cover Cushion (2.5g)",
@@ -77,7 +77,7 @@ export const SoNaturalProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10538,
+    "id": "10538",
     "slug": "so-natural-makeup-setting-spray-fixx-75ml",
     "brand": "So Natural",
     "name": "So Natural Makeup Setting Spray Fixx (75ml)",

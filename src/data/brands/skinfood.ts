@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const SKINFOODProducts: Product[] = [
   {
-    "id": 10356,
+    "id": "10356",
     "slug": "skinfood-rice-brightening-mask",
     "brand": "SKINFOOD",
     "name": "SKINFOOD Rice Brightening Mask",
@@ -42,7 +42,7 @@ export const SKINFOODProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10845,
+    "id": "10845",
     "slug": "skinfood-strawberry-sugar-food-mask-120g",
     "brand": "SKINFOOD",
     "name": "SKINFOOD Strawberry Sugar Food Mask (120g)",
@@ -73,7 +73,7 @@ export const SKINFOODProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10846,
+    "id": "10846",
     "slug": "skinfood-carrot-carotene-calming-mask-sheet-1-pc",
     "brand": "SKINFOOD",
     "name": "SKINFOOD Carrot Carotene Calming Mask Sheet (1 pc)",
@@ -104,7 +104,7 @@ export const SKINFOODProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10847,
+    "id": "10847",
     "slug": "skinfood-black-sugar-mask-wash-off-120g",
     "brand": "SKINFOOD",
     "name": "SKINFOOD Black Sugar Mask Wash-Off (120g)",

@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const KosSoftymoProducts: Product[] = [
   {
-    "id": 10805,
+    "id": "10805",
     "slug": "kose-softymo-speedy-cleansing-oil-2024-version-240ml",
     "brand": "Kosé Softymo",
     "name": "Kose Softymo Speedy Cleansing Oil - 2024 Version (240ml)",
@@ -33,7 +33,7 @@ export const KosSoftymoProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10823,
+    "id": "10823",
     "slug": "kose-softymo-deep-cleansing-oil-2024-version-240ml",
     "brand": "Kosé Softymo",
     "name": "Kose Softymo Deep Cleansing Oil - 2024 Version (240ml)",

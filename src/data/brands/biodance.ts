@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const BiodanceProducts: Product[] = [
   {
-    "id": 10053,
+    "id": "10053",
     "slug": "biodance-cera-nol-gel-toner-pads-60-pcs",
     "brand": "Biodance",
     "name": "Biodance Cera-nol Gel Toner Pads (60 PCs)",
@@ -33,7 +33,7 @@ export const BiodanceProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10054,
+    "id": "10054",
     "slug": "biodance-vita-niacinamide-gel-toner-pads-60-pcs",
     "brand": "Biodance",
     "name": "Biodance Vita Niacinamide Gel Toner Pads (60 PCs)",
@@ -64,7 +64,7 @@ export const BiodanceProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10168,
+    "id": "10168",
     "slug": "biodance-rejuvenating-caviar-pdrn-real-deep-mask",
     "brand": "Biodance",
     "name": "Biodance Rejuvenating Caviar PDRN Real Deep Mask",
@@ -104,7 +104,7 @@ export const BiodanceProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10229,
+    "id": "10229",
     "slug": "biodance-collagen-gel-toner-pads-60-pcs",
     "brand": "Biodance",
     "name": "Biodance Collagen Gel Toner Pads (60 PCs)",
@@ -135,7 +135,7 @@ export const BiodanceProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10230,
+    "id": "10230",
     "slug": "biodance-sea-kelp-gel-toner-pads-60-pcs",
     "brand": "Biodance",
     "name": "Biodance Sea Kelp Gel Toner Pads (60 PCs)",
@@ -166,7 +166,7 @@ export const BiodanceProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10405,
+    "id": "10405",
     "slug": "biodance-radiant-vita-niacinamide-real-deep-mask",
     "brand": "Biodance",
     "name": "Biodance Radiant Vita Niacinamide Real Deep Mask",
@@ -206,7 +206,7 @@ export const BiodanceProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10406,
+    "id": "10406",
     "slug": "biodance-refreshing-sea-kelp-real-deep-mask",
     "brand": "Biodance",
     "name": "Biodance Refreshing Sea Kelp Real Deep Mask",
@@ -246,7 +246,7 @@ export const BiodanceProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10659,
+    "id": "10659",
     "slug": "biodance-hydro-cera-nol-real-deep-mask",
     "brand": "Biodance",
     "name": "Biodance Hydro Cera-nol Real Deep Mask",
@@ -286,7 +286,7 @@ export const BiodanceProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10811,
+    "id": "10811",
     "slug": "biodance-bio-collagen-real-deep-mask",
     "brand": "Biodance",
     "name": "Biodance Bio-Collagen Real Deep Mask",

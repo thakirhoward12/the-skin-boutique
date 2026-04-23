@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const DrMelaxinProducts: Product[] = [
   {
-    "id": 10371,
+    "id": "10371",
     "slug": "dr-melaxin-peel-shot-exfoliating-black-rice-ampoule-80ml",
     "brand": "Dr. Melaxin",
     "name": "Dr.Melaxin Peel Shot Exfoliating Black Rice Ampoule (80ml)",
@@ -33,7 +33,7 @@ export const DrMelaxinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10372,
+    "id": "10372",
     "slug": "dr-melaxin-eyephalt-eyebag-cream-10ml",
     "brand": "Dr. Melaxin",
     "name": "Dr.Melaxin Eyephalt Eyebag Cream (10ml)",
@@ -64,7 +64,7 @@ export const DrMelaxinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10373,
+    "id": "10373",
     "slug": "dr-melaxin-bondex-protein-bonding-remodeling-clinic-250ml",
     "brand": "Dr. Melaxin",
     "name": "Dr.Melaxin Bondex Protein Bonding Remodeling Clinic (250ml)",
@@ -95,7 +95,7 @@ export const DrMelaxinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10374,
+    "id": "10374",
     "slug": "dr-melaxin-tx-cream-50ml",
     "brand": "Dr. Melaxin",
     "name": "Dr.Melaxin TX-Cream (50ml)",
@@ -126,7 +126,7 @@ export const DrMelaxinProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10375,
+    "id": "10375",
     "slug": "dr-melaxin-peel-shot-exfoliating-white-rice-ampoule-80ml",
     "brand": "Dr. Melaxin",
     "name": "Dr.Melaxin Peel Shot Exfoliating White Rice Ampoule (80ml)",

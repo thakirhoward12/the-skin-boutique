@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const honeyProducts: Product[] = [
   {
-    "id": 10055,
+    "id": "10055",
     "slug": "honey-melty-sakura-chegosim-limited-shampoo-treatment-set-440ml-445g-40g",
     "brand": "&honey",
     "name": "&honey Melty Sakura Chegosim Limited Shampoo & Treatment Set (440ml+445g+40g)",
@@ -33,7 +33,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10170,
+    "id": "10170",
     "slug": "honey-pure-moist-foaming-body-wash-500ml-440ml",
     "brand": "&honey",
     "name": "&honey Pure Moist Foaming Body Wash (500ml + 440ml)",
@@ -64,7 +64,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10305,
+    "id": "10305",
     "slug": "honey-herb-smooth-treatment-440ml",
     "brand": "&honey",
     "name": "&honey Herb Smooth Treatment (440ml)",
@@ -95,7 +95,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10306,
+    "id": "10306",
     "slug": "honey-herb-smooth-shampoo-440ml",
     "brand": "&honey",
     "name": "&honey Herb Smooth Shampoo (440ml)",
@@ -126,7 +126,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10569,
+    "id": "10569",
     "slug": "honey-milky-precious-ex-repair-treatment-500ml",
     "brand": "&honey",
     "name": "&honey Milky Precious EX Repair Treatment (500ml)",
@@ -157,7 +157,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10570,
+    "id": "10570",
     "slug": "honey-milky-precious-ex-repair-shampoo-500ml",
     "brand": "&honey",
     "name": "&honey Milky Precious EX Repair Shampoo (500ml)",
@@ -188,7 +188,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10635,
+    "id": "10635",
     "slug": "honey-melty-moist-shine-hair-oil-3-0-100ml",
     "brand": "&honey",
     "name": "&honey Melty Moist Shine Hair Oil 3.0 (100ml)",
@@ -219,7 +219,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11003,
+    "id": "11003",
     "slug": "honey-melty-moist-repair-hair-treatment-2-0-445ml",
     "brand": "&honey",
     "name": "&honey Melty Moist Repair Hair Treatment 2.0 (445ml)",
@@ -250,7 +250,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11034,
+    "id": "11034",
     "slug": "honey-melty-moist-repair-hair-oil-3-0-100ml",
     "brand": "&honey",
     "name": "&honey Melty Moist Repair Hair Oil 3.0 (100ml)",
@@ -281,7 +281,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11035,
+    "id": "11035",
     "slug": "honey-melty-moist-repair-shampoo-1-0-440ml",
     "brand": "&honey",
     "name": "&honey Melty Moist Repair Shampoo 1.0 (440ml)",
@@ -312,7 +312,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11036,
+    "id": "11036",
     "slug": "honey-deep-moist-treatment-2-0-445ml",
     "brand": "&honey",
     "name": "&honey Deep Moist Treatment 2.0 (445ml)",
@@ -343,7 +343,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11037,
+    "id": "11037",
     "slug": "honey-deep-moist-shampoo-1-0-450g",
     "brand": "&honey",
     "name": "&honey Deep Moist Shampoo 1.0 (450g)",
@@ -374,7 +374,7 @@ export const honeyProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11038,
+    "id": "11038",
     "slug": "honey-deep-moist-hair-oil-3-0-100ml",
     "brand": "&honey",
     "name": "&honey Deep Moist Hair Oil 3.0 (100ml)",

@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Twitter, ArrowRight, Droplet, ArrowUp, Star, CreditCard, Wallet } from 'lucide-react';
 import { motion } from 'motion/react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import LegalDocsModal from './LegalDocsModal';
 import GlassSkinModal from './GlassSkinModal';
 import SunCareModal from './SunCareModal';

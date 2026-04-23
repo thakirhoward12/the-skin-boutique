@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const IPSAProducts: Product[] = [
   {
-    "id": 10318,
+    "id": "10318",
     "slug": "ipsa-the-time-reset-aqua-200ml",
     "brand": "IPSA",
     "name": "IPSA The Time Reset Aqua (200ml)",

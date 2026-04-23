@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const NOONIProducts: Product[] = [
   {
-    "id": 10595,
+    "id": "10595",
     "slug": "nooni-lip-mask-12g",
     "brand": "NOONI",
     "name": "NOONI Lip Mask (12g)",

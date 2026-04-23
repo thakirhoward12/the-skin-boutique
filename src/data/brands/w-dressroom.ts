@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const WDRESSROOMProducts: Product[] = [
   {
-    "id": 10191,
+    "id": "10191",
     "slug": "w-dressroom-moisturizing-perfume-hand-cream-50ml",
     "brand": "W. DRESSROOM",
     "name": "W. DRESSROOM Moisturizing Perfume Hand Cream (50ml)",
@@ -42,7 +42,7 @@ export const WDRESSROOMProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10192,
+    "id": "10192",
     "slug": "w-dressroom-perfume-hand-nail-cream-set-3x30ml",
     "brand": "W. DRESSROOM",
     "name": "W. DRESSROOM Perfume Hand & Nail Cream Set (3x30ml)",

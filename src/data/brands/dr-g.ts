@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const DrGProducts: Product[] = [
   {
-    "id": 10232,
+    "id": "10232",
     "slug": "dr-g-mild-up-sunscreen-spf50-pa-50ml",
     "brand": "Dr. G",
     "name": "Dr.G Mild Up Sunscreen SPF50+ PA++++ (50ml)",
@@ -33,7 +33,7 @@ export const DrGProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10487,
+    "id": "10487",
     "slug": "dr-g-royal-black-snail-cream-50ml",
     "brand": "Dr. G",
     "name": "Dr.G Royal Black Snail Cream (50ml)",
@@ -64,7 +64,7 @@ export const DrGProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10488,
+    "id": "10488",
     "slug": "dr-g-royal-black-snail-ampoule-30ml",
     "brand": "Dr. G",
     "name": "Dr.G Royal Black Snail Ampoule (30ml)",
@@ -95,7 +95,7 @@ export const DrGProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10509,
+    "id": "10509",
     "slug": "dr-g-black-snail-retinol-ampoule-50ml",
     "brand": "Dr. G",
     "name": "Dr.G Black Snail Retinol Ampoule (50ml)",
@@ -126,7 +126,7 @@ export const DrGProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10962,
+    "id": "10962",
     "slug": "dr-g-r-e-d-blemish-clear-soothing-emulsion-120ml",
     "brand": "Dr. G",
     "name": "Dr.G R.E.D Blemish Clear Soothing Emulsion (120ml)",
@@ -157,7 +157,7 @@ export const DrGProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11007,
+    "id": "11007",
     "slug": "dr-g-r-e-d-blemish-clear-soothing-cream-70ml",
     "brand": "Dr. G",
     "name": "Dr.G R.E.D Blemish Clear Soothing Cream (70ml)",
@@ -188,7 +188,7 @@ export const DrGProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 11008,
+    "id": "11008",
     "slug": "dr-g-brightening-peeling-gel-120ml",
     "brand": "Dr. G",
     "name": "Dr.G Brightening Peeling Gel (120ml)",

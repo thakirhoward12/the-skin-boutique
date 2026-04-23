@@ -2,7 +2,7 @@ import { Product } from '../products';
 
 export const fweeProducts: Product[] = [
   {
-    "id": 10241,
+    "id": "10241",
     "slug": "fwee-pocket-eye-palette-6-6g",
     "brand": "fwee",
     "name": "fwee Pocket Eye Palette (6.6g)",
@@ -54,7 +54,7 @@ export const fweeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10242,
+    "id": "10242",
     "slug": "fwee-pocket-cheek-palette-9-6g",
     "brand": "fwee",
     "name": "fwee Pocket Cheek Palette (9.6g)",
@@ -102,7 +102,7 @@ export const fweeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10259,
+    "id": "10259",
     "slug": "fwee-lip-cheek-blurry-pudding-pot-5g",
     "brand": "fwee",
     "name": "fwee Lip & Cheek Blurry Pudding Pot (5g)",
@@ -234,7 +234,7 @@ export const fweeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10260,
+    "id": "10260",
     "slug": "fwee-lip-cheek-glowy-pudding-pot-5g",
     "brand": "fwee",
     "name": "fwee Lip & Cheek Glowy Pudding Pot (5g)",
@@ -342,7 +342,7 @@ export const fweeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10261,
+    "id": "10261",
     "slug": "fwee-pink-obsession-stay-fit-lip-tint-3-8g",
     "brand": "fwee",
     "name": "fwee Pink Obsession Stay-Fit Lip Tint (3.8g)",
@@ -418,7 +418,7 @@ export const fweeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10262,
+    "id": "10262",
     "slug": "fwee-3d-voluming-gloss-5-3g",
     "brand": "fwee",
     "name": "fwee 3D Voluming Gloss (5.3g)",
@@ -518,7 +518,7 @@ export const fweeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10263,
+    "id": "10263",
     "slug": "fwee-3d-changing-gloss-5-3g",
     "brand": "fwee",
     "name": "fwee 3D Changing Gloss (5.3g)",
@@ -566,7 +566,7 @@ export const fweeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10264,
+    "id": "10264",
     "slug": "fwee-glitz-stone-highlighter-4-6-6g",
     "brand": "fwee",
     "name": "fwee Glitz Stone Highlighter (4.6-6g)",
@@ -634,7 +634,7 @@ export const fweeProducts: Product[] = [
     "sourceDomain": "kiyoko.com"
   },
   {
-    "id": 10265,
+    "id": "10265",
     "slug": "fwee-3d-voluming-tint-3-8g",
     "brand": "fwee",
     "name": "fwee 3D Voluming Tint (3.8g)",

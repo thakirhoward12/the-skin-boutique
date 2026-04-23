@@ -7,14 +7,13 @@ import { useCurrency } from '../contexts/CurrencyContext';
 import { useUser } from '../contexts/UserContext';
 import { useProducts } from '../contexts/ProductContext';
 
+import { SkinType, Concern, Product } from '../types';
+
 interface SkinQuizModalProps {
   isOpen: boolean;
   onClose: () => void;
   onOpenBuilder?: (recommendations: Product[]) => void;
 }
-
-type SkinType = 'Oily' | 'Dry' | 'Combination' | 'Normal';
-type Concern = 'Acne & Blemishes' | 'Anti-Aging' | 'Redness & Sensitivity' | 'Dryness & Hydration';
 
 export default function SkinQuizModal({ isOpen, onClose, onOpenBuilder }: SkinQuizModalProps) {
   const [step, setStep] = useState(0);
@@ -84,15 +83,14 @@ export default function SkinQuizModal({ isOpen, onClose, onOpenBuilder }: SkinQu
 
   const handleAddRoutineToCart = () => {
     recommendations.forEach(product => {
-      const priceString = product.options && product.options.length > 0 
+      const price = product.options && product.options.length > 0 
         ? product.options[0].price 
         : product.price;
-      const priceNumber = parseFloat(priceString.replace('$', ''));
       
       addToCart({
-        id: product.options && product.options.length > 0 ? `${product.id}-0` : product.id.toString(),
+        id: product.options && product.options.length > 0 ? `${product.id}-0` : product.id,
         title: product.options && product.options.length > 0 ? `${product.name} - ${product.options[0].size}` : product.name,
-        price: priceNumber,
+        price: price,
         image: product.image,
         quantity: 1
       });
