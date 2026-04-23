@@ -116,7 +116,7 @@ export default function AdminOrders() {
             placeholder="Search by order # or email..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-11 pr-4 py-3 bg-white border border-ink-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-pastel-pink-dark/40 focus:border-pastel-pink-dark text-sm font-light transition-all shadow-sm"
+            className="w-full pl-11 pr-4 py-3 bg-white border border-ink-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-pastel-pink-dark/40 focus:border-pastel-pink-dark text-sm font-light"
           />
         </div>
         <div className="flex gap-2 shrink-0">
@@ -134,6 +134,7 @@ export default function AdminOrders() {
               <option value="shipped">Shipped</option>
               <option value="delivered">Delivered</option>
               <option value="cancelled">Cancelled</option>
+              <option value="fulfilled">Fulfilled</option>
             </select>
             <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-ink-400 pointer-events-none" />
           </div>
@@ -255,6 +256,7 @@ export default function AdminOrders() {
                       <option value="shipped">Shipped</option>
                       <option value="delivered">Delivered</option>
                       <option value="cancelled">Cancelled</option>
+                      <option value="fulfilled">Fulfilled</option>
                     </select>
                   </div>
                   <div className="p-4 bg-ink-50 rounded-2xl">
