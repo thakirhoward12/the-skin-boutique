@@ -1,4 +1,4 @@
-import { Product } from '../data/products';
+import { type Product } from '../types';
 
 export type UsageTime = 'AM' | 'PM' | 'BOTH';
 

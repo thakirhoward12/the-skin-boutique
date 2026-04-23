@@ -13,19 +13,19 @@ export default function WishlistModal({
 }: { 
   isOpen: boolean; 
   onClose: () => void;
-  favorites: Set<number>;
-  toggleFavorite: (e: React.MouseEvent, id: number) => void;
+  favorites: Set<string>;
+  toggleFavorite: (e: React.MouseEvent, id: string) => void;
 }) {
   const { formatPrice } = useCurrency();
   const { addToCart } = useCart();
   const { products } = useProducts();
   
   const favoriteProducts = products.filter(product => favorites.has(product.id));
-  const [quantities, setQuantities] = useState<Record<number, number>>({});
+  const [quantities, setQuantities] = useState<Record<string, number>>({});
 
-  const getQuantity = (id: number) => quantities[id] || 1;
+  const getQuantity = (id: string) => quantities[id] || 1;
 
-  const updateQuantity = (id: number, delta: number) => {
+  const updateQuantity = (id: string, delta: number) => {
     setQuantities(prev => ({
       ...prev,
       [id]: Math.max(1, getQuantity(id) + delta)

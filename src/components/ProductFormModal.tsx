@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, Save, Loader2, ImageIcon } from 'lucide-react';
 import { doc, addDoc, updateDoc, collection } from 'firebase/firestore';
 import { db } from '../lib/firebase';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 import { useCurrency, exchangeRates } from '../contexts/CurrencyContext';
 
 interface ProductFormModalProps {

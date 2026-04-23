@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 
 interface SEOProps {
   title?: string;

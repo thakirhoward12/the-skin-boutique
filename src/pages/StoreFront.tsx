@@ -18,7 +18,7 @@ import FAQSection from '../components/FAQSection';
 import TieredBundles from '../components/TieredBundles';
 import NewArrivals from '../components/NewArrivals';
 import NewsletterSignup from '../components/NewsletterSignup';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 import { getActiveTheme } from '../utils/theme';
 import { useCart } from '../contexts/CartContext';
 import { useProducts } from '../contexts/ProductContext';
@@ -36,7 +36,7 @@ const AuthModal = lazy(() => import('../components/AuthModal'));
 const ContactModal = lazy(() => import('../components/ContactModal'));
 
 export default function StoreFront() {
-  const [favorites, setFavorites] = useState<Set<number>>(new Set());
+  const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
   const [isTrackingOpen, setIsTrackingOpen] = useState(false);
   const [isCurrencyOpen, setIsCurrencyOpen] = useState(false);
@@ -102,7 +102,7 @@ export default function StoreFront() {
     };
   }, []);
 
-  const toggleFavorite = (e: React.MouseEvent, id: number) => {
+  const toggleFavorite = (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
     e.preventDefault();
     setFavorites(prev => {

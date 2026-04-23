@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { motion } from 'motion/react';
 import { Star, Quote } from 'lucide-react';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 
 export default function HomepageReviews({
   products,

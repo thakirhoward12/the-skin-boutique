@@ -1,7 +1,8 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { collection, onSnapshot } from 'firebase/firestore';
 import { db } from '../lib/firebase';
-import { products as localProducts, type Product } from '../data/products';
+import { products as localProducts } from '../data/products';
+import { type Product } from '../types';
 
 interface ProductContextType {
   products: Product[];

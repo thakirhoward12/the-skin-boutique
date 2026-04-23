@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { ShoppingBag, Heart, Star } from 'lucide-react';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { useCart } from '../contexts/CartContext';
 
@@ -12,15 +12,15 @@ export default function NewArrivals({
   onOpenProduct
 }: {
   products: Product[];
-  favorites: Set<number>;
-  toggleFavorite: (e: React.MouseEvent, id: number) => void;
+  favorites: Set<string>;
+  toggleFavorite: (e: React.MouseEvent, id: string) => void;
   onOpenProduct: (product: Product) => void;
 }) {
   const { formatPrice } = useCurrency();
   const { addToCart } = useCart();
   
   // Sort products by ID descending to get newest first
-  const newProducts = [...products].sort((a, b) => b.id - a.id).slice(0, 10);
+  const newProducts = [...products].sort((a, b) => parseInt(b.id) - parseInt(a.id)).slice(0, 10);
 
   const handleAddToCart = (e: React.MouseEvent, product: Product) => {
     e.stopPropagation();
@@ -31,7 +31,7 @@ export default function NewArrivals({
       : product.price;
     
     addToCart({
-       id: product.options && product.options.length > 0 ? `${product.id}-0` : product.id.toString(),
+       id: product.options && product.options.length > 0 ? `${product.id}-0` : product.id,
        title: product.options && product.options.length > 0 ? `${product.name} - ${product.options[0].size}` : product.name,
        price: priceNumber,
        image: product.image,

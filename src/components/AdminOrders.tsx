@@ -16,7 +16,8 @@ import {
   Calendar,
   Filter
 } from 'lucide-react';
-import { useOrders, Order, OrderStatus } from '../contexts/OrderContext';
+import { useOrders } from '../contexts/OrderContext';
+import { type Order, type OrderStatus } from '../types';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { db } from '../lib/firebase';
 import { doc, updateDoc } from 'firebase/firestore';
@@ -29,6 +30,7 @@ const statusColors: Record<OrderStatus, string> = {
   shipped: 'bg-pastel-pink text-ink-700 border-pastel-pink-dark/20',
   delivered: 'bg-emerald-50 text-emerald-600 border-emerald-200',
   cancelled: 'bg-red-50 text-red-600 border-red-200',
+  fulfilled: 'bg-emerald-50 text-emerald-600 border-emerald-200',
 };
 
 const statusIcons: Record<OrderStatus, any> = {
@@ -39,6 +41,7 @@ const statusIcons: Record<OrderStatus, any> = {
   shipped: Truck,
   delivered: CheckCircle2,
   cancelled: XCircle,
+  fulfilled: CheckCircle2,
 };
 
 export default function AdminOrders() {

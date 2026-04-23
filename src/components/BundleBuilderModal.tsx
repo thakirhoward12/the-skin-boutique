@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Check, Package, Sparkles, Moon, Sun, Beaker, AlertCircle } from 'lucide-react';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 import { useCart } from '../contexts/CartContext';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { useProducts } from '../contexts/ProductContext';

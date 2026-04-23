@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingBag, Heart, CheckCircle2, X, Star, SlidersHorizontal, Minus, Plus, Play, Info, FolderOpen, ArrowLeft, ChevronRight, Truck, Clock } from 'lucide-react';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { useCart } from '../contexts/CartContext';
 import { useUser } from '../contexts/UserContext';
@@ -85,8 +85,8 @@ export default function ProductGrid({
   onProductOpen,
   onProductClose
 }: { 
-  favorites: Set<number>;
-  toggleFavorite: (e: React.MouseEvent, id: number) => void;
+  favorites: Set<string>;
+  toggleFavorite: (e: React.MouseEvent, id: string) => void;
   selectedProductSlug?: string;
   onProductOpen?: (product: Product) => void;
   onProductClose?: () => void;

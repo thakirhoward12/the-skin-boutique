@@ -6,7 +6,7 @@ import { useProducts } from '../contexts/ProductContext';
 import { useCart } from '../contexts/CartContext';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { PRODUCT_ECOSYSTEMS, type ProductEcosystem } from '../data/complementaryProducts';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 import { getProductSlug } from '../utils/slug';
 import { Link } from 'react-router-dom';
 
@@ -108,10 +108,10 @@ interface EcosystemCardProps {
 }
 
 function EcosystemCard({ ecosystem, index, addToCart, formatPrice }: EcosystemCardProps) {
-  const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const hero = ecosystem.heroProduct!;
 
-  const toggleProduct = (id: number) => {
+  const toggleProduct = (id: string) => {
     setSelectedIds(prev => {
       const next = new Set(prev);
       next.has(id) ? next.delete(id) : next.add(id);

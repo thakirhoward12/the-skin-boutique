@@ -12,7 +12,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 import { useCurrency } from '../contexts/CurrencyContext';
 
 const PAGE_SIZE = 12;
@@ -215,15 +215,15 @@ export default function AdminProducts({
                           </button>
                           <button
                             onClick={() => {
-                              if (window.confirm(`Delete \"${product.name}\"? This cannot be undone.`)) {
-                                onDelete(product.id.toString());
+                              if (window.confirm(`Delete "${product.name}"? This cannot be undone.`)) {
+                                onDelete(product.id);
                               }
                             }}
-                            disabled={deletingId === product.id.toString()}
+                            disabled={deletingId === product.id}
                             className="p-2.5 rounded-xl hover:bg-red-50 text-ink-500 hover:text-red-600 transition-colors disabled:opacity-50 shadow-sm border border-transparent hover:border-red-200"
                             title="Delete"
                           >
-                            {deletingId === product.id.toString() ? (
+                            {deletingId === product.id ? (
                               <Loader2 className="w-3.5 h-3.5 animate-spin" />
                             ) : (
                               <Trash2 className="w-3.5 h-3.5" />

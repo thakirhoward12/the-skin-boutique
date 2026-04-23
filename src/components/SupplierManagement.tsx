@@ -2,7 +2,7 @@ import React, { useMemo, useState, useEffect } from 'react';
 import { Truck, Package, Clock, ShieldCheck, ExternalLink, RefreshCw, Loader2, AlertCircle } from 'lucide-react';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../lib/firebase';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 
 interface Supplier {
   id: string;

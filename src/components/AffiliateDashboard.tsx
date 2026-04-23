@@ -5,7 +5,8 @@ import {
   ExternalLink, Trophy, Star, ShieldCheck, Download, Image as ImageIcon,
   CheckCircle2, Edit3, Save, X
 } from 'lucide-react';
-import { useUser, AffiliateTier } from '../contexts/UserContext';
+import { useUser } from '../contexts/UserContext';
+import { type AffiliateTier } from '../types';
 import { useCurrency, exchangeRates } from '../contexts/CurrencyContext';
 import { collection, query, orderBy, limit, onSnapshot, doc, updateDoc, getDocs, where } from 'firebase/firestore';
 import { db } from '../lib/firebase';

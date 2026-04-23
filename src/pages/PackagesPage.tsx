@@ -6,7 +6,7 @@ import { useProducts } from '../contexts/ProductContext';
 import { useCart } from '../contexts/CartContext';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { ROUTINE_PACKAGES, type RoutinePackage, type PackageStep } from '../data/packages';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 import { Link } from 'react-router-dom';
 
 const SKIN_TYPE_FILTERS = [

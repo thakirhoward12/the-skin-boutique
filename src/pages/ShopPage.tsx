@@ -6,7 +6,7 @@ import { useProducts } from '../contexts/ProductContext';
 import { useCart } from '../contexts/CartContext';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { SHOP_SECTIONS, groupProductsBySection, type ShopSection } from '../data/categoryTaxonomy';
-import { type Product } from '../data/products';
+import { type Product } from '../types';
 import { getProductSlug } from '../utils/slug';
 import { Link } from 'react-router-dom';
 
@@ -22,8 +22,9 @@ const CONCERN_FILTERS = [
 ];
 
 // Social proof generator — deterministic per product ID
-function getSocialProof(id: number): number {
-  return 47 + ((id * 7 + 13) % 200);
+function getSocialProof(id: string): number {
+  const numericId = parseInt(id) || 0;
+  return 47 + ((numericId * 7 + 13) % 200);
 }
 
 function isTrending(product: Product): boolean {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Sparkles, ArrowRight, CheckCircle2 } from 'lucide-react';
-import { type Product } from '../data/products';
+
 import { useCart } from '../contexts/CartContext';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { useUser } from '../contexts/UserContext';

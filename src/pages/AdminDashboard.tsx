@@ -20,7 +20,8 @@ import {
 } from 'lucide-react';
 import { db } from '../lib/firebase';
 import { collection, doc, writeBatch, deleteDoc } from 'firebase/firestore';
-import { products as localProducts, type Product } from '../data/products';
+import { products as localProducts } from '../data/products';
+import { type Product } from '../types';
 import ProductFormModal from '../components/ProductFormModal';
 
 export default function AdminDashboard() {

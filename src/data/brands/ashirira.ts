@@ -1,4 +1,4 @@
-import { Product } from '../products';
+import { type Product } from '../../types';
 
 export const AshiriraProducts: Product[] = [
   {
