@@ -42,7 +42,7 @@ async function runCleanupAndSync() {
   console.log("--- Phase 2: Regenerating JSON Catalog ---");
   try {
     // We execute the existing script which we know works (but we'll fix its regex below)
-    execSync('node generate_json_catalog.mjs', { stdio: 'inherit' });
+    execSync('npx tsx scripts/compile_catalog.ts', { stdio: 'inherit' });
     console.log("✅ products.json regenerated.");
   } catch (e) {
     console.error("❌ Failed to run generate_json_catalog.mjs:", e.message);

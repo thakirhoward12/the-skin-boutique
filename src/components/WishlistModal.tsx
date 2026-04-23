@@ -4,6 +4,7 @@ import { X, Heart, ShoppingBag, Minus, Plus } from 'lucide-react';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { useCart } from '../contexts/CartContext';
 import { useProducts } from '../contexts/ProductContext';
+import { type Product } from '../types';
 
 export default function WishlistModal({ 
   isOpen, 
@@ -117,7 +118,7 @@ export default function WishlistModal({
                               addToCart({
                                 id: product.id.toString(),
                                 title: product.name,
-                                price: parseFloat(product.price.replace('$', '')),
+                                price: typeof product.price === 'string' ? parseFloat(product.price.replace('$', '')) : product.price,
                                 image: product.image,
                                 quantity: getQuantity(product.id)
                               });
