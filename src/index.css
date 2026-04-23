@@ -106,22 +106,36 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--color-ink-300);
 }
 
-.premium-glass {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+.liquid-glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  backdrop-filter: blur(32px) saturate(120%);
+  -webkit-backdrop-filter: blur(32px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: 
-    0 4px 6px -1px rgba(0, 0, 0, 0.05),
-    0 2px 4px -1px rgba(0, 0, 0, 0.03),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  /* The bounce animation will be handled by Framer Motion, but we add a smooth transition for colors */
-  transition: background 0.5s ease, border-color 0.5s ease;
+    0 8px 32px 0 rgba(31, 38, 135, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
 }
 
-.premium-glass:hover {
-  background: rgba(255, 255, 255, 0.6);
-  border-color: rgba(255, 255, 255, 1);
+.liquid-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.liquid-glass:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 100%);
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 
+    0 12px 40px 0 rgba(31, 38, 135, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
 .ambient-orb {
@@ -130,15 +144,19 @@ h1, h2, h3, h4, h5, h6 {
   filter: blur(80px);
   opacity: 0.5;
   pointer-events: none;
-  animation: orb-float 20s infinite ease-in-out alternate;
+  animation: float 15s ease-in-out infinite;
   z-index: 0;
 }
 
-@keyframes orb-float {
-  0% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(30px, -50px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
-  100% { transform: translate(0, 0) scale(1); }
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 0.15; filter: blur(100px); }
+  33% { transform: translate(30px, -50px) scale(1.1) rotate(120deg); opacity: 0.3; filter: blur(120px); }
+  66% { transform: translate(-20px, 20px) scale(0.9) rotate(240deg); opacity: 0.2; filter: blur(90px); }
+  100% { transform: translate(0, 0) scale(1) rotate(360deg); opacity: 0.15; filter: blur(100px); }
+}
+
+.animate-float {
+  animation: float 15s ease-in-out infinite;
 }
 
 /* Grainy Texture Filter - Subdued for Editorial Print Feel */

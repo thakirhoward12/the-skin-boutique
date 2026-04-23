@@ -26,7 +26,7 @@ export default function NewsletterSignup() {
       </div>
       
       <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="premium-glass rounded-[3rem] p-10 md:p-16 shadow-2xl text-center">
+        <div className="liquid-glass rounded-[3rem] p-10 md:p-16 shadow-2xl text-center">
           <h2 className="text-3xl md:text-5xl font-serif text-ink-900 mb-6">Join The Glow Club</h2>
           <p className="text-ink-600 font-light text-lg mb-10 max-w-xl mx-auto">
             Subscribe to our newsletter for early access to new arrivals, exclusive discounts, and expert skincare tips.

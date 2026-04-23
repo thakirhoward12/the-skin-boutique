@@ -114,21 +114,21 @@ export default function Footer({ onOpenAffiliate, onOpenContact }: FooterProps) 
           
           <div className="col-span-1 md:col-span-2 md:col-start-7">
             <h3 className="text-[10px] font-medium text-white/40 tracking-[0.2em] uppercase mb-8">Shop Collections</h3>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300" title="Shop All K-Beauty Brands">All Brands</a></li>
-              <li><a href="#" className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300" title="Trending Skincare Best Sellers">Best Sellers</a></li>
-              <li><a href="#" className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300" title="Latest Korean Skincare Arrivals">New Arrivals</a></li>
-              <li><a href="#" className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300">Gift Cards</a></li>
+            <ul className="space-y-4 group/list">
+              <li><a href="#" className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light" title="Shop All K-Beauty Brands">All Brands</a></li>
+              <li><a href="#" className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light" title="Trending Skincare Best Sellers">Best Sellers</a></li>
+              <li><a href="#" className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light" title="Latest Korean Skincare Arrivals">New Arrivals</a></li>
+              <li><a href="#" className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light">Gift Cards</a></li>
             </ul>
           </div>
 
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-[10px] font-medium text-white/40 tracking-[0.2em] uppercase mb-8">Skincare Guide</h3>
-            <ul className="space-y-4">
-              <li><button type="button" onClick={() => setGlassSkinOpen(true)} className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300">Glass Skin Routine</button></li>
-              <li><button type="button" onClick={() => setSunCareOpen(true)} className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300">Sun Care 101</button></li>
-              <li><button type="button" onClick={() => setGlossaryOpen(true)} className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300">Ingredient Glossary</button></li>
-              <li><button onClick={onOpenAffiliate} className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300">Affiliate Program</button></li>
+            <ul className="space-y-4 group/list">
+              <li><button type="button" onClick={() => setGlassSkinOpen(true)} className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light">Glass Skin Routine</button></li>
+              <li><button type="button" onClick={() => setSunCareOpen(true)} className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light">Sun Care 101</button></li>
+              <li><button type="button" onClick={() => setGlossaryOpen(true)} className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light">Ingredient Glossary</button></li>
+              <li><button onClick={onOpenAffiliate} className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light">Affiliate Program</button></li>
             </ul>
           </div>
 
@@ -145,10 +145,10 @@ export default function Footer({ onOpenAffiliate, onOpenContact }: FooterProps) 
               </div>
               <p className="text-[10px] text-white/60 font-light">Rated 4.9/5 by our beautiful community</p>
             </div>
-            <ul className="space-y-4">
-              <li><button type="button" onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })} className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300">FAQ</button></li>
-              <li><button type="button" onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })} className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300">Shipping & Returns</button></li>
-              <li><button onClick={onOpenContact} className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300">Contact Us</button></li>
+            <ul className="space-y-4 group/list">
+              <li><button type="button" onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })} className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light">FAQ</button></li>
+              <li><button type="button" onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })} className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light">Shipping & Returns</button></li>
+              <li><button onClick={onOpenContact} className="inline-block text-sm text-white/60 group-hover/list:text-white/20 hover:!text-pastel-pink hover:translate-x-2 transition-all duration-500 font-light">Contact Us</button></li>
             </ul>
           </div>
         </motion.div>

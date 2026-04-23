@@ -323,7 +323,7 @@ export default function ProductGrid({
                 className="flex-none w-72 sm:w-80 snap-start group cursor-pointer"
                 onClick={() => openModal(product)}
               >
-                <div className="relative overflow-hidden rounded-[2.5rem] h-[380px] premium-glass transition-all duration-500 mb-6 group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/10">
+                <div className="relative overflow-hidden rounded-[2.5rem] h-[380px] liquid-glass transition-all duration-500 mb-6 group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/10">
                   <img
                     src={product.image}
                     alt={`${product.brand} - ${product.name}`}
@@ -473,7 +473,7 @@ export default function ProductGrid({
                       }}
                       transition={{ delay: (index % 10) * 0.05 }}
                       onClick={() => setSelectedBrandFolder(brand)}
-                      className="group relative cursor-pointer h-[320px] rounded-[2.5rem] overflow-hidden premium-glass transition-all duration-700"
+                      className="group relative cursor-pointer h-[320px] rounded-[2.5rem] overflow-hidden liquid-glass transition-all duration-700"
                     >
                       {/* Brand Background Image */}
                       {representativeImage && (
@@ -534,7 +534,7 @@ export default function ProductGrid({
                   onClick={() => openModal(product)}
                 >
                   <div 
-                    className="relative w-full h-[400px] premium-glass rounded-[2rem] overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/10"
+                    className="relative w-full h-[400px] liquid-glass rounded-[2rem] overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/10"
                   >
                     <img
                       src={product.image}
@@ -632,7 +632,7 @@ export default function ProductGrid({
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="relative w-full max-w-5xl premium-glass rounded-[2rem] shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col md:flex-row"
+              className="relative w-full max-w-5xl liquid-glass rounded-[2rem] shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col md:flex-row"
             >
               <button 
                 onClick={closeModal}

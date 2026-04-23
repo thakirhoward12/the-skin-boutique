@@ -60,29 +60,51 @@ export default function Hero({ isProductActive = false }: { isProductActive?: bo
             </span>
           </motion.div>
 
-          <div className="relative z-10 w-full overflow-hidden">
+          <div className="relative z-10 w-full overflow-hidden flex flex-col items-center">
             {isProductActive ? (
-              <motion.h2
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] tracking-tighter font-serif text-pastel-pink leading-[0.85] font-light"
+              <TitleTag
+                className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] tracking-tighter font-serif text-pastel-pink leading-[0.85] font-light flex flex-col items-center"
               >
                 <span className="sr-only">Premium Korean Skincare & K-Beauty Boutique</span>
-                <span className="block italic pr-8">Glass Skin</span>
-                <span className="block pl-12 sm:pl-24">Redefined.</span>
-              </motion.h2>
+                <motion.span 
+                  initial={{ opacity: 0, y: 120, rotate: 5 }}
+                  animate={{ opacity: 1, y: 0, rotate: 0 }}
+                  transition={{ type: "spring", damping: 20, stiffness: 100, delay: 0.1 }}
+                  className="block italic pr-8"
+                >
+                  Glass Skin
+                </motion.span>
+                <motion.span 
+                  initial={{ opacity: 0, y: 120, rotate: -5 }}
+                  animate={{ opacity: 1, y: 0, rotate: 0 }}
+                  transition={{ type: "spring", damping: 20, stiffness: 100, delay: 0.3 }}
+                  className="block pl-12 sm:pl-24"
+                >
+                  Redefined.
+                </motion.span>
+              </TitleTag>
             ) : (
-              <motion.h1 
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] tracking-tighter font-serif text-pastel-pink leading-[0.85] font-light"
+              <h1 
+                className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] tracking-tighter font-serif text-pastel-pink leading-[0.85] font-light flex flex-col items-center"
               >
                 <span className="sr-only">Premium Korean Skincare & K-Beauty Boutique</span>
-                <span className="block italic pr-8">Glass Skin</span>
-                <span className="block pl-12 sm:pl-24">Redefined.</span>
-              </motion.h1>
+                <motion.span 
+                  initial={{ opacity: 0, y: 120, rotate: 5 }}
+                  animate={{ opacity: 1, y: 0, rotate: 0 }}
+                  transition={{ type: "spring", damping: 20, stiffness: 100, delay: 0.1 }}
+                  className="block italic pr-8"
+                >
+                  Glass Skin
+                </motion.span>
+                <motion.span 
+                  initial={{ opacity: 0, y: 120, rotate: -5 }}
+                  animate={{ opacity: 1, y: 0, rotate: 0 }}
+                  transition={{ type: "spring", damping: 20, stiffness: 100, delay: 0.3 }}
+                  className="block pl-12 sm:pl-24"
+                >
+                  Redefined.
+                </motion.span>
+              </h1>
             )}
           </div>
           

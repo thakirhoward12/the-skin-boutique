@@ -209,7 +209,7 @@ export default function StoreFront() {
                     >
                       <Link
                         to={card.to}
-                        className="group relative flex flex-col h-full p-10 premium-glass grainy focus-visible:ring-2 focus-visible:ring-ink-900 outline-none overflow-hidden rounded-[2rem]"
+                        className="group relative flex flex-col h-full p-10 liquid-glass grainy focus-visible:ring-2 focus-visible:ring-ink-900 outline-none overflow-hidden rounded-[2rem]"
                       >
                         <div className="mb-10 text-ink-900 transform transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-1">
                           <card.icon strokeWidth={1} size={32} />
