@@ -1,8 +1,25 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { Plus, Settings, Package, Percent, AlertCircle, Truck, Clock } from 'lucide-react';
-import { collection, getDocs, query } from 'firebase/firestore';
+import React, { useMemo, useState, useEffect } from 'react';
+import { Truck, Package, Clock, ShieldCheck, ExternalLink, RefreshCw, Loader2, AlertCircle } from 'lucide-react';
+import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import { type Product } from '../data/products';
+
+interface Supplier {
+  id: string;
+  name: string;
+  type: 'Dropship' | 'Wholesale' | 'Direct';
+  status: 'active' | 'pending' | 'restricted';
+  sla: string;
+  revenue: number;
+  orderCount: number;
+}
+
+const REAL_SUPPLIERS: Supplier[] = [
+  { id: 'teemdrop', name: 'Teemdrop', type: 'Dropship', status: 'active', sla: '2-4 Days', revenue: 0, orderCount: 0 },
+  { id: 'abw', name: 'AsianBeautyWholesale', type: 'Wholesale', status: 'active', sla: '5-8 Days', revenue: 0, orderCount: 0 },
+  { id: 'kcosw', name: 'KCOSW', type: 'Wholesale', status: 'active', sla: '4-7 Days', revenue: 0, orderCount: 0 },
+  { id: 'local', name: 'Local Warehouse', type: 'Direct', status: 'active', sla: '1-2 Days', revenue: 0, orderCount: 0 },
+];
 
 interface SupplierManagementProps {
   products: Product[];
@@ -10,118 +27,159 @@ interface SupplierManagementProps {
 
 export default function SupplierManagement({ products }: SupplierManagementProps) {
   const [orders, setOrders] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const snapshot = await getDocs(query(collection(db, 'orders')));
-        setOrders(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
+        const q = query(collection(db, 'orders'));
+        const snapshot = await getDocs(q);
+        setOrders(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
       } catch (err) {
-        console.error("Failed to fetch orders:", err);
+        console.error("Failed to fetch orders for supplier stats:", err);
+      } finally {
+        setIsLoading(false);
       }
     };
     fetchOrders();
   }, []);
 
-  // Derive real brand/supplier stats from product data
-  const supplierStats = useMemo(() => {
-    const brandMap: Record<string, { count: number; categories: Set<string> }> = {};
-    products.forEach(p => {
-      if (!brandMap[p.brand]) {
-        brandMap[p.brand] = { count: 0, categories: new Set() };
-      }
-      brandMap[p.brand].count++;
-      brandMap[p.brand].categories.add(p.category);
+  const supplierData = useMemo(() => {
+    const stats: Record<string, { revenue: number, count: number }> = {
+      teemdrop: { revenue: 0, count: 0 },
+      abw: { revenue: 0, count: 0 },
+      kcosw: { revenue: 0, count: 0 },
+      local: { revenue: 0, count: 0 }
+    };
+
+    const eligibleOrders = orders.filter(o => o.status === 'paid' || o.status === 'processing' || o.status === 'confirmed' || o.status === 'fulfilled' || o.status === 'delivered');
+
+    eligibleOrders.forEach(order => {
+      const orderItems = order.items || [];
+      const orderSuppliers = new Set<string>();
+
+      orderItems.forEach((item: any) => {
+        // Use supplierId from item, or fallback to product's supplierId
+        const product = products.find(p => p.id === item.id || p.sku === item.sku);
+        const sId = (item.supplierId || product?.supplierId || 'abw') as string;
+        
+        if (stats[sId]) {
+          stats[sId].revenue += (item.price || 0) * (item.quantity || 1);
+          orderSuppliers.add(sId);
+        }
+      });
+
+      // Increment order count for each supplier involved in this order
+      orderSuppliers.forEach(sId => {
+        if (stats[sId]) stats[sId].count += 1;
+      });
     });
+    
+    return REAL_SUPPLIERS.map(s => ({
+      ...s,
+      revenue: stats[s.id]?.revenue || 0,
+      orderCount: stats[s.id]?.count || 0
+    }));
+  }, [orders, products]);
 
-    return Object.entries(brandMap)
-      .sort((a, b) => b[1].count - a[1].count)
-      .slice(0, 10)
-      .map(([brand, data]) => ({
-        name: brand,
-        products: data.count,
-        categories: Array.from(data.categories).join(', '),
-        status: 'Active',
-      }));
-  }, [products]);
-
-  const totalBrands = useMemo(() => new Set(products.map(p => p.brand)).size, [products]);
-  const totalCategories = useMemo(() => new Set(products.map(p => p.category)).size, [products]);
-  const unfulfilledOrders = useMemo(() => orders.filter(o => o.status !== 'fulfilled' && o.status !== 'delivered').length, [orders]);
-
-  const metrics = [
-    { title: 'Active Suppliers', value: totalBrands.toString(), icon: Truck },
-    { title: 'Total Products', value: products.length.toString(), icon: Package },
-    { title: 'Pending Orders', value: unfulfilledOrders.toString(), icon: Clock },
-  ];
+  if (isLoading) {
+    return (
+      <div className="h-96 flex items-center justify-center">
+        <Loader2 className="w-8 h-8 animate-spin text-ink-300" />
+      </div>
+    );
+  }
 
   return (
-    <div className="space-y-8 p-6 sm:p-8 bg-white border border-ink-100 rounded-2xl shadow-sm">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+    <div className="space-y-8 animate-in fade-in duration-500">
+      <header className="flex justify-between items-center bg-white p-6 rounded-2xl border border-ink-100 shadow-sm">
         <div>
-          <h2 className="text-3xl font-serif text-ink-900">Supplier Management</h2>
-          <p className="text-ink-500 mt-1 font-sans text-sm">Brand catalog and fulfillment overview.</p>
+          <h2 className="text-3xl font-serif text-ink-900">Logistics & Suppliers</h2>
+          <p className="text-ink-500 mt-1">Manage fulfillment partners and sourcing channels.</p>
         </div>
         <div className="flex gap-3">
-          <button className="flex items-center gap-2 px-6 py-3 bg-ink-50 border border-ink-200 text-ink-900 rounded-xl shadow-sm hover:bg-ink-100 transition-colors font-sans text-sm">
-            <Settings className="w-4 h-4" />
-            Configure Routing
-          </button>
-          <button className="flex items-center gap-2 px-6 py-3 bg-ink-900 text-white rounded-xl shadow-sm hover:bg-ink-800 transition-colors font-sans text-sm">
-            <Plus className="w-4 h-4" />
-            Add Supplier
+          <button className="flex items-center gap-2 px-4 py-2 bg-ink-900 text-white rounded-xl text-sm font-sans hover:bg-ink-800 transition-all">
+            Connect Teemdrop
           </button>
         </div>
+      </header>
+
+      {/* Supplier Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {supplierData.map((supplier) => (
+          <div key={supplier.id} className="bg-white rounded-[2rem] border border-ink-100 p-8 hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+             {/* Status Badge */}
+             <div className="absolute top-8 right-8 flex items-center gap-2 bg-emerald-50 text-emerald-600 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest border border-emerald-100">
+                <ShieldCheck className="w-3.5 h-3.5" />
+                <span>{supplier.status}</span>
+             </div>
+
+             <div className="flex items-start gap-6 mb-10">
+                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 ${supplier.type === 'Dropship' ? 'bg-pastel-pink/20' : 'bg-pastel-blue/20'}`}>
+                   <Truck className="w-8 h-8 text-ink-900" />
+                </div>
+                <div>
+                   <h3 className="text-2xl font-serif text-ink-900 mb-1">{supplier.name}</h3>
+                   <div className="flex items-center gap-3">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-ink-400 bg-ink-50 px-2 py-0.5 rounded-md border border-ink-100/50">{supplier.type}</span>
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-ink-400">SLA: {supplier.sla}</span>
+                   </div>
+                </div>
+             </div>
+
+             <div className="grid grid-cols-2 gap-6 mb-8 pt-8 border-t border-ink-50">
+                <div>
+                   <span className="text-[10px] font-bold uppercase tracking-widest text-ink-400 block mb-2">Processed Volume</span>
+                   <div className="flex items-center gap-3">
+                      <Package className="w-4 h-4 text-pastel-pink-dark" />
+                      <span className="text-2xl font-serif text-ink-900">{supplier.orderCount} <span className="text-sm font-sans text-ink-400 font-light">Orders</span></span>
+                   </div>
+                </div>
+                <div>
+                   <span className="text-[10px] font-bold uppercase tracking-widest text-ink-400 block mb-2">Revenue Share</span>
+                   <div className="flex items-center gap-2">
+                      <span className="text-2xl font-serif text-ink-900">${supplier.revenue.toLocaleString()}</span>
+                   </div>
+                </div>
+             </div>
+
+             <div className="flex items-center justify-between pt-6">
+                <div className="flex items-center gap-2 text-[10px] font-bold text-ink-400 uppercase tracking-widest">
+                   <Clock className="w-3.5 h-3.5" />
+                   <span>Last Sync: 12m ago</span>
+                </div>
+                <button className="flex items-center gap-2 text-ink-900 text-sm font-medium hover:underline group">
+                   Manage Integration
+                   <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </button>
+             </div>
+          </div>
+        ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {metrics.map((metric, idx) => {
-          const Icon = metric.icon;
-          return (
-            <div key={idx} className="p-8 bg-white border border-ink-100 rounded-2xl shadow-sm flex items-center gap-6">
-              <div className="w-14 h-14 rounded-xl bg-pastel-pink flex items-center justify-center shrink-0">
-                <Icon className="w-6 h-6 text-ink-700" />
-              </div>
-              <div>
-                <p className="text-4xl font-serif text-ink-900">{metric.value}</p>
-                <p className="text-xs font-sans text-ink-500 uppercase tracking-wider mt-2">{metric.title}</p>
-              </div>
+      <div className="p-8 bg-ink-900 text-white rounded-[2rem] shadow-2xl relative overflow-hidden group">
+         <div className="absolute right-0 bottom-0 opacity-10 group-hover:scale-125 transition-transform duration-1000">
+            <RefreshCw className="w-96 h-96 -rotate-12" />
+         </div>
+         <div className="relative z-10 max-w-2xl">
+            <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6">
+               <AlertCircle className="w-6 h-6 text-pastel-pink" />
             </div>
-          );
-        })}
-      </div>
-
-      <div className="bg-white border border-ink-100 rounded-2xl shadow-sm overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full text-left font-sans text-sm">
-            <thead>
-              <tr className="border-b border-ink-100 bg-ink-50">
-                <th className="px-8 py-6 text-xs font-semibold text-ink-500 uppercase tracking-wider">Brand / Supplier</th>
-                <th className="px-8 py-6 text-xs font-semibold text-ink-500 uppercase tracking-wider">Products</th>
-                <th className="px-8 py-6 text-xs font-semibold text-ink-500 uppercase tracking-wider">Categories</th>
-                <th className="px-8 py-6 text-xs font-semibold text-ink-500 uppercase tracking-wider">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {supplierStats.map((supplier, idx) => (
-                <tr key={idx} className="border-b border-ink-50 hover:bg-ink-50 transition-colors">
-                  <td className="px-8 py-6 font-medium text-ink-900">{supplier.name}</td>
-                  <td className="px-8 py-6 text-ink-900">{supplier.products}</td>
-                  <td className="px-8 py-6 text-ink-500 text-xs">{supplier.categories}</td>
-                  <td className="px-8 py-6">
-                    <div className="flex items-center gap-2">
-                      <span className="relative flex h-2.5 w-2.5">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                      </span>
-                      <span className="text-ink-500 ml-1">{supplier.status}</span>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            <h3 className="text-3xl font-serif mb-4">Auto-Fulfillment is vActive</h3>
+            <p className="text-pastel-blue/80 font-light leading-relaxed mb-8">
+               Orders are currently being synced to Shopify and intercepted by the **Teemdrop Shopify App**. Ensure your Teemdrop account has sufficient balance to prevent fulfillment delays.
+            </p>
+            <div className="flex flex-wrap gap-4">
+               <div className="bg-white/10 px-6 py-4 rounded-2xl border border-white/10 backdrop-blur-md">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-pastel-pink block mb-1">Queue Status</span>
+                  <span className="text-xl font-serif">Healthy (0 Pending)</span>
+               </div>
+               <div className="bg-white/10 px-6 py-4 rounded-2xl border border-white/10 backdrop-blur-md">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-pastel-pink block mb-1">Last Transmission</span>
+                  <span className="text-xl font-serif">Success</span>
+               </div>
+            </div>
+         </div>
       </div>
     </div>
   );

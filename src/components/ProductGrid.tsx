@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ShoppingBag, Heart, CheckCircle2, X, Star, SlidersHorizontal, Minus, Plus, Play, Info, FolderOpen, ArrowLeft } from 'lucide-react';
+import { ShoppingBag, Heart, CheckCircle2, X, Star, SlidersHorizontal, Minus, Plus, Play, Info, FolderOpen, ArrowLeft, ChevronRight, Truck, Clock } from 'lucide-react';
 import { type Product } from '../data/products';
 import { useCurrency } from '../contexts/CurrencyContext';
 import { useCart } from '../contexts/CartContext';
 import { useUser } from '../contexts/UserContext';
 import { useProducts } from '../contexts/ProductContext';
-import SEO from './SEO';
+import { getProductSlug } from '../utils/slug';
+import { getLeadTimeLabel } from '../lib/pricingEngine';
+import SkinConcernFilter from './SkinConcernFilter';
+import TrendingSearches from './TrendingSearches';
 
 
 const INGREDIENT_GLOSSARY: Record<string, string> = {
@@ -77,10 +80,16 @@ const INGREDIENT_GLOSSARY: Record<string, string> = {
 
 export default function ProductGrid({ 
   favorites, 
-  toggleFavorite 
+  toggleFavorite,
+  selectedProductSlug,
+  onProductOpen,
+  onProductClose
 }: { 
   favorites: Set<number>;
   toggleFavorite: (e: React.MouseEvent, id: number) => void;
+  selectedProductSlug?: string;
+  onProductOpen?: (product: Product) => void;
+  onProductClose?: () => void;
 }) {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -96,7 +105,8 @@ export default function ProductGrid({
   const { formatPrice } = useCurrency();
   const { addToCart } = useCart();
   const { profile } = useUser();
-  const { products, isLoading, searchQuery } = useProducts();
+  const { products, isLoading, searchQuery, setSearchQuery } = useProducts();
+  const [filterConcern, setFilterConcern] = useState('');
 
   const categories = ['All', ...Array.from(new Set(products.map(p => p.category)))];
   const brands = ['All', ...Array.from(new Set(products.map(p => p.brand)))];
@@ -110,6 +120,10 @@ export default function ProductGrid({
 
     if (filterBrand !== 'All') {
       result = result.filter(p => p.brand === filterBrand);
+    }
+
+    if (filterConcern) {
+      result = result.filter(p => p.idealFor?.some(match => match.concern && match.concern.includes(filterConcern)));
     }
 
     if (sortBy === 'price-low-high') {
@@ -127,13 +141,18 @@ export default function ProductGrid({
         (p.description && p.description.toLowerCase().includes(q))
       );
     }
-
-    return result;
-  }, [filterCategory, filterBrand, sortBy, searchQuery, products]);
+      return result;
+  }, [filterCategory, filterBrand, filterConcern, sortBy, searchQuery, products]);
 
   const handleAddToCart = (e: React.MouseEvent, product: Product, quantity: number = 1, optionIndex: number = 0) => {
     e.stopPropagation();
     e.preventDefault();
+    
+    // Skip if product is under review
+    if (product.priceStatus === 'review_required') {
+      setToastMessage(`${product.name} is currently unavailable`);
+      return;
+    }
     
     // Use numeric price directly from product or option
     const priceNumber = product.options && product.options.length > 0 
@@ -145,13 +164,19 @@ export default function ProductGrid({
       title: product.options && product.options.length > 0 ? `${product.name} - ${product.options[optionIndex].size}` : product.name,
       price: priceNumber,
       image: product.image,
-      quantity: quantity
+      quantity: quantity,
+      sku: product.sku || String(product.id),
+      supplierId: product.supplierId,
+      sourceUrl: product.sourceUrl,
+      sourcePrice: product.sourcePrice,
     });
     
     setToastMessage(`${quantity} ${product.name} added to cart`);
   };
 
   const handleToggleFavorite = (e: React.MouseEvent, product: Product) => {
+    e.stopPropagation();
+    e.preventDefault();
     toggleFavorite(e, product.id);
     const isAdding = !favorites.has(product.id);
     if (isAdding) {
@@ -166,7 +191,28 @@ export default function ProductGrid({
     setSelectedOptionIndex(0);
     setModalQuantity(1);
     setIsPlayingVideo(false);
+    onProductOpen?.(product);
   };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+    onProductClose?.();
+  };
+
+  // Sync internal state with external slug prop
+
+
+  // Synchronize modal with URL slug
+  useEffect(() => {
+    if (selectedProductSlug && products.length > 0) {
+      const product = products.find(p => getProductSlug(p) === selectedProductSlug);
+      if (product && (!selectedProduct || getProductSlug(selectedProduct) !== selectedProductSlug)) {
+        openModal(product);
+      }
+    } else if (!selectedProductSlug && selectedProduct) {
+      setSelectedProduct(null);
+    }
+  }, [selectedProductSlug, products]);
 
   const isPerfectMatch = (product: Product) => {
     if (!profile || !product.idealFor) return false;
@@ -252,11 +298,6 @@ export default function ProductGrid({
 
   return (
     <>
-      <SEO 
-        title={selectedProduct ? selectedProduct.name : "Curated K-Beauty Collections"} 
-        description={selectedProduct ? selectedProduct.description : "Discover premium Korean skincare at The Skin Boutique. Curated favorites for every skin concern."}
-        product={selectedProduct || undefined}
-      />
       <section id="products" className="py-24 bg-ivory-50 scroll-mt-20 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -273,12 +314,16 @@ export default function ProductGrid({
                 key={`featured-${product.id}`}
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ 
+                  y: -10,
+                  transition: { type: "spring", stiffness: 400, damping: 20 }
+                }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 className="flex-none w-72 sm:w-80 snap-start group cursor-pointer"
                 onClick={() => openModal(product)}
               >
-                <div className="relative overflow-hidden rounded-[2rem] h-[380px] bg-white shadow-sm group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/20 transition-all duration-500 mb-6">
+                <div className="relative overflow-hidden rounded-[2.5rem] h-[380px] premium-glass transition-all duration-500 mb-6 group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/10">
                   <img
                     src={product.image}
                     alt={`${product.brand} - ${product.name}`}
@@ -342,6 +387,11 @@ export default function ProductGrid({
               Shop our most loved products from top-rated global skincare brands.
             </p>
           </div>
+          <TrendingSearches onSelectTrend={setSearchQuery} />
+        </div>
+
+        <div className="mb-8">
+          <SkinConcernFilter selectedConcern={filterConcern} onSelectConcern={setFilterConcern} />
         </div>
 
         {/* Filters and Sorting */}
@@ -400,42 +450,91 @@ export default function ProductGrid({
         <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
           <AnimatePresence mode="popLayout">
             {!selectedBrandFolder && filterBrand === 'All' && filterCategory === 'All' ? (
-              brands.filter(b => b !== 'All').map((brand, index) => (
-                <motion.div
-                  layout
-                  key={`folder-${brand}`}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.8 }}
-                  transition={{ delay: (index % 10) * 0.05 }}
-                  onClick={() => setSelectedBrandFolder(brand)}
-                  className="group cursor-pointer bg-white rounded-[2rem] p-8 shadow-sm hover:shadow-2xl hover:shadow-pastel-pink-dark/20 transition-all duration-300 flex flex-col items-center justify-center min-h-[250px] border border-ink-100"
-                >
-                  <h3 className="text-xl font-serif text-ink-900 text-center">{brand}</h3>
-                  <p className="text-xs text-ink-500 mt-2 uppercase tracking-widest">{products.filter(p => p.brand === brand).length} Products</p>
-                </motion.div>
-              ))
+              isLoading ? (
+                // Loading Skeletons
+                [...Array(8)].map((_, i) => (
+                  <div key={`skeleton-${i}`} className="animate-pulse bg-white rounded-[2rem] h-[250px] border border-ink-50 shadow-sm" />
+                ))
+              ) : (
+                brands.filter(b => b !== 'All').map((brand, index) => {
+                  const brandProducts = products.filter(p => p.brand === brand);
+                  const representativeImage = brandProducts[0]?.image;
+                  
+                  return (
+                    <motion.div
+                      layout
+                      key={`folder-${brand}`}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.9 }}
+                      whileHover={{ 
+                        y: -10,
+                        transition: { type: "spring", stiffness: 400, damping: 20 }
+                      }}
+                      transition={{ delay: (index % 10) * 0.05 }}
+                      onClick={() => setSelectedBrandFolder(brand)}
+                      className="group relative cursor-pointer h-[320px] rounded-[2.5rem] overflow-hidden premium-glass transition-all duration-700"
+                    >
+                      {/* Brand Background Image */}
+                      {representativeImage && (
+                        <div className="absolute inset-0 z-0">
+                          <img 
+                            src={representativeImage} 
+                            alt={brand} 
+                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 mix-blend-multiply opacity-40"
+                            referrerPolicy="no-referrer"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-br from-ivory-50/80 via-white/40 to-transparent" />
+                        </div>
+                      )}
+                      
+                      {/* Glass Content */}
+                      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-8 backdrop-blur-sm group-hover:backdrop-blur-none transition-all duration-500">
+                        <div className="text-center transform transition-transform duration-500 group-hover:scale-110">
+                          <h3 className="text-2xl font-serif text-ink-900 mb-2 leading-tight">
+                            {brand}
+                          </h3>
+                        </div>
+                        
+                        {/* Hidden Reveal on Hover */}
+                        <div className="absolute bottom-8 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 flex items-center gap-2 text-pastel-pink-dark font-medium text-sm">
+                          Explore Collection <ChevronRight className="w-4 h-4" />
+                        </div>
+                      </div>
+                      
+                      {/* Grainy Noise Overlay */}
+                      <div 
+                        className="absolute inset-0 opacity-10 mix-blend-overlay pointer-events-none z-20" 
+                        style={{ 
+                          backgroundImage: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')" 
+                        }}
+                      ></div>
+                    </motion.div>
+                  );
+                })
+              )
             ) : (
-              filteredAndSortedProducts
+              (filteredAndSortedProducts || [])
                 .filter(p => !selectedBrandFolder || p.brand === selectedBrandFolder)
                 .map((product) => (
                 <motion.div 
                   layout
                   key={product.id}
-                  initial={{ opacity: 0, scale: 0.8, y: 20 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.8, y: -20 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ 
+                    y: -10,
+                    transition: { type: "spring", stiffness: 400, damping: 20 }
+                  }}
+                  viewport={{ once: true }}
                   transition={{ 
                     layout: { type: "spring", stiffness: 250, damping: 25 },
-                    opacity: { duration: 0.25 },
-                    scale: { duration: 0.25 },
-                    y: { duration: 0.25 }
                   }}
-                  className="group relative"
+                  className="group relative cursor-pointer"
+                  onClick={() => openModal(product)}
                 >
                   <div 
-                    className="relative w-full h-[400px] bg-white rounded-[2rem] overflow-hidden cursor-pointer group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/20 transition-all duration-500"
-                    onClick={() => openModal(product)}
+                    className="relative w-full h-[400px] premium-glass rounded-[2rem] overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-pastel-pink-dark/10"
                   >
                     <img
                       src={product.image}
@@ -463,7 +562,7 @@ export default function ProductGrid({
 
                     <button 
                       onClick={(e) => handleAddToCart(e, product)}
-                      className="btn-shop absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md text-ink-900 px-8 py-3.5 rounded-full font-medium text-sm flex items-center shadow-lg opacity-0 group-hover:opacity-100 translate-y-6 group-hover:translate-y-0 transition-all duration-500 ease-out hover:text-white z-10"
+                      className="btn-shop absolute bottom-8 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md text-ink-900 px-8 py-3.5 rounded-full font-medium text-sm flex items-center shadow-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-out hover:text-white z-10"
                     >
                       <ShoppingBag className="w-4 h-4 mr-2" />
                       <span>Add to Cart</span>
@@ -473,11 +572,23 @@ export default function ProductGrid({
                     <h3 className="text-[10px] text-ink-500 mb-2 uppercase tracking-[0.2em] font-medium">
                       {product.brand}
                     </h3>
-                    <p className="text-xl font-serif text-ink-900 cursor-pointer hover:text-pastel-pink-dark transition-colors line-clamp-1" onClick={() => openModal(product)}>
+                    <p className="text-xl font-serif text-ink-900 line-clamp-1">
                       {product.name}
                     </p>
                     <p className="text-sm text-ink-500 mt-1 mb-2 font-light">{product.category}</p>
-                    <p className="text-lg font-medium text-ink-900">{formatPrice(product.price)}</p>
+                    {product.priceStatus === 'review_required' ? (
+                      <p className="text-sm font-medium text-amber-600">Currently Unavailable</p>
+                    ) : (
+                      <p className="text-lg font-medium text-ink-900">{formatPrice(product.price)}</p>
+                    )}
+                    {product.supplierId && product.supplierId !== 'local' && (
+                      <div className="flex items-center gap-1 mt-1.5">
+                        <Clock className="w-3 h-3 text-ink-400" />
+                        <span className="text-[10px] text-ink-400 font-medium">
+                          {getLeadTimeLabel(product.supplierId)}
+                        </span>
+                      </div>
+                    )}
                   </div>
                 </motion.div>
               ))
@@ -508,23 +619,24 @@ export default function ProductGrid({
       {/* Product Detail Modal */}
       <AnimatePresence>
         {selectedProduct && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              onClick={() => setSelectedProduct(null)}
-              className="absolute inset-0 bg-ink-900/40 backdrop-blur-sm"
+              onClick={closeModal}
+              className="absolute inset-0 bg-ink-900/60 backdrop-blur-md"
             />
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-5xl bg-white rounded-[2rem] shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col md:flex-row"
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="relative w-full max-w-5xl premium-glass rounded-[2rem] shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col md:flex-row"
             >
               <button 
-                onClick={() => setSelectedProduct(null)}
-                className="absolute top-6 right-6 z-20 p-2 bg-ink-50 rounded-full hover:bg-ink-100 transition-colors border border-ink-200"
+                onClick={closeModal}
+                className="absolute top-6 right-6 z-20 p-2 bg-white/10 backdrop-blur-md rounded-full hover:bg-white/20 transition-colors border border-white/20"
               >
                 <X className="w-5 h-5 text-ink-900 stroke-[1.5]" />
               </button>
@@ -574,18 +686,25 @@ export default function ProductGrid({
               <div className="w-full md:w-1/2 p-8 md:p-12 overflow-y-auto">
                 <div className="mb-8">
                   <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-[10px] text-ink-500 uppercase tracking-[0.2em] font-medium">
-                      {selectedProduct.brand}
-                    </h3>
+                    <div className="flex items-center gap-3">
+                      <h3 className="text-[10px] text-ink-500 uppercase tracking-[0.2em] font-medium">
+                        {selectedProduct.brand}
+                      </h3>
+                      {selectedProduct.supplierId === 'teemdrop' && (
+                        <span className="flex items-center gap-1.5 px-3 py-1 bg-pastel-blue/10 text-ink-900 text-[10px] font-bold uppercase tracking-widest rounded-full border border-pastel-blue/20">
+                          <Truck className="w-3 h-3" /> Direct from Supplier
+                        </span>
+                      )}
+                    </div>
                     {isPerfectMatch(selectedProduct) && (
                       <span className="bg-pastel-pink-dark/10 text-pastel-pink-dark text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest flex items-center gap-1">
                         <Star className="w-3 h-3 fill-pastel-pink-dark" /> Perfect Match
                       </span>
                     )}
                   </div>
-                  <h2 className="text-3xl sm:text-4xl font-serif text-ink-900 mb-4 leading-tight">
+                  <h1 className="text-3xl sm:text-4xl font-serif text-ink-900 mb-4 leading-tight">
                     {selectedProduct.name}
-                  </h2>
+                  </h1>
                   <p className="text-xl font-light text-ink-700 mb-8">
                     {formatPrice(
                       selectedProduct.options && selectedProduct.options.length > 0

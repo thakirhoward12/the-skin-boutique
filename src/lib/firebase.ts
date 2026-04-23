@@ -24,3 +24,15 @@ export const auth = getAuth(app);
 
 // Initialize Cloud Functions
 export const functions = getFunctions(app, 'africa-south1');
+
+// Initialize Performance Monitoring
+import { getPerformance } from "firebase/performance";
+import { getAnalytics } from "firebase/analytics";
+
+let perf;
+let analytics;
+if (typeof window !== 'undefined') {
+  perf = getPerformance(app);
+  analytics = getAnalytics(app);
+}
+export { perf, analytics };

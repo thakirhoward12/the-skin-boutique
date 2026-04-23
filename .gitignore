@@ -10,12 +10,29 @@ coverage/
 # Secrets — NEVER commit these
 serviceAccountKey.json
 **/serviceAccountKey*.json
+**/credentials*.json
 
 # Large binaries
 node-bin/
+*.msi
+*.zip
 
 # Firebase cache
 .firebase/
 
 # Build artifacts
 functions/lib/
+
+# Extracted/temp data
+extracted_*.json
+normalized_*.json
+non_normalized_list.json
+analysis_results.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini

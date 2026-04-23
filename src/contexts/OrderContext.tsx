@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { db } from '../lib/firebase';
 import { collection, onSnapshot, orderBy, query, doc, updateDoc, addDoc, Timestamp } from 'firebase/firestore';
+import { generatePurchaseLedger } from '../lib/purchaseLedger';
 
 export interface OrderItem {
   id: string;
@@ -8,6 +9,11 @@ export interface OrderItem {
   price: number;
   image: string;
   quantity: number;
+  sku?: string;
+  supplierId?: 'teemdrop' | 'abw' | 'local';
+  sourceUrl?: string;
+  sourcePrice?: number;
+  bundleId?: string;
 }
 
 export type OrderStatus = 'pending' | 'paid' | 'confirmed' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
@@ -34,6 +40,11 @@ export interface Order {
     country: string;
   };
   paymentReference?: string;
+  shopifySyncStatus?: 'success' | 'failed';
+  shopifySyncError?: string;
+  shopifyOrderId?: string | number;
+  shopifySyncTimestamp?: Timestamp | Date;
+  purchaseLedgerStatus?: 'pending' | 'generated' | 'fulfilled';
   createdAt: Timestamp | Date;
   updatedAt: Timestamp | Date;
 }
@@ -41,7 +52,7 @@ export interface Order {
 interface OrderContextType {
   orders: Order[];
   isLoading: boolean;
-  createOrder: (order: Omit<Order, 'id' | 'orderNumber' | 'createdAt' | 'updatedAt'>) => Promise<string>;
+  createOrder: (order: Omit<Order, 'id' | 'orderNumber' | 'createdAt' | 'updatedAt' | 'shopifySyncStatus' | 'shopifySyncError' | 'shopifyOrderId' | 'shopifySyncTimestamp'>) => Promise<string>;
   updateOrderStatus: (orderId: string, status: OrderStatus) => Promise<void>;
 }
 
@@ -53,6 +64,20 @@ function generateOrderNumber(): string {
   const timestamp = Date.now().toString(36).toUpperCase();
   const random = Math.random().toString(36).substring(2, 5).toUpperCase();
   return `${prefix}-${timestamp}-${random}`;
+}
+
+// Deep scrub any undefined values to prevent Firestore crashes
+function scrubUndefined(obj: any): any {
+  if (Array.isArray(obj)) {
+    return obj.map(scrubUndefined);
+  } else if (obj !== null && typeof obj === 'object') {
+    return Object.fromEntries(
+      Object.entries(obj)
+        .filter(([_, v]) => v !== undefined)
+        .map(([k, v]) => [k, scrubUndefined(v)])
+    );
+  }
+  return obj;
 }
 
 export function OrderProvider({ children }: { children: React.ReactNode }) {
@@ -92,13 +117,38 @@ export function OrderProvider({ children }: { children: React.ReactNode }) {
     orderData: Omit<Order, 'id' | 'orderNumber' | 'createdAt' | 'updatedAt'>
   ): Promise<string> => {
     const now = Timestamp.now();
-    const docRef = await addDoc(collection(db, 'orders'), {
+    const scrubbed = scrubUndefined({
       ...orderData,
       orderNumber: generateOrderNumber(),
       createdAt: now,
       updatedAt: now,
     });
-    return docRef.id;
+    
+    const docRef = await addDoc(collection(db, 'orders'), scrubbed);
+    const orderId = docRef.id;
+
+    // Auto-generate purchase ledger if the order is paid
+    if (orderData.status === 'paid') {
+      try {
+        await generatePurchaseLedger({
+          id: orderId,
+          orderNumber: scrubbed.orderNumber,
+          items: orderData.items,
+          customerEmail: orderData.customerEmail,
+          customerName: orderData.customerName,
+          shippingAddress: orderData.shippingAddress,
+        });
+        // Mark ledger as generated
+        await updateDoc(doc(db, 'orders', orderId), {
+          purchaseLedgerStatus: 'generated',
+        });
+      } catch (error) {
+        console.error('Failed to generate purchase ledger:', error);
+        // Non-blocking — order still succeeds
+      }
+    }
+
+    return orderId;
   };
 
   const updateOrderStatus = async (orderId: string, status: OrderStatus) => {

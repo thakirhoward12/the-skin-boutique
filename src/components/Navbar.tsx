@@ -47,7 +47,10 @@ export default function Navbar({
 
   return (
     <>
-      <nav className={`fixed w-full top-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-white/90 backdrop-blur-md border-b border-ink-100 py-2' : 'bg-transparent py-4'}`}>
+      <div className="fixed top-0 w-full bg-ink-900 text-pastel-pink text-[10px] sm:text-xs text-center py-2 uppercase tracking-[0.2em] font-medium z-[60] shadow-md border-b border-white/10">
+        Curated Korean Skincare <span className="mx-2">•</span> Glass Skin <span className="mx-2">•</span> Redefined.
+      </div>
+      <nav className={`fixed w-full top-8 sm:top-8 z-50 transition-all duration-500 ${isScrolled ? 'bg-white/90 backdrop-blur-md border-b border-ink-100 py-2' : 'bg-transparent py-4'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 relative">
             
@@ -62,12 +65,26 @@ export default function Navbar({
             </div>
 
           {/* Logo */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 flex-shrink-0 flex items-center justify-center gap-2">
-            <Droplet className={`w-5 h-5 sm:w-6 sm:h-6 ${isScrolled ? 'text-pastel-pink-dark' : 'text-white'}`} />
+          <motion.div 
+            initial={false}
+            animate={{ 
+              scale: isScrolled ? 0.95 : 1,
+              y: isScrolled ? 0 : 2
+            }}
+            className="absolute left-1/2 transform -translate-x-1/2 flex-shrink-0 flex items-center justify-center gap-2"
+          >
+            <motion.div
+              animate={{ 
+                rotate: isScrolled ? [0, 5, -5, 0] : 0 
+              }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <Droplet className={`w-5 h-5 sm:w-6 sm:h-6 ${isScrolled ? 'text-pastel-pink-dark' : 'text-white'}`} />
+            </motion.div>
             <a href="#" className={`font-serif text-2xl sm:text-3xl font-light tracking-tight ${isScrolled ? 'text-ink-900' : 'text-white'} whitespace-nowrap transition-colors`}>
               The Skin Boutique
             </a>
-          </div>
+          </motion.div>
 
           {/* Right Side: Icons */}
           <div className="flex-1 flex items-center justify-end space-x-4 sm:space-x-6">
@@ -92,64 +109,89 @@ export default function Navbar({
                   </motion.div>
                 )}
               </AnimatePresence>
-              <button 
+              <motion.button 
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
-                className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200`}
+                className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} transition-all duration-200`}
               >
                 {isSearchOpen ? <X className="h-5 w-5" strokeWidth={1.5} /> : <Search className="h-5 w-5" strokeWidth={1.5} />}
-              </button>
+              </motion.button>
             </div>
             
-            <button className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 hidden sm:block relative`} onClick={onOpenWishlist}>
+            <motion.button 
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} transition-all duration-200 hidden sm:block relative`} 
+              onClick={onOpenWishlist}
+            >
               <Heart className="h-5 w-5" strokeWidth={1.5} />
               {favoritesCount > 0 && (
                 <span className="absolute -top-1.5 -right-1.5 bg-pastel-pink-dark text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">
                   {favoritesCount}
                 </span>
               )}
-            </button>
-            <button 
+            </motion.button>
+            <motion.button 
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
               onClick={onOpenCurrency}
-              className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 hidden sm:flex items-center gap-1`}
+              className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} transition-all duration-200 hidden sm:flex items-center gap-1`}
             >
               <Globe className="h-5 w-5" strokeWidth={1.5} />
               <span className="text-xs font-medium">{currency}</span>
-            </button>
-            {isAdmin && (
-              <Link
-                to="/admin"
-                title="Admin Dashboard"
-                className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 hidden sm:block`}
+            </motion.button>
+              <motion.div
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="hidden sm:block"
               >
-                <Settings className="h-5 w-5" strokeWidth={1.5} />
-              </Link>
-            )}
+                <Link
+                  to="/admin"
+                  title="Admin Dashboard"
+                  className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} transition-all duration-200`}
+                >
+                  <Settings className="h-5 w-5" strokeWidth={1.5} />
+                </Link>
+              </motion.div>
             {user ? (
-              <Link 
-                to="/affiliate" 
-                title="Affiliate Dashboard"
-                className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 hidden sm:block`}
+              <motion.div
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="hidden sm:block"
               >
-                <Gift className="h-5 w-5" strokeWidth={1.5} />
-              </Link>
+                <Link 
+                  to="/affiliate" 
+                  title="Affiliate Dashboard"
+                  className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} transition-all duration-200`}
+                >
+                  <Gift className="h-5 w-5" strokeWidth={1.5} />
+                </Link>
+              </motion.div>
             ) : (
-              <button 
+              <motion.button 
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={onOpenAffiliate}
                 title="Affiliate Rewards"
-                className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 hidden sm:block`}
+                className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} transition-all duration-200 hidden sm:block`}
               >
                 <Gift className="h-5 w-5" strokeWidth={1.5} />
-              </button>
+              </motion.button>
             )}
-            <button 
+            <motion.button 
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => user ? logout() : onOpenAuth()}
               title={user ? "Log Out" : "Sign In"}
-              className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 hidden sm:block`}
+              className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} transition-all duration-200 hidden sm:block`}
             >
               <User className={`h-5 w-5 ${user ? 'fill-current' : ''}`} strokeWidth={1.5} />
-            </button>
-            <button 
-              className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} hover:scale-110 transition-all duration-200 relative`}
+            </motion.button>
+            <motion.button 
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className={`${isScrolled ? 'text-ink-900 hover:text-ink-500' : 'text-white hover:text-pastel-pink'} transition-all duration-200 relative`}
               onClick={openCart}
             >
               <ShoppingBag className="h-5 w-5" strokeWidth={1.5} />
@@ -158,7 +200,7 @@ export default function Navbar({
                   {cartCount}
                 </span>
               )}
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
@@ -212,7 +254,18 @@ export default function Navbar({
 
                 {/* Navigation Links */}
                 <div className="flex flex-col space-y-4">
-                  <span className="text-xs font-semibold text-ink-500 uppercase tracking-wider mb-2">Navigation</span>
+                  <span className="text-xs font-semibold text-ink-500 uppercase tracking-wider mb-2">Shop</span>
+                  <Link to="/shop" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">Browse All</Link>
+                  <Link to="/packages" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors flex items-center gap-2">
+                    Packages
+                    <span className="text-[9px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">NEW</span>
+                  </Link>
+                  <Link to="/bundles" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">Bundles</Link>
+                  <Link to="/build" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">Build Routine</Link>
+                </div>
+
+                <div className="flex flex-col space-y-4 pt-4 border-t border-ink-100">
+                  <span className="text-xs font-semibold text-ink-500 uppercase tracking-wider mb-2">Account</span>
                   {isAdmin && (
                     <Link to="/admin" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-pastel-pink-dark hover:text-ink-900 transition-colors flex items-center gap-2">
                       <Settings className="w-5 h-5" /> Admin Dashboard
@@ -227,10 +280,6 @@ export default function Navbar({
                       <Gift className="w-5 h-5 text-pastel-pink-dark" /> Affiliate Rewards
                     </button>
                   )}
-                  <a href="#products" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">Shop</a>
-                  <a href="#brands" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">Brands</a>
-                  <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">About</a>
-                  <a href="#journal" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-ink-900 hover:text-pastel-pink-dark transition-colors">Journal</a>
                 </div>
               </div>
             </motion.div>

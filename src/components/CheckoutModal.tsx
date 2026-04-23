@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, CreditCard, Wallet, CheckCircle2, ShieldCheck, Lock, Mail, Gift, ExternalLink } from 'lucide-react';
+import { X, CreditCard, Wallet, CheckCircle2, ShieldCheck, Lock, Mail, Gift, ExternalLink, Clock } from 'lucide-react';
 import { useCurrency, exchangeRates } from '../contexts/CurrencyContext';
 import { useCart } from '../contexts/CartContext';
 import { useOrders } from '../contexts/OrderContext';
@@ -28,8 +28,8 @@ interface ShippingAddressState {
 }
 
 export default function CheckoutModal({ isOpen, onClose, onOpenTracking }: CheckoutModalProps) {
-  const { formatPrice } = useCurrency();
-  const { cartCount, cartTotal, cartItems, clearCart } = useCart();
+  const { formatPrice, currency } = useCurrency();
+  const { cartCount, cartTotal, cartItems, clearCart, shippingCost, isFreeShipping, cartLeadTime } = useCart();
   const { createOrder } = useOrders();
   const { profile, updateWallet, markDiscountUsed } = useUser();
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>(profile && profile.walletBalance >= 1 ? 'wallet' : 'yoco');
@@ -48,9 +48,9 @@ export default function CheckoutModal({ isOpen, onClose, onOpenTracking }: Check
   const popupRef = useRef<Window | null>(null);
   const pollIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Referral discount logic
+  // Referral discount logic — shipping from pricing engine
   const subtotal = cartTotal;
-  const shipping = cartCount > 0 ? 5.99 : 0;
+  const shipping = shippingCost;
   const isEligibleForReferralDiscount = profile?.referredBy && !profile?.hasUsedReferralDiscount;
   const referralDiscountAmount = isEligibleForReferralDiscount ? subtotal * 0.1 : 0;
   const total = subtotal - referralDiscountAmount + shipping;
@@ -114,16 +114,36 @@ export default function CheckoutModal({ isOpen, onClose, onOpenTracking }: Check
   const handlePaymentSuccess = async () => {
     setCheckoutStep('processing');
     
+    const sanitizeItems = (items: any[]) => items.map(item => ({
+      id: String(item.id || ''),
+      title: String(item.title || item.name || 'Unknown Product'),
+      name: String(item.title || item.name || 'Unknown Product'),
+      price: Number(item.price || 0),
+      image: String(item.image || ''),
+      quantity: Number(item.quantity || 1),
+      sku: String(item.sku || item.id || 'N/A'),
+      supplierId: String(item.supplierId || 'local')
+    }));
+
     const orderData = {
-      items: cartItems,
+      items: sanitizeItems(cartItems),
       subtotal,
       shipping,
       total,
       status: 'paid' as const,
       paymentMethod: 'yoco' as any,
       customerEmail: profile?.email || 'guest@example.com',
-      customerName: `${shippingAddress.firstName} ${shippingAddress.lastName}`,
-      shippingAddress,
+      customerName: `${shippingAddress.firstName || ''} ${shippingAddress.lastName || ''}`.trim() || 'Guest Customer',
+      shippingAddress: {
+        firstName: shippingAddress.firstName || '',
+        lastName: shippingAddress.lastName || '',
+        address1: shippingAddress.address1 || '',
+        address2: shippingAddress.address2 || '',
+        city: shippingAddress.city || '',
+        state: shippingAddress.state || '',
+        zipCode: shippingAddress.zipCode || '',
+        country: shippingAddress.country || 'South Africa'
+      },
       paymentReference: `YOCO-${yocoCheckoutId || Date.now()}`,
     };
 
@@ -144,16 +164,36 @@ export default function CheckoutModal({ isOpen, onClose, onOpenTracking }: Check
 
 
   const handleCheckout = async () => {
+    const sanitizeItems = (items: any[]) => items.map(item => ({
+      id: String(item.id || ''),
+      title: String(item.title || item.name || 'Unknown Product'),
+      name: String(item.title || item.name || 'Unknown Product'),
+      price: Number(item.price || 0),
+      image: String(item.image || ''),
+      quantity: Number(item.quantity || 1),
+      sku: String(item.sku || item.id || 'N/A'),
+      supplierId: String(item.supplierId || 'local')
+    }));
+
     const orderData = {
-      items: cartItems,
+      items: sanitizeItems(cartItems),
       subtotal,
       shipping,
       total,
       status: 'pending' as const,
       paymentMethod: paymentMethod as any,
       customerEmail: profile?.email || 'guest@example.com',
-      customerName: `${shippingAddress.firstName} ${shippingAddress.lastName}`,
-      shippingAddress,
+      customerName: `${shippingAddress.firstName || ''} ${shippingAddress.lastName || ''}`.trim() || 'Guest Customer',
+      shippingAddress: {
+        firstName: shippingAddress.firstName || '',
+        lastName: shippingAddress.lastName || '',
+        address1: shippingAddress.address1 || '',
+        address2: shippingAddress.address2 || '',
+        city: shippingAddress.city || '',
+        state: shippingAddress.state || '',
+        zipCode: shippingAddress.zipCode || '',
+        country: shippingAddress.country || 'South Africa'
+      },
     };
 
     if (paymentMethod === 'paypal') {
@@ -241,7 +281,12 @@ export default function CheckoutModal({ isOpen, onClose, onOpenTracking }: Check
   useEffect(() => {
     if (paymentMethod === 'paypal' && checkoutStep === 'summary') {
       const orderData = {
-        items: cartItems,
+        items: cartItems.map(item => ({
+          ...item,
+          name: item.title,
+          sku: item.sku || item.id.toString(),
+          supplierId: item.supplierId
+        })),
         subtotal,
         shipping,
         total,
@@ -658,15 +703,31 @@ export default function CheckoutModal({ isOpen, onClose, onOpenTracking }: Check
                         </div>
                         <div className="flex justify-between text-sm text-ink-700">
                           <span>Shipping</span>
-                          <span>{formatPrice(shipping)}</span>
+                          <span className={isFreeShipping ? 'text-emerald-600 font-semibold' : ''}>
+                            {isFreeShipping ? 'FREE' : formatPrice(shipping)}
+                          </span>
                         </div>
                         <div className="pt-3 border-t border-ink-200 flex justify-between font-medium text-ink-900">
                           <span>Total</span>
-                          <span>{formatPrice(total)}</span>
+                          <div className="text-right">
+                            <span>{formatPrice(total)}</span>
+                            {currency === 'ZAR' && (
+                              <p className="text-[9px] text-ink-400 mt-0.5">VAT Inclusive</p>
+                            )}
+                          </div>
                         </div>
                         {isEligibleForReferralDiscount && (
                           <div className="mt-2 p-2 bg-emerald-50 text-emerald-700 text-[10px] font-bold rounded-lg flex items-center justify-center gap-1 uppercase tracking-wider">
                             <Gift className="w-3 h-3" /> 10% Referral Discount Applied
+                          </div>
+                        )}
+                        {/* Lead time notice */}
+                        {cartLeadTime.max > 2 && (
+                          <div className="mt-2 flex items-center gap-2 py-2 px-3 bg-amber-50 border border-amber-100 rounded-xl">
+                            <Clock className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                            <p className="text-[10px] text-amber-700 font-medium">
+                              {cartLeadTime.label}
+                            </p>
                           </div>
                         )}
                       </div>

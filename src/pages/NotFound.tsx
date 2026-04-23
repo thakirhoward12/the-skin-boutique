@@ -1,10 +1,15 @@
 import { motion } from 'motion/react';
 import { Home, Search, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-ivory-50 flex flex-col items-center justify-center p-6 text-center">
+      <Helmet>
+        <title>Page Not Found | The Skin Boutique</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

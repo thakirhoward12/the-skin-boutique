@@ -47,7 +47,7 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
   ];
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.div
@@ -62,6 +62,7 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
             className="text-4xl md:text-5xl font-serif text-ink-900 mb-6"
           >
             Build Your Routine
@@ -70,7 +71,7 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.1 }}
             className="text-lg text-ink-500 font-light"
           >
             Choose a starting point that matches your skincare goals, then pick the exact products you want.
@@ -86,9 +87,9 @@ export default function TieredBundles({ onOpenBuilder }: TieredBundlesProps) {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ type: "spring", stiffness: 200, damping: 20, delay: index * 0.1 }}
                 onClick={() => onOpenBuilder(index)}
-                className="group cursor-pointer relative flex flex-col p-8 rounded-[2rem] border border-ink-100 bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-ink-300"
+                className="group cursor-pointer relative flex flex-col p-8 bg-white rounded-3xl shadow-sm border border-ink-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-ink-200"
               >
                 <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${tier.gradient} flex items-center justify-center mb-6`}>
                   <Icon className={`w-7 h-7 ${tier.iconColor} stroke-[1.5]`} />

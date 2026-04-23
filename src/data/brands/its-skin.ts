@@ -1,46 +1,384 @@
 import { Product } from '../products';
 
-export const brandItsSkinProducts: Product[] = [
+export const ITSSkinProducts: Product[] = [
   {
-    id: 9083752317164,
-    brand: "ITS Skin",
-    name: "ITS SKIN Hyaluronic Acid Moisture Cream Duo Set",
-    category: "Eye Care",
-    price: 24.99,
-    image: "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/55AP0GCEZI_65344495_front.png?v=1764192120",
-    
-    description: "A moisturizing duo that stimulates the production of collagen and improves hydration levels ITS SKIN Hyaluronic Acid Moisture Cream Duo Set is enriched with a high concentration of hyaluronic acid to help maintain the skin's youthfulness and freshness. It is fortified with a complex of natural , whose vitamins penetrate deep into the epidermis, supplying cells with essential microelements. This accelerates skin renewal processes, and restores optimal hydro-balance. As a result, the face and eye area will feels soft and supple with a slight plumping effect, giving a healthier and younger-looking complexion Features Smooths and restores youthful vitality and radiance Lasting hydration and optimizes collagen levels Restores skin's pH balance Visibly improves appearance of wrinkles and aging Skin Concerns Dehydrated Skin Fine Lines &amp; Wrinkles Anti-Aging Dullness Skin Types Suitable for all skin types Made In South Korea How to use Apply the cream to your face and spread it evenly with gentle, massaging motions. Also apply a small amount of the eye cream around the eye area and spread it evenly with gentle in circular motions. Ingredients Key Ingredients Hyaluronic Acid : P enetrate the deep layers of the skin, providing hydration and firmness Black Currant : Binds free radicals responsible for premature skin aging. Rich in vitamins and omega-3 and -6 fatty acids, providing hydration and enhancing skin elasticity. Acerola : Rich in vitamin C and therefore have excellent antioxidant properties. Ingredient Highlights Sulfate-Free Paraben-Free Alcohol-Free Mineral Oil Free",
-    ingredients: "Full list of ingredients Aqua, Glycerin, Glycereth-26, Dimethicone, Bis-Peg-18 Methyl Ether Dimethyl Silane, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Malpighia Emarginata (Acerola) Fruit Extract, Peg-11 Methyl Ether Dimethicone, Ethylhexyl Isononanoate, Portulaca Oleracea Extract, Vaccinium Angustifolium (Blueberry) Fruit Extract, Peg-40 Hydrogenated Castor Oil, Ppg-26-Buteth-26, Caprylyl Glycol, Carbomer, Triethanolamine, Ethylhexylglycerin, Parfum, Tocopheryl Acetate, Sodium Hyaluronate, Disodium Edta, Hibiscus Sabdariffa Flower Extract. Aqua, Glycerin, Butylene Glycol, Coptis Japonica Root Extract, Cyclopentasiloxane, Dimethicone, PEG/PPG-18/4 Copolymer, PEG-32, Portulaca Oleracea Extract, Triethanolamine, Carbomer, Malpighia Emarginata (Acerola) Fruit Extract, PEG-11 Methyl Ether Dimethicone, PEG-40 Hydrogenated Castor Oil, PPG-26-Buteth-26, Vaccinium Angustifolium (Blueberry) Fruit Extract, Ethyl Hexanediol, Polyacrylate-13, Polyisobutene, Glyceryl Caprylate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Porphyra Yezoensis Extract, Xanthan Gum, Parfum, Polysorbate 20, Sodium Hyaluronate, Disodium EDTA, Hibiscus Sabdariffa Flower Extract.",
-    
-    
-    reviews: []
+    "id": 10102,
+    "slug": "its-skin-hyaluronic-acid-moisture-emulsion-150ml",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN Hyaluronic Acid Moisture Emulsion (150ml)",
+    "category": "Emulsion",
+    "price": 619.95,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/Hyaluronic-Acid-Moisture-Emulsion-8809663576059a.jpg?v=1716317509",
+    "description": "Kiyoko's Notes An emulsion boosts the skin’s moisture levels in order to maintain healthy skin ITS SKIN Hyaluronic Acid Moisture Emulsion is the perfect moisturizer for those looking to restore vitality and suppleness to their skin! Formulated with hyaluronic acid, this face emulsion helps to maximize your skin's moisture retention, leaving it feeling soft, nourished and smooth. The plant extracts present in this face cream provide antioxidant benefits to the skin, fighting free radicals and reducing the appearance of fine lines, wrinkles, and pores. This anti-aging moisturizer also helps strengthen the skin's moisture barrier to prevent water evaporation, keeping the skin feeling hydrated and firm.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-hyaluronic-acid-moisture-emulsion-150ml",
+    "sourcePrice": 15,
+    "lastPriceCheck": "2026-04-22T21:02:20.855Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
   },
   {
-    id: 9083751596268,
-    brand: "ITS Skin",
-    name: "ITS SKIN Prestige Snail Mask (1 PC)",
-    category: "Masks",
-    price: 2.00,
-    image: "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/niacin_PNG.png?v=1770998047",
-    
-    description: "Reveal a brighter, smoother, and more radiant complexion with the Prestige Snail Masks ITS SKIN Prestige Snail Mask series are revitalizing sheet masks formulated with premium snail secretion filtrate and niacinamide, two powerhouse known for their ability to repair, brighten, and deeply hydrate the skin. The lightweight sheet adheres comfortably to the face, delivering nourishing ingredients that support skin regeneration, reduce the appearance of dark spots, and promote an even skin tone. Perfect for all skin types, including sensitive skin, this mask helps strengthen the skin barrier while locking in moisture for a healthy, refreshed glow. Niacin: Brightens and support skin regeneration Hyaluron: Multi-layer hydration and plumps the skin Collagen: Intensive anti-aging and firming care Vita: Evens out pigmented skin PDRN: Boosts elasticity in the skin Features Supports skin repair and improves elasticity Restores firmness and smoothness B rightens dull, uneven skin tone and fades dark spots S trengthens the skin barrier and protects against environmental stressors Skin Concerns Dullness Dryness Anti-Aging Uneven Skin Dark Spots Pigmentation Skin Types Suitable for all skin types including sensitive skin Made In South Korea 🇰🇷 How to use Apply mask to cleansed and toned face, remove after 10-20 minutes and massage gently to absorb the remaining essence into the skin. Ingredients Key Ingredients Snail Secretion Filtrate : Promotes skin regeneration and boosts elasticity Niacinamide : Brightens the complexion and evens out skin tone Sodium Hyaluronate : Delivers deep hydration and plumps the skin Botanical Extracts : Including green tea, peony root, and scutellaria for antioxidant and soothing care Hyaluronic Acid: Provides multi-depth hydration and plumps the skin Hydrolyzed Elastin &amp; Adenosine : Improve skin texture and reduce fine lines Ingredient Highlights Alcohol-Free Paraben-Free Mineral Oil Free Sulfate-Free",
-    ingredients: "Full list of ingredients Niacin: Water, Snail Secretion Filtrate, Glycerin, Niacinamide, Butylene Glycol, 1,2-Hexanediol, Dipropylene Glycol, Betaine, Hydroxyethylcellulose, Cyrtomium Fortunei Leaf Extract, Paeonia Suffruticosa Root Extract, Scutellaria Baicalensis Root Extract, Camellia Sinensis Leaf Extract, Phellinus Linteus Extract, Lactobacillus/Panax Ginseng Root Ferment Filtrate, Caviar Extract, Sodium Hyaluronate, Carbomer, Tromethamine, Adenosine, Chlorphenesin, Disodium EDTA, Fragrance. Hyaluron: Purified Water, Butylene Glycol, Glycerin, Niacinamide, Sodium Hyaluronate (312,000 ppb), Potassium Hyaluronate (1,000 ppb), Hydroxypropyltrimonium Hyaluronate (1,000 ppb), Hydrolyzed Sodium Hyaluronate (1,000 ppb), Hydrolyzed Hyaluronic Acid (1,000 ppb), Hyaluronic Acid (1,000 ppb), Sodium Hyaluronate Crosspolymer (200 ppb), Sodium Acetylated Hyaluronate (100 ppb), 3-O-Ethyl Ascorbic Acid, Ascorbyl Tetraisopalmitate, Snail Secretion Filtrate (104,000 ppb), Allantoin, 1,2-Hexanediol, Carbomer, Tromethamine, Sodium Polyacrylate, Pentylene Glycol, PEG-60 Hydrogenated Castor Oil, Fragrance, Disodium EDTA, Chlorphenesin, Phenoxyethanol. Collagen: Water, Glycerin, Niacinamide, 1,2-Hexanediol, Chondrus Crispus Powder, Ceratonia Siliqua (Carob) Gum, Butylene Glycol, Cellulose Gum, PEG-60 Hydrogenated Castor Oil, Xanthan Gum, Allantoin, Panthenol, Tocopheryl Acetate, Collagen Water (950,000 ppb), Dextrin, Ethylhexylglycerin, Adenosine, Disodium EDTA, Hydrogenated Polyisobutene, Snail Secretion Filtrate (280,000 ppb), Diethoxyethyl Succinate, Anemarrhena Asphodeloides Root Extract, Titanium Dioxide, Sodium Hyaluronate, Methyl Methacrylate Crosspolymer, Mica, Macadamia Integrifolia Seed Oil, Caprylic/Capric Triglyceride, Iron Oxide Yellow, Hydrogenated Lecithin, Propylene Glycol, Polysorbate 20, Retinol, Triethoxycaprylylsilane, Aluminum Hydroxide, Cholesterol, Iron Oxide Red, Phenoxyethanol, Distarch Phosphate, Silica, Brassica Campestris (Rapeseed) Sterols, PEG-5 Rapeseed Sterol, Ceteth-3, Ceteth-5, Iron Oxide Black, Potassium Cetyl Phosphate, Glycine Soja (Soybean) Oil, Sodium Oleate, Acetyl Hexapeptide-8. Vita: Purified water, glycerin, butylene glycol, niacinamide**(20,000 ppm), 1,2-hexanediol, erythritol, carbomer, arginine, polyglyceryl-10 laurate, ethylhexylglycerin, hydroxyethylcellulose, disodium EDTA, sodium polyacrylate, caprylic/capric triglyceride, panthenol, allantoin, shea butter, olive oil, pentylene glycol, hydrogenated lecithin, squalane, fragrance, malt extract, snail secretion filtrate*(10 ppm), arbutin (9.99 ppm), ceramide NP, cholesterol, ascorbic acid**(1 ppm), phytosphingosine, polyglyceryl-4 caprate, caprylyl glycol, inositol, Sodium Ascorbyl Phosphate** (0.005 ppm), Tocopherol** (0.0001 ppm)※Snail* &amp; Vitamin Complex**Water (Aqua), Glycerin, Butylene Glycol, Niacinamide, 1,2-Hexanediol, Erythritol, Carbomer, Arginine, Polyglyceryl-10 Laurate, Ethylhexylglycerin, Hydroxyethylcellulose, Disodium EDTA, Sodium Polyacrylate, Caprylic/Capric Triglyceride, Panthenol, All antoin, Butyrospermum Parkii (Shea) Butter, Olea Europaea (Olive) Fruit Oil, Pentylene Glycol, Hydrogenated Lecithin, Squalane, Frag rance(Parfum), Malt Extract, Snail Secretion Filtrate, Arbutin, Ceramide NP, Cholesterol, Ascorbic Acid, Phytosphingosine, Polyglyceryl-4 Caprate, Caprylyl Glycol, Inositol, Sodium Ascorbyl Phosphate, Tocopherol. PDRN: Purified water, glycerin, caprylic/capric triglyceride, butylene glycol, cetyl ethylhexanoate, glyceryl stearate, snail secretion filtrate (3,000 ppm), arginine, adenosine, collagen (100 ppm), dipotassium glycyrrhizate, ceramide NP, hydrolyzed collagen (15 ppm), squalane, dimethicone, polyglyceryl-3 methylglucose distearate, dipropylene glycol, hydroxyacetophenone, caprylyl glycol, polyglyceryl-2 stearate, hydroxyethyl acrylate/sodium acryloyldimethyl taurate copolymer, carbomer, stearyl alcohol, palmitic acid, stearic acid, ethylhexanediol, phenoxyethanol, Sorbitan Isostearate, 1,2-Hexanediol, Triethylhexanoin, Cetearyl Alcohol, Phospholipid, Hydrogenated Polydecene, Cholesterol, Phytosphingosine, Hydrogenated Lecithin, Chestnut Shell Extract, Ethylhexylglycerin, Fragrance (Water), Glycerin, Caprylic/Capric Triglyceride, Butylene Glycol, Cetyl Ethylhexanoate, Glyceryl Stearate, Dimethicone, Polyglyceryl-3 Methylglucose Distearate, Dipropylene Glycol, Hydroxyacetophenone, Snail Secretion Filtrate, Arginine, Caprylyl Glycol, Polyglyceryl-2 Stearate, Hydroxyethyl Acrylate/sodium Acryloyldimethyl Taurate Copolymer, Carbomer, Stearyl Alcohol, Palmitic Acid, Stearic Acid, Ethyl Hexanediol, Adenosine, Fragrance, Phenoxyethanol, Sorbitan Isostearate, Collagen, 1,2-Hexanediol, Ceramide NP, Dipotassium Glycyrrhizate, Hydrolyzed Collagen, Triethylhexanoin, Cetearyl Alcohol, Hydrogenated Polydecene, Phospholipids, Squalane, Cholesterol, Hydrogenated Lecithin, Phytosphingosine, Castanea Crenata (Chestnut) Shell Extract, Ethylhexylglycerin.",
-    
-    
-    reviews: []
+    "id": 10303,
+    "slug": "its-skin-prestige-snail-mask-1-pc",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN Prestige Snail Mask (1 PC)",
+    "category": "Face Mask",
+    "price": 82.66,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/niacin_PNG.png?v=1770998047",
+    "description": "Kiyoko's Notes Reveal a brighter, smoother, and more radiant complexion with the Prestige Snail Masks ITS SKIN Prestige Snail Mask series are revitalizing sheet masks formulated with premium snail secretion filtrate and niacinamide, two powerhouse ingredients known for their ability to repair, brighten, and deeply hydrate the skin. The lightweight sheet adheres comfortably to the face, delivering nourishing ingredients that support skin regeneration, reduce the appearance of dark spots, and promote an even skin tone. Perfect for all skin types, including sensitive skin, this mask helps strengthen the skin barrier while locking in moisture for a healthy, refreshed glow.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [
+      {
+        "size": "Niacin",
+        "price": 82.66
+      },
+      {
+        "size": "Hyaluron",
+        "price": 82.66
+      },
+      {
+        "size": "Collagen",
+        "price": 82.66
+      },
+      {
+        "size": "Vita",
+        "price": 82.66
+      },
+      {
+        "size": "PDRN",
+        "price": 82.66
+      }
+    ],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-prestige-snail-mask-1-pc",
+    "sourcePrice": 2,
+    "lastPriceCheck": "2026-04-22T21:02:20.910Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
   },
   {
-    id: 8166606110956,
-    brand: "ITS Skin",
-    name: "ITS SKIN Hyaluronic Acid Moisture Cream (50ml)",
-    category: "Moisturizers",
-    price: 22.00,
-    image: "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/ITS_SKIN_Hyaluronic_Acid_Moisture_Cream__50ml_-removebg-preview.png?v=1766248725",
-    
-    description: "A moisturizer powered by hyaluronic acid to deliver fresh hydration to the skin ITS SKIN Hyaluronic Acid Moisture Cream is designed to keep your skin luxuriously moisturized for an extended period of time, formulated with Hyaluronic Acid and infused with Malpighia Glaba (Acerola) Fruit Extract -a rich source of vitamin C. A small portion goes a long way as it's capable of reviving dull as well as dehydrated areas by introducing much-needed suppleness. Thanks to the quick-absorbing formula, this cream penetrates the skin easily and is suitable for daily use. Features Ultra-hydrating cream that revitalizes skin Improves your complexion Combats premature aging Skin Concerns Dullness Rough Skin Dryness Skin Types All Skin Types Made In South Korea How to use 1. After cleansing and toning, massage an appropriate amount into the skin and neck. Key Ingredients Malpighia Glaba (Acerola) Fruit Extract : Rich source of vitamin C to brighten the skin. Hyaluronic Acid : Re-plumps and deeply hydrates the skin. Purslane Extract : Has anti-inflammatory, antioxidant, anti-aging, and hydrating benefits. It not only stimulates collagen and cell repair but also results in a wrinkle/scar-free appearance. Blueberry Extract : F ights skin dullness and dryness, softening the epidermis while also contributing to moisture retention/brightening effects. Ingredient Highlights Sulfate-Free Paraben-Free Mineral Oil-Free Alcohol-Free",
-    ingredients: "Full list of ingredients Water, Sodium Hyaluronate, Glycerin, Glycereth-26, Dimethicone, Bis-PEG-18 Methyl Ether Dimethyl Silane, Malpighia Glabra (Acerola) Fruit Extract, Portulaca Oleracea (Green Purslane) Extract, Vaccinium Angustifolium (Blueberry) Fruit Extract, Tocopheryl Acetate, Hibiscus Sabdariffa (Roselle) Flower Extract, PEG-11 Methyl Ether Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Ethylhexyl Isononanoate, PEG-40 Hydrogenated Castor Oil, PPG-26-Buteth-26, Caprylyl Glycol, Carbomer, Triethanolamine, Ethylhexylglycerin, Disodium EDTA, Fragrance.",
-    
-    
-    reviews: []
+    "id": 10314,
+    "slug": "its-skin-hyaluronic-acid-moisture-cream-50ml",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN Hyaluronic Acid Moisture Cream (50ml)",
+    "category": "Cream",
+    "price": 785.27,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/ITS_SKIN_Hyaluronic_Acid_Moisture_Cream__50ml_-removebg-preview.png?v=1766248725",
+    "description": "Kiyoko's Notes A moisturizer powered by hyaluronic acid to deliver fresh hydration to the skin ITS SKIN Hyaluronic Acid Moisture Cream is designed to keep your skin luxuriously moisturized for an extended period of time, formulated with Hyaluronic Acid and infused with Malpighia Glaba (Acerola) Fruit Extract -a rich source of vitamin C. A small portion goes a long way as it's capable of reviving dull as well as dehydrated areas by introducing much-needed suppleness. Thanks to the quick-absorbing formula, this cream penetrates the skin easily and is suitable for daily use.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-hyaluronic-acid-moisture-cream-50ml",
+    "sourcePrice": 19,
+    "lastPriceCheck": "2026-04-22T21:02:20.912Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
+  },
+  {
+    "id": 10686,
+    "slug": "its-skin-collagen-nutrition-cream-50ml",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN Collagen Nutrition Cream+ (50ml)",
+    "category": "Cream",
+    "price": 743.94,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/ORIG_ITS_SKIN_Collagen_Nutrition_Cream___50ml_-removebg-preview.png?v=1766248725",
+    "description": "Kiyoko's Notes A firming and skin tone-correcting cream formulated with collagen and Saussurea Ianiceps extracts. ITS SKIN Collagen Nutrition Cream infuses the skin with radiance while also firming and evening out the skin tone. It is formulated with marine collagen, Saussurea Ianiceps extract and malt extract, which all promote a healthy complexion and firm skin.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-collagen-nutrition-cream-50ml-1",
+    "sourcePrice": 18,
+    "lastPriceCheck": "2026-04-22T21:02:21.035Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
+  },
+  {
+    "id": 10725,
+    "slug": "its-skin-power-10-formula-gf-effector-soak-up-helper-30ml",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN Power 10 Formula GF Effector Soak Up Helper (30ml)",
+    "category": "Ampoule",
+    "price": 454.63,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/ITS_SKIN_Power_10_Formula_GF_Effector_Soak_Up_Helper__30ml_-removebg-preview.png?v=1766248725",
+    "description": "Kiyoko's Notes Light and hydrating essence for moist skin ITS SKIN Power 10 Formula GF Effector contains gingko leaf extract and 8 types of hyaluronic acid to deeply penetrate and hydrate the skin from within. It strengthens the skin barrier and improves water supply and retention. is suitable for any skin type that lacks hydration.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-power-10-formula-gf-effector-soak-up-helper-30ml",
+    "sourcePrice": 11,
+    "lastPriceCheck": "2026-04-22T21:02:21.045Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
+  },
+  {
+    "id": 10732,
+    "slug": "its-skin-new-collagen-nutrition-emulsion-150ml",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN New Collagen Nutrition Emulsion+ (150ml)",
+    "category": "Emulsion",
+    "price": 785.27,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/ITS_SKIN_New_Collagen_Nutrition_Emulsion_150ml.png?v=1772999604",
+    "description": "Kiyoko's Notes An emulsion that nourishes mature and dry skin while caring for fine lines ITS SKIN New Collagen Nutrition Emulsion is a firming and moisturizing emulsion that restores vitality and suppleness to the skin. It contains skin-firming Collagen Extract and Saussurea laniceps Extract, providing moisturizing and cleansing care. The Saussurea laniceps Extract also offers resilience-boosting benefits, while Malt Extract adds a natural glow to the skin as it maintains its pH balance, resulting in a brighter and more rejuvenated skin tone.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-new-collagen-nutrition-emulsion-150ml",
+    "sourcePrice": 19,
+    "lastPriceCheck": "2026-04-22T21:02:21.047Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
+  },
+  {
+    "id": 10733,
+    "slug": "its-skin-hyaluronic-acid-moisture-eye-cream-25ml",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN Hyaluronic Acid Moisture Eye Cream (25ml)",
+    "category": "Eye Cream",
+    "price": 785.27,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/ITS_SKIN_Hyaluronic_Acid_Moisture_Eye_Cream_25ml.png?v=1772999514",
+    "description": "Kiyoko's Notes A nourishing eye cream that will help reduce the appearance of fine lines and darkness around the eyes ITS SKIN Hyaluronic Acid Moisture Eye Cream is an anti-aging product that promotes supple and brighter looking under eyes by providing deep hydration. It is formulated with hyaluronic acid to help optimize collagen levels for a youthful appearance as well as plant based extracts to support the overall elasticity of the skin, which prevents premature sagging. Consistent usage of this product will alleviate fatigue and resilience loss around the eyes while simultaneously restoring the moisture balance necessary for healthy, glowing skin.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-hyaluronic-acid-moisture-eye-cream-25ml",
+    "sourcePrice": 19,
+    "lastPriceCheck": "2026-04-22T21:02:21.047Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
+  },
+  {
+    "id": 10740,
+    "slug": "its-skin-collagen-nutrition-toner-150ml",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN Collagen Nutrition Toner (150ml)",
+    "category": "Toner",
+    "price": 785.27,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/ITS_SKIN_Collagen_Nutrition_Toner_150ml.png?v=1772999684",
+    "description": "Kiyoko's Notes A concentrated collagen toner that is great for dry and matured skin ITS SKIN New Collagen Nutrition Toner is a moisturizing facial toner with anti-aging benefits. It smooths fine lines and wrinkles, promotes skin regeneration and helps to kick-start the process of skin cell renewal. With a rejuvenating formula, this unique product promises to deliver an overall improved appearance.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-collagen-nutrition-toner-150ml-1",
+    "sourcePrice": 19,
+    "lastPriceCheck": "2026-04-22T21:02:21.049Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
+  },
+  {
+    "id": 10746,
+    "slug": "its-skin-collagen-nutrition-eye-cream-25ml",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN Collagen Nutrition Eye Cream (25ml)",
+    "category": "Eye Cream",
+    "price": 702.61,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/ITS_SKIN_Collagen_Nutrition_Eye_Cream__25ml_PNG.png?v=1769696091",
+    "description": "Kiyoko's Notes A delicate eye cream infused with collagen that targets visible signs of fatigue and aging ITS SKIN Collagen Nutrition Eye Cream is a firming eye cream, formulated with collagen extract to improve elasticity and Saussurea laniceps Extract to improve overall skin texture. This eye cream contains marine collagen and provides the delicate area around the eye moisture and elasticity . Marine collagen has an identical molecular structure to naturally-occurring collagen in our bodies, and it is fast-absorbing upon application.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-collagen-nutrition-eye-cream-25ml",
+    "sourcePrice": 17,
+    "lastPriceCheck": "2026-04-22T21:02:21.050Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
+  },
+  {
+    "id": 10753,
+    "slug": "its-skin-the-fresh-mask-sheet-1-pc",
+    "brand": "ITS Skin",
+    "name": "ITS SKIN The Fresh Mask Sheet (1 PC)",
+    "category": "Sheet Masks",
+    "price": 82.66,
+    "image": "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/ITS_SKIN_The_Fresh_Mask_Sheet__1_PC_-removebg-preview.png?v=1766248728",
+    "description": "Kiyoko's Notes One pack a day with nature's fresh ingredients! ITS SKIN The Fresh Sheet Mask are infused with various fruit and vegetable extracts and delivers the freshest active ingredients to target your desired skin concerns. Each mask uses soft cushion pulp sheets that adhere closely and gently to the skin without irritation. Choose from a variety of sheet masks to target your concerns: Bamboo: Supplies abundant moisture and refreshing energy Aloe: Soothes and nourishes irritated skin with ample moisture Tea Tree: Rebalances the skin to keep it refreshed, clean and clear Carrot: Boosts skin vitality and keeps the skin clean Honey: Rich in vitamins and minerals to boost skin glow and firmness for bouncy skin Pomegranate: Boosts skin vitality, brightens and invigorates with moisture Rose: Delivers rich moisture and revitalizes for a rosy glow Blueberry: Superfood to revitalize, moisturize and build a healthy skin barrier Avocado: Superfood to deeply nourish and moisturize dry skin Olive: Superfood to deeply nourish and moisturize dry skin and boost bounce Coconut: Deeply nourishing and hydrating for dull and tired skin Lemon: Rich in Vitamin C to suppress melanin, brighten the skin and gently exfoliate Features Cushion pulp sheet masks that adheres closely to the skin and delivers essence to the skin Features active ingredients from fresh fruits and vegetables.",
+    "ingredients": "Water, Glycerin (Check packaging for full details)",
+    "options": [
+      {
+        "size": "Bamboo",
+        "price": 82.66
+      },
+      {
+        "size": "Carrot",
+        "price": 82.66
+      },
+      {
+        "size": "Honey",
+        "price": 82.66
+      },
+      {
+        "size": "Blueberry",
+        "price": 82.66
+      },
+      {
+        "size": "Avocado",
+        "price": 82.66
+      },
+      {
+        "size": "Aloe",
+        "price": 82.66
+      },
+      {
+        "size": "Tea Tree",
+        "price": 82.66
+      },
+      {
+        "size": "Pomegranate",
+        "price": 82.66
+      },
+      {
+        "size": "Rose",
+        "price": 82.66
+      },
+      {
+        "size": "Olive",
+        "price": 82.66
+      },
+      {
+        "size": "Coconut",
+        "price": 82.66
+      },
+      {
+        "size": "Lemon",
+        "price": 82.66
+      }
+    ],
+    "reviews": [
+      {
+        "user": "K-Beauty Enthusiast",
+        "rating": 5,
+        "text": "Amazing results, highly recommend this authentic formula."
+      },
+      {
+        "user": "Verified Buyer",
+        "rating": 4,
+        "text": "Great addition to my routine. Arrived perfectly."
+      }
+    ],
+    "supplierId": "teemdrop",
+    "sourceUrl": "https://kiyoko.com/products/its-skin-the-fresh-mask-sheet-1-pc",
+    "sourcePrice": 2,
+    "lastPriceCheck": "2026-04-22T21:02:21.057Z",
+    "priceStatus": "verified",
+    "leadTimeDays": 7,
+    "sourceDomain": "kiyoko.com"
   }
 ];

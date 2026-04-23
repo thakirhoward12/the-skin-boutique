@@ -1,11 +1,24 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
+import {
+  FREE_SHIPPING_THRESHOLD,
+  calculateShipping,
+  freeShippingRemaining,
+  freeShippingProgress,
+  getCartLeadTime,
+  getLeadTimeLabel,
+} from '../lib/pricingEngine';
 
 export interface CartItem {
-  id: string; // Product ID
+  id: string | number; // Product ID
   title: string;
   price: number;
   image: string;
   quantity: number;
+  sku?: string;
+  supplierId?: 'teemdrop' | 'abw' | 'local';
+  bundleId?: string;      // If part of a bundle purchase
+  sourceUrl?: string;     // Source store URL for purchase ledger
+  sourcePrice?: number;   // Cost at source for margin tracking
 }
 
 interface CartContextType {
@@ -14,6 +27,13 @@ interface CartContextType {
   isCheckoutOpen: boolean;
   cartCount: number;
   cartTotal: number;
+  shippingCost: number;
+  orderTotal: number;
+  freeShippingThreshold: number;
+  freeShippingRemainingAmount: number;
+  freeShippingProgressPercent: number;
+  isFreeShipping: boolean;
+  cartLeadTime: { min: number; max: number; label: string };
   openCart: () => void;
   closeCart: () => void;
   openCheckout: () => void;
@@ -83,8 +103,20 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     localStorage.removeItem('cart');
   };
 
+  // ── Derived values from pricing engine ──
   const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
   const cartTotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  
+  const shippingCost = calculateShipping(cartTotal);
+  const orderTotal = cartTotal + shippingCost;
+  const freeShippingRemainingAmount = freeShippingRemaining(cartTotal);
+  const freeShippingProgressPercent = freeShippingProgress(cartTotal);
+  const isFreeShipping = freeShippingRemainingAmount <= 0;
+
+  const cartLeadTime = useMemo(() => {
+    const supplierIds = cartItems.map(item => item.supplierId);
+    return getCartLeadTime(supplierIds);
+  }, [cartItems]);
 
   return (
     <CartContext.Provider
@@ -94,6 +126,13 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         isCheckoutOpen,
         cartCount,
         cartTotal,
+        shippingCost,
+        orderTotal,
+        freeShippingThreshold: FREE_SHIPPING_THRESHOLD,
+        freeShippingRemainingAmount,
+        freeShippingProgressPercent,
+        isFreeShipping,
+        cartLeadTime,
         openCart,
         closeCart,
         openCheckout,

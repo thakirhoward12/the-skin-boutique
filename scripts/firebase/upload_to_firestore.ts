@@ -21,17 +21,30 @@ try {
 
   async function uploadData() {
     console.log(`Starting upload of ${products.length} products to Firestore...`);
-    const batch = db.batch();
     const productsRef = db.collection('products');
     
     let count = 0;
+    let batch = db.batch();
+    let batchCount = 0;
+
     for (const product of products) {
       const docRef = productsRef.doc(product.id.toString());
       batch.set(docRef, product);
       count++;
+      batchCount++;
+
+      if (batchCount === 500) {
+        await batch.commit();
+        console.log(`Committed a batch of 500...`);
+        batch = db.batch(); // Create a new batch
+        batchCount = 0;
+      }
     }
     
-    await batch.commit();
+    if (batchCount > 0) {
+      await batch.commit(); // Commit any remaining products
+    }
+    
     console.log(`Successfully uploaded ${count} products to Firestore!`);
   }
 

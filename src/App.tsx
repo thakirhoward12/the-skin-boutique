@@ -8,6 +8,12 @@ const StoreFront = React.lazy(() => import('./pages/StoreFront'));
 // Lazy load complex components
 const AdminDashboard = React.lazy(() => import('./pages/AdminDashboard'));
 const AffiliateDashboard = React.lazy(() => import('./components/AffiliateDashboard'));
+
+// New shop pages
+const ShopPage = React.lazy(() => import('./pages/ShopPage'));
+const PackagesPage = React.lazy(() => import('./pages/PackagesPage'));
+const BundlesPage = React.lazy(() => import('./pages/BundlesPage'));
+const BuilderPage = React.lazy(() => import('./pages/BuilderPage'));
 const AffiliateDashboardPage = () => (
   <div className="pt-24 min-h-screen bg-ivory-50">
     <React.Suspense fallback={<PageLoader />}>
@@ -44,28 +50,68 @@ export default function App() {
                 <CustomCursor />
                 <CookieBanner />
                 <BrowserRouter>
-                  <Routes>
-                    <Route 
-                      path="/" 
-                      element={
-                        <React.Suspense fallback={<PageLoader />}>
-                          <StoreFront />
-                        </React.Suspense>
-                      } 
-                    />
-                    <Route 
-                      path="/admin" 
-                      element={
-                        <AdminRoute>
+                    <Routes>
+                      <Route 
+                        path="/" 
+                        element={
                           <React.Suspense fallback={<PageLoader />}>
-                            <AdminDashboard />
+                            <StoreFront />
                           </React.Suspense>
-                        </AdminRoute>
-                      } 
-                    />
-                    <Route path="/affiliate" element={<AffiliateDashboardPage />} />
-                    <Route path="*" element={<NotFound />} />
-                  </Routes>
+                        } 
+                      />
+                      <Route 
+                        path="/product/:slug" 
+                        element={
+                          <React.Suspense fallback={<PageLoader />}>
+                            <StoreFront />
+                          </React.Suspense>
+                        } 
+                      />
+                      <Route 
+                        path="/admin" 
+                        element={
+                          <AdminRoute>
+                            <React.Suspense fallback={<PageLoader />}>
+                              <AdminDashboard />
+                            </React.Suspense>
+                          </AdminRoute>
+                        } 
+                      />
+                      <Route path="/affiliate" element={<AffiliateDashboardPage />} />
+                      <Route 
+                        path="/shop" 
+                        element={
+                          <React.Suspense fallback={<PageLoader />}>
+                            <ShopPage />
+                          </React.Suspense>
+                        } 
+                      />
+                      <Route 
+                        path="/packages" 
+                        element={
+                          <React.Suspense fallback={<PageLoader />}>
+                            <PackagesPage />
+                          </React.Suspense>
+                        } 
+                      />
+                      <Route 
+                        path="/bundles" 
+                        element={
+                          <React.Suspense fallback={<PageLoader />}>
+                            <BundlesPage />
+                          </React.Suspense>
+                        } 
+                      />
+                      <Route 
+                        path="/build" 
+                        element={
+                          <React.Suspense fallback={<PageLoader />}>
+                            <BuilderPage />
+                          </React.Suspense>
+                        } 
+                      />
+                      <Route path="*" element={<NotFound />} />
+                    </Routes>
                 </BrowserRouter>
               </CartProvider>
             </CurrencyProvider>

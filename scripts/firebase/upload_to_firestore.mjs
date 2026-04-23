@@ -32,11 +32,14 @@ const db = getFirestore();
 // The easiest way is to use `ts-node` or `tsx` to run this script. We already have `tsx` installed.
 
 async function uploadProducts() {
-  console.log("Loading products from local file...");
-  // Import products dynamically (requires running with tsx)
-  const module = await import('./src/data/products.ts');
-  const products = module.products;
+  console.log("Loading products from local file ./public/data/products.json...");
+  
+  if (!fs.existsSync('./public/data/products.json')) {
+    console.error("Error: ./public/data/products.json not found. Please run node generate_json_catalog.mjs first.");
+    process.exit(1);
+  }
 
+  const products = JSON.parse(fs.readFileSync('./public/data/products.json', 'utf8'));
   console.log(`Found ${products.length} products to upload.`);
 
   const batchSize = 500; // max batch size for firestore

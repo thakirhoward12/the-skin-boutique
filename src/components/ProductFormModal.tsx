@@ -221,7 +221,7 @@ export default function ProductFormModal({ isOpen, onClose, product, categories 
                   </div>
                   <div className="space-y-1.5">
                     <label className={labelCls}>
-                      Price (USD) <span className="text-red-500">*</span>
+                      Price (ZAR) <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="number"

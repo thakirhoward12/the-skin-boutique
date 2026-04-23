@@ -24,18 +24,36 @@ export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
+    const fetchCatalog = async () => {
+      try {
+        const response = await fetch('/data/products.json');
+        if (response.ok) {
+          const jsonProducts = await response.json();
+          setProducts(prev => {
+            // Merge logic: prefer Firestore (loaded later) over JSON
+            // But for now, just seed the state with JSON
+            return jsonProducts;
+          });
+        }
+      } catch (error) {
+        console.warn("Failed to fetch products.json, waiting for Firestore:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchCatalog();
+
     try {
       const unsubscribe = onSnapshot(collection(db, 'products'), (snapshot) => {
         if (!snapshot.empty) {
           const prods: Product[] = [];
           snapshot.forEach(doc => {
             const data = doc.data();
-            // Coerce price to a valid number — Firestore may store it as a string
             const rawPrice = Number(data.price);
             prods.push({
               ...data,
               price: isNaN(rawPrice) ? 0 : rawPrice,
-              // Also coerce option prices if they exist
               options: data.options ? data.options.map((opt: any) => ({
                 ...opt,
                 price: isNaN(Number(opt.price)) ? 0 : Number(opt.price)
@@ -46,7 +64,7 @@ export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ child
         }
         setIsLoading(false);
       }, (error) => {
-        console.error("Firestore fetch error, using local products fallback:", error);
+        console.error("Firestore fetch error:", error);
         setIsLoading(false);
       });
 

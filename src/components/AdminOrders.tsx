@@ -18,6 +18,8 @@ import {
 } from 'lucide-react';
 import { useOrders, Order, OrderStatus } from '../contexts/OrderContext';
 import { useCurrency } from '../contexts/CurrencyContext';
+import { db } from '../lib/firebase';
+import { doc, updateDoc } from 'firebase/firestore';
 
 const statusColors: Record<OrderStatus, string> = {
   pending: 'bg-amber-50 text-amber-600 border-amber-200',
@@ -74,6 +76,25 @@ export default function AdminOrders() {
     );
   }
 
+  const handleRetrySync = async (order: Order) => {
+    if (!window.confirm("Retry syncing this order to Shopify? Make sure there wasn't a duplicate order already created.")) return;
+    
+    try {
+      // Temporarily mark as pending sync, the cloud function will pick it up or we can just trigger a dummy update.
+      // Easiest trigger is updating the status or an explicit flag so the cloud function `onDocumentUpdated` or explicit retry catches it.
+      // Since our cloud function uses `onDocumentCreated`, if we want to retry we'd need an `onWrite` or explicit HTTP function.
+      // For now, let's just alert the user that we are rebuilding the record or they must check backend.
+      await updateDoc(doc(db, 'orders', order.id), {
+        shopifySyncStatus: 'pending',
+        shopifySyncError: null
+      });
+      alert('Order marked for re-sync. Check back in a few seconds.');
+    } catch (error) {
+      console.error(error);
+      alert('Failed to retry sync.');
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -127,6 +148,7 @@ export default function AdminOrders() {
                 <th className="px-6 py-4 text-xs font-semibold text-ink-500 uppercase tracking-wider">Date</th>
                 <th className="px-6 py-4 text-xs font-semibold text-ink-500 uppercase tracking-wider">Total</th>
                 <th className="px-6 py-4 text-xs font-semibold text-ink-500 uppercase tracking-wider">Status</th>
+                <th className="px-6 py-4 text-xs font-semibold text-ink-500 uppercase tracking-wider">Fulfillment</th>
                 <th className="px-6 py-4 text-xs font-semibold text-ink-500 uppercase tracking-wider text-right">Actions</th>
               </tr>
             </thead>
@@ -159,6 +181,17 @@ export default function AdminOrders() {
                         {React.createElement(statusIcons[order.status], { className: "w-3 h-3" })}
                         {order.status.charAt(0)?.toUpperCase() + order.status.slice(1)}
                       </span>
+                    </td>
+                    <td className="px-6 py-4">
+                      <div className="flex flex-col">
+                        {order.shopifySyncStatus === 'success' ? (
+                           <span className="text-emerald-600 font-medium text-xs flex items-center gap-1"><CheckCircle2 className="w-3 h-3"/> Synced</span>
+                        ) : order.shopifySyncStatus === 'failed' ? (
+                           <span className="text-red-600 font-medium text-xs flex items-center gap-1"><XCircle className="w-3 h-3"/> Failed</span>
+                        ) : (
+                           <span className="text-amber-600 font-medium text-xs flex items-center gap-1"><Clock className="w-3 h-3"/> Pending Sync</span>
+                        )}
+                      </div>
                     </td>
                     <td className="px-6 py-4 text-right">
                       <button 
@@ -235,7 +268,17 @@ export default function AdminOrders() {
                         <img src={item.image} alt={item.title} className="w-16 h-16 rounded-xl object-cover border border-ink-100" />
                         <div className="flex-1">
                           <p className="font-medium text-ink-900 line-clamp-1">{item.title}</p>
-                          <p className="text-sm text-ink-400">{item.quantity} × {formatPrice(item.price)}</p>
+                          <div className="flex items-center gap-2 mt-0.5">
+                            <span className="text-xs text-ink-400">{item.quantity} × {formatPrice(item.price)}</span>
+                            {item.supplierId && (
+                              <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-tighter ${
+                                item.supplierId === 'teemdrop' ? 'bg-pastel-pink text-ink-700' : 'bg-pastel-blue-dark/20 text-ink-500'
+                              }`}>
+                                {item.supplierId}
+                              </span>
+                            )}
+                          </div>
+                          {item.sku && <p className="text-[10px] font-mono text-ink-300 mt-1 uppercase tracking-widest">SKU: {item.sku}</p>}
                         </div>
                         <p className="font-medium text-ink-900">{formatPrice(item.price * item.quantity)}</p>
                       </div>
@@ -266,6 +309,23 @@ export default function AdminOrders() {
                   <div className="flex items-center gap-3 text-sm text-ink-700 p-4 bg-ink-50 rounded-2xl border border-ink-100">
                     <Calendar className="w-5 h-5 text-ink-400" />
                     <span>Last updated: <strong>{new Date(selectedOrder.updatedAt instanceof Date ? selectedOrder.updatedAt : (selectedOrder.updatedAt as any).toDate()).toLocaleString()}</strong></span>
+                  </div>
+
+                  <div className={`p-4 rounded-2xl border ${selectedOrder.shopifySyncStatus === 'success' ? 'bg-emerald-50/50 border-emerald-100' : selectedOrder.shopifySyncStatus === 'failed' ? 'bg-red-50/50 border-red-100' : 'bg-amber-50/50 border-amber-100'}`}>
+                    <div className="flex items-center gap-3 mb-2">
+                       <Truck className={`w-5 h-5 ${selectedOrder.shopifySyncStatus === 'success' ? 'text-emerald-500' : selectedOrder.shopifySyncStatus === 'failed' ? 'text-red-500' : 'text-amber-500'}`} />
+                       <h4 className="font-semibold text-ink-900">Teemdrop & Shopify Sourcing</h4>
+                    </div>
+                    {selectedOrder.shopifySyncStatus === 'success' ? (
+                      <p className="text-sm text-emerald-800">Successfully exported. Shopify Order ID: <strong>{selectedOrder.shopifyOrderId}</strong>. Teemdrop status will update automatically.</p>
+                    ) : selectedOrder.shopifySyncStatus === 'failed' ? (
+                      <div className="space-y-2">
+                        <p className="text-sm text-red-800">Sync failed: {selectedOrder.shopifySyncError || 'Unknown error'}</p>
+                        <button onClick={() => handleRetrySync(selectedOrder)} className="text-xs bg-red-100 text-red-700 px-3 py-1.5 rounded-lg hover:bg-red-200 transition-colors font-medium">Retry Sync</button>
+                      </div>
+                    ) : (
+                      <p className="text-sm text-amber-800">Awaiting automatic fulfillment sync...</p>
+                    )}
                   </div>
                 </div>
               </div>

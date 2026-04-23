@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { type Product } from '../data/products';
 
 interface SEOProps {
@@ -8,86 +9,83 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description, product }: SEOProps) {
-  useEffect(() => {
-    // 1. Update Title
-    const baseTitle = "The Skin Boutique | Premium K-Beauty";
-    const fullTitle = title ? `${title} | ${baseTitle}` : baseTitle;
-    document.title = fullTitle;
+  const baseTitle = "The Skin Boutique | Premium K-Beauty & Skincare South Africa";
+  const fullTitle = title ? `${title} | ${baseTitle}` : baseTitle;
+  const metaDescription = description || "Shop 1000+ authentic Korean skincare products at The Skin Boutique. Curated K-Beauty favorites for every skin type. Free shipping on orders over R750.";
+  const currentUrl = window.location.href;
+  const defaultImage = "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/The_Skin_Boutique_Logo.png";
+  const image = product?.image || defaultImage;
 
-    // 2. Base Metadata
-    const metaDescription = description || "Discover the best of Korean Skincare at The Skin Boutique. Curated K-Beauty favorites for every skin type.";
-    const currentUrl = window.location.href;
-    const defaultImage = "https://cdn.shopify.com/s/files/1/0515/4589/9157/files/The_Skin_Boutique_Logo.png";
-    const image = product?.image || defaultImage;
-
-    const updates = [
-      { name: "description", content: metaDescription },
-      { property: "og:title", content: fullTitle },
-      { property: "og:description", content: metaDescription },
-      { property: "og:image", content: image },
-      { property: "og:url", content: currentUrl },
-      { property: "twitter:title", content: fullTitle },
-      { property: "twitter:description", content: metaDescription },
-      { property: "twitter:image", content: image },
-    ];
-
-    updates.forEach(({ name, property, content }) => {
-      const selector = name ? `meta[name="${name}"]` : `meta[property="${property}"]`;
-      let element = document.querySelector(selector);
-      if (!element) {
-        element = document.createElement('meta');
-        if (name) element.setAttribute('name', name);
-        if (property) element.setAttribute('property', property);
-        document.head.appendChild(element);
-      }
-      element.setAttribute('content', content);
-    });
-
-    // 3. Canonical URL
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
+  const productSchema = product ? {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": product.name,
+    "image": [product.image],
+    "description": product.description,
+    "brand": { "@type": "Brand", "name": product.brand },
+    "offers": {
+      "@type": "Offer",
+      "url": currentUrl,
+      "priceCurrency": "ZAR",
+      "price": product.price,
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": product.reviews?.length || "12"
     }
-    canonical.setAttribute('href', currentUrl);
+  } : null;
 
-    // 4. Inject Product Schema if applicable
-    let scriptTag = document.getElementById('product-schema');
-    
-    if (product) {
-      const schema = {
-        "@context": "https://schema.org/",
-        "@type": "Product",
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://the-skin-boutique.web.app/"
+      },
+      ...(product ? [{
+        "@type": "ListItem",
+        "position": 2,
         "name": product.name,
-        "image": [product.image],
-        "description": product.description,
-        "brand": { "@type": "Brand", "name": product.brand },
-        "offers": {
-          "@type": "Offer",
-          "url": currentUrl,
-          "priceCurrency": "ZAR",
-          "price": product.price,
-          "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": product.reviews?.length || "12"
-        }
-      };
+        "item": currentUrl
+      }] : [])
+    ]
+  };
 
-      if (!scriptTag) {
-        scriptTag = document.createElement('script');
-        scriptTag.id = 'product-schema';
-        scriptTag.setAttribute('type', 'application/ld+json');
-        document.head.appendChild(scriptTag);
-      }
-      scriptTag.innerHTML = JSON.stringify(schema);
-    } else if (scriptTag) {
-      scriptTag.remove();
-    }
-  }, [title, description, product]);
+  return (
+    <Helmet>
+      {/* Basic Metadata */}
+      <title>{fullTitle}</title>
+      <meta name="description" content={metaDescription} />
+      <link rel="canonical" href={currentUrl} />
 
-  return null; // This is a logic-only component
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content={product ? "product" : "website"} />
+      <meta property="og:url" content={currentUrl} />
+      <meta property="og:title" content={fullTitle} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:image" content={image} />
+
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={currentUrl} />
+      <meta property="twitter:title" content={fullTitle} />
+      <meta property="twitter:description" content={metaDescription} />
+      <meta property="twitter:image" content={image} />
+
+      {/* Structured Data */}
+      {productSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(productSchema)}
+        </script>
+      )}
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
+      </script>
+    </Helmet>
+  );
 }

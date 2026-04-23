@@ -63,6 +63,21 @@ async function generateSitemap() {
   </url>\n`;
   });
 
+  // Product Pages
+  products.forEach(productName => {
+    const slug = productName
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)/g, '');
+    
+    sitemap += `  <url>
+    <loc>${BASE_URL}/product/${slug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>\n`;
+  });
+
   sitemap += `  <url>
     <loc>${BASE_URL}/admin</loc>
     <lastmod>${today}</lastmod>

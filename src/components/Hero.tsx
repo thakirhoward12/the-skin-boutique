@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowRight, Star, Sparkles } from 'lucide-react';
 import { useRef } from 'react';
 
-export default function Hero() {
+export default function Hero({ isProductActive = false }: { isProductActive?: boolean }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -12,10 +12,12 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
+  const TitleTag = isProductActive ? 'h2' : 'h1';
+
   return (
     <div ref={containerRef} className="relative overflow-hidden min-h-[95vh] flex items-center bg-ink-900">
       {/* Grainy Image Underlay */}
-      <motion.div style={{ y, opacity }} className="absolute inset-0 z-0 overflow-hidden relative">
+      <motion.div style={{ y, opacity }} className="absolute inset-0 z-0 overflow-hidden">
         <motion.img
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -25,8 +27,16 @@ export default function Hero() {
           alt="Skincare background"
           referrerPolicy="no-referrer"
         />
+        
+        {/* Ambient Orbs for Refraction */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="ambient-orb w-[600px] h-[600px] top-[-20%] left-[-10%] bg-pastel-pink/20 animate-float" style={{ animationDelay: '0s' }} />
+          <div className="ambient-orb w-[500px] h-[500px] bottom-[-10%] right-[-5%] bg-white/10 animate-float" style={{ animationDelay: '-4s' }} />
+        </div>
+
         {/* Dark Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-ink-900/40 via-transparent to-ink-900/90 mix-blend-multiply"></div>
+        
         {/* Grainy Noise Overlay */}
         <div 
           className="absolute inset-0 opacity-30 mix-blend-overlay pointer-events-none" 
@@ -51,16 +61,29 @@ export default function Hero() {
           </motion.div>
 
           <div className="relative z-10 w-full overflow-hidden">
-            <motion.h1 
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] tracking-tighter font-serif text-pastel-pink leading-[0.85] font-light"
-            >
-              <span className="sr-only">Premium Korean Skincare & K-Beauty Boutique</span>
-              <span className="block italic pr-8">Glass Skin</span>
-              <span className="block pl-12 sm:pl-24">Redefined.</span>
-            </motion.h1>
+            {isProductActive ? (
+              <motion.h2
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] tracking-tighter font-serif text-pastel-pink leading-[0.85] font-light"
+              >
+                <span className="sr-only">Premium Korean Skincare & K-Beauty Boutique</span>
+                <span className="block italic pr-8">Glass Skin</span>
+                <span className="block pl-12 sm:pl-24">Redefined.</span>
+              </motion.h2>
+            ) : (
+              <motion.h1 
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] tracking-tighter font-serif text-pastel-pink leading-[0.85] font-light"
+              >
+                <span className="sr-only">Premium Korean Skincare & K-Beauty Boutique</span>
+                <span className="block italic pr-8">Glass Skin</span>
+                <span className="block pl-12 sm:pl-24">Redefined.</span>
+              </motion.h1>
+            )}
           </div>
           
           <div className="mt-12 sm:mt-16 flex flex-col sm:flex-row items-center justify-between w-full max-w-4xl gap-8 border-t border-pastel-pink/20 pt-8">

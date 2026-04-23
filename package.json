@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node generate_sitemap.mjs && vite build",
+    "build": "node scripts/generate_sitemap.mjs && vite build",
     "preview": "vite preview",
     "deploy:preview": "npm run build && npx firebase hosting:channel:deploy staging",
     "clean": "rm -rf dist",
@@ -17,6 +17,7 @@
     "@tailwindcss/vite": "^4.1.14",
     "@vitejs/plugin-react": "^5.0.4",
     "better-sqlite3": "^12.4.1",
+    "csv-writer": "^1.6.0",
     "dotenv": "^17.2.3",
     "duck-duck-scrape": "^2.2.7",
     "express": "^4.21.2",
@@ -25,8 +26,10 @@
     "googlethis": "^1.8.0",
     "lucide-react": "^0.546.0",
     "motion": "^12.23.24",
+    "pdfkit": "^0.18.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-helmet-async": "^3.0.0",
     "react-router-dom": "^7.13.1",
     "recharts": "^3.8.0",
     "vite": "^6.2.0"

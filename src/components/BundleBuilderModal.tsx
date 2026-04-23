@@ -15,11 +15,13 @@ interface BundleBuilderModalProps {
 }
 
 const CATEGORIES = [
+  { id: 'all', title: 'All Products', keywords: [] as string[], excludeKeywords: [] as string[] },
   { id: 'cleanser', title: 'Cleanser', keywords: ['cleanser', 'wash', 'cleansing'], excludeKeywords: ['shampoo', 'hair', 'scalp'] },
   { id: 'toner', title: 'Toner', keywords: ['toner', 'essence', 'mist'], excludeKeywords: ['hair toner', 'hair', 'scalp', 'shampoo', 'conditioner'] },
   { id: 'serum', title: 'Serum', keywords: ['serum', 'ampoule', 'treatment', 'vitamin c', 'cica', 'retinol', 'bha'], excludeKeywords: ['hair serum', 'scalp serum', 'hair', 'shampoo', 'conditioner'] },
   { id: 'moisturizer', title: 'Moisturizer', keywords: ['moisturizer', 'cream', 'lotion', 'gel', 'hydrate'], excludeKeywords: ['hair', 'body lotion', 'hand cream', 'shampoo', 'conditioner', 'scalp'] },
-  { id: 'spf', title: 'SPF', keywords: ['spf', 'sunscreen', 'sun'], excludeKeywords: [] }
+  { id: 'spf', title: 'SPF', keywords: ['spf', 'sunscreen', 'sun'], excludeKeywords: [] },
+  { id: 'devices', title: 'Devices', keywords: ['device', 'gua sha', 'guasha', 'roller', 'massager', 'led mask', 'age-r', 'pro mini'], excludeKeywords: [] }
 ];
 
 export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex = null }: BundleBuilderModalProps) {
@@ -49,9 +51,50 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
 
   const activeCategory = CATEGORIES[activeCategoryIndex];
 
+  // Deduplicate products: keep unique by normalized name, but allow size/ml variants
+  const deduplicatedProducts = useMemo(() => {
+    const seen = new Map<string, Product>();
+    const sizePattern = /\b(\d+\s*ml|\d+\s*g|\d+\s*oz|value|set|pack|duo|trio)\b/i;
+    
+    for (const p of products) {
+      // Normalize: lowercase, strip sizes/volumes for comparison
+      const baseName = p.name.toLowerCase()
+        .replace(sizePattern, '')
+        .replace(/[^a-z0-9]/g, '')
+        .trim();
+      const key = `${p.brand.toLowerCase()}-${baseName}`;
+      
+      // If we haven't seen this base product, or this one has a different size, keep both
+      const existing = seen.get(key);
+      if (!existing) {
+        seen.set(key, p);
+      } else {
+        // If names differ (different sizes), keep both by using full name as key
+        const existingHasSize = sizePattern.test(existing.name);
+        const currentHasSize = sizePattern.test(p.name);
+        if (existingHasSize || currentHasSize) {
+          // Both are valid size variants — use full name as key
+          const fullKey = `${p.brand.toLowerCase()}-${p.name.toLowerCase().replace(/[^a-z0-9]/g, '')}`;
+          seen.set(fullKey, p);
+        }
+        // Otherwise it's a true duplicate — skip
+      }
+    }
+    return Array.from(seen.values());
+  }, [products]);
+
   const filteredProducts = useMemo(() => {
-    if (!activeCategory) return products.slice(0, 12);
-    return products.filter(p => {
+    if (!activeCategory) return deduplicatedProducts;
+    
+    // "All Products" tab — show everything (excluding haircare/body)
+    if (activeCategory.id === 'all') {
+      return deduplicatedProducts.filter(p => {
+        const hardExcludeCategories = ['haircare', 'hair care', 'fragrance'];
+        return !hardExcludeCategories.some(exc => (p.category || '').toLowerCase().includes(exc));
+      });
+    }
+    
+    return deduplicatedProducts.filter(p => {
       const text = `${p.name} ${p.category} ${p.brand}`.toLowerCase();
       const matchesCategory = activeCategory.keywords.some(kw => text.includes(kw.toLowerCase()));
       if (!matchesCategory) return false;
@@ -61,8 +104,8 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
       // Soft exclude: check negative keywords
       const excluded = activeCategory.excludeKeywords.some(ek => text.includes(ek.toLowerCase()));
       return !excluded;
-    }).slice(0, 20); 
-  }, [activeCategory, products]);
+    });
+  }, [activeCategory, deduplicatedProducts]);
 
   const handleToggleProduct = (product: Product) => {
     const existsIndex = selectedItems.findIndex(item => item.product.id === product.id);
@@ -114,6 +157,9 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
   const handleAddToCart = () => {
     if (selectedCount < 2) return; 
 
+    // Generate a shared bundle ID for all items in this bundle
+    const bundleId = `bnd-${Date.now().toString(36)}-${Math.random().toString(36).substring(2, 5)}`;
+
     selectedItems.forEach(({ product }) => {
       const basePrice = product.options && product.options.length > 0 
         ? Number(product.options[0].price)
@@ -125,7 +171,12 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
         title: `[BUNDLE] ${product.options && product.options.length > 0 ? `${product.name} - ${product.options[0].size}` : product.name}`,
         price: discountedPrice,
         image: product.image,
-        quantity: 1
+        quantity: 1,
+        sku: product.sku || String(product.id),
+        supplierId: product.supplierId as any,
+        bundleId,
+        sourceUrl: product.sourceUrl,
+        sourcePrice: product.sourcePrice,
       });
     });
 
@@ -145,10 +196,11 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
           />
           
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            initial={{ opacity: 0, scale: 0.95, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-6xl bg-white border border-ink-100 rounded-[2rem] shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
+            exit={{ opacity: 0, scale: 0.95, y: 30 }}
+            transition={{ type: "spring", stiffness: 300, damping: 25 }}
+            className="relative w-full max-w-6xl bg-white shadow-2xl rounded-[2.5rem] overflow-hidden flex flex-col max-h-[90vh] border border-ink-100"
           >
             <button 
               onClick={onClose}
@@ -164,8 +216,8 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
                   <Beaker className="w-5 h-5 text-pastel-pink-dark stroke-[2]" />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-serif text-ink-900">Build Your Bundle</h2>
-                  <p className="text-sm text-ink-500">Pick your skincare products. No commitment, no subscription — just your perfect routine.</p>
+                  <h2 className="text-2xl font-serif text-ink-900">Build Your Routine</h2>
+                  <p className="text-sm text-ink-500">Pick your skincare products to curate your ultimate visual glass-skin system.</p>
                 </div>
               </div>
 
@@ -180,7 +232,7 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
                       className={`flex items-center gap-2 shrink-0 px-5 py-2.5 rounded-full border transition-all text-sm font-medium ${
                         isActive 
                           ? 'bg-ink-900 text-white border-ink-900 shadow-md' 
-                          : 'bg-white/60 text-ink-600 border-white/50 hover:bg-white hover:text-ink-900'
+                          : 'bg-white/40 text-ink-600 border-white/60 hover:bg-white/80 hover:text-ink-900 backdrop-blur-md'
                       }`}
                     >
                       {cat.title}
@@ -354,7 +406,7 @@ export default function BundleBuilderModal({ isOpen, onClose, initialTierIndex =
                 </div>
 
                 {/* Fixed Pricing Footer */}
-                <div className="p-6 bg-white border-t border-ink-100 z-20">
+                <div className="p-6 bg-white/70 backdrop-blur-lg border-t border-white/30 z-20">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-sm text-ink-500">Retail Value</span>
                     <span className="text-sm text-ink-400 line-through">{formatPrice(rawTotal)}</span>

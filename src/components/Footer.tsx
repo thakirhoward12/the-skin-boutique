@@ -46,13 +46,24 @@ export default function Footer({ onOpenAffiliate, onOpenContact }: FooterProps) 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Newsletter Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 pb-24 border-b border-white/10">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <h2 className="text-3xl sm:text-4xl font-serif mb-4">Join The Inner Circle</h2>
             <p className="text-white/60 font-light text-sm max-w-md">
               Subscribe to receive exclusive access to new launches, expert skincare advice, and private sales.
             </p>
-          </div>
-          <div className="flex items-center">
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex items-center"
+          >
             <form className="w-full max-w-md flex relative" onSubmit={(e) => e.preventDefault()}>
               <input 
                 type="email" 
@@ -63,10 +74,16 @@ export default function Footer({ onOpenAffiliate, onOpenContact }: FooterProps) 
                 <ArrowRight className="w-5 h-5 stroke-[1.5] group-hover:translate-x-1 transition-transform" />
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24"
+        >
           <div className="col-span-1 md:col-span-4">
             <div className="flex items-center gap-2 mb-8">
               <Droplet className="w-6 h-6 text-pastel-pink" />
@@ -79,16 +96,18 @@ export default function Footer({ onOpenAffiliate, onOpenContact }: FooterProps) 
             </p>
             <div className="flex space-x-4">
               {socialLinks.map(({ icon: Icon, label, href }) => (
-                <a
+                <motion.a
                   key={label}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.9 }}
                   className="group w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300"
                 >
                   <span className="sr-only">{label}</span>
                   <Icon className="h-4 w-4 stroke-[1.5] group-hover:scale-110 transition-transform duration-300" />
-                </a>
+                </motion.a>
               ))}
             </div>
           </div>
@@ -132,7 +151,7 @@ export default function Footer({ onOpenAffiliate, onOpenContact }: FooterProps) 
               <li><button onClick={onOpenContact} className="text-sm text-white/80 hover:text-white transition-colors font-light hover:pl-1 duration-300">Contact Us</button></li>
             </ul>
           </div>
-        </div>
+        </motion.div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-white/40 font-light">
